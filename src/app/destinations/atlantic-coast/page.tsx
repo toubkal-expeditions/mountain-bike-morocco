@@ -488,7 +488,7 @@ export default function AtlanticCoastDestinationPage() {
           </div>
         </div>
         <div className="page-width footer-bottom">
-          <span>© {new Date().getFullYear()} Mountain Bike Morocco</span>
+          <span>© 2026 Mountain Bike Morocco</span>
           <span>Atlantic coast cycling adventures, thoughtfully planned.</span>
         </div>
       </footer>

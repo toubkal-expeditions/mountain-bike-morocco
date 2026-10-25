@@ -1,0 +1,547 @@
+import Link from "next/link";
+
+const tours = [
+  {
+    category: "MOUNTAIN BIKE",
+    title: "Atlas Mountains MTB Adventure",
+    detail: "Ride mountain trails, traditional villages and spectacular High Atlas landscapes.",
+    duration: "4–7 days",
+    level: "Intermediate",
+    image:
+      "https://images.unsplash.com/photo-1544191696-15693072a9c7?auto=format&fit=crop&w=1200&q=85",
+    href: "/mountain-bike-tours-morocco",
+  },
+  {
+    category: "E-MTB",
+    title: "Explore the Atlas by E-MTB",
+    detail: "Climb higher, discover hidden valleys and enjoy more of Morocco on an e-mountain bike.",
+    duration: "3–6 days",
+    level: "All abilities",
+    image:
+      "https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1200&q=85",
+    href: "/e-mtb-tour",
+  },
+  {
+    category: "ATLAS TO DESERT",
+    title: "Mountains, Valleys & Desert",
+    detail: "A multi-day cycling journey through changing landscapes and authentic Moroccan communities.",
+    duration: "5–8 days",
+    level: "Intermediate",
+    image:
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85",
+    href: "/cycling-holiday-morocco",
+  },
+];
+
+const destinations = [
+  {
+    name: "High Atlas Mountains",
+    description: "Big mountain scenery, remote trails and panoramic descents.",
+    image:
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85",
+  },
+  {
+    name: "Imlil & Toubkal",
+    description: "Traditional mountain villages and routes beneath North Africa's highest peak.",
+    image:
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85",
+  },
+  {
+    name: "Agafay & Sahara",
+    description: "Open desert landscapes, rocky tracks and unforgettable horizons.",
+    image:
+      "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=900&q=85",
+  },
+  {
+    name: "Marrakech & Beyond",
+    description: "Combine the energy of Marrakech with rewarding rides in the countryside.",
+    image:
+      "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=900&q=85",
+  },
+];
+
+const experiences = [
+  ["01", "Mountain Bike Tours", "Technical singletrack, mountain paths and rewarding descents."],
+  ["02", "E-MTB Adventures", "Discover more terrain with the support of an electric mountain bike."],
+  ["03", "Gravel Cycling", "Quiet roads, rough tracks and long rides through changing landscapes."],
+  ["04", "Road Cycling", "Mountain climbs, winding roads and scenic routes across Morocco."],
+  ["05", "Luxury Cycling", "Carefully planned rides with comfort and personal service."],
+  ["06", "Family MTB Tours", "Flexible rides designed around your family's pace and experience."],
+  ["07", "Private Group Trips", "A route, schedule and experience shaped around your group."],
+  ["08", "Multi-day Holidays", "A complete journey with riding, local culture and time to explore."],
+];
+
+const faqs = [
+  {
+    question: "When is the best time for cycling in Morocco?",
+    answer:
+      "Spring and autumn are popular seasons for cycling, particularly in the Atlas Mountains. Conditions vary by altitude and region, so your itinerary should match the season, your riding style and the areas you want to explore.",
+  },
+  {
+    question: "Can I start my cycling holiday in Marrakech?",
+    answer:
+      "Yes. Marrakech can be a practical starting point for day rides and multi-day cycling trips. Your plan can include transfers to mountain trails, accommodation and a route matched to your schedule.",
+  },
+  {
+    question: "Do I need to bring my own bike?",
+    answer:
+      "You can discuss bringing your own bike or arranging a rental. Availability and the most suitable bike depend on the route and travel dates, so confirm these details when planning your trip.",
+  },
+  {
+    question: "Can you organise a private cycling trip?",
+    answer:
+      "A private trip can be planned around your group, preferred riding style, fitness, dates and interests. Share your requirements to discuss a suitable itinerary.",
+  },
+];
+
+export default function HomePage() {
+  return (
+    <>
+      <header className="site-header">
+        <div className="header-inner">
+          <Link className="brand" href="/" aria-label="Mountain Bike Morocco home">
+            <span className="brand-mark">M</span>
+            <span className="brand-name">
+              MOUNTAIN BIKE
+              <strong>MOROCCO</strong>
+            </span>
+          </Link>
+
+          <nav className="main-nav" aria-label="Main navigation">
+            <Link href="/">Home</Link>
+
+            <div className="nav-dropdown">
+              <Link href="/cycling-holiday-morocco">Cycling Trip <span>⌄</span></Link>
+              <div className="dropdown-menu">
+                <Link href="/cycling-holiday-morocco">All Cycling Tours</Link>
+                <Link href="/mountain-bike-tours-morocco">MTB Tour</Link>
+                <Link href="/e-mtb-tour">E-MTB Tour</Link>
+                <Link href="/gravel-cycling">Gravel Cycling</Link>
+                <Link href="/road-cycling">Road Cycling</Link>
+                <Link href="/luxury-cycling">Luxury Cycling</Link>
+                <Link href="/family-mtb-tour">Family MTB Tour</Link>
+                <Link href="/private-group-cycling">Private Group Cycling</Link>
+                <Link href="/cycling-from-marrakech">Cycling from Marrakech</Link>
+              </div>
+            </div>
+
+            <div className="nav-dropdown">
+              <Link href="/destinations">Destinations <span>⌄</span></Link>
+              <div className="dropdown-menu">
+                <Link href="/destinations">All Destinations</Link>
+                <Link href="/destinations/atlas-mountains">Atlas Mountains</Link>
+                <Link href="/destinations/imlil">Imlil</Link>
+                <Link href="/destinations/toubkal">Toubkal</Link>
+                <Link href="/destinations/anti-atlas">Anti-Atlas</Link>
+                <Link href="/destinations/marrakech">Marrakech</Link>
+                <Link href="/destinations/agafay-desert">Agafay Desert</Link>
+                <Link href="/destinations/sahara-desert">Sahara Desert</Link>
+                <Link href="/destinations/atlantic-coast">Atlantic Coast</Link>
+              </div>
+            </div>
+
+            <Link href="/events">Events</Link>
+            <Link href="/about">About</Link>
+            <Link href="/journal">Journal</Link>
+          </nav>
+
+          <Link className="header-cta" href="/plan-your-trip">
+            Plan your trip <span>↗</span>
+          </Link>
+
+          <details className="mobile-menu">
+            <summary aria-label="Open navigation menu">☰</summary>
+            <nav aria-label="Mobile navigation">
+              <Link href="/">Home</Link>
+              <Link href="/cycling-holiday-morocco">All Cycling Tours</Link>
+              <Link href="/mountain-bike-tours-morocco">Mountain Bike</Link>
+              <Link href="/e-mtb-tour">E-MTB</Link>
+              <Link href="/gravel-cycling">Gravel Cycling</Link>
+              <Link href="/destinations">Destinations</Link>
+              <Link href="/events">Events</Link>
+              <Link href="/about">About</Link>
+              <Link href="/journal">Journal</Link>
+              <Link href="/plan-your-trip">Plan your trip ↗</Link>
+            </nav>
+          </details>
+        </div>
+      </header>
+
+      <main>
+        {/* 1. HERO */}
+        <section className="hero">
+          <div className="hero-image" />
+          <div className="hero-overlay" />
+          <div className="hero-content container">
+            <p className="eyebrow light">RIDE BEYOND THE ORDINARY · MOROCCO</p>
+            <h1>
+              Discover Morocco
+              <br />
+              <em>on two wheels.</em>
+            </h1>
+            <p className="hero-description">
+              From the high trails of the Atlas Mountains to the wide-open
+              landscapes beyond, discover a different side of Morocco on a
+              cycling holiday built around you.
+            </p>
+            <div className="hero-actions">
+              <Link className="button button-light" href="/cycling-holiday-morocco">
+                Explore cycling tours <span>↗</span>
+              </Link>
+              <Link className="text-link light-link" href="/plan-your-trip">
+                Plan your adventure <span>→</span>
+              </Link>
+            </div>
+            <div className="hero-note">
+              <span className="hero-note-line" />
+              LOCAL KNOWLEDGE. OPEN TRAILS. REAL MOROCCO.
+            </div>
+          </div>
+          <div className="hero-index"><span>01</span> / MOROCCO, YOUR WAY</div>
+        </section>
+
+        {/* 2. WHY RIDE WITH US */}
+        <section className="intro section-pad container">
+          <div className="intro-copy">
+            <p className="eyebrow">MORE THAN A RIDE</p>
+            <h2>Morocco is best discovered <em>at your own pace.</em></h2>
+            <p>
+              The best cycling holidays are about more than the kilometres.
+              They are the quiet trails, the mountain views, the welcome in a
+              village and the feeling of discovering somewhere new.
+            </p>
+            <p>
+              Mountain Bike Morocco helps you explore the country through
+              thoughtfully planned cycling experiences, with local knowledge
+              and routes selected around your ability, interests and ambitions.
+            </p>
+            <Link className="text-link" href="/about">
+              Get to know us <span>→</span>
+            </Link>
+          </div>
+          <div className="intro-visual">
+            <div className="intro-photo" role="img" aria-label="Mountain landscape in Morocco" />
+            <div className="photo-caption">
+              <span>01 / THE HIGH ATLAS</span>
+              <span>MADE FOR EXPLORING</span>
+            </div>
+            <div className="round-stamp">LOCAL<br />KNOWLEDGE<br /><span>✳</span></div>
+          </div>
+          <div className="benefits-grid">
+            <div><span>01</span><h3>Local knowledge</h3><p>Discover routes and places with insight into the landscape and local life.</p></div>
+            <div><span>02</span><h3>Routes that fit</h3><p>Choose a riding experience that suits your ability, pace and interests.</p></div>
+            <div><span>03</span><h3>Support on the way</h3><p>Discuss guiding, transfers, equipment and practical details before you ride.</p></div>
+            <div><span>04</span><h3>Real connections</h3><p>Make space for mountain villages, local food and the people you meet.</p></div>
+          </div>
+        </section>
+
+        {/* 3. CYCLING TOURS */}
+        <section className="tours-section section-pad">
+          <div className="container">
+            <div className="section-heading">
+              <div>
+                <p className="eyebrow">FIND YOUR RIDE</p>
+                <h2>Choose your next <em>adventure.</em></h2>
+              </div>
+              <Link className="text-link" href="/cycling-holiday-morocco">
+                View all cycling tours <span>→</span>
+              </Link>
+            </div>
+            <p className="section-lead">
+              From singletrack in the Atlas Mountains to longer journeys across
+              Morocco, find a cycling holiday that matches the way you like to ride.
+            </p>
+            <div className="tour-grid">
+              {tours.map((tour, index) => (
+                <article className="tour-card" key={tour.title}>
+                  <Link className="tour-image" href={tour.href} style={{ backgroundImage: `url("${tour.image}")` }}>
+                    <span className="tour-number">0{index + 1}</span>
+                    <span className="image-arrow">↗</span>
+                  </Link>
+                  <div className="tour-card-content">
+                    <p className="eyebrow">{tour.category}</p>
+                    <h3><Link href={tour.href}>{tour.title}</Link></h3>
+                    <p>{tour.detail}</p>
+                    <div className="tour-meta">
+                      <span>{tour.duration}</span>
+                      <span>{tour.level}</span>
+                    </div>
+                    <Link className="text-link" href={tour.href}>Discover this tour <span>→</span></Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <p className="fine-print">
+              Itineraries, riding levels and trip details can be tailored to your dates and requirements.
+            </p>
+          </div>
+        </section>
+
+        {/* 4. DESTINATIONS */}
+        <section className="destinations-section section-pad container">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">A COUNTRY OF CONTRASTS</p>
+              <h2>Where will you <em>ride?</em></h2>
+            </div>
+            <p className="heading-aside">
+              One country. Many landscapes. Find the setting for your next Moroccan cycling adventure.
+            </p>
+          </div>
+          <div className="destination-grid">
+            {destinations.map((place, index) => (
+              <Link
+                className={`destination-card destination-${index + 1}`}
+                href={`/destinations/${["atlas-mountains", "imlil", "sahara-desert", "marrakech"][index]}`}
+                key={place.name}
+                style={{ backgroundImage: `url("${place.image}")` }}
+              >
+                <span className="destination-number">0{index + 1}</span>
+                <div className="destination-info">
+                  <h3>{place.name}</h3>
+                  <p>{place.description}</p>
+                  <span className="destination-link">Explore destination ↗</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="destination-footer">
+            <p>High Atlas · Imlil · Toubkal · Anti-Atlas · Marrakech · Agafay · Sahara · Atlantic Coast</p>
+            <Link className="text-link" href="/destinations">Explore all destinations <span>→</span></Link>
+          </div>
+        </section>
+
+        {/* 5. RIDING EXPERIENCES */}
+        <section className="experiences-section section-pad">
+          <div className="container experiences-layout">
+            <div className="experiences-heading">
+              <p className="eyebrow light">YOUR STYLE. YOUR JOURNEY.</p>
+              <h2>Find the ride <em>that feels like you.</em></h2>
+              <p>
+                Whether you prefer technical trails, long gravel days or a
+                relaxed family adventure, your cycling holiday should start
+                with the way you want to experience Morocco.
+              </p>
+              <Link className="button button-light" href="/plan-your-trip">Tell us what you have in mind <span>↗</span></Link>
+            </div>
+            <div className="experience-list">
+              {experiences.map(([number, title, description]) => (
+                <Link className="experience-row" href="/plan-your-trip" key={number}>
+                  <span className="experience-number">{number}</span>
+                  <span className="experience-copy"><strong>{title}</strong><small>{description}</small></span>
+                  <span className="experience-arrow">↗</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 6. FROM MARRAKECH */}
+        <section className="marrakech-section">
+          <div className="marrakech-image" role="img" aria-label="Moroccan landscape near Marrakech" />
+          <div className="marrakech-copy">
+            <p className="eyebrow">YOUR JOURNEY STARTS HERE</p>
+            <h2>From Marrakech to the <em>open trail.</em></h2>
+            <p>
+              Marrakech makes a natural starting point for exploring Morocco
+              by bike. Leave the city behind and head towards mountain passes,
+              rural tracks and landscapes that feel a world away.
+            </p>
+            <p>
+              Plan a day ride, add cycling to a wider Moroccan holiday or build
+              a multi-day itinerary with guiding, accommodation and transport
+              discussed around your plans.
+            </p>
+            <ul className="check-list">
+              <li>Day rides and multi-day cycling holidays</li>
+              <li>Transfers to selected riding areas</li>
+              <li>Private and tailor-made itinerary options</li>
+            </ul>
+            <Link className="button button-dark" href="/cycling-from-marrakech">Explore cycling from Marrakech <span>↗</span></Link>
+          </div>
+        </section>
+
+        {/* 7. HOW IT WORKS */}
+        <section className="planning-section section-pad container">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">FROM FIRST MESSAGE TO FIRST RIDE</p>
+              <h2>A good trip starts <em>with a good plan.</em></h2>
+            </div>
+            <p className="heading-aside">
+              We help you work through the details so your holiday fits the
+              riding you want to do and the time you have.
+            </p>
+          </div>
+          <div className="planning-grid">
+            <article><span>01</span><h3>Tell us about your trip</h3><p>Share your dates, group size, experience and the kind of riding you enjoy.</p></article>
+            <article><span>02</span><h3>Shape your itinerary</h3><p>Discuss destinations, route difficulty, daily distances and the pace of your trip.</p></article>
+            <article><span>03</span><h3>Sort the details</h3><p>Confirm the practical arrangements, which may include guides, bikes, transport and accommodation.</p></article>
+            <article><span>04</span><h3>Enjoy the journey</h3><p>Arrive ready to ride, explore new landscapes and experience Morocco beyond the usual route.</p></article>
+          </div>
+        </section>
+
+        {/* 8. BEST TIME */}
+        <section className="season-section section-pad">
+          <div className="container season-layout">
+            <div className="season-copy">
+              <p className="eyebrow">PLAN AROUND THE SEASONS</p>
+              <h2>When is the best time to <em>ride Morocco?</em></h2>
+              <p>
+                Morocco offers very different cycling conditions depending on
+                the region, elevation and time of year. Spring and autumn are
+                often excellent starting points for planning a trip, while
+                mountain weather and summer heat need careful consideration.
+              </p>
+              <p>
+                The right dates depend on whether you want high Atlas trails,
+                desert riding, coastal routes or a combination of regions.
+                Plan your itinerary around the conditions rather than the calendar alone.
+              </p>
+              <Link className="text-link" href="/journal">Read our cycling guides <span>→</span></Link>
+            </div>
+            <div className="season-facts">
+              <div><span>SPRING</span><h3>Fresh landscapes</h3><p>A popular period to explore many regions, with conditions varying by altitude.</p></div>
+              <div><span>SUMMER</span><h3>Choose your elevation</h3><p>Higher mountain areas may be more comfortable than exposed lowland routes.</p></div>
+              <div><span>AUTUMN</span><h3>Made for exploring</h3><p>Often a good season to consider for mountain trails and longer cycling journeys.</p></div>
+              <div><span>WINTER</span><h3>Plan region by region</h3><p>Lower elevations can suit some rides, while high mountain routes may be cold or snow-covered.</p></div>
+            </div>
+          </div>
+        </section>
+
+        {/* 9. CULTURE */}
+        <section className="culture-section section-pad container">
+          <div className="culture-image" role="img" aria-label="Moroccan mountain village and landscape" />
+          <div className="culture-copy">
+            <p className="eyebrow">THE COUNTRY BEYOND THE TRAIL</p>
+            <h2>Come for the riding. Leave with <em>more stories.</em></h2>
+            <p>
+              A cycling journey through Morocco can bring you closer to the
+              country's mountain landscapes, Amazigh communities, local food
+              and long traditions of hospitality.
+            </p>
+            <p>
+              Take time to discover the villages along your route, enjoy a
+              mint tea stop and experience the places between the start and
+              finish of each ride. Thoughtful travel means respecting local
+              customs and the landscapes that make these journeys special.
+            </p>
+            <Link className="text-link" href="/about">Discover our approach <span>→</span></Link>
+          </div>
+        </section>
+
+        {/* 10. JOURNAL */}
+        <section className="journal-section section-pad container">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">NOTES FROM THE TRAIL</p>
+              <h2>The Morocco cycling <em>journal.</em></h2>
+            </div>
+            <Link className="text-link" href="/journal">Visit the journal <span>→</span></Link>
+          </div>
+          <p className="section-lead">
+            Practical inspiration for planning a mountain biking holiday in Morocco,
+            choosing your region and making the most of your time on two wheels.
+          </p>
+          <div className="journal-grid">
+            <article className="journal-card">
+              <Link className="journal-image journal-image-one" href="/journal/best-time-to-cycle-morocco" aria-label="Read about the best time to cycle in Morocco" />
+              <p className="eyebrow">TRIP PLANNING · 6 MIN READ</p>
+              <h3><Link href="/journal/best-time-to-cycle-morocco">The best time to go cycling in Morocco</Link></h3>
+              <p>Understand the seasons, mountain conditions and regional differences before choosing your dates.</p>
+              <Link className="text-link" href="/journal/best-time-to-cycle-morocco">Read the guide <span>→</span></Link>
+            </article>
+            <article className="journal-card">
+              <Link className="journal-image journal-image-two" href="/journal/atlas-mountains-mtb-guide" aria-label="Read the Atlas Mountains mountain biking guide" />
+              <p className="eyebrow">DESTINATIONS · 8 MIN READ</p>
+              <h3><Link href="/journal/atlas-mountains-mtb-guide">A mountain biking guide to the Atlas Mountains</Link></h3>
+              <p>Explore the terrain, riding styles and planning considerations for an Atlas adventure.</p>
+              <Link className="text-link" href="/journal/atlas-mountains-mtb-guide">Read the guide <span>→</span></Link>
+            </article>
+            <article className="journal-card">
+              <Link className="journal-image journal-image-three" href="/journal/cycling-holiday-packing-list" aria-label="Read the cycling holiday packing guide" />
+              <p className="eyebrow">CYCLING TIPS · 5 MIN READ</p>
+              <h3><Link href="/journal/cycling-holiday-packing-list">What to pack for a cycling holiday in Morocco</Link></h3>
+              <p>A practical starting point for thinking about kit, layers, hydration and essentials.</p>
+              <Link className="text-link" href="/journal/cycling-holiday-packing-list">Read the guide <span>→</span></Link>
+            </article>
+          </div>
+          <p className="fine-print">Journal topics are planned for publication; article links need their own pages before launch.</p>
+        </section>
+
+        {/* 11. FAQ */}
+        <section className="faq-section section-pad">
+          <div className="container faq-layout">
+            <div className="faq-intro">
+              <p className="eyebrow">GOOD TO KNOW</p>
+              <h2>Questions before <em>you ride?</em></h2>
+              <p>Here are a few useful things to consider when planning your Morocco cycling holiday.</p>
+              <Link className="text-link" href="/plan-your-trip">Ask us about your trip <span>→</span></Link>
+            </div>
+            <div className="faq-list">
+              {faqs.map((faq) => (
+                <details key={faq.question}>
+                  <summary>{faq.question}<span>+</span></summary>
+                  <p>{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 12. CONTACT CTA */}
+        <section className="final-cta">
+          <div className="final-cta-image" />
+          <div className="final-cta-overlay" />
+          <div className="final-cta-content container">
+            <p className="eyebrow light">YOUR NEXT CHAPTER STARTS HERE</p>
+            <h2>Ready to ride <em>Morocco?</em></h2>
+            <p>Tell us what inspires you, and start planning a cycling holiday made around your journey.</p>
+            <Link className="button button-light" href="/plan-your-trip">Plan your trip <span>↗</span></Link>
+          </div>
+        </section>
+      </main>
+
+      <footer className="site-footer">
+        <div className="container footer-main">
+          <div className="footer-brand">
+            <Link className="brand brand-footer" href="/">
+              <span className="brand-mark">M</span>
+              <span className="brand-name">MOUNTAIN BIKE<strong>MOROCCO</strong></span>
+            </Link>
+            <p>Discover Morocco on two wheels. Mountain landscapes, memorable trails and cycling journeys planned around you.</p>
+          </div>
+          <div className="footer-column">
+            <h3>EXPLORE</h3>
+            <Link href="/cycling-holiday-morocco">All Cycling Tours</Link>
+            <Link href="/mountain-bike-tours-morocco">Mountain Bike</Link>
+            <Link href="/e-mtb-tour">E-MTB Tours</Link>
+            <Link href="/gravel-cycling">Gravel Cycling</Link>
+            <Link href="/cycling-from-marrakech">From Marrakech</Link>
+          </div>
+          <div className="footer-column">
+            <h3>DESTINATIONS</h3>
+            <Link href="/destinations/atlas-mountains">Atlas Mountains</Link>
+            <Link href="/destinations/imlil">Imlil & Toubkal</Link>
+            <Link href="/destinations/marrakech">Marrakech</Link>
+            <Link href="/destinations/agafay-desert">Agafay Desert</Link>
+            <Link href="/destinations/sahara-desert">Sahara Desert</Link>
+          </div>
+          <div className="footer-column">
+            <h3>LET'S TALK</h3>
+            <Link href="/about">About us</Link>
+            <Link href="/events">Events</Link>
+            <Link href="/journal">Journal</Link>
+            <Link href="/plan-your-trip">Plan your trip</Link>
+            <Link href="/contact">Contact</Link>
+          </div>
+        </div>
+        <div className="container footer-bottom">
+          <span>© {new Date().getFullYear()} Mountain Bike Morocco</span>
+          <span>Made for the journey.</span>
+          <Link href="/privacy-policy">Privacy policy</Link>
+        </div>
+      </footer>
+    </>
+  );
+}

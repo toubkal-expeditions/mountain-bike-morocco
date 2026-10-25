@@ -513,7 +513,7 @@ export default function SaharaDesertDestinationPage() {
           </div>
         </div>
         <div className="page-width footer-bottom">
-          <span>© {new Date().getFullYear()} Mountain Bike Morocco</span>
+          <span>© 2026 Mountain Bike Morocco</span>
           <span>Sahara cycling adventures, thoughtfully planned.</span>
         </div>
       </footer>
