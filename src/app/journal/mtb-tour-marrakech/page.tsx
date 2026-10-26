@@ -624,7 +624,7 @@ export default function MtbTourMarrakechPage() {
         </div>
 
         <div className="article-shell article-footer-bottom">
-          <span>© {new Date().getFullYear()} Mountain Bike Morocco</span>
+          <span>© 2026 Mountain Bike Morocco</span>
           <span>Morocco cycling adventures, thoughtfully planned.</span>
           <Link href="#top">Back to top ↑</Link>
         </div>

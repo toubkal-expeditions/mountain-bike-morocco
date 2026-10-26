@@ -1,0 +1,591 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "E-MTB Tours in Morocco: A Complete Rider's Guide | Mountain Bike Morocco",
+  description:
+    "Discover E-MTB tours in Morocco, from Atlas Mountain climbs and singletrack to guided e-bike adventures. Learn about batteries, range, preparation, terrain and trip planning.",
+  alternates: { canonical: "/journal/emtb-tours-morocco" },
+  openGraph: {
+    title: "E-MTB Tours in Morocco: A Complete Rider's Guide",
+    description:
+      "Plan an electric mountain biking adventure in Morocco with practical advice on trails, battery range, equipment, fitness and guided tours.",
+    type: "article",
+    images: ["/images/e-mtb-tour-morocco.jpg"],
+  },
+};
+
+const relatedArticles = [
+  {
+    category: "MOUNTAIN BIKE GUIDES",
+    title: "A Rider's Guide to Mountain Biking in the High Atlas",
+    text: "Understand High Atlas terrain, route difficulty, altitude, equipment and the preparation needed for a rewarding mountain bike trip.",
+    image: "/images/singletrack-mtb-atlas-mountains.jpg",
+    href: "/journal/high-atlas-mtb-guide",
+  },
+  {
+    category: "E-BIKE ADVENTURES",
+    title: "Atlas Mountains E-Bike Tours",
+    text: "Explore the landscapes, climbs and riding opportunities that make the Atlas Mountains an exciting destination for electric mountain biking.",
+    image: "/images/atlas-mountains-cycling-tour-morocco.jpg",
+    href: "/journal/atlas-mountains-e-bike-tours",
+  },
+  {
+    category: "TRIP PLANNING",
+    title: "Mountain Biking in Morocco",
+    text: "Discover how to choose routes, prepare your bike and plan a cycling experience around Morocco's varied landscapes.",
+    image: "/images/atlas-mountains-cycling-tour-morocco.jpg",
+    href: "/journal/mountain-biking-morocco",
+  },
+];
+
+const faqs = [
+  {
+    question: "What is an E-MTB tour?",
+    answer:
+      "An E-MTB tour uses an electric-assist mountain bike to support your pedalling. The motor helps when climbing and riding demanding terrain, but you still pedal, steer, brake and manage the bike. Assistance does not replace mountain-bike handling skills or sensible route selection.",
+  },
+  {
+    question: "Is Morocco suitable for electric mountain biking?",
+    answer:
+      "Morocco offers varied riding environments, including Atlas Mountain tracks, rocky trails, rural paths and desert-edge landscapes. The right itinerary depends on the terrain, your experience, the available bike and battery setup, charging opportunities, weather and the support arrangements for the trip.",
+  },
+  {
+    question: "How far can an E-MTB travel on one battery?",
+    answer:
+      "There is no single reliable distance for every E-MTB. Range depends on battery capacity, assistance mode, rider and luggage weight, elevation gain, surface, temperature, tyre choice and riding style. Ask your tour organiser for realistic guidance based on the actual route and equipment rather than relying on a maximum manufacturer estimate.",
+  },
+  {
+    question: "Do I need to be fit to ride an E-MTB?",
+    answer:
+      "Electric assistance can make sustained climbing more manageable, but a multi-day ride can still demand endurance, balance and concentration. Rough terrain and long descents require control, and the bike's weight can affect handling. Choose a route that matches your experience and general fitness.",
+  },
+  {
+    question: "Can beginners join an E-MTB tour?",
+    answer:
+      "Some tours can suit newer riders if the route, pace and daily distances are selected carefully. Beginners should be comfortable starting, stopping, braking and controlling a bicycle before attempting technical mountain trails. Discuss your experience honestly so the route can be matched to your ability.",
+  },
+  {
+    question: "What should I bring on an E-MTB trip?",
+    answer:
+      "Bring a correctly fitted helmet, gloves, suitable riding shoes, eyewear, sun protection, water capacity and layers for changing conditions. Confirm whether the tour provides the bike, charger, spare battery if applicable, repair tools, helmet, accommodation, meals and luggage transfers.",
+  },
+  {
+    question: "Can I ride an E-MTB on technical trails?",
+    answer:
+      "Yes, when the bike, rider and route are appropriate. E-MTBs can be heavier than conventional mountain bikes, and their power requires smooth control on loose or steep surfaces. Technical sections should match your skills, and walking a difficult feature is always a sensible option.",
+  },
+];
+
+export default function EmTBMoroccoGuidePage() {
+  return (
+    <main className="high-atlas-mtb-guide-article" id="top">
+      <div className="article-breadcrumbs article-shell" aria-label="Breadcrumb">
+        <Link href="/">Home</Link>
+        <span>/</span>
+        <Link href="/journal">Journal</Link>
+        <span>/</span>
+        <span>E-MTB Tours in Morocco</span>
+      </div>
+
+      <header className="article-hero article-shell">
+        <div className="article-hero-copy">
+          <p className="article-eyebrow">E-MTB GUIDES · ATLAS MOUNTAINS · MOROCCO</p>
+          <h1>E-MTB Tours in Morocco: A Complete Rider&apos;s Guide</h1>
+          <p className="article-deck">
+            Electric mountain biking opens up new ways to explore Morocco&apos;s
+            mountain landscapes. With pedal assistance on the climbs, riders
+            can experience rugged tracks, remote valleys and memorable
+            descents while still enjoying the physical and technical side of
+            mountain biking. The key is choosing a suitable route and planning
+            battery use, terrain, daily distance and support before setting
+            off.
+          </p>
+          <div className="article-meta">
+            <span>8 MIN READ</span>
+            <span>E-MTB · BATTERY RANGE · ROUTE PLANNING</span>
+          </div>
+        </div>
+        <figure className="article-hero-image">
+          <img
+            src="/images/e-mtb-tour-morocco.jpg"
+            alt="Electric mountain biking adventure in Morocco"
+            fetchPriority="high"
+          />
+          <figcaption>
+            Explore Morocco by electric mountain bike with a route suited to
+            your riding ability, equipment and range.
+          </figcaption>
+        </figure>
+      </header>
+
+      <div className="article-main-grid article-shell">
+        <aside className="article-toc">
+          <p>IN THIS GUIDE</p>
+          <a href="#why-emtb">Why choose an E-MTB?</a>
+          <a href="#where-to-ride">Where to ride in Morocco</a>
+          <a href="#choose-tour">Choose your tour</a>
+          <a href="#battery-range">Battery range and charging</a>
+          <a href="#skills-fitness">Skills and fitness</a>
+          <a href="#bike-equipment">Bike and equipment</a>
+          <a href="#seasons">Weather and seasons</a>
+          <a href="#responsible-riding">Responsible riding</a>
+          <a href="#plan-trip">Plan your E-MTB trip</a>
+          <a href="#checklist">Pre-trip checklist</a>
+          <a href="#faq">Frequently asked questions</a>
+        </aside>
+
+        <article className="article-body">
+          <p className="article-lead">
+            An E-MTB tour is more than a conventional mountain bike trip with a
+            motor added. Electric assistance changes how riders approach
+            climbing, manage their energy and plan a day on the trail. In
+            Morocco, the best experience comes from matching the bike and
+            battery setup to the landscape, the riding group and the route
+            ahead.
+          </p>
+
+          <section id="why-emtb">
+            <h2>Why choose an E-MTB tour in Morocco?</h2>
+            <p>
+              Morocco offers a remarkable variety of cycling landscapes.
+              Around the Atlas Mountains, routes can cross open hillsides,
+              rocky tracks, terraced valleys and traditional villages. An
+              electric mountain bike can help riders manage sustained climbs
+              and conserve energy for the rest of the day, depending on the
+              assistance level, battery capacity and terrain.
+            </p>
+            <p>
+              E-MTBs can also make it easier for a group with different fitness
+              levels to share a suitable itinerary. Assistance does not make
+              every rider equally fast, however, and technical confidence
+              remains important. The route should allow the group to ride at a
+              comfortable pace, regroup regularly and enjoy the surroundings
+              instead of treating every stage as a race.
+            </p>
+            <figure className="article-inline-image">
+              <img
+                src="/images/atlas-mountains-cycling-tour-morocco.jpg"
+                alt="Mountain biking through the Atlas Mountains in Morocco"
+                loading="lazy"
+              />
+              <figcaption>
+                Atlas Mountain routes combine changing landscapes with climbs
+                and descents that reward careful itinerary planning.
+              </figcaption>
+            </figure>
+          </section>
+
+          <section id="where-to-ride">
+            <h2>Where can you ride an E-MTB in Morocco?</h2>
+            <h3>The Atlas Mountains</h3>
+            <p>
+              The Atlas region is a natural starting point for riders looking
+              for mountain scenery, rural tracks and varied elevation. Routes
+              may combine gradual climbs, rough mountain roads and narrower
+              trails. The exact experience depends on the valley, altitude,
+              trail access and the technical level selected for the group.
+            </p>
+            <p>
+              Before choosing an itinerary, ask how much of the route is
+              singletrack, rocky track or paved road. Find out whether any
+              sections are steep, exposed or likely to require walking, and
+              whether the planned stages offer suitable opportunities to
+              recharge batteries.
+            </p>
+            <h3>Routes around Marrakech</h3>
+            <p>
+              Marrakech can provide a practical starting point for guided
+              cycling experiences beyond the city. Depending on the itinerary,
+              riders may travel towards mountain foothills, countryside or
+              drier landscapes. Confirm transfer times and the actual riding
+              location before comparing tours, because a trip described as
+              starting in Marrakech may include a transfer before the ride
+              begins.
+            </p>
+            <h3>Choose the landscape for your riding style</h3>
+            <p>
+              Some riders want flowing trails and long descents; others prefer
+              scenic exploration with manageable climbs and time to visit
+              villages. Describe your priorities to your organiser so the
+              route can balance riding time, technical features, scenery and
+              battery availability.
+            </p>
+            <div className="article-tip">
+              <strong>Route tip</strong>
+              <p>
+                Ask for the route surface, elevation profile, expected riding
+                time, technical difficulty and planned charging opportunities.
+                These details are more useful than distance alone when
+                choosing an E-MTB adventure.
+              </p>
+            </div>
+          </section>
+
+          <section id="choose-tour">
+            <h2>Choose the right E-MTB tour for your experience</h2>
+            <p>
+              Start by considering what you enjoy on a mountain bike. Do you
+              feel confident riding loose stones? Can you control your speed
+              on steep descents? Are you comfortable riding for several hours,
+              or would you prefer shorter stages with more time for stops?
+              Your answers will help determine which itinerary is appropriate.
+            </p>
+            <h3>Scenic and introductory rides</h3>
+            <p>
+              Riders who are new to electric mountain biking may prefer wider
+              tracks, moderate gradients and shorter stages. This allows time
+              to become familiar with the motor response, the bike&apos;s
+              handling and the process of managing assistance levels. A
+              beginner-friendly tour should still be selected around the
+              rider&apos;s actual cycling experience.
+            </p>
+            <h3>Technical trail and enduro-style riding</h3>
+            <p>
+              More experienced riders may want rocky singletrack, steeper
+              descents and more demanding terrain. These routes require
+              confident braking, line choice and balance. The additional
+              weight of an E-MTB can change how it responds, so riders should
+              understand the bike before tackling difficult sections.
+            </p>
+            <ul className="article-checklist">
+              <li>Describe your recent mountain biking experience honestly.</li>
+              <li>Ask about the steepest climbs and most technical descents.</li>
+              <li>Confirm daily distance, elevation gain and riding time.</li>
+              <li>Check whether the group can adjust the route if needed.</li>
+              <li>Ask what guiding and mechanical support are provided.</li>
+            </ul>
+          </section>
+
+          <section id="battery-range">
+            <h2>Understand battery range and charging</h2>
+            <p>
+              Battery planning is one of the most important parts of an
+              E-MTB trip. Range varies with battery capacity, assistance mode,
+              rider weight, luggage, tyre pressure, temperature, surface and
+              the amount of climbing. A route with repeated steep ascents and
+              loose ground may use considerably more energy than a smoother
+              ride of the same distance.
+            </p>
+            <p>
+              Avoid planning a remote stage around a manufacturer's maximum
+              advertised range. Instead, ask your organiser how the actual
+              bike performs on comparable terrain and what reserve is
+              recommended. If the itinerary includes long climbs or limited
+              charging opportunities, the route and assistance strategy need
+              to account for that.
+            </p>
+            <h3>Use assistance thoughtfully</h3>
+            <p>
+              Lower assistance settings can conserve energy on manageable
+              terrain, while higher settings may be useful for demanding
+              climbs. The right balance depends on your bike, the route and
+              how you feel during the ride. Learn the controls before
+              departure and avoid relying on one setting for every situation.
+            </p>
+            <h3>Confirm charging arrangements</h3>
+            <p>
+              Ask where charging can take place, whether chargers are
+              compatible with the supplied bikes and how long charging is
+              expected to take. For multi-day trips, confirm whether overnight
+              charging is available and whether spare batteries are provided.
+              Do not assume that every accommodation stop has the required
+              facilities.
+            </p>
+            <div className="article-tip">
+              <strong>Battery planning tip</strong>
+              <p>
+                Confirm the battery capacity, realistic range for your
+                itinerary, charging schedule and backup plan before travelling.
+                The exact equipment and route should determine the plan.
+              </p>
+            </div>
+          </section>
+
+          <section id="skills-fitness">
+            <h2>Fitness, handling skills and riding confidence</h2>
+            <p>
+              Electric assistance reduces some of the effort needed to climb,
+              but it does not remove the physical demands of a full day on the
+              bike. Rough ground, repeated descents and changes in elevation
+              can be tiring, and technical riding requires concentration.
+              Build up your riding time before departure and include some
+              climbing and descending practice where possible.
+            </p>
+            <p>
+              Spend time becoming familiar with the bike before riding
+              difficult terrain. Practise smooth starts, controlled braking,
+              cornering and changing assistance modes on ground where you
+              feel comfortable. An E-MTB can be heavier than a conventional
+              mountain bike, so moving it through tight turns or lifting it
+              over obstacles may require a different approach.
+            </p>
+            <p>
+              If you are unsure about a section, stop and assess it. Walking a
+              technical feature is a sensible decision, not a failure. Tell
+              your guide about your comfort level so the pace and route can be
+              adjusted appropriately.
+            </p>
+          </section>
+
+          <section id="bike-equipment">
+            <h2>Choose the right bike and equipment</h2>
+            <p>
+              A suitable E-MTB should fit the rider and the terrain. Frame
+              size, braking performance, tyre choice, gearing and suspension
+              all affect comfort and control. Before the trip, confirm the
+              supplied bike model, size, battery setup, pedals and helmet
+              arrangements. If you bring your own bike, ask about transport
+              and compatibility with the tour's charging arrangements.
+            </p>
+            <h3>Essential riding equipment</h3>
+            <ul className="article-checklist">
+              <li>A properly fitted helmet and suitable cycling gloves.</li>
+              <li>Comfortable riding clothing and protective eyewear.</li>
+              <li>Riding shoes with suitable grip for the pedals provided.</li>
+              <li>Water capacity, snacks and sun protection.</li>
+              <li>Layers for changing temperatures and mountain weather.</li>
+              <li>Any personal medication and essential travel documents.</li>
+            </ul>
+            <h3>Mechanical support and spare parts</h3>
+            <p>
+              Ask who carries repair tools and common spares, how punctures
+              and mechanical problems are handled, and what happens if an
+              electrical component fails. Battery and motor systems may
+              require specialist support, so clarify the available backup
+              arrangements before setting off on remote stages.
+            </p>
+          </section>
+
+          <section id="seasons">
+            <h2>Weather and the best time to ride</h2>
+            <p>
+              Riding conditions in Morocco vary by region, altitude and time
+              of year. Mountain areas can be cool, windy or affected by rain
+              and snow, while lower and exposed routes can become very hot.
+              Weather also affects trail grip, visibility and how comfortable
+              a long day on the bike will be.
+            </p>
+            <p>
+              Spring and autumn are often considered for many mountain
+              itineraries, but there is no single ideal season for every route.
+              Check the forecast and local trail conditions close to your
+              departure date. Build flexibility into the plan in case weather
+              or access conditions make a particular stage unsuitable.
+            </p>
+            <p>
+              Battery performance can also be affected by temperature. Follow
+              the bike manufacturer's guidance for charging, storage and
+              operating conditions, and ask your organiser how batteries will
+              be handled during the trip.
+            </p>
+          </section>
+
+          <section id="responsible-riding">
+            <h2>Ride responsibly through Morocco's landscapes</h2>
+            <p>
+              Some routes pass through villages, agricultural land and paths
+              shared with walkers and livestock. Slow down near homes, give
+              people and animals plenty of space, and follow local guidance
+              about trail access. Electric assistance can make it easy to
+              approach others quietly, so remain alert and communicate
+              considerately.
+            </p>
+            <p>
+              Stay on appropriate paths, avoid widening trails around
+              obstacles and carry out your rubbish. Ask before photographing
+              people, respect private property and be mindful when stopping
+              or regrouping. Local guides can help explain which routes are
+              suitable and how to travel respectfully through communities.
+            </p>
+          </section>
+
+          <section id="plan-trip">
+            <h2>Plan your E-MTB adventure in Morocco</h2>
+            <p>
+              Begin with your preferred travel dates, group size, riding
+              experience and the type of landscape you want to explore. Then
+              compare route difficulty, daily elevation, accommodation,
+              meals, transfers and mechanical support. For an electric bike
+              itinerary, battery capacity and charging arrangements should be
+              part of the planning discussion from the beginning.
+            </p>
+            <p>
+              Before confirming a booking, ask for a clear explanation of what
+              is included in the price. Check whether the E-MTB, charger,
+              helmet, guide, luggage transfers, accommodation, meals and
+              support vehicle are provided. Inclusions vary by tour, so get
+              the details for your specific itinerary in writing.
+            </p>
+            <p>
+              Explore our <Link href="/cycling-trips/e-mtb">E-MTB tours</Link>,
+              discover <Link href="/destinations/atlas-mountains">Atlas Mountains destinations</Link>,
+              or browse the full range of <Link href="/cycling-trips">cycling trips in Morocco</Link>.
+            </p>
+          </section>
+
+          <section id="checklist">
+            <h2>E-MTB trip checklist</h2>
+            <ul className="article-checklist">
+              <li>Confirm the bike model, size, battery capacity and charger.</li>
+              <li>Understand realistic battery range for the planned terrain.</li>
+              <li>Check charging access and backup arrangements for each stage.</li>
+              <li>Review route surface, elevation, difficulty and daily riding time.</li>
+              <li>Prepare your helmet, gloves, shoes, water and weather layers.</li>
+              <li>Confirm guiding, mechanical support, transfers and inclusions.</li>
+              <li>Check the forecast and any route access updates before departure.</li>
+              <li>Respect local communities, shared paths and the environment.</li>
+            </ul>
+          </section>
+
+          <section className="article-faq" id="faq" aria-labelledby="article-faq-title">
+            <h2 id="article-faq-title">Frequently asked questions</h2>
+            {faqs.map((faq) => (
+              <details key={faq.question}>
+                <summary>{faq.question}</summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))}
+          </section>
+
+          <div className="article-author-note">
+            <strong>Planning note</strong>
+            <p>
+              This guide provides general E-MTB trip-planning advice, not a
+              live trail report or a guarantee of battery range. Confirm
+              current route access, weather, bike specifications, charging
+              facilities, support arrangements and tour inclusions for your
+              exact dates.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <section className="article-related">
+        <div className="article-shell">
+          <div className="article-section-heading">
+            <div>
+              <p className="article-eyebrow article-eyebrow-dark">KEEP EXPLORING</p>
+              <h2>More cycling guides</h2>
+            </div>
+            <Link href="/journal" className="article-text-link">
+              Back to the Journal ↗
+            </Link>
+          </div>
+          <div className="article-related-grid">
+            {relatedArticles.map((item) => (
+              <article className="article-related-card" key={item.title}>
+                <Link href={item.href} className="article-related-image">
+                  <img src={item.image} alt={item.title} loading="lazy" />
+                </Link>
+                <div className="article-related-content">
+                  <p className="article-eyebrow article-eyebrow-dark">{item.category}</p>
+                  <h3>
+                    <Link href={item.href}>{item.title}</Link>
+                  </h3>
+                  <p>{item.text}</p>
+                  <Link href={item.href} className="article-text-link">
+                    Read guide ↗
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="article-cta">
+        <div className="article-shell article-cta-inner">
+          <div>
+            <p className="article-eyebrow">RIDE MOROCCO BY E-MTB</p>
+            <h2>Find the right electric mountain bike adventure.</h2>
+            <p>
+              Share your riding experience, preferred terrain and travel dates
+              to discuss an E-MTB itinerary that fits your group.
+            </p>
+          </div>
+          <div className="article-cta-actions">
+            <Link className="article-button article-button-light" href="/cycling-trips/e-mtb">
+              Explore E-MTB Tours
+            </Link>
+            <Link className="article-button article-button-outline" href="/contact?request=emtb-tours-morocco">
+              Plan Your Ride
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <footer className="article-site-footer">
+        <div className="article-shell article-footer-grid">
+          <div className="article-footer-brand">
+            <Link href="/" className="article-brand">
+              <img src="/images/logo-mountain-bike-morocco-footer.png" alt="Mountain Bike Morocco" />
+              <span>MOUNTAIN BIKE <em>MOROCCO</em></span>
+            </Link>
+            <p>
+              Guided mountain biking, E-MTB, gravel and road cycling
+              experiences across Morocco. Discover the landscapes, trails and
+              local culture at your own pace.
+            </p>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <Link href="/cycling-trips">All Cycling Tours</Link>
+            <Link href="/cycling-trips/mtb">Mountain Bike Tours</Link>
+            <Link href="/cycling-trips/e-mtb">E-MTB Tours</Link>
+            <Link href="/cycling-trips/gravel">Gravel Cycling</Link>
+            <Link href="/cycling-trips/road">Road Cycling</Link>
+          </div>
+          <div>
+            <h3>Destinations</h3>
+            <Link href="/destinations/atlas-mountains">Atlas Mountains</Link>
+            <Link href="/destinations/imlil">Imlil Valley</Link>
+            <Link href="/destinations/toubkal">Mount Toubkal</Link>
+            <Link href="/destinations/marrakech">Marrakech</Link>
+            <Link href="/destinations">All Destinations</Link>
+          </div>
+          <div>
+            <h3>Let's Plan</h3>
+            <Link href="/about">About Us</Link>
+            <Link href="/events">Events</Link>
+            <Link href="/journal">Journal</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/contact">Plan Your Trip</Link>
+          </div>
+        </div>
+        <div className="article-shell article-footer-bottom">
+          <span>© 2026 Mountain Bike Morocco</span>
+          <span>Morocco cycling adventures, thoughtfully planned.</span>
+          <Link href="#top">Back to top ↑</Link>
+        </div>
+      </footer>
+
+      <style>{`
+        .high-atlas-mtb-guide-article{background:#fbfaf7;color:#201f1c;font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+        .article-shell{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+        .article-breadcrumbs{display:flex;flex-wrap:wrap;gap:10px;padding-top:25px;padding-bottom:20px;font-size:12px;color:#777168}
+        .article-breadcrumbs a{color:inherit;text-decoration:none}.article-breadcrumbs a:hover{color:#c65c35}
+        .article-hero{padding:44px 0 60px;display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(30px,5vw,68px);align-items:center}
+        .article-eyebrow{font-size:11px;line-height:1.5;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#e7663b;margin:0 0 16px}.article-eyebrow-dark{color:#bd542f}
+        .article-hero h1{font-size:clamp(42px,5.8vw,76px);line-height:.99;letter-spacing:-.055em;margin:0 0 22px;max-width:700px}
+        .article-deck{font-size:18px;line-height:1.8;color:#5d5953;margin:0;max-width:660px}
+        .article-meta{display:flex;flex-wrap:wrap;gap:18px;margin-top:25px;font-size:10px;font-weight:800;letter-spacing:.13em;color:#777168}
+        .article-hero-image{margin:0;position:relative;min-width:0}.article-hero-image img{display:block;width:100%;height:clamp(320px,40vw,515px);object-fit:cover}.article-hero-image figcaption{padding:10px 0 0;font-size:12px;color:#777168;line-height:1.6}
+        .article-main-grid{display:grid;grid-template-columns:220px minmax(0,760px);justify-content:space-between;gap:clamp(28px,5vw,75px);padding-top:20px;padding-bottom:90px}
+        .article-toc{align-self:start;position:sticky;top:30px;display:flex;flex-direction:column;gap:12px;padding:20px;border:1px solid #dedbd4;background:#fff}.article-toc p{font-size:10px;font-weight:800;letter-spacing:.16em;color:#bd542f;margin:0 0 5px}.article-toc a{font-size:13px;line-height:1.45;color:#514d47;text-decoration:none}.article-toc a:hover{color:#bd542f}
+        .article-body{min-width:0;font-size:16px;color:#4e4a45}.article-body p{margin:0 0 19px;line-height:1.9}.article-body .article-lead{font-size:20px;line-height:1.8;color:#292723;margin-bottom:38px}.article-body section{scroll-margin-top:35px;margin:0 0 38px}.article-body h2{font-size:clamp(28px,3.2vw,38px);line-height:1.12;letter-spacing:-.035em;color:#211f1b;margin:0 0 17px}.article-body h3{font-size:22px;line-height:1.2;margin:24px 0 12px;color:#211f1b}
+        .article-inline-image{margin:28px 0 24px}.article-inline-image img{display:block;width:100%;max-height:430px;object-fit:cover}.article-inline-image figcaption{padding-top:10px;color:#777168;font-size:12px;line-height:1.6}
+        .article-tip{margin:26px 0;padding:23px 25px;background:#eeeae2;border-left:3px solid #c65c35}.article-tip strong{display:block;margin-bottom:6px;color:#25231f}.article-tip p{margin:0}
+        .article-checklist{margin:10px 0 24px;padding-left:23px}.article-checklist li{padding-left:5px;margin:0 0 12px;line-height:1.8}.article-checklist strong{color:#24221e}.article-body a{color:#bd542f}.article-text-link{font-size:13px;font-weight:800;text-decoration:none;color:#bd542f}.article-text-link:hover{text-decoration:underline}
+        .article-faq details{border-top:1px solid #dcd8d0;padding:18px 0}.article-faq details:last-child{border-bottom:1px solid #dcd8d0}.article-faq summary{cursor:pointer;list-style:none;font-size:16px;font-weight:700;color:#24221e}.article-faq summary::-webkit-details-marker{display:none}.article-faq summary:after{content:'+';float:right;color:#c65c35;font-size:22px}.article-faq details[open] summary:after{content:'−'}.article-faq details p{margin:13px 0 0;color:#625e57}
+        .article-author-note{padding:22px 24px;background:#fff;border:1px solid #e0ddd6}.article-author-note strong{display:block;color:#24221e;margin-bottom:6px}.article-author-note p{margin:0;font-size:14px}
+        .article-related{padding:76px 0 86px;background:#f0eee8}.article-section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}.article-section-heading h2{font-size:clamp(30px,4vw,45px);line-height:1.1;letter-spacing:-.04em;margin:0}.article-related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.article-related-card{background:#fff;border:1px solid #e0ddd6;min-width:0}.article-related-image{display:block;overflow:hidden}.article-related-image img{display:block;width:100%;height:220px;object-fit:cover;transition:transform .3s ease}.article-related-image:hover img{transform:scale(1.03)}.article-related-content{padding:22px}.article-related-content .article-eyebrow{font-size:9px;margin-bottom:10px}.article-related-content h3{font-size:21px;line-height:1.2;margin:0 0 10px;letter-spacing:-.02em}.article-related-content h3 a{color:inherit;text-decoration:none}.article-related-content h3 a:hover{color:#bd542f}.article-related-content>p:not(.article-eyebrow){color:#68645d;font-size:13px;line-height:1.7;margin:0 0 17px}
+        .article-cta{padding:65px 0;background:#23231f;color:#fff}.article-cta-inner{display:flex;justify-content:space-between;align-items:center;gap:35px}.article-cta .article-eyebrow{color:#f18b60}.article-cta h2{font-size:clamp(32px,4vw,48px);line-height:1.05;letter-spacing:-.04em;max-width:600px;margin:0 0 14px}.article-cta-inner>div:first-child>p:last-child{max-width:650px;color:#d1cdc5;margin:0;line-height:1.8}.article-cta-actions{display:flex;flex-wrap:wrap;gap:12px;flex-shrink:0}.article-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 17px;font-size:12px;font-weight:800;text-decoration:none;transition:background .2s ease,color .2s ease}.article-button-light{background:#e7663b;color:#fff!important}.article-button-light:hover{background:#d6522a}.article-button-outline{border:1px solid #8f8b82;color:#fff!important}.article-button-outline:hover{background:#fff;color:#24221e!important}
+        .article-site-footer{background:#181815;color:#fff;padding-top:55px}.article-footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:40px;padding-bottom:45px}.article-footer-grid>div{display:flex;flex-direction:column;align-items:flex-start;gap:11px}.article-footer-grid h3{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#e98258;margin:0 0 7px}.article-footer-grid a:not(.article-brand){color:#d1cec7;font-size:13px;text-decoration:none}.article-footer-grid a:not(.article-brand):hover{color:#fff}.article-brand{display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#fff;font-size:13px;font-weight:800;letter-spacing:.07em}.article-brand img{width:185px;max-height:60px;object-fit:contain;object-position:left center}.article-brand em{font-style:normal;color:#e98258;margin-left:5px}.article-footer-brand p{max-width:290px;font-size:13px;line-height:1.8;color:#aaa69d;margin:6px 0 0}.article-footer-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid #393832;padding-top:18px;padding-bottom:20px;color:#a9a59d;font-size:11px}.article-footer-bottom a{color:inherit;text-decoration:none}.article-footer-bottom a:hover{color:#fff}
+        @media(max-width:900px){.article-hero{grid-template-columns:1fr;gap:28px;padding-top:22px}.article-hero h1{max-width:850px}.article-hero-image img{height:clamp(290px,58vw,480px)}.article-main-grid{grid-template-columns:1fr;padding-top:0}.article-toc{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px}.article-toc p{grid-column:1/-1}.article-related-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.article-cta-inner{align-items:flex-start;flex-direction:column}.article-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 22px}.article-footer-brand{grid-column:1/-1}}
+        @media(max-width:560px){.article-shell{width:calc(100% - 34px)}.article-hero{padding-top:20px;padding-bottom:40px}.article-hero h1{font-size:43px}.article-deck{font-size:16px}.article-main-grid{padding-bottom:58px}.article-body{font-size:15px}.article-body .article-lead{font-size:18px}.article-toc{padding:16px;grid-template-columns:1fr 1fr}.article-related{padding:54px 0}.article-section-heading{align-items:flex-start;flex-direction:column;gap:15px}.article-related-grid{grid-template-columns:1fr}.article-related-image img{height:235px}.article-cta{padding:50px 0}.article-cta-actions{width:100%;flex-direction:column}.article-button{width:100%}.article-footer-grid{grid-template-columns:1fr 1fr;gap:28px 16px}.article-brand img{width:155px}.article-footer-grid>div{min-width:0}.article-footer-grid a:not(.article-brand){font-size:12px}.article-footer-bottom{flex-direction:column;gap:7px}}
+        @media(prefers-reduced-motion:reduce){.high-atlas-mtb-guide-article *,.high-atlas-mtb-guide-article *:before,.high-atlas-mtb-guide-article *:after{scroll-behavior:auto!important;transition:none!important}}
+      `}</style>
+    </main>
+  );
+}
