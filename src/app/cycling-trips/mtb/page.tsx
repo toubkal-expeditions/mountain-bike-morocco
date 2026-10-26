@@ -1,4 +1,21 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mountain Bike Tours Morocco | Atlas MTB Adventures",
+  description:
+    "Explore Morocco on guided mountain bike tours in the High Atlas, with singletrack trails, enduro descents, private MTB holidays and rides from Marrakech.",
+  alternates: {
+    canonical: "/cycling-trips/mtb",
+  },
+  openGraph: {
+    title: "Mountain Bike Tours Morocco | Atlas MTB Adventures",
+    description:
+      "Discover guided MTB adventures in Morocco, from Atlas Mountains singletrack and enduro trails to private mountain bike holidays and day rides from Marrakech.",
+    url: "/cycling-trips/mtb",
+    type: "website",
+  },
+};
 
 type MtbTour = {
   number: string;

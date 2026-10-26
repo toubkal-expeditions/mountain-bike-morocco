@@ -641,7 +641,119 @@ const articles = [
     "relatedLabel": "Explore premium cycling options",
     "relatedHref": "/cycling-trips/luxury"
   }
-
+,
+  {
+    "slug": "emtb-tours-morocco",
+    "category": "E-MTB GUIDES",
+    "readTime": "7 min read",
+    "title": "E-MTB Tours in Morocco: A Complete Guide",
+    "excerpt": "Discover how electric mountain bikes open up Morocco's Atlas trails, remote valleys and rewarding multi-day rides.",
+    "image": "/images/e-mtb-tour-morocco.jpg",
+    "imageAlt": "Electric mountain biking on a trail in Morocco",
+    "body": [
+      "E-MTB tours in Morocco combine mountain scenery, traditional villages and varied off-road terrain. Electric assistance can make long climbs more manageable, helping riders save energy for descents, exploration and full days in the mountains.",
+      "Before choosing a tour, ask about the bike model, battery capacity, charging opportunities, spare batteries and the availability of mechanical support. The practical range depends on elevation gain, rider weight, terrain, assistance mode and battery condition, so a realistic route plan matters more than a headline range.",
+      "Choose a route that matches your riding experience and comfort on loose surfaces. A guide can help adapt the pace and route to the group, while appropriate equipment, water, layers and basic repair supplies help you prepare for changing mountain conditions."
+    ],
+    "relatedLabel": "Explore E-MTB tours",
+    "relatedHref": "/cycling-trips/e-mtb"
+  },
+  {
+    "slug": "mountain-biking-morocco",
+    "category": "MOUNTAIN BIKE GUIDES",
+    "readTime": "8 min read",
+    "title": "Mountain Biking in Morocco: The Essential Guide",
+    "excerpt": "Plan a mountain-bike adventure through the Atlas Mountains with practical advice on trails, seasons, preparation and local guiding.",
+    "image": "/images/atlas-mountains-cycling-tour-morocco.jpg",
+    "imageAlt": "Mountain biking in Morocco's Atlas Mountains",
+    "body": [
+      "Mountain biking in Morocco offers a mix of rocky mountain tracks, flowing singletrack, remote valleys and routes connecting traditional Amazigh villages. The High Atlas is a major draw for riders looking for big landscapes and varied terrain, while other regions offer different riding conditions and scenery.",
+      "Select your route according to technical ability, fitness and the amount of climbing you enjoy. Trail surfaces can be rocky, loose and uneven, and conditions may change with weather or local access. A local guide can help match the route to the group and explain trail conditions before the ride.",
+      "Plan around the season, bring suitable protection and carry enough water, snacks and repair essentials. For multi-day trips, confirm accommodation, luggage transfers, vehicle support and what happens if the route needs to change."
+    ],
+    "relatedLabel": "Explore mountain bike tours",
+    "relatedHref": "/cycling-trips/mtb"
+  },
+  {
+    "slug": "gravel-cycling-morocco",
+    "category": "GRAVEL CYCLING",
+    "readTime": "7 min read",
+    "title": "Gravel Cycling in Morocco: Routes and Planning",
+    "excerpt": "Learn what to consider when planning a gravel ride across Morocco's mountain roads, rural tracks and wide-open landscapes.",
+    "image": "/images/gravel-cycling-morocco.jpg",
+    "imageAlt": "Gravel cycling across a rural Moroccan landscape",
+    "body": [
+      "Gravel cycling in Morocco can link quiet paved roads, dirt tracks, agricultural paths and remote mountain scenery. The character of a route varies by region, so it is worth checking surface conditions and elevation rather than judging a ride by distance alone.",
+      "Tyre width and tread should suit the expected mix of gravel, hard-packed earth and rougher sections. Carry repair supplies, navigation, food and sufficient water, especially where services are widely spaced. Confirm that planned tracks are accessible and appropriate for cycling.",
+      "For a supported trip, ask about daily distances, climbing, luggage transport, accommodation and backup support. A flexible itinerary can make it easier to respond to weather, surface conditions and the group's preferred pace."
+    ],
+    "relatedLabel": "Explore gravel cycling",
+    "relatedHref": "/cycling-trips/gravel"
+  },
+  {
+    "slug": "road-bike-morocco",
+    "category": "ROAD CYCLING",
+    "readTime": "7 min read",
+    "title": "Road Cycling in Morocco: What to Know Before You Ride",
+    "excerpt": "Prepare for Moroccan road rides with guidance on route choice, mountain climbs, road conditions, equipment and support.",
+    "image": "/images/group-cycling-tour-morocco.jpg",
+    "imageAlt": "Cyclists riding a road through the Moroccan mountains",
+    "body": [
+      "Road cycling in Morocco ranges from rolling countryside to demanding mountain climbs and long scenic roads. Routes around the Atlas Mountains can involve substantial elevation gain, so plan daily distances around climbing, fitness and the time available for stops.",
+      "Check road surfaces, traffic exposure, weather and access to food and water before setting out. Use visible cycling clothing, lights when appropriate, a helmet and a reliable navigation plan. Conditions can differ considerably between mountain passes, rural roads and busier approaches to towns.",
+      "For a guided holiday, clarify the support vehicle arrangements, group pace, mechanical assistance, luggage transfers and options for shorter or longer riding days. These details help you choose a trip that fits your experience and goals."
+    ],
+    "relatedLabel": "Explore road cycling holidays",
+    "relatedHref": "/cycling-trips/road"
+  },
+  {
+    "slug": "luxury-biking-morocco",
+    "category": "LUXURY CYCLING",
+    "readTime": "6 min read",
+    "title": "Luxury Biking in Morocco: How to Plan a Premium Trip",
+    "excerpt": "Understand the details that shape a premium cycling holiday, from private guiding and comfortable stays to flexible daily routes.",
+    "image": "/images/luxury-cycling-holiday-trip-morocco.jpg",
+    "imageAlt": "Premium cycling holiday in Morocco",
+    "body": [
+      "A premium biking holiday is about how thoughtfully the journey is organised. Private guiding, carefully chosen accommodation, luggage transfers and flexible pacing can make a cycling trip more comfortable without losing its connection to Morocco's landscapes and local culture.",
+      "Ask providers to specify what is included in the price, such as bike rental, meals, transfers, vehicle support, guiding and accommodation. Confirm the standard of each service rather than relying on broad descriptions such as luxury or exclusive.",
+      "Share your riding ability, preferred daily distance, comfort expectations and interests before confirming an itinerary. A well-planned trip balances riding ambitions with time to rest, explore villages and enjoy the places along the route."
+    ],
+    "relatedLabel": "Explore luxury cycling holidays",
+    "relatedHref": "/cycling-trips/luxury"
+  },
+  {
+    "slug": "family-holiday-morocco",
+    "category": "FAMILY CYCLING",
+    "readTime": "6 min read",
+    "title": "Planning a Family Cycling Holiday in Morocco",
+    "excerpt": "Find out how to plan a family-friendly cycling holiday with suitable routes, realistic distances, rest stops and practical support.",
+    "image": "/images/group-cycling-tour-morocco.jpg",
+    "imageAlt": "Family enjoying an outdoor cycling holiday in Morocco",
+    "body": [
+      "A family cycling holiday in Morocco works best when the route and daily schedule reflect the ages, confidence and interests of everyone taking part. Shorter rides, quieter tracks and time for breaks can help make the experience enjoyable for both children and adults.",
+      "Before booking, ask about route surfaces, traffic exposure, climbing, bike sizes, helmets, child seats or other age-appropriate equipment, and vehicle support. Confirm that the operator can accommodate each rider's needs and explain how the itinerary can be adjusted if someone becomes tired.",
+      "Build in time for meals, rest and cultural activities away from the bike. Bring sun protection, suitable layers and plenty of water, and check the availability of family-appropriate accommodation along the planned route."
+    ],
+    "relatedLabel": "Explore family cycling holidays",
+    "relatedHref": "/cycling-trips/family"
+  },
+  {
+    "slug": "mtb-tour-marrakech",
+    "category": "MARRAKECH CYCLING",
+    "readTime": "7 min read",
+    "title": "MTB Tours from Marrakech: Atlas Trails and Day Trips",
+    "excerpt": "Use Marrakech as a starting point for mountain-bike day rides and longer adventures into the nearby Atlas Mountains.",
+    "image": "/images/day-ebike-tour-from-marrakech.jpg",
+    "imageAlt": "Cycling adventure near Marrakech in Morocco",
+    "body": [
+      "Marrakech is a practical base for exploring a variety of cycling landscapes, including foothills, rural tracks and routes leading toward the Atlas Mountains. The right tour depends on how much time you have, your technical ability and whether you prefer a day trip or a multi-day journey.",
+      "When comparing MTB tours from Marrakech, ask how long the transfer takes, how much time is spent riding, what the elevation profile looks like and which surfaces to expect. Confirm bike provision, guiding, meals, transport and the support available if a mechanical issue occurs.",
+      "Bring suitable riding clothing, a helmet, water and sun protection, and choose a route that reflects your experience. If you want to ride more technical trails or travel deeper into the mountains, discuss your goals with the guide before the trip so the route can be planned accordingly."
+    ],
+    "relatedLabel": "Explore cycling trips from Marrakech",
+    "relatedHref": "/cycling-trips"
+  }
 ];
 
 const journalCategories = [
@@ -858,7 +970,7 @@ export default function JournalPage() {
             <Link href="/destinations">All Destinations</Link>
           </div>
           <div>
-            <h3>Let's Plan</h3>
+            <h3>Let&apos;s Plan</h3>
             <Link href="/about">About Us</Link>
             <Link href="/events">Events</Link>
             <Link href="/journal">Journal</Link>

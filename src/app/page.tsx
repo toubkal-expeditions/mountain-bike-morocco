@@ -14,37 +14,7 @@ const tours = [
     href: "/cycling-trips/atlas-mountains",
   },
   {
-    category: "E-MTB EXPERIENCE",
-    title: "Electric Mountain Biking in Morocco",
-    description:
-      "Discover more of Morocco with the assistance of a modern electric mountain bike. Our guided E-MTB journeys combine scenic singletrack, remote mountain villages and rewarding descents, with flexible itineraries suited to different fitness levels. Explore the Atlas Mountains while enjoying the freedom to cover more terrain.",
-    duration: "2–6 days",
-    level: "All levels",
-    image: "/images/e-mtb-tour-morocco.jpg",
-    href: "/cycling-trips/e-mtb",
-  },
-  {
-    category: "GRAVEL CYCLING",
-    title: "Gravel Roads from the Atlas to the Desert",
-    description:
-      "Follow quiet mountain roads, remote gravel tracks and spectacular routes through changing Moroccan landscapes. These cycling holidays connect mountain passes, rural communities and wide-open valleys for riders who love exploring beyond the usual roads. Discover a different side of Morocco on a journey planned around your preferred pace.",
-    duration: "5–9 days",
-    level: "Intermediate",
-    image: "/images/gravel-cycling-morocco.jpg",
-    href: "/cycling-trips/gravel",
-  },
-  {
-    category: "FROM MARRAKECH",
-    title: "Day Mountain Bike Tour near Marrakech",
-    description:
-      "Escape the busy streets of Marrakech and discover a quieter side of Morocco by bike. Ride through foothills, agricultural valleys and traditional villages, with a route selected according to your experience, available time and preferred riding style. A day tour is a practical way to experience Moroccan cycling during a city break.",
-    duration: "1 day",
-    level: "Flexible",
-    image: "/images/day-ebike-tour-from-marrakech.jpg",
-    href: "/cycling-trips/from-marrakech",
-  },
-  {
-    category: "MULTI-DAY JOURNEY",
+    category: "MTB ADVENTURE",
     title: "High Atlas Singletrack Expedition",
     description:
       "Spend several days discovering the riding potential of the High Atlas. Each stage reveals a different landscape, from rocky mountain paths to terraced farmland and remote villages. We plan the route, local stays and support around your group's needs, creating a multi-day experience that balances riding, scenery and cultural discovery.",
@@ -54,14 +24,74 @@ const tours = [
     href: "/cycling-trips/high-atlas",
   },
   {
-    category: "PRIVATE CYCLING",
-    title: "Your Private Morocco Cycling Holiday",
+    category: "MTB ADVENTURE",
+    title: "Anti-Atlas Mountain Bike Tour",
     description:
-      "Build a cycling journey around your own priorities. Choose the riding style, daily distances, accommodation preferences and places you want to discover. Our local team can help turn your ideas into a practical itinerary with personal guidance throughout, whether you are travelling as a couple, with friends or as a private group.",
-    duration: "Custom",
-    level: "Your choice",
-    image: "/images/group-cycling-tour-morocco.jpg",
-    href: "/cycling-trips/private-groups",
+      "Discover the rugged landscapes of southern Morocco on a mountain biking journey through the Anti-Atlas. Explore rocky tracks, remote valleys and traditional villages while enjoying the distinctive scenery of this quieter mountain region. Your itinerary can be adapted to your riding experience, preferred daily distances and available travel time.",
+    duration: "3–6 days",
+    level: "Intermediate",
+    image: "/images/anti-atlas-cycling-tour.jpg",
+    href: "/cycling-trips/mtb",
+  },
+  {
+    category: "E-MTB EXPERIENCE",
+    title: "Atlas Mountains E-MTB Adventure",
+    description:
+      "Discover more of Morocco with the assistance of a modern electric mountain bike. Explore scenic singletrack, remote mountain villages and rewarding descents, with flexible itineraries suited to different fitness levels. Enjoy the freedom to cover more terrain while experiencing the landscapes and culture of the Atlas Mountains.",
+    duration: "2–6 days",
+    level: "All levels",
+    image: "/images/e-mtb-tour-morocco.jpg",
+    href: "/cycling-trips/e-mtb",
+  },
+  {
+    category: "E-MTB EXPERIENCE",
+    title: "E-Bike Day Tour from Marrakech",
+    description:
+      "Escape the busy streets of Marrakech and discover the surrounding countryside on an electric bike. Ride through foothills, rural tracks and traditional villages on a route selected according to your experience, available time and preferred riding style. Enjoy a rewarding day outdoors with assistance on the climbs and time to appreciate the scenery.",
+    duration: "1 day",
+    level: "Flexible",
+    image: "/images/day-ebike-tour-from-marrakech.jpg",
+    href: "/cycling-trips/from-marrakech",
+  },
+  {
+    category: "E-MTB EXPERIENCE",
+    title: "High Atlas Electric Bike Expedition",
+    description:
+      "Explore the High Atlas on an electric mountain bike journey designed to combine scenic climbs, mountain trails and visits to traditional villages. Electric assistance can help you cover more ground while keeping the experience focused on the landscape and the ride. Routes and daily distances can be adapted to your group and riding goals.",
+    duration: "3–5 days",
+    level: "All levels",
+    image: "/images/atlas-mountains-ebike-tour.jpg",
+    href: "/cycling-trips/e-mtb",
+  },
+  {
+    category: "GRAVEL CYCLING",
+    title: "Gravel Roads from the Atlas to the Desert",
+    description:
+      "Follow quiet mountain roads, remote gravel tracks and spectacular routes through changing Moroccan landscapes. Connect mountain passes, rural communities and wide-open valleys on a journey planned around your preferred pace, daily distance and cycling experience.",
+    duration: "5–9 days",
+    level: "Intermediate",
+    image: "/images/gravel-cycling-morocco.jpg",
+    href: "/cycling-trips/gravel",
+  },
+  {
+    category: "GRAVEL CYCLING",
+    title: "Southern Morocco Gravel Expedition",
+    description:
+      "Ride across the varied landscapes of southern Morocco on a gravel adventure linking quiet roads, remote tracks and open countryside. Experience the changing scenery, discover rural communities and enjoy long days in the saddle away from busy highways. Your itinerary can be tailored to your preferred distance and level of challenge.",
+    duration: "5–8 days",
+    level: "Intermediate",
+    image: "/images/south-morocco-cycling-trips.jpg",
+    href: "/cycling-trips/gravel",
+  },
+  {
+    category: "GRAVEL CYCLING",
+    title: "Atlas Mountains Gravel Adventure",
+    description:
+      "Discover the Atlas Mountains on a gravel bike, following quiet roads, mountain passes and tracks through traditional villages and dramatic valleys. This journey combines rewarding climbs, sweeping views and opportunities to experience local life along the route. Choose an itinerary suited to your riding experience, preferred pace and available time.",
+    duration: "3–7 days",
+    level: "Intermediate",
+    image: "/images/gravel-bike-atlas-mountains.JPG",
+    href: "/cycling-trips/gravel",
   },
 ];
 
@@ -831,7 +861,8 @@ export default function Home() {
         </div>
 
         <div className="page-width footer-bottom">
-<span>© 2026 Mountain Bike Morocco</span>          <span>Morocco cycling adventures, thoughtfully planned.</span>
+          <span>© 2026 Mountain Bike Morocco</span>
+          <span>Morocco cycling adventures, thoughtfully planned.</span>
         </div>
       </footer>
     </main>
