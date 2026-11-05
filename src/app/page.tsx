@@ -293,6 +293,7 @@ const exploreOptions = [
 export default function Home() {
   return (
     <main>
+      {/* HERO */}
       <section className="hero">
         <div className="hero__image" aria-hidden="true">
           <img
@@ -329,6 +330,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* INTRODUCTION */}
       <section className="intro section page-width">
         <div>
           <p className="eyebrow">DISCOVER MOROCCO BY BIKE</p>
@@ -355,6 +357,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CYCLING TOURS */}
       <section className="section section--soft">
         <div className="page-width">
           <div className="section-heading">
@@ -406,6 +409,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* DESTINATIONS */}
       <section className="section page-width">
         <div className="section-heading">
           <div>
@@ -448,6 +452,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CYCLING EXPERIENCES */}
       <section className="section section--dark">
         <div className="page-width">
           <div className="section-heading section-heading--dark">
@@ -484,6 +489,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MARRAKECH INTRODUCTION */}
       <section className="section page-width split-section">
         <div className="split-section__image">
           <img
@@ -519,6 +525,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PLANNING STEPS */}
       <section className="section section--soft">
         <div className="page-width">
           <div className="section-heading">
@@ -575,6 +582,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BEST SEASON */}
       <section className="section page-width split-section split-section--reverse">
         <div className="split-section__image">
           <img
@@ -606,6 +614,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BEYOND THE TRAIL */}
       <section className="section section--soft">
         <div className="page-width">
           <div className="section-heading">
@@ -676,6 +685,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MORE WAYS TO EXPLORE */}
       <section className="more-explore section">
         <div className="page-width more-explore__inner">
           <div className="more-explore__heading">
@@ -747,6 +757,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WHY RIDE WITH US */}
       <section className="section section--dark">
         <div className="page-width">
           <div className="section-heading section-heading--dark">
@@ -774,6 +785,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
       <section className="section page-width">
         <div className="section-heading">
           <div>
@@ -796,6 +808,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FINAL CTA */}
       <section className="final-cta">
         <div className="page-width final-cta__inner">
           <p className="eyebrow eyebrow--light">
@@ -813,14 +826,14 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FOOTER */}
       <footer className="site-footer">
         <div className="page-width footer-grid">
           <div className="footer-brand">
             <Link className="brand" href="/">
               <img
                 className="brand__logo"
-                src="/images/mountain-bike-morocco-logo.png"
-                alt="Mountain Bike Morocco"
+src="/images/logo-mountain-bike-morocco-footer.png"                alt="Mountain Bike Morocco"
               />
               <span>
                 MOUNTAIN BIKE <em>MOROCCO</em>
