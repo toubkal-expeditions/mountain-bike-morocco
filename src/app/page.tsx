@@ -11,7 +11,7 @@ const tours = [
     duration: "3–7 days",
     level: "Intermediate",
     image: "/images/atlas-mountains-cycling-tour-morocco.jpg",
-    href: "/cycling-trips/atlas-mountains",
+    href: "/cycling-trips/high-atlas",
   },
   {
     category: "MTB ADVENTURE",
@@ -108,7 +108,7 @@ const destinations = [
     description:
       "Discover the mountain villages around Imlil and the rugged foothills of Mount Toubkal. This region combines traditional architecture, terraced fields and spectacular mountain views, making it an inspiring base for guided rides and multi-day adventures. Explore the surrounding valleys and learn about the landscapes and communities of the High Atlas.",
     image: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
-    href: "/destinations/imlil-toubkal",
+    href: "/destinations/imlil",
   },
   {
     title: "Agafay and the Desert",
@@ -171,7 +171,7 @@ const experiences = [
     title: "Family Cycling",
     description:
       "Enjoy an itinerary planned around your family's ages, confidence, interests and preferred pace.",
-    href: "/cycling-trips/family",
+    href: "/cycling-trips/family-mtb",
   },
   {
     title: "Luxury Cycling",
@@ -858,7 +858,7 @@ src="/images/logo-mountain-bike-morocco-footer.png"                alt="Mountain
           <div>
             <h3>Destinations</h3>
             <Link href="/destinations/atlas-mountains">Atlas Mountains</Link>
-            <Link href="/destinations/imlil-toubkal">Imlil &amp; Toubkal</Link>
+            <Link href="/destinations/imlil">Imlil &amp; Toubkal</Link>
             <Link href="/destinations/marrakech">Marrakech</Link>
             <Link href="/destinations/agafay-desert">Agafay Desert</Link>
             <Link href="/destinations">All Destinations</Link>

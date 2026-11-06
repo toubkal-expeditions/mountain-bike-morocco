@@ -9,18 +9,23 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+const geistMono = Geist({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mountain-bike-morocco.com"),
+
   title: {
-    default: "Mountain Bike Morocco | MTB, E-MTB & Cycling Tours",
+    default:
+      "Mountain Bike Morocco | MTB & E-MTB Tours in the Atlas Mountains",
     template: "%s | Mountain Bike Morocco",
   },
+
   description:
-    "Discover Morocco by bike with local cycling guides. Explore Atlas Mountain MTB trails, E-MTB adventures, gravel routes, road cycling, desert expeditions and tailor-made cycling holidays.",
+    "Explore Morocco by bike with expert local guides. Discover mountain bike and E-MTB tours in the Atlas Mountains, gravel and road cycling adventures, desert trails and private cycling holidays.",
+
 };
 
 export default function RootLayout({
