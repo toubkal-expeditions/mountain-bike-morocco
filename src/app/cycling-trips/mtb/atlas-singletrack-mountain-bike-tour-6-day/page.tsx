@@ -2566,7 +2566,7 @@ export default function AtlasSingletrackMountainBikeTourPage() {
 
           <div className="at-footer-bottom">
             <p>
-              © {new Date().getFullYear()} Mountain Bike Morocco. All rights
+              © {2026} Mountain Bike Morocco. All rights
               reserved.
             </p>
             <p>Ride the Atlas. Feel the freedom.</p>

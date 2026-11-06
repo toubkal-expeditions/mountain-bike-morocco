@@ -984,7 +984,7 @@ export default function MoroccoCyclingAdventure4DayPage() {
           </div>
         </div>
         <div className="at-container at-footer-bottom">
-          <span>© {new Date().getFullYear()} Mountain Bike Morocco. All rights reserved.</span>
+          <span>© {2026} Mountain Bike Morocco. All rights reserved.</span>
           <span>Ride the Atlas. Feel the Freedom.</span>
         </div>
       </footer>

@@ -1971,7 +1971,7 @@ export default function AtlasMountainsGravelRidePage() {
           </div>
 
           <div className="at-footer-bottom">
-            <p>© {new Date().getFullYear()} Mountain Bike Morocco. All rights reserved.</p>
+            <p>© {2026} Mountain Bike Morocco. All rights reserved.</p>
             <a href="/contact">Plan your cycling adventure</a>
           </div>
         </div>

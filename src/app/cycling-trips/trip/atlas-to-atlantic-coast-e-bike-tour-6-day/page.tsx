@@ -938,7 +938,7 @@ export default function AtlasToAtlanticCoastEbikeTourPage() {
         </div>
         <div className="at-container at-footer-bottom">
           <span>
-            © {new Date().getFullYear()} Cycling Morocco. All rights reserved.
+            © {2026} Cycling Morocco. All rights reserved.
           </span>
           <span>Ride the Atlas. Feel the Freedom.</span>
         </div>
