@@ -16,7 +16,9 @@ const geistMono = Geist({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mountain-bike-morocco.com"),
-
+verification: {
+    google: "gyNnjLGnRLBJnwM14bzQphnb49H8Cn2AZMDuVX3Hlo0",
+  },
   title: {
     default:
       "Mountain Bike Morocco | MTB & E-MTB Tours in the Atlas Mountains",
