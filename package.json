@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack",
-    "start": "next start",
+"build": "node scripts/generate-sitemap.mjs && next build --webpack",    "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
