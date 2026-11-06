@@ -4,36 +4,81 @@ import { FormEvent, useState } from "react";
 
 export default function ContactEnquiryForm() {
   const [formMessage, setFormMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const recipient = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "mountainbikemorocco@gmail.com";
-    const data = new FormData(event.currentTarget);
 
-    if (!recipient) {
+    if (isSubmitting) return;
+
+    setIsSubmitting(true);
+    setFormMessage("");
+    setIsSuccess(false);
+
+    const form = event.currentTarget;
+    const data = new FormData(form);
+
+    const enquiry = {
+      name: data.get("name"),
+      email: data.get("email"),
+      departureDate: data.get("departureDate"),
+      cyclingType: data.get("cyclingType"),
+      groupSize: data.get("groupSize"),
+      destination: data.get("destination"),
+      tour: data.get("tour"),
+      message: data.get("message"),
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(enquiry),
+      });
+
+      const responseText = await response.text();
+
+let result: { error?: string; success?: boolean };
+
+try {
+  result = responseText
+    ? JSON.parse(responseText)
+    : {};
+} catch {
+  throw new Error(
+    "The server returned an invalid response. Please check the API route and server terminal."
+  );
+}
+
+if (!response.ok) {
+  throw new Error(
+    result.error || `Server error (${response.status}). Please try again.`
+  );
+}
+
+if (!result.success) {
+  throw new Error("The server did not confirm that your enquiry was sent.");
+}
+
+      setIsSuccess(true);
       setFormMessage(
-        "The form is ready, but the receiving email address has not been configured. Add NEXT_PUBLIC_CONTACT_EMAIL to your .env.local file, then restart the development server."
+        "Thank you! Your enquiry has been sent successfully. Our team will get back to you soon."
       );
-      return;
+
+      form.reset();
+    } catch (error) {
+      setIsSuccess(false);
+      setFormMessage(
+        error instanceof Error
+          ? error.message
+          : "Something went wrong. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
     }
-
-    const body = [
-      `Name: ${data.get("name")}`,
-      `Email: ${data.get("email")}`,
-      `Departure date: ${data.get("departureDate") || "Flexible"}`,
-      `Cycling style: ${data.get("cyclingType")}`,
-      `Group size: ${data.get("groupSize") || "Not provided"}`,
-      `Destination: ${data.get("destination") || "Open to suggestions"}`,
-      `Tour of interest: ${data.get("tour") || "Not decided yet"}`,
-      `Message: ${data.get("message") || "Not provided"}`,
-    ].join("\n");
-
-    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(
-      "Mountain Bike Morocco trip enquiry"
-    )}&body=${encodeURIComponent(body)}`;
-    setFormMessage(
-      "Your email application should open with the enquiry prepared. Send the email there to complete your request."
-    );
   }
 
   const fieldStyle = {
@@ -68,20 +113,50 @@ export default function ContactEnquiryForm() {
       <div className="contact-enquiry-form__grid">
         <label style={labelStyle}>
           Full name *
-          <input style={fieldStyle} type="text" name="name" autoComplete="name" placeholder="Your full name" required />
+          <input
+            style={fieldStyle}
+            type="text"
+            name="name"
+            autoComplete="name"
+            placeholder="Your full name"
+            maxLength={120}
+            required
+          />
         </label>
+
         <label style={labelStyle}>
           Email address *
-          <input style={fieldStyle} type="email" name="email" autoComplete="email" placeholder="you@example.com" required />
+          <input
+            style={fieldStyle}
+            type="email"
+            name="email"
+            autoComplete="email"
+            placeholder="you@example.com"
+            maxLength={254}
+            required
+          />
         </label>
+
         <label style={labelStyle}>
           Departure date
-          <input style={fieldStyle} type="date" name="departureDate" />
+          <input
+            style={fieldStyle}
+            type="date"
+            name="departureDate"
+          />
         </label>
+
         <label style={labelStyle}>
           Cycling style *
-          <select style={fieldStyle} name="cyclingType" defaultValue="" required>
-            <option value="" disabled>Select a cycling style</option>
+          <select
+            style={fieldStyle}
+            name="cyclingType"
+            defaultValue=""
+            required
+          >
+            <option value="" disabled>
+              Select a cycling style
+            </option>
             <option>Mountain Bike</option>
             <option>E-MTB Tour</option>
             <option>Gravel Cycling</option>
@@ -90,9 +165,14 @@ export default function ContactEnquiryForm() {
             <option>Not sure yet</option>
           </select>
         </label>
+
         <label style={labelStyle}>
           Group size
-          <select style={fieldStyle} name="groupSize" defaultValue="">
+          <select
+            style={fieldStyle}
+            name="groupSize"
+            defaultValue=""
+          >
             <option value="">Select group size</option>
             <option>1 rider</option>
             <option>2 riders</option>
@@ -101,32 +181,77 @@ export default function ContactEnquiryForm() {
             <option>9+ riders</option>
           </select>
         </label>
+
         <label style={labelStyle}>
           Preferred destination
-          <input style={fieldStyle} type="text" name="destination" placeholder="e.g. Atlas Mountains, Agafay, Sahara" />
+          <input
+            style={fieldStyle}
+            type="text"
+            name="destination"
+            placeholder="e.g. Atlas Mountains, Agafay, Sahara"
+            maxLength={150}
+          />
         </label>
-        <label className="contact-enquiry-form__full" style={labelStyle}>
+
+        <label
+          className="contact-enquiry-form__full"
+          style={labelStyle}
+        >
           Tour name (if known)
-          <input style={fieldStyle} type="text" name="tour" placeholder="Paste a tour name or leave blank" />
+          <input
+            style={fieldStyle}
+            type="text"
+            name="tour"
+            placeholder="Paste a tour name or leave blank"
+            maxLength={200}
+          />
         </label>
-        <label className="contact-enquiry-form__full" style={labelStyle}>
+
+        <label
+          className="contact-enquiry-form__full"
+          style={labelStyle}
+        >
           Your message *
           <textarea
-            style={{ ...fieldStyle, minHeight: "140px", resize: "vertical" }}
+            style={{
+              ...fieldStyle,
+              minHeight: "140px",
+              resize: "vertical",
+            }}
             name="message"
             rows={5}
+            maxLength={5000}
             required
             placeholder="Tell us about your riding experience, preferred dates, trip length, budget range or any questions."
           />
         </label>
       </div>
 
-      <button className="contact-enquiry-form__submit" type="submit">
-        Prepare your enquiry <span aria-hidden="true">↗</span>
+      <button
+        className="contact-enquiry-form__submit"
+        type="submit"
+        disabled={isSubmitting}
+      >
+        {isSubmitting ? "Sending your enquiry..." : "Send booking enquiry"}
+        <span aria-hidden="true"> ↗</span>
       </button>
-      {formMessage ? <p className="contact-enquiry-form__status" role="status">{formMessage}</p> : null}
+
+      {formMessage ? (
+        <p
+          className="contact-enquiry-form__status"
+          role="status"
+          aria-live="polite"
+          style={{
+            color: isSuccess ? "#287343" : "#b42318",
+          }}
+        >
+          {formMessage}
+        </p>
+      ) : null}
+
       <p className="contact-enquiry-form__privacy">
-        This form prepares an email in your email application. Direct online submission requires a connected form or mail service.
+        Your enquiry will be sent securely to our team. We will use
+        your contact details only to respond to your trip enquiry.
       </p>
     </form>
   );
