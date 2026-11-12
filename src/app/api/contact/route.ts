@@ -1,3 +1,4 @@
+
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -35,13 +36,8 @@ function getBookingDetails(message: string) {
     };
   }
 
-  const customerMessage = message
-    .slice(0, markerIndex)
-    .trim();
-
-  const additionalText = message
-    .slice(markerIndex + marker.length)
-    .trim();
+  const customerMessage = message.slice(0, markerIndex).trim();
+  const additionalText = message.slice(markerIndex + marker.length).trim();
 
   const details: Record<string, string> = {};
 
@@ -58,17 +54,13 @@ function getBookingDetails(message: string) {
     }
   });
 
-  return {
-    customerMessage,
-    details,
-  };
+  return { customerMessage, details };
 }
 
 function emailRow(label: string, value: string) {
   return `
     <tr>
-      <td style="
-        width: 38%;
+      <td width="38%" style="
         padding: 13px 16px;
         border-bottom: 1px solid #e9e6de;
         color: #77776e;
@@ -181,8 +173,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const { customerMessage, details } =
-      getBookingDetails(rawMessage);
+    const { customerMessage, details } = getBookingDetails(rawMessage);
 
     if (!customerMessage || customerMessage.length > 5000) {
       return Response.json(
@@ -193,16 +184,10 @@ export async function POST(request: Request) {
 
     const phone = cleanValue(details["Phone / WhatsApp"]);
     const experience = cleanValue(details["Riding experience"]);
-    const tripDuration = cleanValue(
-      details["Preferred trip duration"]
-    );
+    const tripDuration = cleanValue(details["Preferred trip duration"]);
     const budget = cleanValue(details["Budget per person"]);
-    const dateFlexibility = cleanValue(
-      details["Date flexibility"]
-    );
-    const contactMethod = cleanValue(
-      details["Preferred contact method"]
-    );
+    const dateFlexibility = cleanValue(details["Date flexibility"]);
+    const contactMethod = cleanValue(details["Preferred contact method"]);
 
     const contactRows = [
       emailRow("Full name", name),
@@ -371,20 +356,20 @@ New website booking enquiry
                 </h3>
 
                 <div style="
-                  padding: 20px;
+                  padding: 16px;
                   border: 1px solid #e9e6de;
                   background: #ffffff;
                   color: #45463f;
                   font-size: 13px;
-                  line-height: 1.9;
+                  line-height: 1.8;
                   white-space: pre-wrap;
                   overflow-wrap: anywhere;
                 ">${escapeHtml(customerMessage)}</div>
               </div>
 
               <div style="
-                margin-top: 35px;
-                padding-top: 20px;
+                margin-top: 30px;
+                padding-top: 18px;
                 border-top: 1px solid #e5e2d9;
               ">
                 <p style="
