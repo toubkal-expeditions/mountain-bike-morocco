@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title:
     "Atlas Singletrack Mountain Bike Tour Morocco – 6 Days | Mountain Bike Morocco",
   description:
-    "Discover six days of mountain biking in Morocco's High Atlas. Explore singletrack trails, mountain tracks, traditional Amazigh villages and spectacular descents around Imlil and the Atlas valleys.",
+    "Discover 6 days of mountain biking in Morocco's High Atlas. Explore singletrack trails, mountain tracks, traditional Amazigh villages and spectacular descents around Imlil and the Atlas valleys.",
   alternates: {
     canonical: "/cycling-trips/trip/atlas-singletrack-mountain-bike-tour-6-day",
   },
@@ -414,7 +415,7 @@ export default function AtlasSingletrackMountainBikeTour6DayPage() {
         }
 
         .atlas-tour .at-hero-content {
-          position: relative;
+          position: relative;æ
           z-index: 1;
           width: min(1240px, calc(100% - 64px));
           margin: 0 auto;
@@ -1257,7 +1258,7 @@ export default function AtlasSingletrackMountainBikeTour6DayPage() {
             landscapes, technical trails and spectacular descents of Morocco.
           </p>
           <div className="at-hero-actions">
-            <a className="at-button" href="/contact">Plan Your MTB Adventure <span>→</span></a>
+            <a className="at-button" href="#enquiry">Plan Your MTB Adventure <span>→</span></a>
             <a className="at-hero-back" href="/cycling-trips">Explore All Cycling Tours</a>
           </div>
           <div className="at-hero-bottom">
@@ -1287,6 +1288,7 @@ export default function AtlasSingletrackMountainBikeTour6DayPage() {
           <a href="#included">Included</a>
           <a href="#preparation">Preparation</a>
           <a href="#faqs">FAQs</a>
+          <a href="#enquiry">Enquire</a>
         </div>
       </nav>
 
@@ -1352,7 +1354,7 @@ export default function AtlasSingletrackMountainBikeTour6DayPage() {
               <li><span>Tour format</span><strong>Private MTB</strong></li>
               <li><span>Trail programme</span><strong>Customised</strong></li>
             </ul>
-            <a className="at-button" href="/contact">Enquire About This Tour <span>→</span></a>
+            <a className="at-button" href="#enquiry">Enquire About This Tour <span>→</span></a>
           </aside>
         </div>
       </section>
@@ -1623,7 +1625,7 @@ export default function AtlasSingletrackMountainBikeTour6DayPage() {
               the High Atlas. Contact our team if you need more details
               before planning your trip.
             </p>
-            <a className="at-text-link" href="/contact">Ask Us a Question →</a>
+            <a className="at-text-link" href="#enquiry">Ask Us a Question →</a>
           </div>
           <div className="at-faq-list">
             {faqs.map((item) => (
@@ -1649,7 +1651,22 @@ export default function AtlasSingletrackMountainBikeTour6DayPage() {
             experience. We will discuss a private MTB adventure and help
             you plan your journey through the High Atlas.
           </p>
-          <a className="at-button" href="/contact">Plan Your MTB Adventure <span>→</span></a>
+          <a className="at-button" href="#enquiry">Plan Your MTB Adventure <span>→</span></a>
+        </div>
+      </section>
+
+      {/* ENQUIRY FORM MOVED HERE: AFTER THE FINAL CTA AND BEFORE EXPLORE MORE */}
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Atlas Singletrack Mountain Bike Tour – 6 Days"
+            destination="High Atlas Mountains, Morocco"
+            cyclingType="Mountain Bike"
+          />
         </div>
       </section>
 
@@ -1697,7 +1714,7 @@ export default function AtlasSingletrackMountainBikeTour6DayPage() {
             <div className="at-footer-links">
               <a href="/cycling-trips">All Cycling Tours</a>
               <a href="/cycling-trips/mtb">Mountain Bike Tours</a>
-              <a href="/cycling-trips/emtb">E-MTB Tours</a>
+              <a href="/cycling-trips/e-mtb">E-MTB Tours</a>
               <a href="/cycling-trips/gravel">Gravel Cycling</a>
             </div>
           </div>
@@ -1714,8 +1731,8 @@ export default function AtlasSingletrackMountainBikeTour6DayPage() {
             <h3>Get in Touch</h3>
             <div className="at-footer-links">
               <a href="/about">About Us</a>
-              <a href="/contact">Contact</a>
-              <a href="/contact">Plan Your Trip</a>
+              <a href="#enquiry">Contact</a>
+              <a href="#enquiry">Plan Your Trip</a>
               <a href="/cycling-trips">Explore Cycling Tours</a>
             </div>
           </div>

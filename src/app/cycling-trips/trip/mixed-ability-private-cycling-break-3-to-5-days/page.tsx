@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Mixed Ability Private Cycling Break in Morocco – 3 to 5 Days | Mountain Bike Morocco",
   description:
     "Enjoy a three-to-five-day private cycling break in Morocco designed for mixed-ability groups. Choose suitable routes, flexible distances and a relaxed pace through Atlas landscapes, villages and valleys.",
   alternates: {
-    canonical: "/cycling-trips/trip/mixed-ability-private-cycling-break-3-to-5-day",
+    canonical: "/cycling-trips/trip/mixed-ability-private-cycling-break-3-to-5-days",
   },
 };
 
@@ -419,6 +420,11 @@ export default function MixedAbilityPrivateCyclingBreakPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour #enquiry { background: var(--green); color: #fff; }
+        .atlas-tour #enquiry .at-container { text-align: left; }
+        .atlas-tour #enquiry .at-eyebrow { color: var(--gold-light); text-align: left; }
+        .atlas-tour #enquiry .at-heading { color: #fff; text-align: left; }
+        .atlas-tour #enquiry .at-enquiry-intro { max-width: 720px; margin: 0 0 32px; color: #e1e2d8; font-size: 15px; line-height: 1.9; text-align: left; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -863,6 +869,23 @@ export default function MixedAbilityPrivateCyclingBreakPage() {
             Tell us your preferred dates, group size, each rider’s experience and the type of cycling you enjoy. We can discuss suitable routes, daily distances, terrain, equipment, accommodation and transfers for your three-to-five-day private cycling break.
           </p>
           <a className="at-button" href="/contact">Plan Your Private Cycling Break <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section" id="enquiry">
+        <div className="at-container">
+          <span className="at-eyebrow">START PLANNING YOUR RIDE</span>
+          <h2 className="at-heading">
+            Plan Your Mixed-Ability Private Cycling Break
+          </h2>
+          <p className="at-enquiry-intro">
+            Tell us your preferred travel dates, group size and the cycling
+            experience of each rider. Let us know your preferred terrain,
+            daily distances and any bicycle, accommodation or transfer
+            requirements. Our team will use these details to help plan a
+            private Moroccan cycling break that suits your group.
+          </p>
+          <ContactEnquiryForm />
         </div>
       </section>
 

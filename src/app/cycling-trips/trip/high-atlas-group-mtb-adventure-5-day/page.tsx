@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "High Atlas Group MTB Adventure – 5 Days | Mountain Bike Morocco",
   description:
-    "Join a five-day guided mountain bike adventure in Morocco's High Atlas. Ride mountain trails, singletrack and scenic valley routes with a local team, with the itinerary adapted to your group's experience and riding preferences.",
+    "Join a 5-day guided mountain bike adventure in Morocco's High Atlas. Ride mountain trails, singletrack and scenic valley routes with a local team, with the itinerary adapted to your group's experience and riding preferences.",
   alternates: {
     canonical: "/cycling-trips/trip/high-atlas-group-mtb-adventure-5-day",
   },
@@ -422,6 +423,10 @@ export default function HighAtlasGroupMtbAdventurePage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section { background: var(--green); color: #fff; }
+        .atlas-tour .at-enquiry-section .at-eyebrow { color: var(--gold-light); }
+        .atlas-tour .at-enquiry-section .at-heading { color: #fff; }
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #e1e2d8; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -867,6 +872,30 @@ export default function HighAtlasGroupMtbAdventurePage() {
             Tell us your preferred dates, group size, riders' experience and mountain biking goals. We can discuss suitable routes, daily distances, climbing, equipment, accommodation and transfers for your five-day High Atlas Group MTB Adventure.
           </p>
           <a className="at-button" href="/contact">Plan Your High Atlas Group MTB Adventure <span>→</span></a>
+        </div>
+      </section>
+
+      {/* CONTACT ENQUIRY FORM */}
+      <section className="at-section at-enquiry-section" id="enquire">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+              <h2 className="at-heading">
+                Enquire About High Atlas Group MTB Adventure
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred dates, group size, riding experience and
+              requirements. Our team will help you plan the details of your
+              five-day guided group mountain biking adventure in the High Atlas.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="High Atlas Group MTB Adventure"
+            destination="High Atlas Mountains, Morocco"
+            cyclingType="Mountain Biking"
+          />
         </div>
       </section>
 

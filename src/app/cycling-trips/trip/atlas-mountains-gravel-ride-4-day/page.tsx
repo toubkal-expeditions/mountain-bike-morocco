@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title:
     "Atlas Mountains Gravel Ride Morocco – 4 Days | Mountain Bike Morocco",
   description:
-    "Ride through the Atlas Mountains on a four-day gravel cycling adventure in Morocco. Discover mountain roads, remote valleys, traditional Berber villages and spectacular landscapes.",
+    "Ride through the Atlas Mountains on 4-day gravel cycling adventure in Morocco. Discover mountain roads, remote valleys, traditional Berber villages and spectacular landscapes.",
   alternates: {
     canonical: "/cycling-trips/trip/atlas-mountains-gravel-ride-4-day",
   },
@@ -904,6 +905,21 @@ export default function AtlasMountainsGravelRide4DayPage() {
             plan your gravel cycling adventure.
           </p>
           <a className="at-button" href="/contact">Plan Your Gravel Adventure <span>→</span></a>
+        </div>
+      </section>
+
+      {/* Enquiry form: after the final CTA and before related tours */}
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Atlas Mountains Gravel Ride – 4 Days"
+            destination="Atlas Mountains, Morocco"
+            cyclingType="Gravel"
+          />
         </div>
       </section>
 

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Private Morocco Road Cycling Holiday – 7 Days | Mountain Bike Morocco",
   description:
-    "Experience a private seven-day road cycling holiday in Morocco. Discover the Atlas Mountains, scenic mountain roads, valleys and traditional villages on a cycling journey planned around your group.",
+    "Experience a private 7-day road cycling holiday in Morocco. Discover the Atlas Mountains, scenic mountain roads, valleys and traditional villages on a cycling journey planned around your group.",
   alternates: {
     canonical:
       "/cycling-trips/trip/private-morocco-road-cycling-holiday-7-day",
@@ -330,7 +331,7 @@ const relatedTours = [
     title: "Atlas to Atlantic Coast Road Cycling Tour",
     text: "Ride from the Atlas region towards Morocco's Atlantic landscapes on a four-day cycling journey.",
     image: "/images/atlas-mountains-road-cycling-tour.jpg",
-    href: "/cycling-trips/trip/atlas-to-atlantic-coast-road-cycling-tour-4-day",
+    href: "/cycling-trips/trip/atlantic-coast-road-cycling-tour-4-day",
   },
   {
     category: "CYCLING FROM MARRAKECH",
@@ -368,6 +369,10 @@ export default function PrivateMoroccoRoadCyclingHoliday7DaysPage() {
         .atlas-tour .at-eyebrow { display: block; color: #946c30; font-size: 11px; font-weight: 700; letter-spacing: 2px; line-height: 1.6; text-transform: uppercase; }
         .atlas-tour .at-heading { margin: 12px 0 20px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(32px, 3.5vw, 48px); font-weight: 400; letter-spacing: -1.25px; line-height: 1.14; }
         .atlas-tour .at-section { padding: 86px 0; }
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+        .atlas-tour .at-enquiry-section .at-eyebrow,
+        .atlas-tour .at-enquiry-section .at-heading,
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #fff !important; }
         .atlas-tour .at-section-head { display: grid; grid-template-columns: 1.15fr .85fr; align-items: end; gap: 44px; margin-bottom: 36px; }
         .atlas-tour .at-section-head .at-heading { margin-bottom: 0; }
         .atlas-tour .at-section-head > p { max-width: 480px; margin: 0 0 4px auto; color: var(--muted); font-size: 15px; line-height: 1.85; }
@@ -1046,6 +1051,27 @@ export default function PrivateMoroccoRoadCyclingHoliday7DaysPage() {
             for your seven-day holiday.
           </p>
           <a className="at-button" href="/contact">Plan Your Private Cycling Holiday <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR PRIVATE ROAD CYCLING HOLIDAY</span>
+              <h2 className="at-heading">
+                Tell Us About Your Private Morocco Road Cycling Holiday
+              </h2>
+            </div>
+            <p>
+              Share your preferred dates, group size, cycling experience,
+              fitness level and road bicycle requirements. Our team can
+              discuss suitable routes, accommodation, support services and
+              practical arrangements for your seven-day private road cycling
+              holiday.
+            </p>
+          </div>
+          <ContactEnquiryForm />
         </div>
       </section>
 

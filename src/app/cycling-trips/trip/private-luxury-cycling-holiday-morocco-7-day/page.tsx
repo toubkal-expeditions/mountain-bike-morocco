@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Private Luxury Cycling Holiday Morocco – 7 Days | Mountain Bike Morocco",
   description:
-    "Experience a private seven-day luxury cycling holiday in Morocco. Discover spectacular Atlas Mountain roads, traditional villages, beautiful valleys and carefully planned cycling stages on a personalised journey.",
+    "Experience a private 7-day luxury cycling holiday in Morocco. Discover spectacular Atlas Mountain roads, traditional villages, beautiful valleys and carefully planned cycling stages on a personalised journey.",
   alternates: {
     canonical: "/cycling-trips/trip/private-luxury-cycling-holiday-morocco-7-day",
   },
@@ -333,7 +334,7 @@ const relatedTours = [
     title: "Todra and Dades Luxury Road Journey",
     text: "Explore the dramatic landscapes of Todra Gorge and the Dades Valley on a private southern Morocco cycling journey.",
     image: "/images/south-morocco-cycling-tour.jpg",
-    href: "/cycling-trips/trip/todra-dades-luxury-road-journey-6-day",
+    href: "/cycling-trips/trip/todra-and-dades-luxury-road-journey-6-day",
   },
   {
     category: "ROAD CYCLING",
@@ -511,6 +512,10 @@ export default function PrivateLuxuryCyclingHolidayMorocco7DaysPage() {
         .atlas-tour .at-related-content h3 { margin: 10px 0; font-family: Georgia, 'Times New Roman', serif; font-size: 24px; font-weight: 400; line-height: 1.25; }
         .atlas-tour .at-related-content p { color: var(--muted); font-size: 13px; line-height: 1.8; }
         .atlas-tour .at-related-content a { display: inline-block; margin-top: 8px; padding-bottom: 4px; border-bottom: 1px solid var(--gold); font-size: 11px; font-weight: 700; letter-spacing: 1px; text-decoration: none; text-transform: uppercase; }
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+        .atlas-tour .at-enquiry-section .at-eyebrow,
+        .atlas-tour .at-enquiry-section .at-heading,
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #fff !important; }
         .atlas-tour .at-footer { background: #171d18; color: #eeeae1; }
         .atlas-tour .at-footer-main { display: grid; grid-template-columns: 1.3fr .8fr .9fr 1fr; gap: 45px; padding: 65px 0 50px; }
         .atlas-tour .at-footer-brand img { width: 190px; height: auto; object-fit: contain; object-position: left center; }
@@ -1048,6 +1053,26 @@ export default function PrivateLuxuryCyclingHolidayMorocco7DaysPage() {
             seven-day cycling holiday.
           </p>
           <a className="at-button" href="/contact">Plan Your Private Cycling Holiday <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR PRIVATE LUXURY CYCLING HOLIDAY</span>
+              <h2 className="at-heading">
+                Tell Us About Your Private Luxury Cycling Holiday in Morocco
+              </h2>
+            </div>
+            <p>
+              Share your preferred dates, group size, riders' ages and cycling
+              experience. Our team can help discuss suitable routes,
+              accommodation, equipment and practical arrangements for your
+              seven-day private luxury cycling holiday.
+            </p>
+          </div>
+          <ContactEnquiryForm />
         </div>
       </section>
 

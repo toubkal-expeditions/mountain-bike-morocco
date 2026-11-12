@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Marrakech E-MTB Adventure – 1 Day | Mountain Bike Morocco",
   description:
-    "Discover the Atlas foothills on a one-day guided E-MTB adventure from Marrakech, with electric mountain-bike routes selected around your experience, preferred terrain and local conditions.",
+    "Discover the Atlas foothills on a 1-day guided E-MTB adventure from Marrakech, with electric mountain-bike routes selected around your experience, preferred terrain and local conditions.",
   alternates: {
     canonical:
       "/cycling-trips/trip/marrakech-emtb-adventure-1-day",
@@ -369,6 +370,10 @@ export default function MarrakechEMTBAdventurePage() {
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
         .atlas-tour .at-related-section { padding: 86px 0; }
+        .atlas-tour .at-enquiry-section { background: var(--green); color: #fff; }
+        .atlas-tour .at-enquiry-section .at-eyebrow { color: var(--gold-light); }
+        .atlas-tour .at-enquiry-section .at-heading { color: #fff; }
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #e1e2d8; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
         .atlas-tour .at-related-image { height: 255px; overflow: hidden; }
@@ -986,6 +991,31 @@ export default function MarrakechEMTBAdventurePage() {
         </div>
       </section>
 
+      {/* CONTACT ENQUIRY FORM */}
+      <section className="at-section at-enquiry-section" id="enquire">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+              <h2 className="at-heading">
+                Enquire About Marrakech E-MTB Adventure
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred date, group size, riding experience and
+              equipment requirements. Our team will help discuss a suitable
+              route and the arrangements for your one-day E-MTB adventure
+              from Marrakech.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="Marrakech E-MTB Adventure"
+            destination="Marrakech and Atlas foothills, Morocco"
+            cyclingType="E-MTB"
+          />
+        </div>
+      </section>
+
       <section className="at-related-section">
         <div className="at-container">
           <div className="at-section-head">
@@ -1037,7 +1067,7 @@ export default function MarrakechEMTBAdventurePage() {
             <div className="at-footer-links">
               <a href="/cycling-trips">All Cycling Tours</a>
               <a href="/cycling-trips/mtb">Mountain Bike Tours</a>
-              <a href="/cycling-trips/emtb">E-MTB Tours</a>
+              <a href="/cycling-trips/e-mtb">E-MTB Tours</a>
               <a href="/cycling-trips/gravel">Gravel Cycling</a>
             </div>
           </div>

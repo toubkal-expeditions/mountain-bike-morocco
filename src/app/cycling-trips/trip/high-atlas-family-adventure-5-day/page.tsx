@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "High Atlas Family Adventure – 5 Days | Mountain Bike Morocco",
   description:
-    "Discover the High Atlas on a five-day family cycling adventure in Morocco. Explore mountain scenery, valley tracks and traditional villages on a guided itinerary planned around your family's ages and riding experience.",
+    "Discover the High Atlas on a 5-day family cycling adventure in Morocco. Explore mountain scenery, valley tracks and traditional villages on a guided itinerary planned around your family's ages and riding experience.",
   alternates: {
     canonical: "/cycling-trips/trip/high-atlas-family-adventure-5-day",
   },
@@ -423,6 +424,10 @@ export default function HighAtlasFamilyAdventurePage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section { background: var(--green); color: #fff; }
+        .atlas-tour .at-enquiry-section .at-eyebrow { color: var(--gold-light); }
+        .atlas-tour .at-enquiry-section .at-heading { color: #fff; }
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #e1e2d8; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -917,6 +922,32 @@ export default function HighAtlasFamilyAdventurePage() {
             five-day family cycling holiday in the Atlas Mountains of Morocco.
           </p>
           <a className="at-button" href="/contact">Plan Your High Atlas Family Adventure <span>→</span></a>
+        </div>
+      </section>
+
+      {/* CONTACT ENQUIRY FORM */}
+      <section className="at-section at-enquiry-section" id="enquire">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR FAMILY ADVENTURE</span>
+              <h2 className="at-heading">
+                Enquire About High Atlas Family Adventure
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred dates, group size, children's ages,
+              cycling experience and bicycle requirements. Our team will
+              help you discuss suitable family routes, daily riding distances,
+              equipment and arrangements for your five-day High Atlas adventure.
+            </p>
+          </div>
+
+          <ContactEnquiryForm
+            tourName="High Atlas Family Adventure – 5 Days"
+            destination="High Atlas Mountains, Morocco"
+            cyclingType="Family Mountain Biking"
+          />
         </div>
       </section>
 

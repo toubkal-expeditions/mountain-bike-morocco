@@ -1,4 +1,36 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Electric Mountain Bike Tours in Morocco | Atlas E-MTB Adventures",
+  description:
+    "Discover guided electric mountain bike tours in Morocco's High Atlas. Explore E-MTB day rides, multi-day adventures, private cycling holidays and scenic routes from Marrakech.",
+  alternates: {
+    canonical: "/cycling-trips/e-mtb",
+  },
+  openGraph: {
+    title: "Electric Mountain Bike Tours in Morocco | Atlas E-MTB Adventures",
+    description:
+      "Explore Morocco on a guided electric mountain bike adventure. Discover Atlas Mountain trails, traditional villages, private E-MTB holidays and day rides from Marrakech.",
+    url: "https://mountain-bike-morocco.com/cycling-trips/e-mtb",
+    siteName: "Mountain Bike Morocco",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "/images/eBike-tour-atlas-mountains-morocco.jpg",
+        alt: "Electric mountain bike adventure in Morocco's Atlas Mountains",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Electric Mountain Bike Tours in Morocco | Mountain Bike Morocco",
+    description:
+      "Guided E-MTB adventures in the High Atlas, with mountain trails, private holidays and day rides from Marrakech.",
+    images: ["/images/eBike-tour-atlas-mountains-morocco.jpg"],
+  },
+};
 
 const emtbTours = [
   {
@@ -575,7 +607,8 @@ export default function ElectricMountainBikeToursPage() {
           </div>
         </div>
         <div className="page-width footer-bottom">
-© 2026 Mountain Bike Morocco          <span>Morocco cycling adventures, thoughtfully planned.</span>
+          © 2026 Mountain Bike Morocco
+          <span>Morocco cycling adventures, thoughtfully planned.</span>
         </div>
       </footer>
     </>

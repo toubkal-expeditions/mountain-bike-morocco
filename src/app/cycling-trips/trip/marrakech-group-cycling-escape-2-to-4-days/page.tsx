@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Marrakech Group Cycling Escape – 2 to 4 Days | Mountain Bike Morocco",
   description:
-    "Enjoy a two-to-four-day group cycling escape from Marrakech. Discover the city surroundings, countryside and Atlas foothills on guided rides planned around your group.",
+    "Enjoy a 2 to 4day group cycling escape from Marrakech. Discover the city surroundings, countryside and Atlas foothills on guided rides planned around your group.",
   alternates: {
-    canonical: "/cycling-trips/trip/marrakech-group-cycling-escape-2-to-4-day",
+    canonical: "/cycling-trips/trip/marrakech-group-cycling-escape-2-to-4-days",
   },
 };
 
@@ -396,6 +397,12 @@ export default function MarrakechGroupCyclingEscapePage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-intro { max-width: 760px; margin: 0 auto 34px; text-align: center; }
+        .atlas-tour .at-enquiry-intro .at-eyebrow { color: var(--gold-light); }
+        .atlas-tour .at-enquiry-intro .at-heading { color: #fff; }
+        .atlas-tour .at-enquiry-intro p { max-width: 680px; margin: 0 auto; color: #e1e2d8; font-size: 15px; line-height: 1.9; }
+        .atlas-tour #enquiry { background: var(--green); }
+        .atlas-tour #enquiry .at-enquiry-intro .at-heading { color: #fff; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -842,6 +849,19 @@ export default function MarrakechGroupCyclingEscapePage() {
         </div>
       </section>
 
+      <section className="at-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-enquiry-intro">
+            <span className="at-eyebrow">START PLANNING YOUR GROUP RIDE</span>
+            <h2 className="at-heading">Enquire About the Marrakech Group Cycling Escape</h2>
+            <p>
+              Tell us your preferred dates, group size, cycling experience and whether you are interested in the two-, three- or four-day option. Our team will use your enquiry to discuss suitable routes, riding arrangements and a personalised proposal for your group.
+            </p>
+          </div>
+          <ContactEnquiryForm />
+        </div>
+      </section>
+
       <section className="at-related-section">
         <div className="at-container">
           <div className="at-section-head">
@@ -888,7 +908,7 @@ export default function MarrakechGroupCyclingEscapePage() {
               <a href="/cycling-trips/mtb">Mountain Bike Tours</a>
               <a href="/cycling-trips/e-mtb">E-MTB Tours</a>
               <a href="/cycling-trips/gravel">Gravel Cycling</a>
-              <a href="/cycling-trips/road">Cycling</a>
+              <a href="/cycling-trips/road">Road Cycling</a>
             </div>
           </div>
           <div>

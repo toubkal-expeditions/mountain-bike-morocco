@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Morocco Luxury Cycling Week – 7 Days | Mountain Bike Morocco",
   description:
-    "Discover Morocco on a seven-day private luxury cycling holiday. Explore spectacular Atlas Mountain roads, traditional Berber villages and beautiful valleys with a personalised cycling itinerary.",
+    "Discover Morocco on a 7-day private luxury cycling holiday. Explore spectacular Atlas Mountain roads, traditional Berber villages and beautiful valleys with a personalised cycling itinerary.",
   alternates: {
     canonical: "/cycling-trips/trip/morocco-luxury-cycling-week-7-day",
   },
@@ -492,6 +493,22 @@ export default function MoroccoLuxuryCyclingWeek7DayPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section {
+          background: var(--green);
+        }
+
+        .atlas-tour .at-enquiry-section .at-eyebrow {
+          color: var(--gold-light);
+        }
+
+        .atlas-tour .at-enquiry-section .at-heading {
+          color: #fff;
+        }
+
+        .atlas-tour .at-enquiry-section .at-section-head > p {
+          color: #e1e2d8;
+        }
+
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -1036,6 +1053,27 @@ export default function MoroccoLuxuryCyclingWeek7DayPage() {
             details of your seven-day holiday.
           </p>
           <a className="at-button" href="/contact">Plan Your Cycling Week <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">START PLANNING YOUR RIDE</span>
+              <h2 className="at-heading">
+                Plan Your Morocco Luxury Cycling Week
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred dates, group size and cycling
+              preferences. Our team will help you plan a seven-day
+              luxury cycling holiday in Morocco, with routes,
+              accommodation and support tailored to your trip.
+            </p>
+          </div>
+
+          <ContactEnquiryForm />
         </div>
       </section>
 

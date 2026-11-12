@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Morocco E-MTB Tour – 3 Days | Mountain Bike Morocco",
   description:
-    "Discover the Atlas Mountains on a three-day guided E-MTB tour from Marrakech. Ride mountain trails, explore traditional Berber villages and enjoy spectacular valleys on an electric mountain bike adventure.",
+    "Discover the Atlas Mountains on a 3-day guided E-MTB tour from Marrakech. Ride mountain trails, explore traditional Berber villages and enjoy spectacular valleys on an electric mountain bike adventure.",
   alternates: {
     canonical: "/cycling-trips/trip/morocco-emtb-tour-3-day",
   },
@@ -1131,6 +1132,23 @@ export default function MoroccoEMtbTour3DayPage() {
           font-size: 11px;
         }
 
+        /* GREEN ENQUIRY SECTION */
+        .atlas-tour .at-enquiry-section {
+          background: var(--green);
+        }
+
+        .atlas-tour .at-enquiry-section .at-eyebrow {
+          color: var(--gold-light);
+        }
+
+        .atlas-tour .at-enquiry-section .at-heading {
+          color: #fff;
+        }
+
+        .atlas-tour .at-enquiry-section .at-section-head > p {
+          color: #e1e2d8;
+        }
+
         @media (max-width: 1000px) {
           .atlas-tour .at-overview-grid,
           .atlas-tour .at-terrain-grid,
@@ -1639,6 +1657,30 @@ export default function MoroccoEMtbTour3DayPage() {
             from Marrakech.
           </p>
           <a className="at-button" href="/contact">Plan Your E-MTB Adventure <span>→</span></a>
+        </div>
+      </section>
+
+      {/* CONTACT ENQUIRY FORM */}
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">START PLANNING YOUR RIDE</span>
+              <h2 className="at-heading">
+                Plan Your Morocco E-MTB Adventure
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred travel dates, group size and
+              mountain biking experience. Let us know your E-MTB
+              rental and equipment requirements, preferred routes
+              and any accommodation or transfer arrangements.
+              Our team will use these details to help plan your
+              three-day electric mountain biking adventure from Marrakech.
+            </p>
+          </div>
+
+          <ContactEnquiryForm />
         </div>
       </section>
 

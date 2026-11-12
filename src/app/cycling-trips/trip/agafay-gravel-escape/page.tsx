@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Agafay Gravel Escape – 1 Day | Mountain Bike Morocco",
@@ -899,6 +900,20 @@ export default function AgafayGravelEscape1DayPage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Agafay Gravel Escape – 1 Day"
+            destination="Agafay Desert, near Marrakech"
+            cyclingType="Gravel Cycling"
+          />
         </div>
       </section>
 

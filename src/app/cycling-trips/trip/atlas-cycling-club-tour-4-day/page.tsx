@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Atlas Cycling Club Tour – 4 Days | Mountain Bike Morocco",
@@ -851,6 +852,21 @@ export default function AtlasCyclingClubTourPage() {
             Tell us your preferred dates, club size, riders' experience and cycling goals. We can discuss suitable routes, daily distances, climbing, equipment, accommodation and transfers for your four-day Atlas Cycling Club Tour.
           </p>
           <a className="at-button" href="/contact">Plan Your Atlas Cycling Club Tour <span>→</span></a>
+        </div>
+      </section>
+
+      {/* Enquiry form: after the final CTA and before related tours */}
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Atlas Cycling Club Tour – 4 Days"
+            destination="High Atlas Mountains, Morocco"
+            cyclingType="Road Cycling"
+          />
         </div>
       </section>
 

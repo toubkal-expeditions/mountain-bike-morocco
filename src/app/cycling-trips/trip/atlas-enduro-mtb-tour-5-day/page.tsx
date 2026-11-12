@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title:
     "Atlas Enduro MTB Tour Morocco – 5 Days | Mountain Bike Morocco",
   description:
-    "Experience five days of enduro mountain biking in Morocco's High Atlas. Discover technical trails, mountain descents and spectacular landscapes around Imlil and the Atlas valleys.",
+    "Experience 5 days of enduro mountain biking in Morocco's High Atlas. Discover technical trails, mountain descents and spectacular landscapes around Imlil and the Atlas valleys.",
   alternates: {
     canonical: "/cycling-trips/trip/atlas-enduro-mtb-tour-5-day",
   },
@@ -922,6 +923,21 @@ export default function AtlasEnduroMtbTour5DayPage() {
         </div>
       </section>
 
+      {/* Enquiry form: after the final CTA and before related tours */}
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Atlas Enduro MTB Tour – 5 Days"
+            destination="High Atlas Mountains, Morocco"
+            cyclingType="Enduro Mountain Biking"
+          />
+        </div>
+      </section>
+
       <section className="at-related-section">
         <div className="at-container">
           <div className="at-section-head">
@@ -967,7 +983,7 @@ export default function AtlasEnduroMtbTour5DayPage() {
             <div className="at-footer-links">
               <a href="/cycling-trips">All Cycling Tours</a>
               <a href="/cycling-trips/mtb">Mountain Bike Tours</a>
-              <a href="/cycling-trips/emtb">E-MTB Tours</a>
+              <a href="/cycling-trips/e-mtb">E-MTB Tours</a>
               <a href="/cycling-trips/gravel">Gravel Cycling</a>
             </div>
           </div>

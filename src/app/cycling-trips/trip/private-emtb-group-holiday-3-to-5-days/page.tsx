@@ -1,11 +1,13 @@
+
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Private E-MTB Group Holiday in Morocco – 3 to 5 Days | Mountain Bike Morocco",
   description:
-    "Plan a private three-to-five-day e-MTB holiday in Morocco's Atlas Mountains. Ride guided mountain trails and valley routes with a programme tailored to your group's experience, preferred pace and dates.",
+    "Plan a private 3 to 5-day e-MTB holiday in Morocco's Atlas Mountains. Ride guided mountain trails and valley routes with a programme tailored to your group's experience, preferred pace and dates.",
   alternates: {
-    canonical: "/cycling-trips/trip/private-e-mtb-group-holiday-3-to-5-day",
+    canonical: "/cycling-trips/trip/private-emtb-group-holiday-3-to-5-days",
   },
 };
 
@@ -100,9 +102,27 @@ const faqs = [
 ];
 
 const relatedTours = [
-  { category: "E-MTB ADVENTURE", title: "Atlas Mountains E-Bike Tour", text: "Explore mountain tracks and scenic valleys with electric assistance on a guided Atlas ride.", image: "/images/group-ebike-tour-morocco.jpg", href: "/cycling-trips/trip/atlas-mountains-e-bike-tour" },
-  { category: "E-MTB FROM MARRAKECH", title: "E-MTB Tour from Marrakech", text: "Escape the city for a guided electric mountain-bike experience in the nearby Atlas region.", image: "/images/e-bike-day-tour-atlas-morocco.jpg", href: "/cycling-trips/trip/e-mtb-tour-from-marrakech" },
-  { category: "MULTI-DAY E-MTB", title: "Atlas to Desert E-MTB Tour", text: "Discover a longer electric mountain-bike journey through changing landscapes in Morocco.", image: "/images/atlas-to-desert-e-mtb-tour.jpg", href: "/cycling-trips/trip/atlas-to-desert-e-mtb-tour" },
+  {
+    category: "E-MTB ADVENTURE",
+    title: "Atlas Mountains E-Bike Tour",
+    text: "Explore mountain tracks and scenic valleys with electric assistance on a guided Atlas ride.",
+    image: "/images/group-ebike-tour-morocco.jpg",
+    href: "/cycling-trips/trip/atlas-mountains-e-bike-tour-4-day",
+  },
+  {
+    category: "E-MTB FROM MARRAKECH",
+    title: "E-MTB Tour from Marrakech",
+    text: "Escape the city for a guided electric mountain-bike experience in the nearby Atlas region.",
+    image: "/images/e-bike-day-tour-atlas-morocco.jpg",
+    href: "/cycling-trips/trip/marrakech-emtb-adventure-1-day",
+  },
+  {
+    category: "MULTI-DAY E-MTB",
+    title: "Atlas to Desert E-MTB Tour",
+    text: "Discover a longer electric mountain-bike journey through changing landscapes in Morocco.",
+    image: "/images/atlas-to-desert-e-mtb-tour.jpg",
+    href: "/cycling-trips/trip/atlas-and-desert-emtb-tour-8-day",
+  },
 ];
 
 export default function PrivateEMTBGroupHolidayPage() {
@@ -261,6 +281,10 @@ export default function PrivateEMTBGroupHolidayPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+        .atlas-tour .at-enquiry-section .at-eyebrow,
+        .atlas-tour .at-enquiry-section .at-heading,
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #fff !important; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -705,6 +729,27 @@ export default function PrivateEMTBGroupHolidayPage() {
             Tell us your preferred dates, group size, riders’ experience and trail preferences. We can discuss suitable routes, daily distances, climbing, E-MTB rental, battery and charging arrangements, accommodation and transfers for your three-to-five-day private holiday.
           </p>
           <a className="at-button" href="/contact">Plan Your Private E-MTB Holiday <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR PRIVATE E-MTB HOLIDAY</span>
+              <h2 className="at-heading">
+                Enquire About Your Private Group E-MTB Holiday
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred dates, group size, cycling experience,
+              E-MTB requirements and the Atlas trails you would like to
+              explore. We can discuss suitable routes, daily distances,
+              accommodation, equipment, transfers and support for your
+              private three-to-five-day E-MTB holiday.
+            </p>
+          </div>
+          <ContactEnquiryForm />
         </div>
       </section>
 

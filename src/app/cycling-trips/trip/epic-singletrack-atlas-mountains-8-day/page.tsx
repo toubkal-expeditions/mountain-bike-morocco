@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title:
     "Epic Singletrack Atlas Mountains MTB Tour Morocco – 8 Days | Mountain Bike Morocco",
   description:
-    "Ride eight days of epic mountain biking in Morocco's High Atlas. Discover natural singletrack, remote valleys, Amazigh villages and spectacular mountain descents on a private MTB adventure from Marrakech.",
+    "Ride 8 days of epic mountain biking in Morocco's High Atlas. Discover natural singletrack, remote valleys, Amazigh villages and spectacular mountain descents on a private MTB adventure from Marrakech.",
   alternates: {
     canonical: "/cycling-trips/trip/epic-singletrack-atlas-mountains-8-day",
   },
@@ -1085,6 +1086,23 @@ export default function EpicSingletrackAtlasMountains8DayPage() {
           line-height: 1.85;
         }
 
+        .atlas-tour .at-enquiry-section {
+          background: var(--green);
+          color: #fff;
+        }
+
+        .atlas-tour .at-enquiry-section .at-eyebrow {
+          color: var(--gold-light);
+        }
+
+        .atlas-tour .at-enquiry-section .at-heading {
+          color: #fff;
+        }
+
+        .atlas-tour .at-enquiry-section .at-section-head > p {
+          color: #e1e2d8;
+        }
+
         .atlas-tour .at-related-section { padding: 86px 0; }
 
         .atlas-tour .at-related-grid {
@@ -1722,6 +1740,29 @@ export default function EpicSingletrackAtlasMountains8DayPage() {
         </div>
       </section>
 
+      <section className="at-section at-enquiry-section" id="enquire">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+              <h2 className="at-heading">
+                Enquire About the Epic Singletrack Atlas Mountains MTB Tour
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred date, group size and mountain biking
+              experience so we can help plan your eight-day Atlas Mountains
+              singletrack adventure.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="Epic Singletrack Atlas Mountains – 8 Days"
+            destination="High Atlas Mountains, Morocco"
+            cyclingType="Mountain Biking"
+          />
+        </div>
+      </section>
+
       <section className="at-related-section">
         <div className="at-container">
           <div className="at-section-head">
@@ -1770,7 +1811,7 @@ export default function EpicSingletrackAtlasMountains8DayPage() {
             <div className="at-footer-links">
               <a href="/cycling-trips">All Cycling Tours</a>
               <a href="/cycling-trips/mtb">Mountain Bike Tours</a>
-              <a href="/cycling-trips/emtb">E-MTB Tours</a>
+              <a href="/cycling-trips/e-mtb">E-MTB Tours</a>
               <a href="/cycling-trips/gravel">Gravel Cycling</a>
             </div>
           </div>

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Private Family MTB Holiday in Morocco – 5 Days | Mountain Bike Morocco",
   description:
-    "Enjoy a five-day private family mountain-bike holiday in Morocco’s Atlas Mountains. Explore selected mountain trails, valleys and traditional villages on a guided itinerary planned around your family’s ages and riding experience.",
+    "Enjoy a 5-day private family mountain-bike holiday in Morocco’s Atlas Mountains. Explore selected mountain trails, valleys and traditional villages on a guided itinerary planned around your family’s ages and riding experience.",
   alternates: {
-    canonical: "/cycling-trips/trip/private-family-mtb-holiday-morocco-5-day",
+    canonical: "/cycling-trips/trip/private-family-mtb-holiday-in-morocco-5-day",
   },
 };
 
@@ -288,14 +289,14 @@ const relatedTours = [
     title: "Family E-Bike & MTB Adventure – 2 Days",
     text: "Enjoy a shorter family mountain biking escape with selected valley routes and scenic countryside.",
     image: "/images/ouirgane-valley-ebike-tour.jpg",
-    href: "/cycling-trips/trip/family-e-bike-mtb-adventure-2-day",
+    href: "/cycling-trips/trip/family-e-bike-and-mtb-adventure-2-day",
   },
   {
     category: "MTB ADVENTURE",
     title: "Atlas Singletrack Mountain Bike Tour",
     text: "Discover selected singletrack and mountain trails on a guided Atlas mountain-bike adventure.",
     image: "/images/singletrack-mtb-atlas-mountains.jpg",
-    href: "/cycling-trips/trip/atlas-singletrack-mtb-tour",
+    href: "/cycling-trips/trip/atlas-singletrack-mountain-bike-tour-6-day",
   },
 ];
 
@@ -455,6 +456,10 @@ export default function PrivateFamilyMtbHolidayMoroccoPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+        .atlas-tour .at-enquiry-section .at-eyebrow,
+        .atlas-tour .at-enquiry-section .at-heading,
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #fff !important; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -951,6 +956,26 @@ export default function PrivateFamilyMtbHolidayMoroccoPage() {
             five-day private family MTB holiday in the Atlas Mountains of Morocco.
           </p>
           <a className="at-button" href="/contact">Plan Your Private Family MTB Holiday in Morocco <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR FAMILY MTB HOLIDAY</span>
+              <h2 className="at-heading">
+                Tell Us About Your Private Family MTB Trip
+              </h2>
+            </div>
+            <p>
+              Share your preferred dates, group size, the ages of everyone
+              joining and each rider's mountain-bike experience. Our team can
+              help plan a five-day Atlas Mountains adventure around your
+              family's needs.
+            </p>
+          </div>
+          <ContactEnquiryForm />
         </div>
       </section>
 

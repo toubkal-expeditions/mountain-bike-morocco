@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
-  title: "Atlas to Atlantic Coast Road Cycling Tour – 4 Days | Mountain Bike Morocco",
+  title: "Atlantic Coast Road Cycling Tour – 4 Days | Mountain Bike Morocco",
   description:
-    "Discover Morocco by road bike on a four-day cycling journey from the Atlas Mountains towards the Atlantic Coast. Experience mountain roads, rural valleys and changing landscapes on a private cycling adventure.",
+    "Discover Morocco by road bike on a four-day cycling journey through the Atlas Mountains towards the Atlantic Coast. Experience mountain roads, rural valleys and changing landscapes on a private cycling adventure.",
   alternates: {
     canonical:
-      "/cycling-trips/trip/atlas-to-atlantic-coast-road-cycling-tour-4-day",
+      "/cycling-trips/trip/atlantic-coast-road-cycling-tour-4-day",
   },
 };
 
@@ -198,7 +199,7 @@ const preparation = [
 
 const faqs = [
   {
-    q: "How long is the Atlas to Atlantic Coast Road Cycling Tour?",
+    q: "How long is the Atlantic Coast Road Cycling Tour?",
     a: "This is a four-day road cycling experience travelling from the Atlas region towards Morocco's Atlantic region. The programme combines selected cycling routes with the agreed travel and overnight arrangements.",
   },
   {
@@ -283,7 +284,7 @@ const relatedTours = [
   },
 ];
 
-export default function AtlasToAtlanticCoastRoadCyclingTour4DaysPage() {
+export default function AtlanticCoastRoadCyclingTour4DaysPage() {
   return (
     <main className="atlas-tour">
       <style>{`
@@ -524,9 +525,9 @@ export default function AtlasToAtlanticCoastRoadCyclingTour4DaysPage() {
         <div className="at-hero-shade" />
         <div className="at-hero-content">
           <span className="at-eyebrow">MOROCCO · ATLAS MOUNTAINS · ATLANTIC COAST · 4 DAYS</span>
-          <h1>Atlas to Atlantic Coast Road Cycling Tour</h1>
+          <h1>Atlantic Coast Road Cycling Tour</h1>
           <p className="at-hero-description">
-            Ride from the mountain landscapes of
+            Ride through the mountain landscapes of
             the Atlas towards Morocco's Atlantic
             region. Discover changing scenery,
             rural roads and the landscapes of
@@ -572,11 +573,11 @@ export default function AtlasToAtlanticCoastRoadCyclingTour4DaysPage() {
             <img src={images.overview} alt="Road cycling adventure in the Atlas Mountains of Morocco" />
           </div>
           <div className="at-overview-content">
-            <span className="at-eyebrow">A FOUR-DAY ATLAS TO ATLANTIC JOURNEY</span>
+            <span className="at-eyebrow">A FOUR-DAY ATLANTIC COAST JOURNEY</span>
             <h2 className="at-heading">Discover Morocco from the Atlas Mountains to the Atlantic Coast</h2>
             <p className="at-copy">
-              The Atlas to Atlantic Coast Road
-              Cycling Tour is a four-day cycling
+              The Atlantic Coast Road Cycling
+              Tour is a four-day cycling
               journey connecting the mountain
               landscapes of Morocco with its
               Atlantic region. It is designed
@@ -632,7 +633,7 @@ export default function AtlasToAtlanticCoastRoadCyclingTour4DaysPage() {
           </div>
           <aside className="at-booking-card">
             <span className="at-eyebrow">TRIP AT A GLANCE</span>
-            <h3>Atlas to Atlantic Coast Road Cycling Tour</h3>
+            <h3>Atlantic Coast Road Cycling Tour – 4 Days</h3>
             <p>A four-day road cycling journey from Morocco's Atlas region towards the Atlantic.</p>
             <ul className="at-booking-list">
               <li><span>Duration</span><strong>4 days</strong></li>
@@ -651,7 +652,7 @@ export default function AtlasToAtlanticCoastRoadCyclingTour4DaysPage() {
           <div className="at-section-head">
             <div>
               <span className="at-eyebrow">THE EXPERIENCE</span>
-              <h2 className="at-heading">Highlights of the Atlas to Atlantic Coast Cycling Tour</h2>
+              <h2 className="at-heading">Highlights of the Atlantic Coast Road Cycling Tour</h2>
             </div>
             <p>
               Experience four days of road
@@ -792,7 +793,7 @@ export default function AtlasToAtlanticCoastRoadCyclingTour4DaysPage() {
           <div className="at-section-head">
             <div>
               <span className="at-eyebrow">FOUR DAYS FROM MOUNTAINS TO COAST</span>
-              <h2 className="at-heading">Atlas to Atlantic Coast Road Cycling Itinerary</h2>
+              <h2 className="at-heading">Atlantic Coast Road Cycling Tour Itinerary</h2>
             </div>
             <p>
               Four days of road cycling
@@ -881,7 +882,7 @@ export default function AtlasToAtlanticCoastRoadCyclingTour4DaysPage() {
           <div className="at-section-head">
             <div>
               <span className="at-eyebrow">BEFORE YOU RIDE</span>
-              <h2 className="at-heading">Preparing for Your Atlas to Atlantic Cycling Tour</h2>
+              <h2 className="at-heading">Preparing for Your Atlantic Coast Cycling Tour</h2>
             </div>
             <p>
               Prepare your bicycle, fitness
@@ -948,8 +949,8 @@ export default function AtlasToAtlanticCoastRoadCyclingTour4DaysPage() {
             <h2 className="at-heading">Frequently Asked Questions</h2>
             <p className="at-copy">
               Find answers to common questions
-              about the Atlas to Atlantic Coast
-              Road Cycling Tour. Contact our
+              about the Atlantic Coast Road
+              Cycling Tour. Contact our
               team if you need more details
               before planning your four days.
             </p>
@@ -972,7 +973,7 @@ export default function AtlasToAtlanticCoastRoadCyclingTour4DaysPage() {
         </div>
         <div className="at-final-shade" />
         <div className="at-final-content">
-          <span className="at-eyebrow">YOUR ATLAS TO ATLANTIC JOURNEY STARTS HERE</span>
+          <span className="at-eyebrow">YOUR ATLANTIC COAST JOURNEY STARTS HERE</span>
           <h2>Ready to Ride from the Atlas Mountains to the Atlantic Coast?</h2>
           <p>
             Tell us your preferred dates,
@@ -983,7 +984,22 @@ export default function AtlasToAtlanticCoastRoadCyclingTour4DaysPage() {
             finishing point and arrangements
             for your four-day journey.
           </p>
-          <a className="at-button" href="/contact">Plan Your Atlas to Atlantic Tour <span>→</span></a>
+          <a className="at-button" href="/contact">Plan Your Atlantic Coast Tour <span>→</span></a>
+        </div>
+      </section>
+
+      {/* Enquiry form: after the final CTA and before related tours */}
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Atlantic Coast Road Cycling Tour – 4 Days"
+            destination="Atlas Mountains to Atlantic Coast, Morocco"
+            cyclingType="Road Cycling"
+          />
         </div>
       </section>
 

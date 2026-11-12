@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Morocco Cycling Adventure – 4 Days | Mountain Bike Morocco",
@@ -12,14 +13,13 @@ export const metadata: Metadata = {
 const images = {
   hero: "/images/mountain-bike-morocco-hero.jpg",
   overview: "/images/atlas-mountains-cycling-tour-morocco.jpg",
-  atlas: "/images/mountain-bike-morocco-intro.jpg",
+  atlas: "/images/morocco-cycling-adventure.jpg",
   valley: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
   village: "/images/group-cycling-tour-morocco.jpg",
   cycling: "/images/singletrack-mtb-atlas-mountains.jpg",
   trail: "/images/Desert-Agafay-Morocco.jpg",
   final: "/images/atlas-mountains-cycling-tour-morocco.jpg",
 };
-
 const facts = [
   ["Duration", "4 days / 3 nights"],
   ["Destination", "Marrakech and Atlas Mountains, Morocco"],
@@ -402,6 +402,33 @@ export default function MoroccoCyclingAdventure4DayPage() {
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
         .atlas-tour .at-related-section { padding: 86px 0; }
+
+        .atlas-tour #enquiry {
+          background: var(--green);
+          color: #fff;
+        }
+        .atlas-tour #enquiry .at-eyebrow {
+          color: var(--gold-light);
+        }
+        .atlas-tour #enquiry .at-heading {
+          color: #fff;
+        }
+        .atlas-tour #enquiry .at-enquiry-intro {
+          max-width: 720px;
+          margin: 0 0 32px;
+          color: #e1e2d8;
+          font-size: 15px;
+          line-height: 1.9;
+        }
+        .atlas-tour #enquiry .at-container {
+          text-align: left;
+        }
+        .atlas-tour #enquiry .at-eyebrow,
+        .atlas-tour #enquiry .at-heading,
+        .atlas-tour #enquiry .at-enquiry-intro {
+          text-align: left;
+        }
+
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
         .atlas-tour .at-related-image { height: 255px; overflow: hidden; }
@@ -909,6 +936,24 @@ export default function MoroccoCyclingAdventure4DayPage() {
           <a className="at-button" href="/contact">
             Plan Your Cycling Adventure <span>→</span>
           </a>
+        </div>
+      </section>
+
+      <section className="at-section" id="enquiry">
+        <div className="at-container">
+          <span className="at-eyebrow">START PLANNING YOUR RIDE</span>
+          <h2 className="at-heading">
+            Plan Your Morocco Cycling Adventure
+          </h2>
+          <p className="at-enquiry-intro">
+            Tell us your preferred travel dates, group size and cycling
+            experience. Let us know your preferred riding style, the type
+            of routes you would like to explore and any bicycle,
+            accommodation or transfer requirements. Our team will use
+            these details to help plan your four-day cycling adventure
+            from Marrakech into the Atlas Mountains.
+          </p>
+          <ContactEnquiryForm />
         </div>
       </section>
 

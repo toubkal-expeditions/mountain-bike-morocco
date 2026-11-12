@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title:
     "Morocco Family E-Bike Tour – 4 Days | Mountain Bike Morocco",
   description:
-    "Enjoy a four-day family electric bike adventure in Morocco from Marrakech. Explore suitable mountain routes, rural landscapes and traditional villages with a private E-bike experience adapted to your family.",
+    "Enjoy a 4-day family electric bike adventure in Morocco from Marrakech. Explore suitable mountain routes, rural landscapes and traditional villages with a private E-bike experience adapted to your family.",
   alternates: {
     canonical: "/cycling-trips/trip/morocco-family-e-bike-tour-4-day",
   },
@@ -1033,6 +1034,22 @@ export default function MoroccoFamilyEBikeTour4DayPage() {
           line-height: 1.85;
         }
 
+        .atlas-tour .at-enquiry-section {
+          background: var(--green);
+        }
+
+        .atlas-tour .at-enquiry-section .at-eyebrow {
+          color: var(--gold-light);
+        }
+
+        .atlas-tour .at-enquiry-section .at-heading {
+          color: #fff;
+        }
+
+        .atlas-tour .at-enquiry-section .at-section-head > p {
+          color: #e1e2d8;
+        }
+
         .atlas-tour .at-related-section { padding: 86px 0; }
 
         .atlas-tour .at-related-grid {
@@ -1659,6 +1676,28 @@ export default function MoroccoFamilyEBikeTour4DayPage() {
             four-day family adventure in Morocco.
           </p>
           <a className="at-button" href="/contact">Plan Your Family Adventure <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">START PLANNING YOUR RIDE</span>
+              <h2 className="at-heading">
+                Plan Your Morocco Family E-Bike Tour
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred travel dates, family size,
+              children's ages and heights, and everyone's cycling
+              experience. Include any bicycle, accommodation or
+              transfer requirements so our team can help plan
+              your four-day family cycling adventure.
+            </p>
+          </div>
+
+          <ContactEnquiryForm />
         </div>
       </section>
 

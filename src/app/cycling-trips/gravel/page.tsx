@@ -1,10 +1,36 @@
+
 import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Gravel Cycling Tours in Morocco",
+  title: "Gravel Cycling Tours in Morocco | Atlas & Desert Gravel Adventures",
   description:
-    "Explore Morocco on guided gravel cycling tours, from Atlas Mountain tracks and remote valleys to rocky desert landscapes and long-distance multi-day adventures.",
+    "Discover guided gravel cycling tours in Morocco, from Atlas Mountain roads and rural tracks to Agafay and the southern desert. Explore private gravel holidays and multi-day cycling adventures.",
+  alternates: {
+    canonical: "/cycling-trips/gravel",
+  },
+  openGraph: {
+    title: "Gravel Cycling Tours in Morocco | Mountain Bike Morocco",
+    description:
+      "Explore Morocco by gravel bike on guided rides through the High Atlas, rural valleys, Agafay and southern landscapes. Discover day rides and private multi-day gravel holidays.",
+    url: "https://mountain-bike-morocco.com/cycling-trips/gravel",
+    siteName: "Mountain Bike Morocco",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "/images/gravel-adventure-bike-morocco.jpg",
+        alt: "Gravel cycling adventure through the landscapes of Morocco",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gravel Cycling Tours in Morocco | Mountain Bike Morocco",
+    description:
+      "Guided gravel cycling adventures across Morocco, from Atlas Mountain roads to remote valleys and desert landscapes.",
+    images: ["/images/gravel-adventure-bike-morocco.jpg"],
+  },
 };
 
 type Tour = {

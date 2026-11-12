@@ -2,9 +2,34 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Road Cycling Tours in Morocco",
+  title: "Road Cycling Tours in Morocco | Atlas Mountain Passes & Cycling Holidays",
   description:
-    "Explore Morocco on guided road cycling tours through the High Atlas, mountain passes, rural valleys, Marrakech countryside and southern landscapes. Plan scenic climbs, multi-day rides and private road cycling holidays.",
+    "Discover guided road cycling tours in Morocco, from challenging High Atlas mountain passes to Marrakech, southern landscapes and Atlantic coastal roads. Explore private road cycling holidays and multi-day adventures.",
+  alternates: {
+    canonical: "/cycling-trips/road",
+  },
+  openGraph: {
+    title: "Road Cycling Tours in Morocco | Mountain Bike Morocco",
+    description:
+      "Explore Morocco by road bike on guided cycling adventures through the High Atlas, mountain passes, rural valleys and Atlantic coast. Discover private tours and multi-day cycling holidays.",
+    url: "https://mountain-bike-morocco.com/cycling-trips/road",
+    siteName: "Mountain Bike Morocco",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "/images/road-cycling-tour-morocco.jpg",
+        alt: "Road cycling through the High Atlas Mountains in Morocco",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Road Cycling Tours in Morocco | Mountain Bike Morocco",
+    description:
+      "Guided road cycling holidays across Morocco, featuring Atlas Mountain climbs, scenic roads and multi-day cycling adventures.",
+    images: ["/images/road-cycling-tour-morocco.jpg"],
+  },
 };
 
 type Tour = {

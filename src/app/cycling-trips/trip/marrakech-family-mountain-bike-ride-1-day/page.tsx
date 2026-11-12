@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Marrakech Family Mountain Bike Ride – 1 Day | Mountain Bike Morocco",
@@ -174,7 +175,7 @@ const faqs = [
   },
   {
     q: "How far will we cycle?",
-    a: "The daily distance has not been fixed on this page. It will depend on the selected route, the ages and abilities of the riders and the agreed pace. The distance will be confirmed during trip planning.",
+    a: "The daily distance has not been fixed on this page. It will depend on the selected route, the group's ability and the agreed pace. The distance will be confirmed during trip planning.",
   },
   {
     q: "How long will we spend cycling?",
@@ -265,6 +266,41 @@ export default function MarrakechFamilyMountainBikeRide1DayPage() {
         .atlas-tour .at-eyebrow { display: block; color: #946c30; font-size: 11px; font-weight: 700; letter-spacing: 2px; line-height: 1.6; text-transform: uppercase; }
         .atlas-tour .at-heading { margin: 12px 0 20px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(32px, 3.5vw, 48px); font-weight: 400; letter-spacing: -1.25px; line-height: 1.14; }
         .atlas-tour .at-section { padding: 86px 0; }
+        .atlas-tour #enquiry { background: var(--green); }
+
+        /* Enquiry introduction – styled to match the supplied reference */
+        .atlas-tour .at-enquiry-intro {
+          display: grid;
+          grid-template-columns: 1.2fr .8fr;
+          align-items: center;
+          gap: 65px;
+          max-width: none;
+          margin: 0 auto 62px;
+          text-align: left;
+        }
+        .atlas-tour .at-enquiry-intro .at-eyebrow {
+          color: var(--gold-light);
+          font-size: 12px;
+          letter-spacing: 2.5px;
+        }
+        .atlas-tour .at-enquiry-intro h2 {
+          max-width: 950px;
+          margin: 18px 0 0;
+          color: #fff;
+          font-family: Georgia, 'Times New Roman', serif;
+          font-size: clamp(42px, 5vw, 72px);
+          font-weight: 400;
+          letter-spacing: -2px;
+          line-height: 1.16;
+        }
+        .atlas-tour .at-enquiry-intro p {
+          max-width: 620px;
+          margin: 24px 0 0;
+          color: #e1e2d8;
+          font-size: clamp(17px, 1.35vw, 23px);
+          line-height: 1.95;
+        }
+
         .atlas-tour .at-section-head { display: grid; grid-template-columns: 1.15fr .85fr; align-items: end; gap: 44px; margin-bottom: 36px; }
         .atlas-tour .at-section-head .at-heading { margin-bottom: 0; }
         .atlas-tour .at-section-head > p { max-width: 480px; margin: 0 0 4px auto; color: var(--muted); font-size: 15px; line-height: 1.85; }
@@ -393,6 +429,7 @@ export default function MarrakechFamilyMountainBikeRide1DayPage() {
         .atlas-tour .at-final-content { width: min(1240px, calc(100% - 64px)); margin: 0 auto; padding: 90px 0; }
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
+
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
@@ -414,12 +451,16 @@ export default function MarrakechFamilyMountainBikeRide1DayPage() {
         .atlas-tour .at-footer-links a { color: #c4c8c0; font-size: 13px; text-decoration: none; transition: color .2s ease; }
         .atlas-tour .at-footer-links a:hover { color: #e4c78c; }
         .atlas-tour .at-footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding: 20px 0; border-top: 1px solid rgba(255,255,255,.15); color: #9fa69c; font-size: 11px; }
+
         @media (max-width: 1000px) {
           .atlas-tour .at-overview-grid, .atlas-tour .at-terrain-grid, .atlas-tour .at-facts-layout, .atlas-tour .at-difficulty-grid, .atlas-tour .at-faq-layout { gap: 40px; }
           .atlas-tour .at-highlight-grid { grid-template-columns: repeat(2, 1fr); }
           .atlas-tour .at-prep-grid { grid-template-columns: repeat(2, 1fr); }
           .atlas-tour .at-footer-main { grid-template-columns: 1.2fr 1fr; }
+          .atlas-tour .at-enquiry-intro { grid-template-columns: 1fr .8fr; gap: 35px; }
+          .atlas-tour .at-enquiry-intro h2 { font-size: clamp(40px, 5vw, 58px); }
         }
+
         @media (max-width: 700px) {
           .atlas-tour .at-container { width: min(100% - 40px, 1240px); }
           .atlas-tour .at-section { padding: 65px 0; }
@@ -463,7 +504,26 @@ export default function MarrakechFamilyMountainBikeRide1DayPage() {
           .atlas-tour .at-related-image { height: 240px; }
           .atlas-tour .at-footer-main { grid-template-columns: 1fr 1fr; gap: 35px 22px; padding: 50px 0 35px; }
           .atlas-tour .at-footer-bottom { flex-direction: column; gap: 8px; }
+
+          .atlas-tour .at-enquiry-intro {
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-bottom: 42px;
+            text-align: left;
+          }
+          .atlas-tour .at-enquiry-intro h2 {
+            margin-top: 12px;
+            font-size: clamp(38px, 10vw, 52px);
+            letter-spacing: -1.4px;
+            line-height: 1.12;
+          }
+          .atlas-tour .at-enquiry-intro p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 1.85;
+          }
         }
+
         @media (max-width: 420px) {
           .atlas-tour .at-highlight-grid { grid-template-columns: 1fr; }
           .atlas-tour .at-highlight { min-height: auto; }
@@ -949,6 +1009,28 @@ export default function MarrakechFamilyMountainBikeRide1DayPage() {
             cycling adventure around Marrakech.
           </p>
           <a className="at-button" href="/contact">Plan Your Family MTB Ride <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-enquiry-intro">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+              <h2>Enquire About the Marrakech Family Mountain Bike Ride</h2>
+            </div>
+            <p>
+              Tell us your preferred date, group size, children's ages and
+              mountain biking experience so we can help plan a family-friendly
+              day ride from Marrakech.
+            </p>
+          </div>
+
+          <ContactEnquiryForm
+            tourName="Marrakech Family Mountain Bike Ride – 1 Day"
+            destination="Marrakech, Morocco"
+            cyclingType="Mountain Bike"
+          />
         </div>
       </section>
 

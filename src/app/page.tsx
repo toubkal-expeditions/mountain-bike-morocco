@@ -1,6 +1,36 @@
-"use client";
-
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Mountain Bike Tours in Morocco | Atlas MTB & E-MTB Adventures",
+  description:
+    "Discover Morocco on guided mountain bike, E-MTB and gravel cycling tours. Explore Atlas Mountain trails, traditional villages and desert landscapes with experienced local guides.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    url: "https://mountain-bike-morocco.com/",
+    siteName: "Mountain Bike Morocco",
+    title: "Mountain Bike Tours in Morocco | Mountain Bike Morocco",
+    description:
+      "Explore the Atlas Mountains and beyond on guided MTB, E-MTB and gravel cycling adventures with local Moroccan guides.",
+    images: [
+      {
+        url: "/images/mountain-bike-morocco-hero.jpg",
+        alt: "Mountain biking in Morocco's Atlas Mountains",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mountain Bike Tours in Morocco | Mountain Bike Morocco",
+    description:
+      "Guided MTB, E-MTB and gravel cycling adventures across Morocco.",
+    images: ["/images/mountain-bike-morocco-hero.jpg"],
+  },
+};
 
 const tours = [
   {
@@ -833,7 +863,8 @@ export default function Home() {
             <Link className="brand" href="/">
               <img
                 className="brand__logo"
-src="/images/logo-mountain-bike-morocco-footer.png"                alt="Mountain Bike Morocco"
+                src="/images/logo-mountain-bike-morocco-footer.png"
+                alt="Mountain Bike Morocco"
               />
               <span>
                 MOUNTAIN BIKE <em>MOROCCO</em>

@@ -1,4 +1,6 @@
+
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Marrakech to Atlas Cycling Escape – 2 Days | Mountain Bike Morocco",
@@ -6,7 +8,7 @@ export const metadata: Metadata = {
     "Escape Marrakech for two days of guided cycling in the Atlas foothills and mountain valleys. Ride scenic rural roads and tracks, stay overnight in a mountain guesthouse and explore a new route on day two.",
   alternates: {
     canonical:
-      "/cycling-trips/trip/marrakech-to-atlas-cycling-escape-2-days",
+      "/cycling-trips/trip/marrakech-to-atlas-cycling-escape-2-day",
   },
 };
 
@@ -278,6 +280,10 @@ export default function MarrakechToAtlasCyclingEscapePage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour #enquiry { background: var(--green); color: #fff; }
+        .atlas-tour #enquiry .at-eyebrow { color: var(--gold-light); }
+        .atlas-tour #enquiry .at-heading { color: #fff; }
+        .atlas-tour #enquiry .at-enquiry-intro { max-width: 720px; margin: 0 0 32px; color: #e1e2d8; font-size: 15px; line-height: 1.9; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -355,7 +361,6 @@ export default function MarrakechToAtlasCyclingEscapePage() {
           .atlas-tour .at-footer-main { grid-template-columns: 1fr; }
         }
       `}</style>
-      
 
       <section className="at-hero">
         <div className="at-hero-image">
@@ -873,6 +878,24 @@ export default function MarrakechToAtlasCyclingEscapePage() {
           <a className="at-button" href="/contact">
             Plan Your Atlas Cycling Escape <span>→</span>
           </a>
+        </div>
+      </section>
+
+      <section className="at-section" id="enquiry">
+        <div className="at-container">
+          <div style={{ textAlign: "left", width: "100%" }}>
+            <span className="at-eyebrow">START PLANNING YOUR RIDE</span>
+            <h2 className="at-heading">
+              Plan Your Marrakech to Atlas Cycling Escape
+            </h2>
+            <p className="at-enquiry-intro">
+              Tell us your preferred travel dates, group size and cycling experience.
+              Let us know the type of Atlas terrain you would like to explore and
+              any bike, accommodation or transfer requirements. Our team will use
+              these details to help plan your two-day cycling escape from Marrakech.
+            </p>
+          </div>
+          <ContactEnquiryForm />
         </div>
       </section>
 

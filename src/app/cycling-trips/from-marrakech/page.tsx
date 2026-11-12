@@ -1,4 +1,36 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cycling Tours from Marrakech | MTB, E-MTB & Gravel Morocco",
+  description:
+    "Discover guided cycling tours from Marrakech, from Atlas mountain bike and E-MTB day trips to Agafay gravel rides and multi-day cycling holidays across Morocco.",
+  alternates: {
+    canonical: "/cycling-trips/from-marrakech",
+  },
+  openGraph: {
+    title: "Cycling Tours from Marrakech | MTB, E-MTB & Gravel Morocco",
+    description:
+      "Explore Morocco by bike from Marrakech. Discover guided MTB, electric mountain bike, gravel and road cycling day trips, plus multi-day Atlas adventures.",
+    url: "https://mountain-bike-morocco.com/cycling-trips/from-marrakech",
+    siteName: "Mountain Bike Morocco",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "/images/cycling-holiday-trip-from-marrakech.jpg",
+        alt: "Cycling adventure from Marrakech towards the Atlas Mountains",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cycling Tours from Marrakech | Mountain Bike Morocco",
+    description:
+      "Plan a cycling adventure from Marrakech, with guided MTB, E-MTB, gravel and road rides in the Atlas Mountains and beyond.",
+    images: ["/images/cycling-holiday-trip-from-marrakech.jpg"],
+  },
+};
 
 const marrakechTours = [
   {

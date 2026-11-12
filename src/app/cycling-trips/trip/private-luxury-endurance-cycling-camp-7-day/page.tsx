@@ -1,9 +1,11 @@
+
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Private Luxury Endurance Cycling Camp – 7 Days | Mountain Bike Morocco",
   description:
-    "Experience a seven-day private luxury endurance cycling camp in Morocco. Enjoy personalised road cycling, High Atlas mountain routes, professional ride planning and tailored accommodation arrangements.",
+    "Experience a 7day private luxury endurance cycling camp in Morocco. Enjoy personalised road cycling, High Atlas mountain routes, professional ride planning and tailored accommodation arrangements.",
   alternates: {
     canonical:
       "/cycling-trips/trip/private-luxury-endurance-cycling-camp-7-day",
@@ -521,6 +523,12 @@ export default function PrivateLuxuryEnduranceCyclingCamp7DaysPage() {
         .atlas-tour .at-footer-links a { color: #c4c8c0; font-size: 13px; text-decoration: none; transition: color .2s ease; }
         .atlas-tour .at-footer-links a:hover { color: #e4c78c; }
         .atlas-tour .at-footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding: 20px 0; border-top: 1px solid rgba(255,255,255,.15); color: #9fa69c; font-size: 11px; }
+
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+        .atlas-tour .at-enquiry-section .at-eyebrow,
+        .atlas-tour .at-enquiry-section .at-heading,
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #fff !important; }
+
         @media (max-width: 1000px) {
           .atlas-tour .at-overview-grid, .atlas-tour .at-terrain-grid, .atlas-tour .at-facts-layout, .atlas-tour .at-difficulty-grid, .atlas-tour .at-faq-layout { gap: 40px; }
           .atlas-tour .at-highlight-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1053,6 +1061,26 @@ export default function PrivateLuxuryEnduranceCyclingCamp7DaysPage() {
             seven-day cycling experience.
           </p>
           <a className="at-button" href="/contact">Plan Your Cycling Camp <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR PRIVATE ENDURANCE CYCLING CAMP</span>
+              <h2 className="at-heading">
+                Tell Us About Your Luxury Endurance Cycling Camp in Morocco
+              </h2>
+            </div>
+            <p>
+              Share your preferred dates, group size, cycling experience,
+              fitness level and endurance objectives. Our team can help
+              discuss suitable routes, accommodation, transfers and
+              support arrangements for your seven-day private cycling camp.
+            </p>
+          </div>
+          <ContactEnquiryForm />
         </div>
       </section>
 

@@ -2,7 +2,21 @@
 
 import { FormEvent, useState } from "react";
 
-export default function ContactEnquiryForm() {
+type ContactEnquiryFormProps = {
+  tourName?: string;
+  eventName?: string;
+  destination?: string;
+  cyclingType?: string;
+  fullWidth?: boolean;
+};
+
+export default function ContactEnquiryForm({
+  tourName = "",
+  eventName = "",
+  destination = "",
+  cyclingType = "",
+  fullWidth = false,
+}: ContactEnquiryFormProps) {
   const [formMessage, setFormMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -41,27 +55,28 @@ export default function ContactEnquiryForm() {
 
       const responseText = await response.text();
 
-let result: { error?: string; success?: boolean };
+      let result: { error?: string; success?: boolean };
 
-try {
-  result = responseText
-    ? JSON.parse(responseText)
-    : {};
-} catch {
-  throw new Error(
-    "The server returned an invalid response. Please check the API route and server terminal."
-  );
-}
+      try {
+        result = responseText ? JSON.parse(responseText) : {};
+      } catch {
+        throw new Error(
+          "The server returned an invalid response. Please check the API route and server terminal."
+        );
+      }
 
-if (!response.ok) {
-  throw new Error(
-    result.error || `Server error (${response.status}). Please try again.`
-  );
-}
+      if (!response.ok) {
+        throw new Error(
+          result.error ||
+            `Server error (${response.status}). Please try again.`
+        );
+      }
 
-if (!result.success) {
-  throw new Error("The server did not confirm that your enquiry was sent.");
-}
+      if (!result.success) {
+        throw new Error(
+          "The server did not confirm that your enquiry was sent."
+        );
+      }
 
       setIsSuccess(true);
       setFormMessage(
@@ -85,9 +100,9 @@ if (!result.success) {
     width: "100%",
     minHeight: "48px",
     border: "1px solid #d5d1c8",
-    background: "#fffefa",
+    background: "#ffffff",
     padding: "12px 13px",
-    borderRadius: "2px",
+    borderRadius: "3px",
     font: "inherit",
     fontSize: "15px",
     color: "#20221d",
@@ -103,11 +118,23 @@ if (!result.success) {
   };
 
   return (
-    <form className="contact-enquiry-form" onSubmit={handleSubmit}>
+    <form
+      className={`contact-enquiry-form${
+        fullWidth ? " contact-enquiry-form--wide" : ""
+      }`}
+      onSubmit={handleSubmit}
+    >
       <div className="contact-enquiry-form__heading">
-        <p className="cl-eyebrow cl-eyebrow--dark">PLAN YOUR TRIP</p>
-        <h3>Tell us about your ride.</h3>
-        <p>Fields marked * are required.</p>
+        <p className="cl-eyebrow cl-eyebrow--dark">
+          PLAN YOUR MOROCCO ADVENTURE
+        </p>
+
+        <h3>Let’s create a ride worth remembering.</h3>
+
+        <p>
+          Please complete the required fields below so we can start
+          planning your experience.
+        </p>
       </div>
 
       <div className="contact-enquiry-form__grid">
@@ -151,7 +178,7 @@ if (!result.success) {
           <select
             style={fieldStyle}
             name="cyclingType"
-            defaultValue=""
+            defaultValue={cyclingType}
             required
           >
             <option value="" disabled>
@@ -190,6 +217,7 @@ if (!result.success) {
             name="destination"
             placeholder="e.g. Atlas Mountains, Agafay, Sahara"
             maxLength={150}
+            defaultValue={destination}
           />
         </label>
 
@@ -197,13 +225,14 @@ if (!result.success) {
           className="contact-enquiry-form__full"
           style={labelStyle}
         >
-          Tour name (if known)
+          Tour or event name (if known)
           <input
             style={fieldStyle}
             type="text"
             name="tour"
-            placeholder="Paste a tour name or leave blank"
+            placeholder="Your selected tour or event"
             maxLength={200}
+            defaultValue={tourName || eventName}
           />
         </label>
 
@@ -232,7 +261,9 @@ if (!result.success) {
         type="submit"
         disabled={isSubmitting}
       >
-        {isSubmitting ? "Sending your enquiry..." : "Send booking enquiry"}
+        {isSubmitting
+          ? "Sending your enquiry..."
+          : "Send booking enquiry"}
         <span aria-hidden="true"> ↗</span>
       </button>
 
@@ -253,6 +284,124 @@ if (!result.success) {
         Your enquiry will be sent securely to our team. We will use
         your contact details only to respond to your trip enquiry.
       </p>
+
+      <style>{`
+        .contact-enquiry-form {
+          width: 100%;
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 48px;
+          background: #ffffff;
+          border: 2px solid #d8d3c9;
+          border-radius: 10px;
+          box-shadow: 0 14px 38px rgba(0, 0, 0, 0.10);
+          box-sizing: border-box;
+        }
+
+        .contact-enquiry-form--wide {
+          max-width: none;
+        }
+
+        .contact-enquiry-form__heading .cl-eyebrow {
+          color: #b99a62 !important;
+          letter-spacing: 0.18em;
+          font-size: 11px;
+          font-weight: 750;
+          margin-bottom: 14px;
+        }
+
+        .contact-enquiry-form__heading h3 {
+  color: #C58A4A;
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  margin: 0 0 13px;
+}
+
+.contact-enquiry-form__heading > p:last-child {
+  color: #D49A61;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+        .contact-enquiry-form__grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 24px;
+          margin-top: 30px;
+        }
+
+        .contact-enquiry-form__full {
+          grid-column: 1 / -1;
+        }
+
+        .contact-enquiry-form__submit {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          min-height: 54px;
+          margin-top: 30px;
+          padding: 0 28px;
+          border: 1px solid #20221d;
+          border-radius: 3px;
+          background: #20221d;
+          color: #ffffff;
+          font: inherit;
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 0.04em;
+          cursor: pointer;
+          transition:
+            background 0.2s ease,
+            border-color 0.2s ease;
+        }
+
+        .contact-enquiry-form__submit:hover:not(:disabled) {
+          background: #a8874d;
+          border-color: #a8874d;
+        }
+
+        .contact-enquiry-form__submit:disabled {
+          opacity: 0.65;
+          cursor: not-allowed;
+        }
+
+        .contact-enquiry-form__status {
+          margin-top: 20px;
+          font-size: 14px;
+          line-height: 1.7;
+        }
+
+        .contact-enquiry-form__privacy {
+          margin-top: 22px;
+          color: #77766e;
+          font-size: 12px;
+          line-height: 1.8;
+        }
+
+        @media (max-width: 640px) {
+          .contact-enquiry-form {
+            padding: 28px 20px;
+            border-radius: 8px;
+          }
+
+          .contact-enquiry-form__grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+
+          .contact-enquiry-form__full {
+            grid-column: auto;
+          }
+
+          .contact-enquiry-form__submit {
+            width: 100%;
+          }
+        }
+      `}</style>
     </form>
   );
 }

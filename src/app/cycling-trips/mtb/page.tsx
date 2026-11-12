@@ -2,18 +2,36 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mountain Bike Tours Morocco | Atlas MTB Adventures",
+  title: "Mountain Bike Tours in Morocco | Atlas MTB Adventures",
   description:
-    "Explore Morocco on guided mountain bike tours in the High Atlas, with singletrack trails, enduro descents, private MTB holidays and rides from Marrakech.",
+    "Book guided mountain bike tours in Morocco's High Atlas. Discover singletrack, enduro descents, private MTB holidays and day rides from Marrakech with local guides.",
+
   alternates: {
     canonical: "/cycling-trips/mtb",
   },
+
   openGraph: {
-    title: "Mountain Bike Tours Morocco | Atlas MTB Adventures",
+    title: "Mountain Bike Tours in Morocco | Atlas MTB Adventures",
     description:
-      "Discover guided MTB adventures in Morocco, from Atlas Mountains singletrack and enduro trails to private mountain bike holidays and day rides from Marrakech.",
-    url: "/cycling-trips/mtb",
+      "Explore the High Atlas on guided mountain bike adventures, from singletrack and enduro trails to private MTB holidays and day rides from Marrakech.",
+    url: "https://mountain-bike-morocco.com/cycling-trips/mtb",
+    siteName: "Mountain Bike Morocco",
+    locale: "en_GB",
     type: "website",
+    images: [
+      {
+        url: "/images/mountain-bike-morocco-hero.jpg",
+        alt: "Mountain biking through the Atlas Mountains in Morocco",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Mountain Bike Tours in Morocco | Mountain Bike Morocco",
+    description:
+      "Guided MTB adventures in the High Atlas, with singletrack, enduro trails and private mountain bike holidays.",
+    images: ["/images/mountain-bike-morocco-hero.jpg"],
   },
 };
 

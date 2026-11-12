@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Agafay Desert Cycling Tour – 1 Day | Mountain Bike Morocco",
@@ -445,7 +446,6 @@ export default function AgafayDesertCyclingTourPage() {
           .atlas-tour .at-footer-main { grid-template-columns: 1fr; }
         }
       `}</style>
-      
 
       <section className="at-hero">
         <div className="at-hero-image">
@@ -966,6 +966,20 @@ export default function AgafayDesertCyclingTourPage() {
           <a className="at-button" href="/contact">
             Plan Your Agafay Cycling Day <span>→</span>
           </a>
+        </div>
+      </section>
+
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Agafay Desert Cycling Tour – 1 Day"
+            destination="Agafay Desert, near Marrakech"
+            cyclingType="Mountain Bike"
+          />
         </div>
       </section>
 

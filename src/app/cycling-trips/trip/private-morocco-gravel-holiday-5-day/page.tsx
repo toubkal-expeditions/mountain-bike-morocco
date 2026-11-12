@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Private Morocco Gravel Holiday – 5 Days | Mountain Bike Morocco",
   description:
-    "Experience a five-day private gravel cycling holiday in Morocco. Explore mountain landscapes, rural roads, traditional villages and varied gravel terrain on a journey planned around your riding level.",
+    "Experience a 5-day private gravel cycling holiday in Morocco. Explore mountain landscapes, rural roads, traditional villages and varied gravel terrain on a journey planned around your riding level.",
   alternates: {
     canonical: "/cycling-trips/trip/private-morocco-gravel-holiday-5-day",
   },
@@ -435,6 +436,10 @@ export default function PrivateMoroccoGravelHoliday5DayPage() {
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
         .atlas-tour .at-related-section { padding: 86px 0; }
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+        .atlas-tour .at-enquiry-section .at-eyebrow,
+        .atlas-tour .at-enquiry-section .at-heading,
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #fff !important; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
         .atlas-tour .at-related-image { height: 255px; overflow: hidden; }
@@ -954,6 +959,27 @@ export default function PrivateMoroccoGravelHoliday5DayPage() {
             experience suited to your riding style.
           </p>
           <a className="at-button" href="/contact">Plan Your Gravel Holiday <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR PRIVATE GRAVEL HOLIDAY</span>
+              <h2 className="at-heading">
+                Tell Us About Your Private Morocco Gravel Holiday
+              </h2>
+            </div>
+            <p>
+              Share your preferred dates, group size, cycling experience,
+              fitness level and preferred terrain. Our team can discuss
+              suitable gravel routes, accommodation, support services
+              and practical arrangements for your five-day private
+              cycling holiday.
+            </p>
+          </div>
+          <ContactEnquiryForm />
         </div>
       </section>
 

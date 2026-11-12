@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Atlas Mountains E-Bike Tour – 4 Days | Mountain Bike Morocco",
   description:
-    "Discover the High Atlas Mountains on a four-day E-bike adventure from Marrakech. Ride through Ourika, Imlil, the Imenan Valley, Azzaden Valley, Ouirgane and Amizmiz.",
+    "Discover the High Atlas Mountains on 4-day E-bike adventure from Marrakech. Ride through Ourika, Imlil, the Imenan Valley, Azzaden Valley, Ouirgane and Amizmiz.",
   alternates: {
     canonical: "/cycling-trips/trip/e-bike-tour-atlas-mountains-4-day",
   },
@@ -1037,6 +1038,23 @@ export default function AtlasMountainsEBikeTour4DayPage() {
           line-height: 1.85;
         }
 
+        .atlas-tour .at-enquiry-section {
+          background: var(--green);
+          color: #fff;
+        }
+
+        .atlas-tour .at-enquiry-section .at-eyebrow {
+          color: var(--gold-light);
+        }
+
+        .atlas-tour .at-enquiry-section .at-heading {
+          color: #fff;
+        }
+
+        .atlas-tour .at-enquiry-section .at-section-head > p {
+          color: #e1e2d8;
+        }
+
         .atlas-tour .at-related-section { padding: 86px 0; }
 
         .atlas-tour .at-related-grid {
@@ -1652,6 +1670,27 @@ export default function AtlasMountainsEBikeTour4DayPage() {
             your private four-day adventure.
           </p>
           <a className="at-button" href="/contact">Plan Your E-Bike Adventure <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquire">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+              <h2 className="at-heading">
+                Enquire About Your Atlas Mountains E-Bike Tour
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred dates, group size, mountain biking experience and E-bike requirements so we can start planning your four-day Atlas Mountains adventure.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="Atlas Mountains E-Bike Tour – 4 Days"
+            destination="High Atlas Mountains, Morocco"
+            cyclingType="Electric Mountain Biking"
+          />
         </div>
       </section>
 

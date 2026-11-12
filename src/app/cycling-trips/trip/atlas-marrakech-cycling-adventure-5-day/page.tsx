@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Atlas Marrakech Cycling Adventure – 5 Days | Mountain Bike Morocco",
   description:
-    "Discover the Atlas Mountains on a five-day cycling adventure from Marrakech. Explore mountain landscapes, traditional Amazigh villages and scenic cycling routes on a private guided journey in Morocco.",
+    "Discover the Atlas Mountains on 5-day cycling adventure from Marrakech. Explore mountain landscapes, traditional Amazigh villages and scenic cycling routes on a private guided journey in Morocco.",
   alternates: {
     canonical:
       "/cycling-trips/trip/atlas-marrakech-cycling-adventure-5-day",
@@ -18,8 +19,7 @@ const images = {
   village: "/images/group-cycling-tour-morocco.jpg",
   cycling: "/images/singletrack-mtb-atlas-mountains.jpg",
   mountain: "/images/mtb-morocco-Saghro.JPG",
-  final: "/images/mountain-bike-morocco-intro.jpg",
-};
+final: "/images/mountain-biking-morocco.jpg",};
 
 const facts = [
   ["Duration", "5 days / 4 nights"],
@@ -1039,6 +1039,21 @@ export default function AtlasMarrakechCyclingAdventure5DayPage() {
         </div>
       </section>
 
+      {/* Enquiry form: after the final CTA and before related tours */}
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Atlas Marrakech Cycling Adventure – 5 Days"
+            destination="Marrakech and the Atlas Mountains, Morocco"
+            cyclingType="Cycling"
+          />
+        </div>
+      </section>
+
       <section className="at-related-section">
         <div className="at-container">
           <div className="at-section-head">
@@ -1090,7 +1105,7 @@ export default function AtlasMarrakechCyclingAdventure5DayPage() {
             <div className="at-footer-links">
               <a href="/cycling-trips">All Cycling Tours</a>
               <a href="/cycling-trips/mtb">Mountain Bike Tours</a>
-              <a href="/cycling-trips/emtb">E-MTB Tours</a>
+              <a href="/cycling-trips/e-mtb">E-MTB Tours</a>
               <a href="/cycling-trips/gravel">Gravel Cycling</a>
             </div>
           </div>

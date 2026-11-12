@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "MTB Tour Atlas Mountains – 2 Days | Mountain Bike Morocco",
   description:
-    "Ride the High Atlas Mountains on a two-day mountain biking adventure from Marrakech. Discover mountain trails, Berber villages, spectacular landscapes and unforgettable off-road riding.",
+    "Ride the High Atlas Mountains on a 2-day mountain biking adventure from Marrakech. Discover mountain trails, Berber villages, spectacular landscapes and unforgettable off-road riding.",
   alternates: {
     canonical: "/cycling-trips/trip/mtb-tour-atlas-mountains-2-day",
   },
@@ -370,6 +371,11 @@ export default function MtbAtlasMountains2DayPage() {
         .atlas-tour .at-footer-links { display:grid;gap:11px; }
         .atlas-tour .at-footer-links a { color:#c4c8c0;font-size:13px;text-decoration:none; }
         .atlas-tour .at-footer-bottom { display:flex;justify-content:space-between;gap:20px;padding:20px 0;border-top:1px solid rgba(255,255,255,.15);color:#9fa69c;font-size:11px; }
+        .atlas-tour .at-enquiry-section { background:var(--green); }
+        .atlas-tour .at-enquiry-heading { max-width:760px;margin:0 auto 35px;text-align:center; }
+        .atlas-tour .at-enquiry-heading .at-eyebrow { color:var(--gold-light); }
+        .atlas-tour .at-enquiry-heading .at-heading { color:#fff; }
+        .atlas-tour .at-enquiry-heading p { max-width:680px;margin:0 auto;color:#e1e2d8;font-size:15px;line-height:1.85; }
         @media(max-width:1000px) {
           .atlas-tour .at-overview-grid,.atlas-tour .at-terrain-grid,.atlas-tour .at-facts-layout,.atlas-tour .at-difficulty-grid,.atlas-tour .at-faq-layout { gap:40px; }
           .atlas-tour .at-highlight-grid { grid-template-columns:repeat(2,1fr); }
@@ -833,6 +839,22 @@ export default function MtbAtlasMountains2DayPage() {
         </div>
       </section>
 
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-enquiry-heading">
+            <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+            <h2 className="at-heading">Enquire About the MTB Tour Atlas Mountains</h2>
+            <p>
+              Tell us your preferred travel dates, group size, mountain
+              biking experience and fitness level so we can help plan
+              your private two-day mountain bike adventure in the High Atlas
+              from Marrakech.
+            </p>
+          </div>
+          <ContactEnquiryForm />
+        </div>
+      </section>
+
       <section className="at-related-section">
         <div className="at-container">
           <div className="at-section-head">
@@ -877,7 +899,7 @@ export default function MtbAtlasMountains2DayPage() {
             <div className="at-footer-links">
               <a href="/cycling-trips">All Cycling Tours</a>
               <a href="/cycling-trips/mtb">Mountain Bike Tours</a>
-              <a href="/cycling-trips/emtb">E-MTB Tours</a>
+              <a href="/cycling-trips/e-mtb">E-MTB Tours</a>
               <a href="/cycling-trips/gravel">Gravel Cycling</a>
             </div>
           </div>

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Private Road Cycling Tour in Morocco – 4 to 7 Days | Mountain Bike Morocco",
   description:
-    "Discover Morocco on a private four-to-seven-day road cycling tour. Ride scenic Atlas mountain roads, quiet countryside routes and rewarding climbs on a flexible itinerary planned around your fitness, experience and travel dates.",
+    "Discover Morocco on a private 4 to 7-day road cycling tour. Ride scenic Atlas mountain roads, quiet countryside routes and rewarding climbs on a flexible itinerary planned around your fitness, experience and travel dates.",
   alternates: {
-    canonical: "/cycling-trips/trip/private-road-cycling-tour-4-to-7-day",
+    canonical: "/cycling-trips/trip/private-road-cycling-tour-4-to-7-days",
   },
 };
 
@@ -292,7 +293,7 @@ const relatedTours = [
     image: "/images/atlas-mountains-singletrack.jpg",
     href: "/cycling-trips/trip/private-atlas-mountain-bike-weekend-2-to-3-days",
   },
-]
+];
 
 export default function PrivateRoadCyclingTourPage() {
   return (
@@ -450,6 +451,10 @@ export default function PrivateRoadCyclingTourPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+        .atlas-tour .at-enquiry-section .at-eyebrow,
+        .atlas-tour .at-enquiry-section .at-heading,
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #fff !important; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -895,6 +900,25 @@ export default function PrivateRoadCyclingTourPage() {
             Tell us your preferred dates, number of riders, cycling experience and preferred routes. We can discuss suitable road routes, daily distances, climbing, equipment, accommodation and transfers for your four-to-seven-day Private Road Cycling Tour.
           </p>
           <a className="at-button" href="/contact">Plan Your Private Road Cycling Tour <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">START PLANNING YOUR RIDE</span>
+              <h2 className="at-heading">Enquire About Your Private Road Cycling Tour</h2>
+            </div>
+            <p>
+              Tell us when you would like to travel, how many people are riding and what kind of road cycling experience you are looking for. Share your preferred tour duration, cycling experience and riding goals, and our team will help you plan a private road cycling journey in Morocco.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="Private Road Cycling Tour – 4 to 7 Days"
+            destination="High Atlas Mountains and selected regions of Morocco"
+            cyclingType="Road Cycling"
+          />
         </div>
       </section>
 

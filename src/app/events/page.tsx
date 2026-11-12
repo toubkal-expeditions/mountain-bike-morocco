@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 const events = [
   {
     number: "01",
+    slug: "atlas-mountains-mtb-gathering",
     discipline: "MTB · GROUP RIDE",
     label: "MOUNTAIN TRAILS & LOCAL CULTURE",
     title: "Atlas Mountains MTB Gathering",
@@ -21,6 +22,7 @@ const events = [
   },
   {
     number: "02",
+    slug: "agafay-desert-cycling-challenge",
     discipline: "MTB · DESERT RIDE",
     label: "ROCKY PLATEAUS & OPEN LANDSCAPES",
     title: "Agafay Desert Cycling Challenge",
@@ -32,6 +34,7 @@ const events = [
   },
   {
     number: "03",
+    slug: "morocco-desert-cycling-expedition",
     discipline: "GRAVEL · EXPEDITION",
     label: "DESERT ROADS & MULTI-DAY ADVENTURE",
     title: "Morocco Desert Cycling Expedition",
@@ -43,6 +46,7 @@ const events = [
   },
   {
     number: "04",
+    slug: "morocco-gravel-bike-caravan",
     discipline: "GRAVEL · GROUP CARAVAN",
     label: "QUIET ROADS & RURAL TRACKS",
     title: "Morocco Gravel Bike Caravan",
@@ -54,6 +58,7 @@ const events = [
   },
   {
     number: "05",
+    slug: "marrakech-to-sahara-e-mtb-caravan",
     discipline: "E-MTB · CARAVAN",
     label: "ELECTRIC-ASSISTED MULTI-DAY JOURNEY",
     title: "Marrakech to Sahara E-MTB Caravan",
@@ -65,6 +70,7 @@ const events = [
   },
   {
     number: "06",
+    slug: "women-cycling-tour",
     discipline: "WOMEN’S CYCLING · GROUP TRIP",
     label: "A SUPPORTIVE SHARED ADVENTURE",
     title: "Women Cycling Tour",
@@ -76,6 +82,7 @@ const events = [
   },
   {
     number: "07",
+    slug: "school-cycling-sahara-expedition",
     discipline: "COMMUNITY · DESERT CYCLING",
     label: "A GROUP EXPERIENCE WITH A CLEAR PURPOSE",
     title: "School Cycling Sahara Expedition",
@@ -87,6 +94,7 @@ const events = [
   },
   {
     number: "08",
+    slug: "atlantic-coast-cycling-weekend",
     discipline: "COASTAL CYCLING · GROUP WEEKEND",
     label: "ATLANTIC AIR & COUNTRYSIDE ROUTES",
     title: "Atlantic Coast Cycling Weekend",
@@ -98,6 +106,7 @@ const events = [
   },
   {
     number: "09",
+    slug: "private-group-team-cycling-event",
     discipline: "PRIVATE EVENT · ANY DISCIPLINE",
     label: "BUILT AROUND YOUR TEAM",
     title: "Private Group or Team Cycling Event",
@@ -231,7 +240,7 @@ export default function EventsPage() {
                 <article className="cl-tour-card" key={event.number}>
                   <Link
                     className="cl-tour-card__image-link"
-                    href={{ pathname: "/contact", query: { event: event.title, destination: event.location, request: "event-details" } }}
+                    href={`/events/${event.slug}`}
                     aria-label={`More details about ${event.title}`}
                   >
                     <img className="cl-tour-card__image" src={event.image} alt={event.title} loading="lazy" />
@@ -241,7 +250,7 @@ export default function EventsPage() {
                     <p className="cl-card-label">{event.discipline} · {event.duration}</p>
                     <p className="cl-card-label">{event.label}</p>
                     <h3>
-                      <Link href={{ pathname: "/contact", query: { event: event.title, destination: event.location, request: "event-details" } }}>
+                      <Link href={`/events/${event.slug}`}>
                         {event.title}
                       </Link>
                     </h3>
@@ -249,13 +258,20 @@ export default function EventsPage() {
                     <div className="cl-tour-card__actions">
                       <Link
                         className="cl-button cl-button--dark"
-                        href={{ pathname: "/contact", query: { event: event.title, destination: event.location, request: "event-details" } }}
+                        href={`/events/${event.slug}`}
                       >
                         More Details
                       </Link>
                       <Link
                         className="cl-button cl-button--gold"
-                        href={{ pathname: "/contact", query: { event: event.title, destination: event.location, request: "event-enquiry" } }}
+                        href={{
+                          pathname: "/contact",
+                          query: {
+                            event: event.title,
+                            destination: event.location,
+                            request: "event-enquiry",
+                          },
+                        }}
                       >
                         Enquire
                       </Link>
@@ -468,7 +484,7 @@ export default function EventsPage() {
           </div>
         </div>
         <div className="page-width footer-bottom">
-          <span>© 2026 Mountain Bike Morocco</span>
+          <span>© {2026} Mountain Bike Morocco. All rights reserved.</span>
           <span>Morocco cycling adventures, thoughtfully planned.</span>
         </div>
       </footer>

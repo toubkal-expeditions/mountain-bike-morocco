@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title:
@@ -357,6 +358,10 @@ export default function GravelCyclingFromMarrakech1DayPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section { background: var(--green); color: #fff; }
+        .atlas-tour .at-enquiry-section .at-eyebrow { color: var(--gold-light); }
+        .atlas-tour .at-enquiry-section .at-heading { color: #fff; }
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #e1e2d8; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -864,6 +869,31 @@ export default function GravelCyclingFromMarrakech1DayPage() {
             suited to your riding style.
           </p>
           <a className="at-button" href="/contact">Plan Your Gravel Adventure <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquire">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+              <h2 className="at-heading">
+                Enquire About Gravel Cycling from Marrakech
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred date, group size, cycling
+              experience and bicycle requirements. Our team
+              will help you discuss a suitable route, gravel
+              bike arrangements and support for your
+              one-day cycling adventure from Marrakech.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="Gravel Cycling from Marrakech – 1 Day"
+            destination="Marrakech, Morocco"
+            cyclingType="Gravel Cycling"
+          />
         </div>
       </section>
 

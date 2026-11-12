@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Morocco Family Cycling Week – 7 Days | Mountain Bike Morocco",
   description:
-    "Enjoy a seven-day family cycling holiday in Morocco, combining Atlas mountain scenery, valley tracks, countryside routes and traditional villages. The guided programme is planned around your family's ages and riding experience.",
+    "Enjoy a 7-day family cycling holiday in Morocco, combining Atlas mountain scenery, valley tracks, countryside routes and traditional villages. The guided programme is planned around your family's ages and riding experience.",
   alternates: {
     canonical: "/cycling-trips/trip/morocco-family-cycling-week-7-day",
   },
@@ -458,6 +459,10 @@ export default function MoroccoFamilyCyclingWeekPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+        .atlas-tour .at-enquiry-section .at-eyebrow { color: var(--gold-light); }
+        .atlas-tour .at-enquiry-section .at-heading { color: #fff; }
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #e1e2d8; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -952,6 +957,29 @@ export default function MoroccoFamilyCyclingWeekPage() {
             seven-day family cycling holiday in the Atlas Mountains and Marrakech countryside.
           </p>
           <a className="at-button" href="/contact">Plan Your Morocco Family Cycling Week <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">START PLANNING YOUR RIDE</span>
+              <h2 className="at-heading">
+                Plan Your Morocco Family Cycling Week
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred travel dates, group size and the ages
+              and cycling experience of everyone joining. Let us know your
+              family's bicycle requirements, preferred routes and any
+              accommodation or transfer arrangements. Our team will use
+              these details to help plan your seven-day family cycling
+              holiday in Morocco.
+            </p>
+          </div>
+
+          <ContactEnquiryForm />
         </div>
       </section>
 

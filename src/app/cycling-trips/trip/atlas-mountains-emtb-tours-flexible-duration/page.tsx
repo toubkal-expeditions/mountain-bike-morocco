@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Atlas Mountains e-MTB Tours – Flexible Duration | Mountain Bike Morocco",
@@ -367,7 +368,7 @@ export default function AtlasMountainsEmtbToursFlexibleDurationPage() {
           .atlas-tour .at-footer-main { grid-template-columns: 1fr; }
         }
       `}</style>
-      
+
 
       <section className="at-hero">
         <div className="at-hero-image">
@@ -852,6 +853,21 @@ export default function AtlasMountainsEmtbToursFlexibleDurationPage() {
           <a className="at-button" href="/contact">
             Enquire About an e-MTB Tour <span>→</span>
           </a>
+        </div>
+      </section>
+
+      {/* Enquiry form: after the final CTA and before related tours */}
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Atlas Mountains e-MTB Tours – Flexible Duration"
+            destination="Atlas Mountains, Morocco"
+            cyclingType="E-MTB"
+          />
         </div>
       </section>
 

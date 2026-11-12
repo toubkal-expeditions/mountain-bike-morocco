@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Road Cycling from Marrakech – 1 Day | Mountain Bike Morocco",
   description:
-    "Discover Morocco by road bike on a one-day cycling adventure from Marrakech. Ride through the countryside, explore the Atlas foothills and enjoy spectacular mountain scenery.",
+    "Discover Morocco by road bike on a 1day cycling adventure from Marrakech. Ride through the countryside, explore the Atlas foothills and enjoy spectacular mountain scenery.",
   alternates: {
     canonical: "/cycling-trips/trip/road-cycling-from-marrakech-1-day",
   },
@@ -371,6 +372,10 @@ export default function RoadCyclingFromMarrakech1DayPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+        .atlas-tour .at-enquiry-section .at-eyebrow,
+        .atlas-tour .at-enquiry-section .at-heading,
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #fff !important; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -884,6 +889,29 @@ export default function RoadCyclingFromMarrakech1DayPage() {
             from Marrakech.
           </p>
           <a className="at-button" href="/contact">Plan Your Marrakech Ride <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">START PLANNING YOUR RIDE</span>
+              <h2 className="at-heading">Enquire About Your Road Cycling Day from Marrakech</h2>
+            </div>
+            <p>
+              Tell us your preferred travel date, group size,
+              road cycling experience and bicycle requirements.
+              Our team will help discuss a suitable route,
+              distance and riding arrangements for your
+              one-day cycling experience from Marrakech.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="Road Cycling from Marrakech – 1 Day"
+            destination="Marrakech and surrounding countryside"
+            cyclingType="Road Cycling"
+          />
         </div>
       </section>
 

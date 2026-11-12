@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Atlas to Desert Group Expedition – 6 Days | Mountain Bike Morocco",
   description:
-    "Ride from Morocco's Atlas Mountains towards the desert on a six-day guided group cycling expedition. Discover changing mountain, valley and arid landscapes with a route and riding plan adapted to your group's experience and preferences.",
+    "Ride from Morocco's Atlas Mountains towards the desert on 6-day guided group cycling expedition. Discover changing mountain, valley and arid landscapes with a route and riding plan adapted to your group's experience and preferences.",
   alternates: {
     canonical: "/cycling-trips/trip/atlas-to-desert-group-expedition-6-day",
   },
@@ -262,6 +263,19 @@ export default function AtlasToDesertGroupExpeditionPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section {
+          background: var(--green);
+          color: #fff;
+        }
+        .atlas-tour .at-enquiry-section .at-eyebrow {
+          color: var(--gold-light);
+        }
+        .atlas-tour .at-enquiry-section .at-heading {
+          color: #fff;
+        }
+        .atlas-tour .at-enquiry-section .at-section-head > p {
+          color: #e1e2d8;
+        }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -707,6 +721,27 @@ export default function AtlasToDesertGroupExpeditionPage() {
             Tell us your preferred dates, group size, riders' experience and cycling goals. We can discuss suitable routes, daily distances, climbing, equipment, accommodation and transfers for your six-day Atlas to Desert Group Expedition.
           </p>
           <a className="at-button" href="/contact">Plan Your Atlas to Desert Group Expedition <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquire">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+              <h2 className="at-heading">
+                Enquire About the Atlas to Desert Group Expedition
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred dates, group size and cycling experience so we can help plan your six-day group cycling expedition.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="Atlas to Desert Group Expedition – 6 Days"
+            destination="Atlas Mountains and Southern Morocco"
+            cyclingType="Group Cycling"
+          />
         </div>
       </section>
 

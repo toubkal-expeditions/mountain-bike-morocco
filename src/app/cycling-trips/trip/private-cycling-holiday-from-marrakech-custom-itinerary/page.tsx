@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Private Cycling Holiday from Marrakech – Custom Itinerary | Mountain Bike Morocco",
@@ -300,6 +301,10 @@ export default function PrivateCyclingHolidayFromMarrakechPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+        .atlas-tour .at-enquiry-section .at-eyebrow,
+        .atlas-tour .at-enquiry-section .at-heading,
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #fff !important; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -377,7 +382,7 @@ export default function PrivateCyclingHolidayFromMarrakechPage() {
           .atlas-tour .at-footer-main { grid-template-columns: 1fr; }
         }
       `}</style>
-      
+
 
       <section className="at-hero">
         <div className="at-hero-image">
@@ -862,6 +867,27 @@ export default function PrivateCyclingHolidayFromMarrakechPage() {
           <a className="at-button" href="/contact">
             Plan Your Private Cycling Holiday <span>→</span>
           </a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR PRIVATE MARRAKECH CYCLING HOLIDAY</span>
+              <h2 className="at-heading">
+                Enquire About Your Custom Cycling Itinerary
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred dates, group size, cycling style and
+              riding experience. Share the regions you would like to explore,
+              your accommodation preferences and any transfer or support
+              requirements so we can discuss a private itinerary around your
+              holiday plans.
+            </p>
+          </div>
+          <ContactEnquiryForm />
         </div>
       </section>
 

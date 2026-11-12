@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Agafay and Southern Morocco e-MTB – Flexible Duration | Mountain Bike Morocco",
@@ -19,6 +20,7 @@ const images = {
   mountain: "/images/atlas-desert-cycling-tour.jpg",
   final: "/images/south-ebike-tourmorocco.jpg",
 };
+
 const facts = [
   ["Tour format", "Private guided e-MTB adventure"],
   ["Destinations", "Agafay Desert and Southern Morocco"],
@@ -30,44 +32,112 @@ const facts = [
   ["Group size", "Private groups; confirm on enquiry"],
   ["Travel dates", "Available by arrangement"],
 ];
+
 const highlights = [
-  { number: "01", title: "Ride the Agafay Desert", text: "Explore the stony desert landscapes beyond Marrakech, following rugged tracks, open plateaus and dry riverbeds. Routes are selected around the group's ability, weather and trail conditions." },
-  { number: "02", title: "Discover Southern Morocco", text: "Extend the journey into southern landscapes, where rocky mountains, remote valleys and changing desert scenery create a very different multi-day e-MTB experience." },
-  { number: "03", title: "Choose Your Own Duration", text: "Plan a single-day Agafay ride, a short escape or a longer southern Morocco expedition. Add riding days, scenic stops and overnight stays to suit your dates and pace." },
-  { number: "04", title: "Private Guiding and e-MTB Support", text: "Your guide matches routes to your technical confidence, fitness and battery range. Bike rental, charging, transfers, accommodation and support are confirmed in your individual proposal." },
+  {
+    number: "01",
+    title: "Ride the Agafay Desert",
+    text: "Explore the stony desert landscapes beyond Marrakech, following rugged tracks, open plateaus and dry riverbeds. Routes are selected around the group's ability, weather and trail conditions.",
+  },
+  {
+    number: "02",
+    title: "Discover Southern Morocco",
+    text: "Extend the journey into southern landscapes, where rocky mountains, remote valleys and changing desert scenery create a very different multi-day e-MTB experience.",
+  },
+  {
+    number: "03",
+    title: "Choose Your Own Duration",
+    text: "Plan a single-day Agafay ride, a short escape or a longer southern Morocco expedition. Add riding days, scenic stops and overnight stays to suit your dates and pace.",
+  },
+  {
+    number: "04",
+    title: "Private Guiding and e-MTB Support",
+    text: "Your guide matches routes to your technical confidence, fitness and battery range. Bike rental, charging, transfers, accommodation and support are confirmed in your individual proposal.",
+  },
 ];
+
 const beyondTrail = [
-  { title: "Agafay's rugged desert terrain", text: "Ride across stony plains, low hills and dry riverbeds within reach of Marrakech." },
-  { title: "Southern Morocco's open landscapes", text: "Explore remote tracks, mountain backdrops and dramatic transitions between desert and valley terrain." },
-  { title: "Rural stops along the way", text: "Pause for refreshments and take time to appreciate local landscapes and communities respectfully." },
-  { title: "One region or a longer expedition", text: "Focus on Agafay for a shorter ride or build a multi-day route into southern Morocco." },
+  {
+    title: "Agafay's rugged desert terrain",
+    text: "Ride across stony plains, low hills and dry riverbeds within reach of Marrakech.",
+  },
+  {
+    title: "Southern Morocco's open landscapes",
+    text: "Explore remote tracks, mountain backdrops and dramatic transitions between desert and valley terrain.",
+  },
+  {
+    title: "Rural stops along the way",
+    text: "Pause for refreshments and take time to appreciate local landscapes and communities respectfully.",
+  },
+  {
+    title: "One region or a longer expedition",
+    text: "Focus on Agafay for a shorter ride or build a multi-day route into southern Morocco.",
+  },
 ];
+
 const itinerary = [
   {
-    day: "01", title: "Explore the Agafay Desert Tracks", location: "Marrakech to the Agafay area", distance: "Set according to the selected route", riding: "Guided e-MTB desert ride and rocky tracks",
+    day: "01",
+    title: "Explore the Agafay Desert Tracks",
+    location: "Marrakech to the Agafay area",
+    distance: "Set according to the selected route",
+    riding: "Guided e-MTB desert ride and rocky tracks",
     image: images.overview,
     text: "Meet in Marrakech or at an agreed meeting point before travelling towards Agafay. After checking the bikes, battery levels and riding set-up, set out across the stony desert landscape. The guide adjusts the route to the group's confidence, with time for viewpoints and breaks along the way.",
-    details: ["Meet the guide and complete an e-MTB safety and equipment check", "Review assistance modes, battery use and desert riding conditions", "Ride selected Agafay tracks, plateaus and dry riverbeds", "Return to Marrakech or stay locally if included in the plan"],
+    details: [
+      "Meet the guide and complete an e-MTB safety and equipment check",
+      "Review assistance modes, battery use and desert riding conditions",
+      "Ride selected Agafay tracks, plateaus and dry riverbeds",
+      "Return to Marrakech or stay locally if included in the plan",
+    ],
   },
   {
-    day: "02", title: "Travel South for a New Desert Landscape", location: "Agreed southern Morocco region, subject to logistics", distance: "Flexible according to terrain and battery range", riding: "Remote tracks, rocky valleys and scenic climbs",
+    day: "02",
+    title: "Travel South for a New Desert Landscape",
+    location: "Agreed southern Morocco region, subject to logistics",
+    distance: "Flexible according to terrain and battery range",
+    riding: "Remote tracks, rocky valleys and scenic climbs",
     image: images.valley,
     text: "For a multi-day option, continue south to explore a different character of Moroccan terrain. The route may combine rugged mountain scenery, open valleys and remote tracks. Your guide selects a ride that balances scenery, climbing and technical challenge, with transfers planned around the chosen region.",
-    details: ["Breakfast and route briefing", "Transfer to the selected southern riding area where required", "Ride suitable tracks with stops for photographs and refreshments", "Overnight locally or continue according to the agreed itinerary"],
+    details: [
+      "Breakfast and route briefing",
+      "Transfer to the selected southern riding area where required",
+      "Ride suitable tracks with stops for photographs and refreshments",
+      "Overnight locally or continue according to the agreed itinerary",
+    ],
   },
   {
-    day: "03", title: "Discover More Southern Trails", location: "Selected southern Morocco riding area", distance: "Confirmed after the route is selected", riding: "A tailored e-MTB ride matched to your group",
+    day: "03",
+    title: "Discover More Southern Trails",
+    location: "Selected southern Morocco riding area",
+    distance: "Confirmed after the route is selected",
+    riding: "A tailored e-MTB ride matched to your group",
     image: images.atlas,
     text: "Add another day to explore a different trail area or revisit a favourite landscape. The route can be more relaxed or more demanding depending on your experience and the group's preferences. Daily distances and climbing are agreed only after the exact trails and logistics are confirmed.",
-    details: ["Select the preferred route and riding character", "Check battery charge and support arrangements", "Enjoy a guided ride at a comfortable group pace", "Finish with a local overnight stay or planned transfer"],
+    details: [
+      "Select the preferred route and riding character",
+      "Check battery charge and support arrangements",
+      "Enjoy a guided ride at a comfortable group pace",
+      "Finish with a local overnight stay or planned transfer",
+    ],
   },
   {
-    day: "04", title: "Optional Extra Ride and Return", location: "Selected southern region to Marrakech", distance: "Optional ride or transfer day", riding: "Extra trail time or a relaxed departure",
+    day: "04",
+    title: "Optional Extra Ride and Return",
+    location: "Selected southern region to Marrakech",
+    distance: "Optional ride or transfer day",
+    riding: "Extra trail time or a relaxed departure",
     image: images.final,
     text: "Longer holidays can include another ride, a scenic stop or a relaxed morning before returning to Marrakech. This fourth stage is optional and illustrates how the flexible programme can be extended to suit your schedule and chosen destination.",
-    details: ["Optional short e-MTB ride if time and conditions allow", "Return equipment and complete bike checks", "Transfer towards Marrakech if included", "Finish at your hotel or agreed drop-off point"],
+    details: [
+      "Optional short e-MTB ride if time and conditions allow",
+      "Return equipment and complete bike checks",
+      "Transfer towards Marrakech if included",
+      "Finish at your hotel or agreed drop-off point",
+    ],
   },
 ];
+
 const inclusions = [
   "Private local cycling guide for the agreed riding days",
   "e-MTB rental and helmet only when selected and confirmed",
@@ -76,6 +146,7 @@ const inclusions = [
   "Battery charging arrangements and technical support as agreed",
   "Luggage support or additional services expressly stated in the booking",
 ];
+
 const exclusions = [
   "International flights and travel to Morocco",
   "Travel insurance, medical cover and personal accident insurance",
@@ -85,22 +156,61 @@ const exclusions = [
   "Personal riding clothing, shoes and any unlisted equipment",
   "Services not expressly included in the final booking confirmation",
 ];
+
 const preparation = [
-  { title: "Choose Your Riding Region", text: "Tell us whether you prefer a day ride in Agafay, a southern Morocco expedition or a combination with transfers between regions. We can shape the route around your dates and available time." },
-  { title: "Share Your Riding Experience", text: "Describe your recent mountain-bike experience, confidence on loose and rocky surfaces and preferred technical challenge. Pedal-assist supports climbing but does not replace bike-handling skills." },
-  { title: "Plan e-MTB Battery Use", text: "Range depends on elevation, terrain, rider weight, assistance mode, temperature and battery condition. Confirm the bike, battery capacity, charging options and daily route before departure." },
-  { title: "Pack for Desert Conditions", text: "Bring suitable riding clothes, gloves, shoes, eye protection, sun protection and a light layer for cooler mornings or evenings. Heat, wind and changing conditions should be considered when planning each ride." },
+  {
+    title: "Choose Your Riding Region",
+    text: "Tell us whether you prefer a day ride in Agafay, a southern Morocco expedition or a combination with transfers between regions. We can shape the route around your dates and available time.",
+  },
+  {
+    title: "Share Your Riding Experience",
+    text: "Describe your recent mountain-bike experience, confidence on loose and rocky surfaces and preferred technical challenge. Pedal-assist supports climbing but does not replace bike-handling skills.",
+  },
+  {
+    title: "Plan e-MTB Battery Use",
+    text: "Range depends on elevation, terrain, rider weight, assistance mode, temperature and battery condition. Confirm the bike, battery capacity, charging options and daily route before departure.",
+  },
+  {
+    title: "Pack for Desert Conditions",
+    text: "Bring suitable riding clothes, gloves, shoes, eye protection, sun protection and a light layer for cooler mornings or evenings. Heat, wind and changing conditions should be considered when planning each ride.",
+  },
 ];
+
 const faqs = [
-  { q: "Can Agafay and southern Morocco be combined in one e-MTB holiday?", a: "Yes. A multi-day itinerary can combine an Agafay ride with a selected southern Morocco region, subject to transfer time, route conditions and the length of your trip. You can also focus on Agafay for a shorter adventure." },
-  { q: "How long are the Agafay and southern Morocco e-MTB adventures?", a: "Duration is flexible. Enquire about a day ride, a two- or three-day escape or a longer private holiday. The final programme depends on your dates, riding level and preferred pace." },
-  { q: "Do I need previous e-MTB experience?", a: "Previous e-MTB experience is useful but not essential for every route. You should be comfortable riding a mountain bike on the selected terrain. Share your experience so a suitable route can be recommended." },
-  { q: "Is an electric mountain bike included?", a: "Bike rental may be arranged but is not automatically included. Confirm the bike model, frame size, battery, charger, pedals, helmet and rental cost in your written proposal." },
-  { q: "Are the routes suitable for beginners?", a: "Some easier tracks may suit confident recreational riders with basic mountain-bike handling skills. Loose stones, rocky tracks and remote routes require suitable skills, so discuss difficulty honestly before booking." },
-  { q: "Where does the tour start?", a: "Agafay rides can usually be arranged from Marrakech. Multi-day southern Morocco options may begin with a Marrakech pickup and a planned transfer to the selected riding region." },
-  { q: "Can the itinerary be customised?", a: "Yes. The route, duration, riding pace, overnight stops and balance between Agafay and southern Morocco can be discussed around your group and available time." },
-  { q: "What is included in the price?", a: "Inclusions vary by duration and service level. Your proposal should list guiding, bike rental, transfers, accommodation, meals and support individually." },
+  {
+    q: "Can Agafay and southern Morocco be combined in one e-MTB holiday?",
+    a: "Yes. A multi-day itinerary can combine an Agafay ride with a selected southern Morocco region, subject to transfer time, route conditions and the length of your trip. You can also focus on Agafay for a shorter adventure.",
+  },
+  {
+    q: "How long are the Agafay and southern Morocco e-MTB adventures?",
+    a: "Duration is flexible. Enquire about a day ride, a two- or three-day escape or a longer private holiday. The final programme depends on your dates, riding level and preferred pace.",
+  },
+  {
+    q: "Do I need previous e-MTB experience?",
+    a: "Previous e-MTB experience is useful but not essential for every route. You should be comfortable riding a mountain bike on the selected terrain. Share your experience so a suitable route can be recommended.",
+  },
+  {
+    q: "Is an electric mountain bike included?",
+    a: "Bike rental may be arranged but is not automatically included. Confirm the bike model, frame size, battery, charger, pedals, helmet and rental cost in your written proposal.",
+  },
+  {
+    q: "Are the routes suitable for beginners?",
+    a: "Some easier tracks may suit confident recreational riders with basic mountain-bike handling skills. Loose stones, rocky tracks and remote routes require suitable skills, so discuss difficulty honestly before booking.",
+  },
+  {
+    q: "Where does the tour start?",
+    a: "Agafay rides can usually be arranged from Marrakech. Multi-day southern Morocco options may begin with a Marrakech pickup and a planned transfer to the selected riding region.",
+  },
+  {
+    q: "Can the itinerary be customised?",
+    a: "Yes. The route, duration, riding pace, overnight stops and balance between Agafay and southern Morocco can be discussed around your group and available time.",
+  },
+  {
+    q: "What is included in the price?",
+    a: "Inclusions vary by duration and service level. Your proposal should list guiding, bike rental, transfers, accommodation, meals and support individually.",
+  },
 ];
+
 const relatedTours = [
   {
     category: "ATLAS E-BIKE ESCAPE",
@@ -124,6 +234,7 @@ const relatedTours = [
     href: "/cycling-trips/trip/private-emtb-holidays-private-itinerary",
   },
 ];
+
 export default function AgafayAndSouthernMoroccoEmtbPage() {
   return (
     <main className="atlas-tour">
@@ -357,7 +468,6 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
           .atlas-tour .at-footer-main { grid-template-columns: 1fr; }
         }
       `}</style>
-      
 
       <section className="at-hero">
         <div className="at-hero-image">
@@ -373,10 +483,13 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
           </span>
           <h1>Agafay &amp; Southern Morocco e-MTB Adventures</h1>
           <p className="at-hero-description">
-            Discover Morocco’s desert landscapes by electric mountain bike. Ride Agafay’s rocky tracks and explore the remote valleys of the south on a private adventure with flexible duration, routes and riding pace.
+            Discover Morocco’s desert landscapes by electric mountain bike.
+            Ride Agafay’s rocky tracks and explore the remote valleys of the
+            south on a private adventure with flexible duration, routes and
+            riding pace.
           </p>
           <div className="at-hero-actions">
-            <a className="at-button" href="/contact">
+            <a className="at-button" href="#enquiry">
               Enquire About Your e-MTB Adventure <span>→</span>
             </a>
             <a className="at-hero-back" href="/cycling-trips">
@@ -446,18 +559,31 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
             />
           </div>
           <div className="at-overview-content">
-            <span className="at-eyebrow">GUIDED ELECTRIC MOUNTAIN BIKING IN THE ATLAS</span>
+            <span className="at-eyebrow">
+              GUIDED ELECTRIC MOUNTAIN BIKING IN THE ATLAS
+            </span>
             <h2 className="at-heading">
               Desert Tracks and Southern Landscapes, One e-MTB Adventure
             </h2>
             <p className="at-copy">
-              Discover the rocky desert terrain of Agafay near Marrakech, then explore southern Morocco’s remote landscapes, rugged valleys and changing desert scenery. A local guide helps select trails and tracks that suit your group’s skills, fitness and appetite for adventure.
+              Discover the rocky desert terrain of Agafay near Marrakech, then
+              explore southern Morocco’s remote landscapes, rugged valleys and
+              changing desert scenery. A local guide helps select trails and
+              tracks that suit your group’s skills, fitness and appetite for
+              adventure.
             </p>
             <p className="at-copy">
-              Choose a focused ride in Agafay or combine it with a southern Morocco expedition over several days. Multi-day options can include different trail areas, overnight stays and transfers between the selected regions. Exact distances, climbing and technical features are confirmed in your route plan.
+              Choose a focused ride in Agafay or combine it with a southern
+              Morocco expedition over several days. Multi-day options can
+              include different trail areas, overnight stays and transfers
+              between the selected regions. Exact distances, climbing and
+              technical features are confirmed in your route plan.
             </p>
             <p className="at-copy">
-              Before departure, confirm your e-MTB model and size, battery and charging plan, route difficulty, daily riding time, transfers between Agafay and Southern Morocco, accommodation and the services included in your booking.
+              Before departure, confirm your e-MTB model and size, battery and
+              charging plan, route difficulty, daily riding time, transfers
+              between Agafay and Southern Morocco, accommodation and the
+              services included in your booking.
             </p>
             <a className="at-text-link" href="#itinerary">
               View the sample tour plan →
@@ -474,20 +600,29 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
               Choose Your Pace Across Agafay and the South
             </h2>
             <p className="at-copy">
-              Your e-MTB adventure can focus on Agafay’s desert terrain or southern Morocco’s remote landscapes or a combination of both. We shape the riding around your group, available time, trail conditions and the logistics between the selected regions.
+              Your e-MTB adventure can focus on Agafay’s desert terrain or
+              southern Morocco’s remote landscapes or a combination of both.
+              We shape the riding around your group, available time, trail
+              conditions and the logistics between the selected regions.
             </p>
             <p className="at-copy">
-              Share your dates, group size, e-MTB experience and preferred level of challenge. We can then discuss suitable trails, bike rental, battery arrangements, transfers and overnight options.
+              Share your dates, group size, e-MTB experience and preferred level
+              of challenge. We can then discuss suitable trails, bike rental,
+              battery arrangements, transfers and overnight options.
             </p>
             <p className="at-copy">
-              Your proposal should confirm each riding day, route area, estimated distance and climbing, bike and battery arrangements, guide service, transfers, accommodation and meals where applicable.
+              Your proposal should confirm each riding day, route area,
+              estimated distance and climbing, bike and battery arrangements,
+              guide service, transfers, accommodation and meals where
+              applicable.
             </p>
           </div>
           <aside className="at-booking-card">
             <span className="at-eyebrow">YOUR GUIDED TRIP</span>
             <h3>Agafay &amp; Southern Morocco e-MTB Adventures</h3>
             <p>
-              Guided electric mountain biking with flexible duration, route options and support arranged around your group.
+              Guided electric mountain biking with flexible duration, route
+              options and support arranged around your group.
             </p>
             <ul className="at-booking-list">
               <li>
@@ -511,7 +646,7 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
                 <strong>On Request</strong>
               </li>
             </ul>
-            <a className="at-button" href="/contact">
+            <a className="at-button" href="#enquiry">
               Enquire About Your Trip <span>→</span>
             </a>
           </aside>
@@ -528,7 +663,9 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
               </h2>
             </div>
             <p>
-              Ride contrasting Moroccan landscapes with pedal-assist support, flexible routes and a daily pace shaped around your group’s experience.
+              Ride contrasting Moroccan landscapes with pedal-assist support,
+              flexible routes and a daily pace shaped around your group’s
+              experience.
             </p>
           </div>
           <div className="at-highlight-grid">
@@ -557,10 +694,18 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
               Rocky Desert Tracks and Remote Southern Routes
             </h2>
             <p className="at-copy">
-              In Agafay, routes can include stony tracks, rolling plateaus and dry riverbeds. In southern Morocco, rides may follow remote valley tracks, rocky foothills and desert routes. Your guide considers gradients, surface, weather, access, technical demands and e-MTB battery range before confirming each stage.
+              In Agafay, routes can include stony tracks, rolling plateaus and
+              dry riverbeds. In southern Morocco, rides may follow remote
+              valley tracks, rocky foothills and desert routes. Your guide
+              considers gradients, surface, weather, access, technical demands
+              and e-MTB battery range before confirming each stage.
             </p>
             <p className="at-copy">
-              The best route depends on your technical ability, fitness, season, bike set-up and battery capacity. Agree which riding region to explore, daily distance, climbing, trail character, charging opportunities, transfers and support in the final plan.
+              The best route depends on your technical ability, fitness,
+              season, bike set-up and battery capacity. Agree which riding
+              region to explore, daily distance, climbing, trail character,
+              charging opportunities, transfers and support in the final
+              plan.
             </p>
             <ul className="at-terrain-points">
               <li>
@@ -588,9 +733,14 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
         <div className="at-container at-facts-layout">
           <div>
             <span className="at-eyebrow">IMLIL &amp; OUIRGANE TOUR DETAILS</span>
-            <h2 className="at-heading">Agafay and Southern Morocco e-MTB Tour Information</h2>
+            <h2 className="at-heading">
+              Agafay and Southern Morocco e-MTB Tour Information
+            </h2>
             <p className="at-copy">
-              The details are agreed before departure. Confirm the meeting point, rider experience, e-MTB size and model, battery capacity, helmet, chosen riding region or combination of regions, route, duration, refreshment plan and transfers.
+              The details are agreed before departure. Confirm the meeting
+              point, rider experience, e-MTB size and model, battery capacity,
+              helmet, chosen riding region or combination of regions, route,
+              duration, refreshment plan and transfers.
             </p>
           </div>
           <div className="at-facts-table">
@@ -612,12 +762,19 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
           />
         </div>
         <div className="at-culture-content">
-          <span className="at-eyebrow">BEYOND THE TRAIL · TWO ATLAS VALLEYS</span>
+          <span className="at-eyebrow">
+            BEYOND THE TRAIL · TWO ATLAS VALLEYS
+          </span>
           <h2 className="at-heading">
             Discover Agafay and Southern Morocco by e-MTB
           </h2>
           <p className="at-copy">
-            An e-MTB journey takes you beyond Marrakech into contrasting desert landscapes. Agafay offers rugged stony plains and rolling hills, while southern Morocco opens into remote valleys, rocky mountains and expansive desert scenery. Pedal-assist helps you enjoy the climbs while keeping the focus on the landscape and the ride.
+            An e-MTB journey takes you beyond Marrakech into contrasting
+            desert landscapes. Agafay offers rugged stony plains and rolling
+            hills, while southern Morocco opens into remote valleys, rocky
+            mountains and expansive desert scenery. Pedal-assist helps you
+            enjoy the climbs while keeping the focus on the landscape and the
+            ride.
           </p>
           <div className="at-culture-grid">
             {beyondTrail.map((item) => (
@@ -640,24 +797,42 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
               </h2>
             </div>
             <p>
-              Discover the contrasting landscapes of Agafay and southern Morocco through rocky desert tracks, remote valley routes and rugged mountain paths. Each ride is selected to match the group’s ability, available time and local conditions.
+              Discover the contrasting landscapes of Agafay and southern
+              Morocco through rocky desert tracks, remote valley routes and
+              rugged mountain paths. Each ride is selected to match the
+              group’s ability, available time and local conditions.
             </p>
           </div>
           <div className="at-gallery-grid">
             <div className="at-gallery-item">
-              <img src={images.cycling} alt="Cycling through a selected Moroccan mountain landscape" />
+              <img
+                src={images.cycling}
+                alt="Cycling through a selected Moroccan mountain landscape"
+              />
             </div>
             <div className="at-gallery-item">
-              <img src={images.valley} alt="Remote southern Morocco landscape and riding terrain" />
+              <img
+                src={images.valley}
+                alt="Remote southern Morocco landscape and riding terrain"
+              />
             </div>
             <div className="at-gallery-item">
-              <img src={images.village} alt="Traditional Berber village along a Moroccan cycling route" />
+              <img
+                src={images.village}
+                alt="Traditional Berber village along a Moroccan cycling route"
+              />
             </div>
             <div className="at-gallery-item">
-              <img src={images.mountain} alt="Mountain landscape in Morocco" />
+              <img
+                src={images.mountain}
+                alt="Mountain landscape in Morocco"
+              />
             </div>
             <div className="at-gallery-item">
-              <img src={images.atlas} alt="Atlas mountain landscape on the cycling journey" />
+              <img
+                src={images.atlas}
+                alt="Atlas mountain landscape on the cycling journey"
+              />
             </div>
           </div>
         </div>
@@ -673,11 +848,18 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
               </h2>
             </div>
             <p>
-              This sample four-stage outline shows how a flexible e-MTB adventure could be arranged. Choose a single-day ride in Agafay, continue south over two or three days, or extend the experience with additional riding days.
+              This sample four-stage outline shows how a flexible e-MTB
+              adventure could be arranged. Choose a single-day ride in Agafay,
+              continue south over two or three days, or extend the experience
+              with additional riding days.
             </p>
           </div>
           <p className="at-itinerary-intro">
-            This is an illustrative programme, not a fixed four-day package. Your final proposal will confirm the actual duration, which valleys are included, routes, distances, elevation, e-MTB equipment, charging arrangements, accommodation, meals and transfers.
+            This is an illustrative programme, not a fixed four-day package.
+            Your final proposal will confirm the actual duration, which
+            valleys are included, routes, distances, elevation, e-MTB
+            equipment, charging arrangements, accommodation, meals and
+            transfers.
           </p>
           <div className="at-itinerary-list">
             {itinerary.map((day) => (
@@ -712,7 +894,8 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
             <div>
               <span className="at-eyebrow">YOUR TRIP ARRANGEMENTS</span>
               <h2 className="at-heading">
-                What Is Included in Your Agafay & Southern Morocco e-MTB Adventure?
+                What Is Included in Your Agafay & Southern Morocco e-MTB
+                Adventure?
               </h2>
             </div>
             <p>
@@ -758,7 +941,10 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
               </h2>
             </div>
             <p>
-              Good preparation starts with clear expectations. Share your dates, group size, riding experience and whether you prefer Agafay, southern Morocco or both, so the route, equipment, accommodation and support can be planned accurately.
+              Good preparation starts with clear expectations. Share your
+              dates, group size, riding experience and whether you prefer
+              Agafay, southern Morocco or both, so the route, equipment,
+              accommodation and support can be planned accurately.
             </p>
           </div>
           <div className="at-prep-grid">
@@ -786,13 +972,24 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
               e-MTB Difficulty, Fitness and Riding Experience
             </h2>
             <p className="at-copy">
-              Difficulty depends on the selected trails. Some routes are suitable for confident recreational mountain bikers, while rocky singletrack and steep descents require stronger technical skills. Electric assistance helps on climbs but does not make technical terrain automatically easy.
+              Difficulty depends on the selected trails. Some routes are
+              suitable for confident recreational mountain bikers, while rocky
+              singletrack and steep descents require stronger technical
+              skills. Electric assistance helps on climbs but does not make
+              technical terrain automatically easy.
             </p>
             <p className="at-copy">
-              Share your recent mountain-bike experience, fitness, technical confidence and preferred daily effort. Also tell us about your e-MTB experience so the guide can plan realistic distances, climbing and battery use.
+              Share your recent mountain-bike experience, fitness, technical
+              confidence and preferred daily effort. Also tell us about your
+              e-MTB experience so the guide can plan realistic distances,
+              climbing and battery use.
             </p>
             <div className="at-difficulty-note">
-              <strong>Important:</strong> confirm daily distances, climbing, trail grades, battery range, charging options, support arrangements and realistic riding times in your final itinerary. Conditions and route choices may change with weather and local access.
+              <strong>Important:</strong> confirm daily distances, climbing,
+              trail grades, battery range, charging options, support
+              arrangements and realistic riding times in your final itinerary.
+              Conditions and route choices may change with weather and local
+              access.
             </div>
           </div>
         </div>
@@ -802,13 +999,13 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
         <div className="at-container at-faq-layout">
           <div>
             <span className="at-eyebrow">GOOD TO KNOW</span>
-            <h2 className="at-heading">
-              Frequently Asked Questions
-            </h2>
+            <h2 className="at-heading">Frequently Asked Questions</h2>
             <p className="at-copy">
-              Find answers about tour duration, e-MTB equipment, battery range, route difficulty and planning your Agafay and Southern Morocco adventure.
+              Find answers about tour duration, e-MTB equipment, battery
+              range, route difficulty and planning your Agafay and Southern
+              Morocco adventure.
             </p>
-            <a className="at-text-link" href="/contact">
+            <a className="at-text-link" href="#enquiry">
               Ask Us a Question →
             </a>
           </div>
@@ -837,11 +1034,28 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
           </span>
           <h2>Plan Your Agafay &amp; Southern Morocco e-MTB Adventure</h2>
           <p>
-            Tell us your preferred dates, group size, riding experience and the number of days you have available. We can discuss Agafay and Southern Morocco routes, e-MTB rental, battery arrangements, transfers between the selected regions and accommodation options.
+            Tell us your preferred dates, group size, riding experience and the
+            number of days you have available. We can discuss Agafay and
+            Southern Morocco routes, e-MTB rental, battery arrangements,
+            transfers between the selected regions and accommodation options.
           </p>
-          <a className="at-button" href="/contact">
+          <a className="at-button" href="#enquiry">
             Enquire About Your e-MTB Adventure <span>→</span>
           </a>
+        </div>
+      </section>
+
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Agafay and Southern Morocco e-MTB Adventures – Flexible Duration"
+            destination="Agafay Desert and Southern Morocco"
+            cyclingType="Electric Mountain Bike (e-MTB)"
+          />
         </div>
       </section>
 
@@ -855,7 +1069,9 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
               </h2>
             </div>
             <p>
-              Explore related electric mountain-bike journeys, from a three-day Atlas escape to a private e-MTB holiday with a custom itinerary.
+              Explore related electric mountain-bike journeys, from a
+              three-day Atlas escape to a private e-MTB holiday with a custom
+              itinerary.
             </p>
           </div>
           <div className="at-related-grid">
@@ -884,7 +1100,9 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
               alt="Mountain Bike Morocco"
             />
             <p>
-              Discover Morocco by bike. Explore the High Atlas, ride through rural villages and experience unforgettable mountain and countryside cycling journeys.
+              Discover Morocco by bike. Explore the High Atlas, ride through
+              rural villages and experience unforgettable mountain and
+              countryside cycling journeys.
             </p>
           </div>
           <div>
@@ -910,15 +1128,13 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
             <div className="at-footer-links">
               <a href="/about">About Us</a>
               <a href="/contact">Contact</a>
-              <a href="/contact">Plan Your Trip</a>
+              <a href="#enquiry">Plan Your Trip</a>
               <a href="/cycling-trips">Explore Cycling Tours</a>
             </div>
           </div>
         </div>
         <div className="at-container at-footer-bottom">
-          <span>
-            © {2026} Cycling Morocco. All rights reserved.
-          </span>
+          <span>© {2026} Cycling Morocco. All rights reserved.</span>
           <span>Ride the Atlas. Feel the Freedom.</span>
         </div>
       </footer>

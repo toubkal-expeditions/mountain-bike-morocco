@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Atlas Mountain Passes Cycling Holiday – 7 Days | Mountain Bike Morocco",
   description:
-    "Discover Morocco on a seven-day road cycling holiday through the Atlas Mountains. Ride spectacular mountain roads, explore traditional villages and experience the legendary mountain passes of Morocco.",
+    "Discover Morocco on 7-day road cycling holiday through the Atlas Mountains. Ride spectacular mountain roads, explore traditional villages and experience the legendary mountain passes of Morocco.",
   alternates: {
     canonical: "/cycling-trips/trip/atlas-mountain-passes-cycling-holiday-7-day",
   },
@@ -997,6 +998,21 @@ export default function AtlasMountainPassesCyclingHoliday7DayPage() {
             road cycling holiday.
           </p>
           <a className="at-button" href="/contact">Plan Your Cycling Holiday <span>→</span></a>
+        </div>
+      </section>
+
+      {/* Enquiry form: after the final CTA and before related tours */}
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Atlas Mountain Passes Cycling Holiday – 7 Days"
+            destination="High Atlas Mountains, Morocco"
+            cyclingType="Road Cycling"
+          />
         </div>
       </section>
 

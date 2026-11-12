@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Marrakech Countryside Family Cycling – 3 Days | Mountain Bike Morocco",
   description:
-    "Enjoy a three-day family cycling adventure in the countryside around Marrakech. Discover quiet rural tracks, traditional villages and open landscapes on a private guided journey planned around your family's ages and riding experience.",
+    "Enjoy a 3-day family cycling adventure in the countryside around Marrakech. Discover quiet rural tracks, traditional villages and open landscapes on a private guided journey planned around your family's ages and riding experience.",
   alternates: {
     canonical: "/cycling-trips/trip/marrakech-countryside-family-cycling-3-day",
   },
@@ -427,6 +428,10 @@ export default function MarrakechCountrysideFamilyCyclingPage() {
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
         .atlas-tour .at-related-section { padding: 86px 0; }
+        .atlas-tour .at-enquiry-section { background: var(--green); color: #fff; }
+        .atlas-tour .at-enquiry-section .at-eyebrow { color: var(--gold-light); }
+        .atlas-tour .at-enquiry-section .at-heading { color: #fff; }
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #e1e2d8; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
         .atlas-tour .at-related-image { height: 255px; overflow: hidden; }
@@ -977,6 +982,31 @@ export default function MarrakechCountrysideFamilyCyclingPage() {
             three-day family cycling adventure in the countryside around Marrakech.
           </p>
           <a className="at-button" href="/contact">Plan Your Marrakech Countryside Family Cycling <span>→</span></a>
+        </div>
+      </section>
+
+      {/* CONTACT ENQUIRY FORM */}
+      <section className="at-section at-enquiry-section" id="enquire">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+              <h2 className="at-heading">
+                Enquire About Marrakech Countryside Family Cycling
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred dates, group size, the ages of your
+              children and everyone's cycling experience. Our team will help
+              you plan the details of your three-day family cycling adventure
+              in the countryside around Marrakech.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="Marrakech Countryside Family Cycling"
+            destination="Countryside around Marrakech, Morocco"
+            cyclingType="Family Cycling"
+          />
         </div>
       </section>
 

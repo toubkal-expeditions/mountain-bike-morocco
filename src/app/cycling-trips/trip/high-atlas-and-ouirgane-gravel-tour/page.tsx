@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "High Atlas & Ouirgane Gravel Tour – 4 Days | Mountain Bike Morocco",
   description:
-    "Explore the High Atlas and Ouirgane Valley on a four-day private gravel cycling adventure through mountain roads, rural tracks and traditional villages in Morocco.",
+    "Explore the High Atlas and Ouirgane Valley on a 4-day private gravel cycling adventure through mountain roads, rural tracks and traditional villages in Morocco.",
   alternates: {
-    canonical: "/cycling-trips/trip/high-atlas-and-ouirgane-gravel-tour-4-day",
+    canonical: "/cycling-trips/trip/high-atlas-and-ouirgane-gravel-tour",
   },
 };
 
@@ -417,6 +418,10 @@ export default function HighAtlasOuirganeGravelTour4DayPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section { background: var(--green); color: #fff; }
+        .atlas-tour .at-enquiry-section .at-eyebrow { color: var(--gold-light); }
+        .atlas-tour .at-enquiry-section .at-heading { color: #fff; }
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #e1e2d8; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -932,6 +937,33 @@ export default function HighAtlasOuirganeGravelTour4DayPage() {
         </div>
       </section>
 
+      {/* CONTACT ENQUIRY FORM */}
+      <section className="at-section at-enquiry-section" id="enquire">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+              <h2 className="at-heading">
+                Enquire About High Atlas &amp; Ouirgane Gravel Tour
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred date, group size, cycling experience and
+              bicycle requirements. Our team will help you discuss a suitable
+              gravel route, riding distance, equipment and arrangements for
+              your four-day cycling adventure through the High Atlas and
+              Ouirgane Valley.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="High Atlas & Ouirgane Gravel Tour"
+            destination="High Atlas and Ouirgane Valley, Morocco"
+            cyclingType="Gravel Cycling"
+          />
+        </div>
+      </section>
+
+      {/* EXPLORE MORE */}
       <section className="at-related-section">
         <div className="at-container">
           <div className="at-section-head">

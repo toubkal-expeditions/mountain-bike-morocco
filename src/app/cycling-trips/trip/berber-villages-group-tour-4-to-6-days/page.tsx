@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Berber Villages Group Tour – 4 to 6 Days | Mountain Bike Morocco",
   description:
-    "Explore traditional Berber villages and High Atlas valleys on a guided four-to-six-day group cycling journey. Ride selected rural tracks, enjoy mountain scenery and discover the character of Morocco’s mountain communities.",
+    "Explore traditional Berber villages and High Atlas valleys on a guided 4 to 6day group cycling journey. Ride selected rural tracks, enjoy mountain scenery and discover the character of Morocco’s mountain communities.",
   alternates: {
     canonical: "/cycling-trips/trip/berber-villages-group-tour-4-to-6-days",
   },
@@ -259,6 +260,19 @@ export default function BerberVillagesGroupTour4To6DaysPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section {
+          background: var(--green);
+          color: #fff;
+        }
+        .atlas-tour .at-enquiry-section .at-eyebrow {
+          color: var(--gold-light);
+        }
+        .atlas-tour .at-enquiry-section .at-heading {
+          color: #fff;
+        }
+        .atlas-tour .at-enquiry-section .at-section-head > p {
+          color: #e1e2d8;
+        }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -814,6 +828,27 @@ export default function BerberVillagesGroupTour4To6DaysPage() {
             cycling adventure.
           </p>
           <a className="at-button" href="/contact">Plan Your Group Cycling Tour <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquire">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+              <h2 className="at-heading">
+                Enquire About Berber Villages Group Tour
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred dates, group size and cycling experience so we can help plan your four-to-six-day Atlas group cycling journey.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="Berber Villages Group Tour – 4 to 6 Days"
+            destination="High Atlas villages and valleys"
+            cyclingType="Mountain Biking"
+          />
         </div>
       </section>
 

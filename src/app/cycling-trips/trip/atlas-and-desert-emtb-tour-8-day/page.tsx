@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title:
@@ -1731,6 +1732,21 @@ export default function AtlasAndDesertEMTBTour8DayPage() {
             mountain routes and desert landscapes.
           </p>
           <a className="at-button" href="/contact">Plan Your E-MTB Adventure <span>→</span></a>
+        </div>
+      </section>
+
+      {/* Enquiry form: after the final CTA and before related tours */}
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Atlas and Desert E-MTB Tour – 8 Days"
+            destination="Atlas Mountains and desert, Morocco"
+            cyclingType="E-MTB"
+          />
         </div>
       </section>
 

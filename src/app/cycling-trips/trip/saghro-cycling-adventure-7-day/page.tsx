@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title:
     "Saghro Cycling Adventure Morocco – 7 Days | Mountain Bike Morocco",
   description:
-    "Explore Morocco's dramatic Jebel Saghro on a seven-day guided cycling adventure. Ride remote mountain tracks, rocky landscapes, desert valleys and traditional Amazigh villages on a private journey tailored to your experience.",
+    "Explore Morocco's dramatic Jebel Saghro on a 7-day guided cycling adventure. Ride remote mountain tracks, rocky landscapes, desert valleys and traditional Amazigh villages on a private journey tailored to your experience.",
   alternates: {
     canonical: "/cycling-trips/trip/saghro-cycling-adventure-7-day",
   },
@@ -1074,6 +1075,14 @@ export default function SaghroCyclingAdventure7DayPage() {
           line-height: 1.85;
         }
 
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+
+        .atlas-tour .at-enquiry-section .at-eyebrow,
+        .atlas-tour .at-enquiry-section .at-heading,
+        .atlas-tour .at-enquiry-section .at-section-head > p {
+          color: #fff !important;
+        }
+
         .atlas-tour .at-related-section { padding: 86px 0; }
 
         .atlas-tour .at-related-grid {
@@ -1711,6 +1720,30 @@ export default function SaghroCyclingAdventure7DayPage() {
         </div>
       </section>
 
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">START PLANNING YOUR RIDE</span>
+              <h2 className="at-heading">
+                Enquire About Your Saghro Cycling Adventure
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred travel dates, group size, cycling
+              experience and bicycle requirements. Our team will help
+              discuss the route, riding stages and arrangements for your
+              private seven-day adventure in the Jebel Saghro region.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="Saghro Cycling Adventure – 7 Days"
+            destination="Jebel Saghro, Anti-Atlas, Southern Morocco"
+            cyclingType="Mountain Cycling"
+          />
+        </div>
+      </section>
+
       <section className="at-related-section">
         <div className="at-container">
           <div className="at-section-head">
@@ -1759,7 +1792,7 @@ export default function SaghroCyclingAdventure7DayPage() {
             <div className="at-footer-links">
               <a href="/cycling-trips">All Cycling Tours</a>
               <a href="/cycling-trips/mtb">Mountain Bike Tours</a>
-              <a href="/cycling-trips/emtb">E-MTB Tours</a>
+              <a href="/cycling-trips/e-mtb">E-MTB Tours</a>
               <a href="/cycling-trips/gravel">Gravel Cycling</a>
             </div>
           </div>

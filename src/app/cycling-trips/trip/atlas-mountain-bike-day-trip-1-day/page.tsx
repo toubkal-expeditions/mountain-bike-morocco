@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Atlas Mountain Bike Day Trip – 1 Day | Mountain Bike Morocco",
   description:
-    "Spend a day mountain biking in Morocco's High Atlas. Ride selected trails and mountain tracks with a local guide on a private day trip planned around your experience, preferred terrain and conditions.",
+    "Spend a 1-day mountain biking in Morocco's High Atlas. Ride selected trails and mountain tracks with a local guide on a private day trip planned around your experience, preferred terrain and conditions.",
   alternates: {
     canonical: "/cycling-trips/trip/atlas-mountain-bike-day-trip-1-day",
   },
@@ -814,6 +815,21 @@ export default function AtlasMountainBikeDayTripPage() {
             one-day mountain biking experience in the Atlas Mountains of Morocco.
           </p>
           <a className="at-button" href="/contact">Plan Your Atlas MTB Day Trip <span>→</span></a>
+        </div>
+      </section>
+
+      {/* Enquiry form: after the final CTA and before related tours */}
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Atlas Mountain Bike Day Trip – 1 Day"
+            destination="High Atlas Mountains, Morocco"
+            cyclingType="MTB"
+          />
         </div>
       </section>
 

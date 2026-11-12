@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title:
     "Atlas to Desert Gravel Adventure Ride Morocco – 5 Days | Mountain Bike Morocco",
   description:
-    "Discover Morocco on a five-day Atlas to Desert gravel cycling adventure. Ride through mountain landscapes, traditional villages, the Draa Valley and the desert edge.",
+    "Discover Morocco on 5-day Atlas to Desert gravel cycling adventure. Ride through mountain landscapes, traditional villages, the Draa Valley and the desert edge.",
   alternates: {
     canonical: "/cycling-trips/trip/atlas-to-desert-gravel-adventure-ride-5-day",
   },
@@ -406,7 +407,6 @@ export default function AtlasToDesertGravelAdventureRide5DayPage() {
         .atlas-tour .at-faq-list summary::-webkit-details-marker { display: none; }
         .atlas-tour .at-faq-list summary::after { position: absolute; top: 0; right: 3px; color: #a27b40; content: "+"; font-family: Arial, sans-serif; font-size: 23px; }
         .atlas-tour .at-faq-list details[open] summary::after { content: "−"; }
-        .atlas-tour .at-faq-list details p { max-width: 690px; margin: 13px 0 0; color: var(--muted); font-size: 14px; line-height: 1.85; }
         .atlas-tour .at-final-cta { position: relative; display: flex; min-height: 500px; align-items: center; background: #1e2a22; color: #fff; isolation: isolate; }
         .atlas-tour .at-final-image, .atlas-tour .at-final-shade { position: absolute; inset: 0; }
         .atlas-tour .at-final-image { z-index: -2; }
@@ -415,6 +415,19 @@ export default function AtlasToDesertGravelAdventureRide5DayPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section {
+          background: var(--green);
+          color: #fff;
+        }
+        .atlas-tour .at-enquiry-section .at-eyebrow {
+          color: var(--gold-light);
+        }
+        .atlas-tour .at-enquiry-section .at-heading {
+          color: #fff;
+        }
+        .atlas-tour .at-enquiry-section .at-section-head > p {
+          color: #e1e2d8;
+        }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -931,6 +944,27 @@ export default function AtlasToDesertGravelAdventureRide5DayPage() {
             needed for your Atlas to Desert gravel adventure.
           </p>
           <a className="at-button" href="/contact">Plan Your Gravel Adventure <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquire">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR JOURNEY</span>
+              <h2 className="at-heading">
+                Enquire About the Atlas to Desert Gravel Adventure Ride
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred dates, group size and cycling experience so we can help plan your five-day gravel cycling adventure.
+            </p>
+          </div>
+          <ContactEnquiryForm
+            tourName="Atlas to Desert Gravel Adventure Ride – 5 Days"
+            destination="Atlas Mountains and Southern Morocco"
+            cyclingType="Gravel Cycling"
+          />
         </div>
       </section>
 

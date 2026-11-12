@@ -1,4 +1,36 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Family Mountain Bike Tours in Morocco | Atlas Cycling Holidays",
+  description:
+    "Discover family-friendly mountain bike tours in Morocco. Explore the Atlas Mountains, Marrakech countryside and Ouirgane Valley on cycling adventures planned around your family's ages, abilities and pace.",
+  alternates: {
+    canonical: "/cycling-trips/family-mtb",
+  },
+  openGraph: {
+    title: "Family Mountain Bike Tours in Morocco | Atlas Cycling Holidays",
+    description:
+      "Plan a family cycling holiday in Morocco, with mountain bike adventures in the Atlas foothills, Ouirgane Valley and countryside around Marrakech.",
+    url: "https://mountain-bike-morocco.com/cycling-trips/family-mtb",
+    siteName: "Mountain Bike Morocco",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "/images/group-cycling-atlas-mountains.jpg",
+        alt: "Family mountain biking adventure in Morocco's Atlas Mountains",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Family Mountain Bike Tours in Morocco | Mountain Bike Morocco",
+    description:
+      "Explore Morocco together on family-friendly cycling adventures in the Atlas Mountains and Marrakech countryside.",
+    images: ["/images/group-cycling-atlas-mountains.jpg"],
+  },
+};
 
 const familyTours = [
   {

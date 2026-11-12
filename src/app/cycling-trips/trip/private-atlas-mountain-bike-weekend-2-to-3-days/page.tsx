@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
   title: "Private Atlas Mountain Bike Weekend – 2 to 3 Days | Mountain Bike Morocco",
   description:
-    "Ride the Atlas on a private two- or three-day mountain-bike weekend in Morocco. Explore selected trails, mountain tracks and valley landscapes with a local guide and a route plan tailored to your group's riding experience.",
+    "Ride the Atlas on a private 2 or 3-day mountain-bike weekend in Morocco. Explore selected trails, mountain tracks and valley landscapes with a local guide and a route plan tailored to your group's riding experience.",
   alternates: {
     canonical: "/cycling-trips/trip/private-atlas-mountain-bike-weekend-2-to-3-days",
   },
@@ -391,6 +392,10 @@ export default function PrivateAtlasMountainBikeWeekendPage() {
         .atlas-tour .at-final-content .at-eyebrow { color: #f0ce88; }
         .atlas-tour .at-final-content h2 { max-width: 750px; margin: 15px 0 20px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.5vw, 68px); font-weight: 400; letter-spacing: -1.8px; line-height: 1.1; }
         .atlas-tour .at-final-content p { max-width: 580px; margin-bottom: 28px; color: #f0eee6; font-size: 16px; line-height: 1.85; }
+        .atlas-tour .at-enquiry-section { background: var(--green); }
+        .atlas-tour .at-enquiry-section .at-eyebrow,
+        .atlas-tour .at-enquiry-section .at-heading,
+        .atlas-tour .at-enquiry-section .at-section-head > p { color: #fff !important; }
         .atlas-tour .at-related-section { padding: 86px 0; }
         .atlas-tour .at-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
         .atlas-tour .at-related-card { background: #fffefa; border: 1px solid var(--line); }
@@ -878,6 +883,26 @@ export default function PrivateAtlasMountainBikeWeekendPage() {
             2–3-day private mountain biking holiday in the Atlas Mountains of Morocco.
           </p>
           <a className="at-button" href="/contact">Plan Your Private Atlas MTB Weekend <span>→</span></a>
+        </div>
+      </section>
+
+      <section className="at-section at-enquiry-section" id="enquiry">
+        <div className="at-container">
+          <div className="at-section-head">
+            <div>
+              <span className="at-eyebrow">PLAN YOUR PRIVATE ATLAS MTB WEEKEND</span>
+              <h2 className="at-heading">
+                Enquire About the Private Atlas Mountain Bike Weekend
+              </h2>
+            </div>
+            <p>
+              Tell us your preferred dates, group size, riding experience and
+              whether you would like a two- or three-day weekend. We can discuss
+              suitable trails, equipment, accommodation and transfer
+              arrangements for your private Atlas mountain-bike escape.
+            </p>
+          </div>
+          <ContactEnquiryForm />
         </div>
       </section>
 
