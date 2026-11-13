@@ -36,6 +36,7 @@ const emtbTours = [
   {
     number: "01",
     duration: "Day Tour",
+    destination: "Marrakech",
     label: "DAY RIDES & FLEXIBLE ADVENTURES",
     title: "E-MTB Day Tours from Marrakech",
     description:
@@ -46,6 +47,7 @@ const emtbTours = [
   {
     number: "02",
     duration: "Flexible duration",
+    destination: "High Atlas",
     label: "HIGH MOUNTAINS & SCENIC TRAILS",
     title: "Atlas Mountains E-MTB Tours",
     description:
@@ -56,6 +58,7 @@ const emtbTours = [
   {
     number: "03",
     duration: "3 days",
+    destination: "High Atlas",
     label: "MULTI-DAY MOUNTAIN EXPLORATION",
     title: "Three-Day Atlas E-Bike Escape",
     description:
@@ -66,6 +69,7 @@ const emtbTours = [
   {
     number: "04",
     duration: "Private itinerary",
+    destination: "Morocco",
     label: "PERSONALISED CYCLING HOLIDAYS",
     title: "Private E-MTB Holidays",
     description:
@@ -76,6 +80,7 @@ const emtbTours = [
   {
     number: "05",
     duration: "Flexible duration",
+    destination: "Imlil & Ouirgane",
     label: "VILLAGES, VALLEYS & RURAL TRACKS",
     title: "Imlil and Ouirgane E-MTB Adventures",
     description:
@@ -86,6 +91,7 @@ const emtbTours = [
   {
     number: "06",
     duration: "Flexible duration",
+    destination: "Agafay & Southern Morocco",
     label: "OPEN LANDSCAPES & DESERT EDGE",
     title: "Agafay and Southern Morocco E-MTB",
     description:
@@ -96,6 +102,7 @@ const emtbTours = [
   {
     number: "07",
     duration: "2 days",
+    destination: "Atlas Mountains",
     label: "BERBER VILLAGES & VALLEY TRACKS",
     title: "Atlas Berber Valley E-Bike Tour",
     description:
@@ -106,6 +113,7 @@ const emtbTours = [
   {
     number: "08",
     duration: "4 days",
+    destination: "Atlas Mountains",
     label: "MOUNTAIN TRAILS & HIGH ATLAS SCENERY",
     title: "Atlas Mountains E-Bike Tour",
     description:
@@ -116,6 +124,7 @@ const emtbTours = [
   {
     number: "09",
     duration: "8 days",
+    destination: "Atlas & Desert",
     label: "MOUNTAINS TO DESERT LANDSCAPES",
     title: "Atlas & Desert E-MTB Tour",
     description:
@@ -126,6 +135,7 @@ const emtbTours = [
   {
     number: "10",
     duration: "4 days",
+    destination: "Morocco",
     label: "FAMILY RIDING & SHARED DISCOVERY",
     title: "Morocco Family E-Bike Tour",
     description:
@@ -136,6 +146,7 @@ const emtbTours = [
   {
     number: "11",
     duration: "5 days",
+    destination: "Atlas Mountains",
     label: "COMFORT, SCENERY & PRIVATE RIDING",
     title: "Atlas Luxury E-Bike Tour",
     description:
@@ -146,6 +157,7 @@ const emtbTours = [
   {
     number: "12",
     duration: "3 days",
+    destination: "Morocco",
     label: "A SHORT MOROCCO CYCLING ESCAPE",
     title: "Morocco E-MTB Tour",
     description:
@@ -156,6 +168,7 @@ const emtbTours = [
   {
     number: "13",
     duration: "6 days",
+    destination: "Atlas & Atlantic Coast",
     label: "FROM MOUNTAIN INTERIORS TO THE COAST",
     title: "Atlas to Atlantic Coast E-Bike Tour",
     description:
@@ -166,6 +179,7 @@ const emtbTours = [
   {
     number: "14",
     duration: "8 days",
+    destination: "Southern Morocco",
     label: "SOUTHERN VALLEYS & OPEN TERRAIN",
     title: "South Morocco E-Bike Tour",
     description:
@@ -176,6 +190,7 @@ const emtbTours = [
   {
     number: "15",
     duration: "3 days",
+    destination: "Atlas Valleys",
     label: "VALLEY TRAILS & RURAL VILLAGES",
     title: "Three Valley E-Bike Tour",
     description:
@@ -186,6 +201,7 @@ const emtbTours = [
   {
     number: "16",
     duration: "7 days",
+    destination: "Marrakech & Atlas",
     label: "CITY ACCESS & ATLAS EXPLORATION",
     title: "Atlas Marrakech E-Bike Tour",
     description:
@@ -196,6 +212,7 @@ const emtbTours = [
   {
     number: "17",
     duration: "4 days",
+    destination: "Atlas Mountains",
     label: "ATLAS MOUNTAIN RIDING",
     title: "E-Bike Tour Atlas Mountains",
     description:
@@ -364,40 +381,69 @@ export default function ElectricMountainBikeToursPage() {
 
             <div className="cl-tour-grid">
               {emtbTours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={tour.href}
                     aria-label={`More details about ${tour.title}`}
                   >
                     <img
-                      className="cl-tour-card__image"
                       src={tour.image}
                       alt={tour.title}
                       loading="lazy"
                     />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <span className="home-tour-card__category">
+                      {tour.label}
+                    </span>
+                    <span className="home-tour-card__level">
+                      {tour.destination}
+                    </span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.label} · {tour.duration}</p>
-                    <h3>
-                      <Link href={tour.href}>
-                        {tour.title}
-                      </Link>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      MOUNTAIN BIKE MOROCCO
+                    </p>
+                    <h3 className="home-tour-card__title">
+                      <Link href={tour.href}>{tour.title}</Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <div className="cl-tour-card__actions">
+                    <p className="home-tour-card__description">
+                      {tour.description}
+                    </p>
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span
+                          className="home-tour-card__meta-icon"
+                          aria-hidden="true"
+                        >
+                          ◷
+                        </span>
+                        {tour.duration}
+                      </span>
+                      <span className="home-tour-card__meta-item">
+                        <span
+                          className="home-tour-card__meta-icon"
+                          aria-hidden="true"
+                        >
+                          ◆
+                        </span>
+                        {tour.destination}
+                      </span>
+                    </div>
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={tour.href}
                       >
                         More Details
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
-                        href={{ pathname: "/contact", query: { tour: tour.title, request: "booking" } }}
+                        className="home-tour-card__link"
+                        href={{
+                          pathname: "/contact",
+                          query: { tour: tour.title, request: "booking" },
+                        }}
                       >
-                        Booking
+                        Booking <span aria-hidden="true">↗</span>
                       </Link>
                     </div>
                   </div>
@@ -442,17 +488,54 @@ export default function ElectricMountainBikeToursPage() {
               an electric mountain bike experience.
             </p>
           </div>
+
           <div className="cl-region-grid">
             {destinations.map((destination, index) => (
-              <article className="cl-region-card" key={destination.title}>
-                <Link className="cl-region-card__image-wrap" href={destination.href} aria-label={destination.title}>
-                  <img src={destination.image} alt={destination.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+              <article className="home-tour-card" key={destination.title}>
+                <Link
+                  className="home-tour-card__image"
+                  href={destination.href}
+                  aria-label={`Explore ${destination.title}`}
+                >
+                  <img
+                    src={destination.image}
+                    alt={destination.title}
+                    loading="lazy"
+                  />
+                  <span className="home-tour-card__category">
+                    E-MTB DESTINATION
+                  </span>
+                  <span className="home-tour-card__level">
+                    {destination.title}
+                  </span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3><Link href={destination.href}>{destination.title}</Link></h3>
-                  <p>{destination.text}</p>
-                  <Link className="cl-text-link" href={destination.href}>Explore the region <span aria-hidden="true">↗</span></Link>
+
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">
+                    MOROCCO CYCLING DESTINATIONS
+                  </p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={destination.href}>
+                      {destination.title}
+                    </Link>
+                  </h3>
+                  <p className="home-tour-card__description">
+                    {destination.text}
+                  </p>
+                  <div className="home-tour-card__actions">
+                    <Link
+                      className="home-tour-card__button"
+                      href={destination.href}
+                    >
+                      Explore Destination
+                    </Link>
+                    <Link
+                      className="home-tour-card__link"
+                      href="/contact"
+                    >
+                      Plan a Ride <span aria-hidden="true">↗</span>
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}
@@ -593,7 +676,7 @@ export default function ElectricMountainBikeToursPage() {
           <div>
             <h3>Destinations</h3>
             <Link href="/destinations/atlas-mountains">Atlas Mountains</Link>
-            <Link href="/destinations/imlil-toubkal">Imlil &amp; Toubkal</Link>
+            <Link href="/destinations/toubkal">Imlil &amp; Toubkal</Link>
             <Link href="/destinations/marrakech">Marrakech</Link>
             <Link href="/destinations/agafay-desert">Agafay Desert</Link>
             <Link href="/destinations">All Destinations</Link>

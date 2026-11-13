@@ -14,6 +14,7 @@ const tours = [
     label: "DESERT TRACKS & REMOTE LANDSCAPES",
     title: "Sahara Desert Mountain Bike Adventure",
     duration: "3 days",
+    destination: "SAHARA DESERT",
     description: "Explore selected tracks on a guided mountain bike journey through southern Morocco’s desert-edge landscapes. Riding conditions can shift between hard-packed tracks, loose stones and sandy sections, so the route should match your bike, handling skills and experience. Confirm daily distances, elevation, water supply, support, accommodation and access for your dates before the trip is finalised.",
     image: "/images/south-morocco-cycling-tour.jpg",
   },
@@ -23,6 +24,7 @@ const tours = [
     label: "SOUTHERN MOROCCO & DESERT TRAILS",
     title: "Southern Morocco MTB Expedition",
     duration: "5 days",
+    destination: "SOUTHERN MOROCCO",
     description: "Ride a multi-day mountain bike itinerary through selected trails and tracks in southern Morocco, linking changing terrain and wide desert horizons. A realistic plan considers the surface, heat, remoteness, support vehicle access and distances between overnight stops. Share your riding level and preferred pace so technical sections, daily mileage, water stops and logistics can be reviewed together.",
     image: "/images/south-morocco-cycling-expedition.jpg",
   },
@@ -32,6 +34,7 @@ const tours = [
     label: "ROCKY MOUNTAINS & DESERT EDGE",
     title: "Saghro to Sahara Mountain Bike Journey",
     duration: "6 days",
+    destination: "SAGHRO TO SAHARA",
     description: "Connect selected mountain and desert-edge riding areas on a longer MTB journey towards the Sahara region. The terrain and remoteness make thoughtful preparation essential: route options, technical difficulty, weather, water resupply, transfers and overnight arrangements all need to be checked. The final stages should be adapted to the group rather than relying on a fixed mileage target.",
     image: "/images/mtb-morocco-Saghro.JPG",
   },
@@ -41,6 +44,7 @@ const tours = [
     label: "ELECTRIC-ASSISTED DESERT EXPLORATION",
     title: "Sahara Edge E-MTB Discovery Tour",
     duration: "2 days",
+    destination: "SAHARA DESERT EDGE",
     description: "Discover selected tracks on an electric mountain bike, with a route planned around surface conditions, battery range and your experience. Pedal assistance can make climbs more manageable, but loose ground, heat and long distances still require good preparation. Before departure, confirm charging opportunities, spare battery arrangements where applicable, support, water stops and the technical level of each stage.",
     image: "/images/sahara-desert-ebike-expeditions.jpg",
   },
@@ -50,6 +54,7 @@ const tours = [
     label: "WIDE HORIZONS & SOUTHERN TRACKS",
     title: "Southern Morocco E-MTB Desert Escape",
     duration: "4 days",
+    destination: "SOUTHERN MOROCCO",
     description: "Plan several days of electric mountain biking across suitable routes in southern Morocco, with stages selected to fit the terrain and your preferred pace. Battery range, charging access, surface quality, temperature and distances between villages all affect the itinerary. Confirm the bike setup, route access, overnight stops, water and support arrangements before the journey is booked.",
     image: "/images/southern-ebike-cycling-expeditions.jpg",
   },
@@ -59,6 +64,7 @@ const tours = [
     label: "MOUNTAIN FOOTHILLS TO DESERT LANDSCAPES",
     title: "Atlas Foothills to Sahara E-Bike Expedition",
     duration: "6 days",
+    destination: "ATLAS TO SAHARA",
     description: "Combine selected foothill routes and southern desert-edge landscapes on a multi-day e-bike itinerary. The route needs to account for differences in elevation, trail surfaces, battery range, charging opportunities and the practicalities of riding in remote areas. Daily distances, transfers, accommodation and support should be discussed around your equipment, fitness and the conditions expected for your travel dates.",
     image: "/images/saghro-morocco-e-bike-tour.jpg",
   },
@@ -68,6 +74,7 @@ const tours = [
     label: "LONG GRAVEL ROADS & OPEN COUNTRY",
     title: "Sahara Region Gravel Cycling Tour",
     duration: "3 days",
+    destination: "SAHARA REGION",
     description: "Ride selected gravel roads and tracks in southern Morocco, where long horizons and changing terrain create a rewarding journey for riders who enjoy self-paced exploration. Route selection must take account of loose surfaces, tyre clearance, gearing, navigation and the distance between resupply points. Confirm the itinerary, support plan, water arrangements and expected daily mileage before setting off.",
     image: "/images/gravel-desert-cycling-morocco.JPG",
   },
@@ -77,6 +84,7 @@ const tours = [
     label: "REMOTE PISTES & CHANGING TERRAIN",
     title: "Southern Desert Gravel Expedition",
     duration: "5 days",
+    destination: "SOUTHERN MOROCCO",
     description: "Spend several days following suitable gravel roads through selected southern Moroccan landscapes. This kind of trip is as much about planning as distance: road quality, sandy or rocky sections, navigation, temperature and resupply options all shape a sensible stage. Share your bike setup, experience and preferred daily distance so the route and support requirements can be assessed properly.",
     image: "/images/gravel-desert-cycling-expedition.jpg",
   },
@@ -86,6 +94,7 @@ const tours = [
     label: "VILLAGES, DRY VALLEYS & DESERT VIEWS",
     title: "Oases and Desert Roads Gravel Ride",
     duration: "4 days",
+    destination: "SOUTHERN OASES",
     description: "Explore selected gravel routes linking southern Moroccan villages, dry valleys and desert-edge scenery. The exact itinerary should reflect the surfaces available and the group’s comfort with remote riding. Plan realistic distances, navigation, food and water stops, accommodation, transfers and support, and verify the road conditions and route access for the chosen season.",
     image: "/images/gravel-morocco-cycling-tour.JPG",
   },
@@ -95,6 +104,7 @@ const tours = [
     label: "PAVED ROADS THROUGH SOUTHERN MOROCCO",
     title: "Southern Morocco Road Cycling Tour",
     duration: "3 days",
+    destination: "SOUTHERN MOROCCO",
     description: "Discover selected paved routes through southern Morocco on a road cycling break shaped around your fitness and preferred distance. The landscapes and climbing can vary from one area to another, so the final route should consider road surfaces, traffic, elevation, weather and access to food and water. Confirm stage lengths, support and overnight stops before travel.",
     image: "/images/road-cycling-holiday-morocco.jpg",
   },
@@ -104,6 +114,7 @@ const tours = [
     label: "LONGER STAGES & OPEN HORIZONS",
     title: "Sahara Gateway Road Cycling Challenge",
     duration: "5 days",
+    destination: "SAHARA GATEWAY",
     description: "Build an endurance-focused road cycling trip around suitable paved roads in the wider south of Morocco. Daily distances and elevation should be matched to the group, while traffic exposure, road condition, temperature, recovery time and reliable water stops remain central to the plan. Share your cycling background and target mileage so the stages and support can be discussed realistically.",
     image: "/images/adventure-road-cycling-morocco.jpg",
   },
@@ -113,6 +124,7 @@ const tours = [
     label: "MOUNTAIN FOOTHILLS & SOUTHERN ROUTES",
     title: "Atlas to Sahara Road Cycling Journey",
     duration: "7 days",
+    destination: "ATLAS TO SAHARA",
     description: "Consider a multi-day road cycling journey from selected Atlas foothill roads towards southern Morocco’s desert-edge landscapes. The route needs to balance climbing, distances, road conditions, traffic, weather and the location of overnight stops. An appropriate itinerary depends on your current fitness and preferred daily mileage, with transfers and support confirmed before the trip is finalised.",
     image: "/images/atlas-to-desert-biking-tour.jpg",
   },
@@ -122,6 +134,7 @@ const tours = [
     label: "A SHARED JOURNEY THROUGH SOUTHERN MOROCCO",
     title: "Women Cycling Tour",
     duration: "8 days",
+    destination: "SOUTHERN MOROCCO",
     description: "An eight-day cycling journey designed around the interests, experience and pace of women travelling together. The itinerary can combine suitable southern Moroccan roads and desert-edge routes, with daily distances, accommodation, support and rest stops planned for the group. Share your preferred cycling style, experience and travel dates so the route and practical arrangements can be discussed before booking.",
     image: "/images/group-cycling-tour-morocco.jpg",
   },
@@ -131,6 +144,7 @@ const tours = [
     label: "A SCHOOL GROUP JOURNEY THROUGH THE SAHARA REGION",
     title: "School Cycling Sahara Expedition",
     duration: "9 days",
+    destination: "SAHARA REGION",
     description: "A nine-day school-group cycling expedition concept for exploring southern Morocco by bike. The route, daily mileage and riding terrain should be matched to participants' ages, experience and abilities, with appropriate adult supervision, safeguarding arrangements, qualified local support, water and medical contingencies agreed in advance. The final itinerary should only be confirmed after the group requirements, permissions, transport and accommodation have been reviewed.",
     image: "/images/south-morocco-cycling-expedition.jpg",
   },
@@ -140,6 +154,7 @@ const tours = [
     label: "EIGHT DAYS ACROSS SOUTHERN MOROCCO",
     title: "Morocco Desert Cycling Expedition",
     duration: "8 days",
+    destination: "SOUTHERN MOROCCO",
     description: "An eight-day expedition idea through selected desert-edge landscapes in southern Morocco, linking suitable tracks, rural roads and overnight stops according to the group and conditions. The exact route should reflect bike type, surface, weather, water access and support-vehicle logistics; soft dune sand is not suitable for most conventional cycling routes. Discuss your riding background, dates and preferred level of challenge to shape a realistic itinerary.",
     image: "/images/sahara-morocco-cycling-holiday.jpg",
   },
@@ -149,6 +164,7 @@ const tours = [
     label: "TEN DAYS OF GRAVEL ROADS AND OPEN LANDSCAPES",
     title: "Morocco Gravel Bike Caravan",
     duration: "10 days",
+    destination: "MOROCCO",
     description: "A ten-day gravel cycling journey built around selected roads and firm tracks across Morocco's changing landscapes. A longer caravan-style trip needs careful stage planning, suitable tyres and gearing, reliable navigation, food and water resupply, luggage arrangements and support between remote stops. The route should be selected for actual surface conditions and the group's pace, with transfers and overnight accommodation confirmed for the chosen dates.",
     image: "/images/gravel-desert-cycling-expedition.jpg",
   },
@@ -158,6 +174,7 @@ const tours = [
     label: "FROM MARRAKECH TOWARDS THE SAHARA",
     title: "Marrakech to Sahara E-MTB Caravan",
     duration: "9 days",
+    destination: "MARRAKECH TO SAHARA",
     description: "A nine-day electric mountain bike journey concept travelling from Marrakech towards southern Morocco and the Sahara gateway region. The itinerary should balance suitable riding stages with transfers, changing elevation, surface conditions, battery range, charging opportunities and recovery time. Before booking, confirm the bike and battery setup, route access, support vehicle, water supplies, accommodation and realistic daily distances for everyone in the group.",
     image: "/images/e-mtb-tour-from-marrakech.jpg",
   },
@@ -288,36 +305,56 @@ export default function SaharaDesertDestinationPage() {
             </div>
             <div className="cl-tour-grid">
               {tours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={{ pathname: "/contact", query: { tour: tour.title, destination: "Sahara Desert", request: "details" } }}
                     aria-label={`More details about ${tour.title}`}
                   >
-                    <img className="cl-tour-card__image" src={tour.image} alt={tour.title} loading="lazy" />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <img src={tour.image} alt={tour.title} loading="lazy" />
+                    <span className="home-tour-card__category">{tour.label}</span>
+                    <span className="home-tour-card__level">{tour.destination}</span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.discipline} · {tour.duration}</p>
-                    <p className="cl-card-label">{tour.label}</p>
-                    <h3>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      {tour.discipline.includes("ROAD")
+                        ? "ROAD CYCLING TOUR"
+                        : tour.discipline.includes("GRAVEL")
+                          ? "GRAVEL CYCLING TOUR"
+                          : tour.discipline.includes("E-MTB")
+                            ? "E-MTB TOUR"
+                            : tour.discipline.includes("WOMEN'S")
+                              ? "WOMEN'S CYCLING TOUR"
+                              : tour.discipline.includes("GROUP")
+                                ? "GROUP CYCLING EXPEDITION"
+                                : tour.discipline.includes("DESERT CYCLING")
+                                  ? "DESERT CYCLING EXPEDITION"
+                                  : "MOUNTAIN BIKE TOUR"}
+                    </p>
+                    <h3 className="home-tour-card__title">
                       <Link href={{ pathname: "/contact", query: { tour: tour.title, destination: "Sahara Desert", request: "details" } }}>
                         {tour.title}
                       </Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <div className="cl-tour-card__actions">
+                    <p className="home-tour-card__description">{tour.description}</p>
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                        {tour.duration}
+                      </span>
+                    </div>
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={{ pathname: "/contact", query: { tour: tour.title, destination: "Sahara Desert", request: "details" } }}
                       >
-                        More Details
+                        Explore Tour
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={{ pathname: "/contact", query: { tour: tour.title, destination: "Sahara Desert", request: "booking" } }}
                       >
-                        Booking
+                        Enquire Now
                       </Link>
                     </div>
                   </div>
@@ -359,15 +396,30 @@ export default function SaharaDesertDestinationPage() {
           </div>
           <div className="cl-region-grid">
             {regions.map((region, index) => (
-              <article className="cl-region-card" key={region.title}>
-                <Link className="cl-region-card__image-wrap" href={region.href} aria-label={region.title}>
+              <article className="home-tour-card" key={region.title}>
+                <Link
+                  className="home-tour-card__image"
+                  href={region.href}
+                  aria-label={region.title}
+                >
                   <img src={region.image} alt={region.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <span className="home-tour-card__category">CYCLING DESTINATION</span>
+                  <span className="home-tour-card__level">0{index + 1}</span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3><Link href={region.href}>{region.title}</Link></h3>
-                  <p>{region.text}</p>
-                  <Link className="cl-text-link" href={region.href}>Explore the region <span aria-hidden="true">↗</span></Link>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">WHERE TO RIDE</p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={region.href}>{region.title}</Link>
+                  </h3>
+                  <p className="home-tour-card__description">{region.text}</p>
+                  <div className="home-tour-card__actions">
+                    <Link className="home-tour-card__button" href={region.href}>
+                      Explore Destination
+                    </Link>
+                    <Link className="home-tour-card__link" href={region.href}>
+                      Discover More
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}
@@ -514,7 +566,7 @@ export default function SaharaDesertDestinationPage() {
         </div>
         <div className="page-width footer-bottom">
           <span>© 2026 Mountain Bike Morocco</span>
-          <span>Sahara cycling adventures, thoughtfully planned.</span>
+          <span>Morocco cycling adventures, thoughtfully planned.</span>
         </div>
       </footer>
     </>

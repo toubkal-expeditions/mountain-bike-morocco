@@ -14,6 +14,7 @@ const tours = [
     label: "TRAILS & VILLAGE TRACKS",
     title: "Imlil Valley MTB Tour",
     duration: "2 days",
+    destination: "IMLIL VALLEY",
     description:
       "Discover the trails and mountain tracks around Imlil on a two-day mountain bike escape. Ride through changing valley scenery, pass traditional settlements and enjoy views of the surrounding High Atlas. The route should be matched to your handling skills, fitness and preferred level of challenge, with time for bike checks, transfers and stops along the way.",
     image: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
@@ -24,6 +25,7 @@ const tours = [
     label: "HIGH ATLAS SINGLETRACK",
     title: "Toubkal Foothills MTB Adventure",
     duration: "3 days",
+    destination: "TOUBKAL FOOTHILLS",
     description:
       "Spend three days exploring selected mountain bike routes in the foothills around the Toubkal region. A multi-day itinerary can balance trail riding, mountain scenery and village stops, with distances and technical difficulty adjusted to the group. Trail access and current conditions should be checked before the route is confirmed, especially on steep or rocky sections.",
     image: "/images/singletrack-mtb-atlas-mountains.jpg",
@@ -34,6 +36,7 @@ const tours = [
     label: "TECHNICAL TRAILS & DESCENTS",
     title: "Imlil Valley Enduro Tour",
     duration: "2 days",
+    destination: "IMLIL · TOUBKAL",
     description:
       "For riders looking for a more technical experience, this two-day enduro concept focuses on selected descents and rugged mountain trails around Imlil. Route choice depends on experience, bike setup, fitness and comfort with loose or exposed terrain. Discuss trail difficulty, transfer or vehicle support where available, and alternative stages before deciding on the itinerary.",
     image: "/images/enduro-morrocco-cycling-tour.jpg",
@@ -44,6 +47,7 @@ const tours = [
     label: "ELECTRIC-ASSISTED VALLEY RIDING",
     title: "Imlil to Ouirgane E-MTB Tour",
     duration: "3 days",
+    destination: "IMLIL TO OUIRGANE",
     description:
       "Explore the Atlas by electric mountain bike on a journey connecting selected valley routes around Imlil and Ouirgane. Electric assistance can help with climbing, but the plan still needs to account for surface, elevation, battery range, charging and the abilities of everyone riding. Daily stages should be chosen after checking route options and conditions.",
     image: "/images/ouirgane-valley-ebike-tour.jpg",
@@ -54,6 +58,7 @@ const tours = [
     label: "MOUNTAIN SCENERY & BIG CLIMBS",
     title: "High Atlas E-MTB Adventure",
     duration: "4 days",
+    destination: "HIGH ATLAS MOUNTAINS",
     description:
       "Use four days to explore the mountain scenery and rural tracks of the High Atlas with electric assistance. The itinerary can include selected climbs, village routes and varied landscapes, with daily distances planned around battery capacity, elevation, charging opportunities and the group's confidence on technical terrain. Confirm the bike and support arrangements before travel.",
     image: "/images/eBike-tour-atlas-mountains-morocco.jpg",
@@ -64,6 +69,7 @@ const tours = [
     label: "VILLAGES & QUIETER ROUTES",
     title: "Imlil Village E-Bike Escape",
     duration: "2 days",
+    destination: "IMLIL VILLAGES",
     description:
       "Enjoy a shorter electric-assisted cycling break around the Imlil area, combining manageable stages with time to appreciate mountain views and village life. A suitable route depends on the bike, rider experience, gradients and track surface. Discuss battery range and charging needs in advance so the riding plan remains comfortable and realistic.",
     image: "/images/group-ebike-tour-morocco.jpg",
@@ -74,6 +80,7 @@ const tours = [
     label: "QUIET ROADS & GRAVEL PISTES",
     title: "Imlil to Ouirgane Gravel Escape",
     duration: "3 days",
+    destination: "IMLIL TO OUIRGANE",
     description:
       "Explore rural roads and suitable gravel tracks through the Atlas foothills on a three-day journey between selected valley areas. Gravel surfaces and gradients can vary, so route planning should account for tyre choice, braking confidence, climbing, water stops and the distance between services. The final route should reflect your experience and the current condition of the tracks.",
     image: "/images/gravel-bike-atlas-mountains.JPG",
@@ -84,6 +91,7 @@ const tours = [
     label: "MOUNTAIN VILLAGES & OPEN TRACKS",
     title: "High Atlas Villages Gravel Tour",
     duration: "4 days",
+    destination: "HIGH ATLAS VILLAGES",
     description:
       "Ride a selection of quiet roads and gravel routes around the High Atlas, linking rural landscapes and traditional villages where practical. This four-day concept can be adapted to your preferred daily distance and amount of climbing. Discuss surface conditions, navigation, luggage, water and support before the itinerary is finalised.",
     image: "/images/gravel-cycling-morocco.jpg",
@@ -94,6 +102,7 @@ const tours = [
     label: "FROM MARRAKECH INTO THE ATLAS",
     title: "Marrakech to Imlil Gravel Journey",
     duration: "2 days",
+    destination: "MARRAKECH TO IMLIL",
     description:
       "Combine a Marrakech start with a short gravel-focused journey towards the Atlas, using suitable roads and tracks selected for your group. A route should take account of traffic near the city, surface changes, elevation and the transition into mountain terrain. Confirm meeting points, transfers and safe, suitable riding sections before departure.",
     image: "/images/cycling-tour-from-marrakech.jpg",
@@ -104,6 +113,7 @@ const tours = [
     label: "CLIMBS & MOUNTAIN ROADS",
     title: "Imlil and Atlas Road Cycling Tour",
     duration: "3 days",
+    destination: "IMLIL & ATLAS MOUNTAINS",
     description:
       "Explore paved mountain roads and the countryside around Imlil on a road cycling break planned around your pace and climbing experience. Daily elevation, road conditions, traffic, weather and recovery time all influence the route. The itinerary should identify suitable road sections and allow enough time for transfers and stops between riding stages.",
     image: "/images/road-cycling-tour-morocco.jpg",
@@ -114,6 +124,7 @@ const tours = [
     label: "LONGER CLIMBS & PANORAMIC VIEWS",
     title: "High Atlas Mountain Passes Ride",
     duration: "4 days",
+    destination: "HIGH ATLAS PASSES",
     description:
       "Plan a four-day road cycling trip focused on selected mountain roads and climbs in the Atlas region. The route can be shaped around your fitness, preferred daily distance and appetite for elevation, with realistic stages and recovery time. Road condition, traffic, seasonal weather and transfer distances should be reviewed before the route is confirmed.",
     image: "/images/road-cycling-morocco.jpg",
@@ -124,6 +135,7 @@ const tours = [
     label: "TAILOR-MADE ROAD CYCLING",
     title: "Atlas Villages Road Cycling Holiday",
     duration: "5 days",
+    destination: "ATLAS VILLAGES",
     description:
       "Take more time to explore the Atlas by road bike with an itinerary linking selected villages, mountain scenery and quieter paved routes. A private journey gives you room to discuss travel dates, support, accommodation, luggage handling and daily effort. Choose roads and stages based on current conditions and the experience of your group, rather than committing to unrealistic distances.",
     image: "/images/Atlas-Mountains-Bike-trip-From-Marrakech.jpg",
@@ -284,42 +296,59 @@ export default function ImlilDestinationPage() {
               </p>
             </div>
             <div className="cl-tour-grid">
-              {tours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
-                  <Link
-                    className="cl-tour-card__image-link"
-                    href={{ pathname: "/contact", query: { tour: tour.title, request: "details" } }}
-                    aria-label={`More details about ${tour.title}`}
-                  >
-                    <img className="cl-tour-card__image" src={tour.image} alt={tour.title} loading="lazy" />
-                    <span className="cl-tour-card__number">{tour.number}</span>
-                  </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.discipline} · {tour.duration}</p>
-                    <p className="cl-card-label">{tour.label}</p>
-                    <h3>
-                      <Link href={{ pathname: "/contact", query: { tour: tour.title, request: "details" } }}>
-                        {tour.title}
-                      </Link>
-                    </h3>
-                    <p>{tour.description}</p>
-                    <div className="cl-tour-card__actions">
-                      <Link
-                        className="cl-button cl-button--dark"
-                        href={{ pathname: "/contact", query: { tour: tour.title, request: "details" } }}
-                      >
-                        More Details
-                      </Link>
-                      <Link
-                        className="cl-button cl-button--gold"
-                        href={{ pathname: "/contact", query: { tour: tour.title, request: "booking" } }}
-                      >
-                        Booking
-                      </Link>
+              {tours.map((tour) => {
+                const detailsHref = {
+                  pathname: "/contact",
+                  query: { tour: tour.title, request: "details" },
+                };
+                const bookingHref = {
+                  pathname: "/contact",
+                  query: { tour: tour.title, request: "booking" },
+                };
+
+                return (
+                  <article className="home-tour-card" key={tour.number}>
+                    <Link
+                      className="home-tour-card__image"
+                      href={detailsHref}
+                      aria-label={`More details about ${tour.title}`}
+                    >
+                      <img src={tour.image} alt={tour.title} loading="lazy" />
+                      <span className="home-tour-card__category">{tour.label}</span>
+                      <span className="home-tour-card__level">{tour.destination}</span>
+                    </Link>
+                    <div className="home-tour-card__body">
+                      <p className="home-tour-card__eyebrow">
+                        {tour.discipline.includes("ROAD")
+                          ? "ROAD CYCLING TOUR"
+                          : tour.discipline.includes("GRAVEL")
+                            ? "GRAVEL CYCLING TOUR"
+                            : tour.discipline.includes("E-MTB")
+                              ? "E-MTB TOUR"
+                              : "MOUNTAIN BIKE TOUR"}
+                      </p>
+                      <h3 className="home-tour-card__title">
+                        <Link href={detailsHref}>{tour.title}</Link>
+                      </h3>
+                      <p className="home-tour-card__description">{tour.description}</p>
+                      <div className="home-tour-card__meta">
+                        <span className="home-tour-card__meta-item">
+                          <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                          {tour.duration}
+                        </span>
+                      </div>
+                      <div className="home-tour-card__actions">
+                        <Link className="home-tour-card__button" href={detailsHref}>
+                          Explore Tour
+                        </Link>
+                        <Link className="home-tour-card__link" href={bookingHref}>
+                          Enquire Now
+                        </Link>
+                      </div>
                     </div>
-                  </div>
-                </article>
-              ))}
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -360,17 +389,30 @@ export default function ImlilDestinationPage() {
           </div>
           <div className="cl-region-grid">
             {regions.map((region, index) => (
-              <article className="cl-region-card" key={region.title}>
-                <Link className="cl-region-card__image-wrap" href={region.href} aria-label={region.title}>
+              <article className="home-tour-card" key={region.title}>
+                <Link
+                  className="home-tour-card__image"
+                  href={region.href}
+                  aria-label={region.title}
+                >
                   <img src={region.image} alt={region.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <span className="home-tour-card__category">CYCLING DESTINATION</span>
+                  <span className="home-tour-card__level">0{index + 1}</span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3><Link href={region.href}>{region.title}</Link></h3>
-                  <p>{region.text}</p>
-                  <Link className="cl-text-link" href={region.href}>
-                    Explore the area <span aria-hidden="true">↗</span>
-                  </Link>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">WHERE TO RIDE</p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={region.href}>{region.title}</Link>
+                  </h3>
+                  <p className="home-tour-card__description">{region.text}</p>
+                  <div className="home-tour-card__actions">
+                    <Link className="home-tour-card__button" href={region.href}>
+                      Explore Destination
+                    </Link>
+                    <Link className="home-tour-card__link" href={region.href}>
+                      Discover More
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}

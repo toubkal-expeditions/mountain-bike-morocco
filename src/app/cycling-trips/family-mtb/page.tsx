@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -37,6 +38,7 @@ const familyTours = [
     number: "01",
     duration: "2 days",
     label: "FAMILY WEEKEND · ATLAS FOOTHILLS",
+    destination: "ATLAS FOOTHILLS",
     title: "Family-Friendly Atlas MTB Weekend",
     slug: "family-friendly-atlas-mtb-weekend-2-day",
     description:
@@ -47,6 +49,7 @@ const familyTours = [
     number: "02",
     duration: "1 day",
     label: "SHORT RIDE · FROM MARRAKECH",
+    destination: "MARRAKECH COUNTRYSIDE",
     title: "Marrakech Family Mountain Bike Ride",
     slug: "marrakech-family-mountain-bike-ride-1-day",
     description:
@@ -57,6 +60,7 @@ const familyTours = [
     number: "03",
     duration: "2 days",
     label: "VALLEY TRACKS · VILLAGE DISCOVERY",
+    destination: "OUIRGANE VALLEY",
     title: "Ouirgane Valley Family MTB Escape",
     slug: "ouirgane-valley-family-mtb-escape-2-day",
     description:
@@ -67,6 +71,7 @@ const familyTours = [
     number: "04",
     duration: "3 days",
     label: "VILLAGES · SCENIC RIDING",
+    destination: "ATLAS MOUNTAIN VILLAGES",
     title: "Atlas Villages and Gentle Trails",
     slug: "atlas-villages-and-gentle-trails-3-day",
     description:
@@ -77,6 +82,7 @@ const familyTours = [
     number: "05",
     duration: "2 days",
     label: "ELECTRIC ASSISTANCE · SHARED ADVENTURE",
+    destination: "ATLAS MOUNTAINS",
     title: "Family E-Bike and MTB Adventure",
     slug: "family-e-bike-and-mtb-adventure-2-day",
     description:
@@ -87,6 +93,7 @@ const familyTours = [
     number: "06",
     duration: "4 days",
     label: "MULTI-DAY HOLIDAY · HIGH ATLAS",
+    destination: "HIGH ATLAS MOUNTAINS",
     title: "Four-Day Family Atlas Explorer",
     slug: "four-day-family-atlas-explorer-4-day",
     description:
@@ -97,6 +104,7 @@ const familyTours = [
     number: "07",
     duration: "3 days",
     label: "COUNTRYSIDE · FLEXIBLE PACING",
+    destination: "MARRAKECH COUNTRYSIDE",
     title: "Marrakech Countryside Family Cycling",
     slug: "marrakech-countryside-family-cycling-3-day",
     description:
@@ -107,6 +115,7 @@ const familyTours = [
     number: "08",
     duration: "5 days",
     label: "PRIVATE GROUP · PERSONALISED ITINERARY",
+    destination: "PRIVATE · CUSTOM ROUTE",
     title: "Private Family MTB Holiday in Morocco",
     slug: "private-family-mtb-holiday-in-morocco-5-day",
     description:
@@ -117,6 +126,7 @@ const familyTours = [
     number: "09",
     duration: "5 days",
     label: "MOUNTAIN SCENERY · FAMILY EXPLORATION",
+    destination: "HIGH ATLAS MOUNTAINS",
     title: "High Atlas Family Adventure",
     slug: "high-atlas-family-adventure-5-day",
     description:
@@ -127,6 +137,7 @@ const familyTours = [
     number: "10",
     duration: "7 days",
     label: "LONGER HOLIDAY · CULTURE AND CYCLING",
+    destination: "MOROCCO · MULTI-REGION",
     title: "Morocco Family Cycling Week",
     slug: "morocco-family-cycling-week-7-day",
     description:
@@ -295,37 +306,45 @@ export default function FamilyMountainBikeToursPage() {
 
             <div className="cl-tour-grid">
               {familyTours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={`/cycling-trips/trip/${tour.slug}`}
                     aria-label={`More details about ${tour.title}`}
                   >
                     <img
-                      className="cl-tour-card__image"
                       src={tour.image}
                       alt={tour.title}
                       loading="lazy"
                     />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <span className="home-tour-card__category">{tour.label}</span>
+                    <span className="home-tour-card__level">{tour.destination}</span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.label} · {tour.duration}</p>
-                    <h3>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      FAMILY CYCLING · {tour.destination}
+                    </p>
+                    <h3 className="home-tour-card__title">
                       <Link href={`/cycling-trips/trip/${tour.slug}`}>
                         {tour.title}
                       </Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <div className="cl-tour-card__actions">
+                    <p className="home-tour-card__description">{tour.description}</p>
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                        {tour.duration}
+                      </span>
+                    </div>
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={`/cycling-trips/trip/${tour.slug}`}
                       >
                         More Details
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={{ pathname: "/contact", query: { tour: tour.title, request: "booking" } }}
                       >
                         Booking
@@ -377,21 +396,42 @@ export default function FamilyMountainBikeToursPage() {
           </div>
           <div className="cl-region-grid">
             {destinations.map((destination, index) => (
-              <article className="cl-region-card" key={destination.title}>
+              <article className="home-tour-card" key={destination.title}>
                 <Link
-                  className="cl-region-card__image-wrap"
+                  className="home-tour-card__image"
                   href={destination.href}
                   aria-label={destination.title}
                 >
-                  <img src={destination.image} alt={destination.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <img
+                    src={destination.image}
+                    alt={destination.title}
+                    loading="lazy"
+                  />
+                  <span className="home-tour-card__category">FAMILY CYCLING DESTINATION</span>
+                  <span className="home-tour-card__level">{destination.title}</span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3><Link href={destination.href}>{destination.title}</Link></h3>
-                  <p>{destination.text}</p>
-                  <Link className="cl-text-link" href={destination.href}>
-                    Explore the region <span aria-hidden="true">↗</span>
-                  </Link>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">
+                    FAMILY CYCLING · {destination.title}
+                  </p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={destination.href}>{destination.title}</Link>
+                  </h3>
+                  <p className="home-tour-card__description">{destination.text}</p>
+                  <div className="home-tour-card__actions">
+                    <Link
+                      className="home-tour-card__button"
+                      href={destination.href}
+                    >
+                      Explore Region
+                    </Link>
+                    <Link
+                      className="home-tour-card__link"
+                      href={destination.href}
+                    >
+                      Discover
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}

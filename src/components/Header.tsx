@@ -16,6 +16,49 @@ const cyclingLinks = [
   { label: "From Marrakech", href: "/cycling-trips/from-marrakech", detail: "Your adventure starts in the Red City" },
 ];
 
+const guideLinks = [
+  {
+    label: "Mountain Bike Tours from Marrakech",
+    href: "/mountain-bike-tours-from-marrakech",
+    detail: "Discover MTB adventures starting in Marrakech",
+  },
+  {
+    label: "Atlas Mountains MTB Tours",
+    href: "/atlas-mountains-mtb-tours",
+    detail: "Explore trails across the High Atlas",
+  },
+  {
+    label: "Private Mountain Bike Tours in Morocco",
+    href: "/private-mountain-bike-tours-morocco",
+    detail: "Personalised private cycling adventures",
+  },
+  {
+    label: "Beginner Mountain Biking in Morocco",
+    href: "/beginner-mountain-biking-morocco",
+    detail: "Find the right ride for your experience",
+  },
+  {
+    label: "One-Day MTB Trips from Marrakech",
+    href: "/one-day-mtb-trips-from-marrakech",
+    detail: "Discover Morocco on a one-day ride",
+  },
+  {
+    label: "E-Bike Tours Morocco",
+    href: "/e-bike-tours-morocco",
+    detail: "Explore Morocco on electric bikes",
+  },
+  {
+    label: "Gravel Bike Tours Morocco",
+    href: "/gravel-bike-tours-morocco",
+    detail: "Discover Morocco's gravel routes and landscapes",
+  },
+  {
+    label: "Road Cycling Tours Morocco",
+    href: "/road-cycling-tours-morocco",
+    detail: "Explore Morocco's mountain passes and open roads",
+  },
+];
+
 const destinationLinks = [
   { label: "All Destinations", href: "/destinations", detail: "Discover Morocco by bike" },
   { label: "Atlas Mountains", href: "/destinations/atlas-mountains", detail: "High passes & mountain trails" },
@@ -34,7 +77,7 @@ type NavLink = {
   detail?: string;
 };
 
-type MenuName = "cycling" | "destinations";
+type MenuName = "cycling" | "guides" | "destinations";
 
 function MegaMenu({
   label,
@@ -114,12 +157,14 @@ export default function Header() {
   const [activeMenu, setActiveMenu] = useState<MenuName | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileCyclingOpen, setMobileCyclingOpen] = useState(false);
+  const [mobileGuidesOpen, setMobileGuidesOpen] = useState(false);
   const [mobileDestinationsOpen, setMobileDestinationsOpen] = useState(false);
 
   const closeMenus = () => {
     setActiveMenu(null);
     setMobileOpen(false);
     setMobileCyclingOpen(false);
+    setMobileGuidesOpen(false);
     setMobileDestinationsOpen(false);
   };
 
@@ -180,6 +225,14 @@ export default function Header() {
             links={cyclingLinks}
             open={activeMenu === "cycling"}
             onToggle={() => toggleDesktopMenu("cycling")}
+            onNavigate={closeMenus}
+          />
+
+          <MegaMenu
+            label="MTB Guides"
+            links={guideLinks}
+            open={activeMenu === "guides"}
+            onToggle={() => toggleDesktopMenu("guides")}
             onNavigate={closeMenus}
           />
 
@@ -261,6 +314,24 @@ export default function Header() {
           {mobileCyclingOpen && (
             <div className="mobile-group-links">
               {renderMobileLinks(cyclingLinks)}
+            </div>
+          )}
+        </div>
+
+        <div className="mobile-menu-group">
+          <button
+            type="button"
+            className="mobile-group-trigger"
+            aria-expanded={mobileGuidesOpen}
+            onClick={() => setMobileGuidesOpen((current) => !current)}
+          >
+            MTB Guides
+            <span aria-hidden="true">{mobileGuidesOpen ? "−" : "+"}</span>
+          </button>
+
+          {mobileGuidesOpen && (
+            <div className="mobile-group-links">
+              {renderMobileLinks(guideLinks)}
             </div>
           )}
         </div>

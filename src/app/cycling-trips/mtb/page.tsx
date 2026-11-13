@@ -307,522 +307,587 @@ const mtbTours: MtbTour[] = [
     description: "Create a short cycling holiday shaped around the landscapes and riding style that interest you most. Share dates, ability, preferred terrain and group size to discuss practical route options and support requirements.",
     image: "/images/morocco-cycling-adventure.jpg",
     href: "/cycling-trips/trip/morocco-cycling-adventure-4-day",
-  }
+  },
 ];
 
 const destinations = [
-{
-title: "High Atlas Mountains",
-text: "A dramatic mountain setting for varied trails, high viewpoints, remote tracks and multi-day riding. The best route depends on altitude, weather, technical ability and the time available.",
-image: "/images/atlas-mountains-cycling-tour-morocco.jpg",
-href: "/destinations/atlas-mountains",
-},
-{
-title: "Imlil & Toubkal Region",
-text: "Explore mountain villages, terraced valleys and rugged tracks around the Imlil area. Routes can be adapted to focus on scenic riding or more demanding terrain when conditions allow.",
-image: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
-href: "/destinations/imlil-toubkal",
-},
-{
-title: "Marrakech & the Foothills",
-text: "Start from Marrakech and head towards rural roads, foothills and trail networks outside the city. This is a useful option for a single ride or for adding cycling to a wider Morocco holiday.",
-image: "/images/cycling-tour-from-marrakech.jpg",
-href: "/destinations/marrakech",
-},
-{
-title: "Agafay & Open Terrain",
-text: "Open rocky landscapes offer a different feel from high mountain trails. Plan carefully around temperature, water, route surface and exposure, especially during warmer months.",
-image: "/images/Desert-Agafay-Morocco.jpg",
-href: "/destinations/agafay-desert",
-},
+  {
+    title: "High Atlas Mountains",
+    text: "A dramatic mountain setting for varied trails, high viewpoints, remote tracks and multi-day riding. The best route depends on altitude, weather, technical ability and the time available.",
+    image: "/images/atlas-mountains-cycling-tour-morocco.jpg",
+    href: "/destinations/atlas-mountains",
+  },
+  {
+    title: "Imlil & Toubkal Region",
+    text: "Explore mountain villages, terraced valleys and rugged tracks around the Imlil area. Routes can be adapted to focus on scenic riding or more demanding terrain when conditions allow.",
+    image: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
+    href: "/destinations/imlil-toubkal",
+  },
+  {
+    title: "Marrakech & the Foothills",
+    text: "Start from Marrakech and head towards rural roads, foothills and trail networks outside the city. This is a useful option for a single ride or for adding cycling to a wider Morocco holiday.",
+    image: "/images/cycling-tour-from-marrakech.jpg",
+    href: "/destinations/marrakech",
+  },
+  {
+    title: "Agafay & Open Terrain",
+    text: "Open rocky landscapes offer a different feel from high mountain trails. Plan carefully around temperature, water, route surface and exposure, especially during warmer months.",
+    image: "/images/Desert-Agafay-Morocco.jpg",
+    href: "/destinations/agafay-desert",
+  },
 ];
 
 const faqs = [
-{
-question: "What level of fitness do I need for a Morocco mountain bike tour?",
-answer:
-"It depends on the route. A shorter ride with moderate terrain asks for a different level of fitness from a multi-day trip with long climbs, altitude or technical descents. Tell us about your usual riding, the distance you are comfortable with and how you feel about climbing so the itinerary can be matched to your group.",
-},
-{
-question: "Are the trails suitable for beginners?",
-answer:
-"Some routes may suit newer riders with basic bike control, while narrow, rocky or steep trails can require confident handling and experience. We should discuss your ability and the terrain in advance rather than assuming every mountain route is beginner-friendly. A suitable route prioritises safe, enjoyable riding over difficulty for its own sake.",
-},
-{
-question: "When is the best time for mountain biking in Morocco?",
-answer:
-"Spring and autumn are often good periods for many lower and mid-altitude routes, but conditions vary by region and elevation. Higher mountain areas can be cold or affected by snow, while lower landscapes may be very hot in summer. Choose dates based on the route and check the expected conditions before confirming your trip.",
-},
-{
-question: "Can I bring my own mountain bike?",
-answer:
-"You can discuss travelling with your own bike when enquiring. The practical arrangements depend on your airline, transfers and the itinerary. Tell us your bike type and any special equipment needs so transport, assembly and support requirements can be considered before travel.",
-},
-{
-question: "Can I book a private group mountain bike trip?",
-answer:
-"Yes, you can enquire about a private itinerary for friends, a club or a group travelling together. Share your dates, group size, riding level, preferred terrain and accommodation expectations. These details help shape a route and daily schedule that make sense for the group.",
-},
-{
-question: "What should I bring for an MTB holiday?",
-answer:
-"Bring a properly fitting helmet, gloves, eye protection, riding clothing, suitable shoes, sun protection and a hydration system. Depending on the season and altitude, warm layers and a lightweight waterproof may also be useful. Ask for a route-specific packing list once the itinerary and support arrangements are clear.",
-},
+  {
+    question: "What level of fitness do I need for a Morocco mountain bike tour?",
+    answer:
+      "It depends on the route. A shorter ride with moderate terrain asks for a different level of fitness from a multi-day trip with long climbs, altitude or technical descents. Tell us about your usual riding, the distance you are comfortable with and how you feel about climbing so the itinerary can be matched to your group.",
+  },
+  {
+    question: "Are the trails suitable for beginners?",
+    answer:
+      "Some routes may suit newer riders with basic bike control, while narrow, rocky or steep trails can require confident handling and experience. We should discuss your ability and the terrain in advance rather than assuming every mountain route is beginner-friendly. A suitable route prioritises safe, enjoyable riding over difficulty for its own sake.",
+  },
+  {
+    question: "When is the best time for mountain biking in Morocco?",
+    answer:
+      "Spring and autumn are often good periods for many lower and mid-altitude routes, but conditions vary by region and elevation. Higher mountain areas can be cold or affected by snow, while lower landscapes may be very hot in summer. Choose dates based on the route and check the expected conditions before confirming your trip.",
+  },
+  {
+    question: "Can I bring my own mountain bike?",
+    answer:
+      "You can discuss travelling with your own bike when enquiring. The practical arrangements depend on your airline, transfers and the itinerary. Tell us your bike type and any special equipment needs so transport, assembly and support requirements can be considered before travel.",
+  },
+  {
+    question: "Can I book a private group mountain bike trip?",
+    answer:
+      "Yes, you can enquire about a private itinerary for friends, a club or a group travelling together. Share your dates, group size, riding level, preferred terrain and accommodation expectations. These details help shape a route and daily schedule that make sense for the group.",
+  },
+  {
+    question: "What should I bring for an MTB holiday?",
+    answer:
+      "Bring a properly fitting helmet, gloves, eye protection, riding clothing, suitable shoes, sun protection and a hydration system. Depending on the season and altitude, warm layers and a lightweight waterproof may also be useful. Ask for a route-specific packing list once the itinerary and support arrangements are clear.",
+  },
 ];
 
-function tourContactHref(tourTitle: string, destination: string | undefined, request: "details" | "booking") {
+function tourContactHref(
+  tourTitle: string,
+  destination: string | undefined,
+  request: "details" | "booking"
+) {
   return `/contact?tour=${encodeURIComponent(tourTitle)}&destination=${encodeURIComponent(destination || "Morocco")}&request=${request}`;
 }
 
 export default function MountainBikeToursMoroccoPage() {
-return (
-<>
-<main className="cycling-listing mtb-page">
-<section className="cl-hero">
-<img
-         className="cl-hero__image"
-         src="/images/mountain-bike-morocco-hero.jpg"
-         alt="Mountain biking through the Atlas Mountains in Morocco"
-         fetchPriority="high"
-       />
-<div className="cl-hero__shade" />
-<div className="cl-wrap cl-hero__content">
-<h1>Mountain Bike Tours in Morocco</h1>
-<p className="cl-hero__intro">
-Discover Morocco by mountain bike, from rugged Atlas trails and
-remote valleys to guided rides close to Marrakech. Find a route
-that fits your riding experience, preferred terrain and the kind
-of adventure you want from your time on the bike.
-</p>
-<div className="cl-actions">
-<Link className="cl-button cl-button--gold" href="/contact">
-Plan your MTB trip
-</Link>
-<Link
-             className="cl-button cl-button--outline"
-             href="#mtb-options"
-           >
-Explore MTB tours
-</Link>
-</div>
-<div className="cl-hero__meta">
-<span>GUIDED RIDING</span>
-<span>PRIVATE OPTIONS</span>
-<span>ROUTES TO SUIT YOUR LEVEL</span>
-</div>
-</div>
-</section>
-
-    <section className="cl-intro cl-wrap">
-      <div className="cl-intro__heading">
-        <h2>
-          Mountain biking shaped by trails, landscapes and local knowledge.
-        </h2>
-      </div>
-      <div className="cl-intro__copy">
-        <p>
-          A mountain bike holiday in Morocco brings together rugged
-          terrain, mountain scenery and the chance to explore places that
-          feel far removed from the busy streets of the cities. In the
-          Atlas Mountains, trails and tracks pass through changing
-          landscapes, traditional villages and valleys shaped by everyday
-          rural life. The experience can be as much about the journey and
-          the people you meet as it is about the descent.
-        </p>
-        <p>
-          No two groups ride in exactly the same way. Some want technical
-          singletrack and demanding days; others prefer scenic routes,
-          moderate climbs and time to stop along the way. We encourage you
-          to share your experience, fitness, preferred bike and travel
-          dates early, so the route, support and daily distances can be
-          discussed realistically before you travel.
-        </p>
-        <Link className="cl-text-link" href="/cycling-holiday-morocco">
-          Explore all cycling tours <span aria-hidden="true">↗</span>
-        </Link>
-      </div>
-    </section>
-
-    <section className="cl-tours" id="mtb-options">
-      <div className="cl-wrap">
-        <div className="cl-section-heading">
-          <div>
-            <p className="cl-eyebrow cl-eyebrow--dark">
-              CHOOSE YOUR RIDE
+  return (
+    <>
+      <main className="cycling-listing mtb-page">
+        <section className="cl-hero">
+          <img
+            className="cl-hero__image"
+            src="/images/mountain-bike-morocco-hero.jpg"
+            alt="Mountain biking through the Atlas Mountains in Morocco"
+            fetchPriority="high"
+          />
+          <div className="cl-hero__shade" />
+          <div className="cl-wrap cl-hero__content">
+            <h1>Mountain Bike Tours in Morocco</h1>
+            <p className="cl-hero__intro">
+              Discover Morocco by mountain bike, from rugged Atlas trails and
+              remote valleys to guided rides close to Marrakech. Find a route
+              that fits your riding experience, preferred terrain and the kind
+              of adventure you want from your time on the bike.
             </p>
-            <h2>Mountain bike holidays and trail experiences</h2>
-          </div>
-          <p>
-            Start with the kind of riding you enjoy. From a single guided
-            trail day to an enduro-focused trip or a private multi-day
-            journey, the details should be shaped around your ability, the
-            terrain and the season.
-          </p>
-        </div>
-        <div className="cl-tour-grid">
-          {mtbTours.map((tour) => {
-            const detailHref = tour.href;
-            return (
-            <article className="cl-tour-card" key={tour.number}>
-              <Link
-                className="cl-tour-card__image-link"
-                href={detailHref}
-                aria-label={tour.title}
-              >
-                <img
-                  className="cl-tour-card__image"
-                  src={tour.image}
-                  alt={tour.title}
-                  loading="lazy"
-                />
-                <span className="cl-tour-card__number">{tour.number}</span>
+            <div className="cl-actions">
+              <Link className="cl-button cl-button--gold" href="/contact">
+                Plan your MTB trip
               </Link>
-              <div className="cl-tour-card__body">
-                <p className="cl-card-label">{tour.label}</p>
-                {tour.duration && (
-                  <p
-                    className="cl-tour-card__duration"
-                    style={{ fontSize: "12px", lineHeight: 1.5, color: "#777168", margin: "-5px 0 12px" }}
-                  >
-                    {tour.duration} · {tour.region}
-                  </p>
-                )}
-                <h3>
-                  <Link href={detailHref}>{tour.title}</Link>
-                </h3>
-                <p>{tour.description}</p>
-                <div
-                  className="cl-tour-card__actions"
-                  style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "10px", width: "100%", paddingTop: "18px" }}
-                >
-                  <Link
-                    className="cl-button cl-button--dark"
-                    style={{ width: "100%", minWidth: 0, minHeight: "46px", padding: "10px 8px", fontSize: "12px", textAlign: "center", justifyContent: "center", backgroundColor: "#252620", color: "#ffffff", border: "1px solid #252620" }}
-                    href={detailHref}
-                  >
-                    More Details
-                  </Link>
-                  <Link
-                    className="cl-button cl-button--gold"
-                    style={{ width: "100%", minWidth: 0, minHeight: "46px", padding: "10px 8px", fontSize: "12px", textAlign: "center", justifyContent: "center" }}
-                    href={tourContactHref(tour.title, tour.region, "booking")}
-                  >
-                    Booking
-                  </Link>
-                </div>
-              </div>
-            </article>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-
-    <section className="cl-dark-band">
-      <div className="cl-wrap cl-dark-band__inner">
-        <div>
-          <p className="cl-eyebrow">YOUR SKILLS. YOUR PACE.</p>
-          <h2>
-            Choose a trail that challenges you for the right reasons.
-          </h2>
-        </div>
-        <div>
-          <p>
-            Technical difficulty, elevation, surface and daily distance all
-            affect how a ride feels. Tell us what you have ridden before
-            and what you want to improve or experience. We can discuss the
-            route options and the practical details that need to be checked
-            before an itinerary is confirmed.
-          </p>
-          <Link className="cl-button cl-button--gold" href="/contact">
-            Talk through your riding level
-          </Link>
-        </div>
-      </div>
-    </section>
-
-    <section className="cl-regions cl-wrap">
-      <div className="cl-section-heading">
-        <div>
-          <p className="cl-eyebrow cl-eyebrow--dark">WHERE TO RIDE</p>
-          <h2>Explore mountain biking regions in Morocco</h2>
-        </div>
-        <p>
-          The right area depends on the kind of trail experience you want,
-          how long you have and the conditions at your travel dates.
-          Explore these regions as a starting point for planning your ride.
-        </p>
-      </div>
-      <div className="cl-region-grid">
-        {destinations.map((destination, index) => (
-          <article className="cl-region-card" key={destination.title}>
-            <Link
-              className="cl-region-card__image-wrap"
-              href={destination.href}
-              aria-label={destination.title}
-            >
-              <img
-                src={destination.image}
-                alt={destination.title}
-                loading="lazy"
-              />
-              <span>0{index + 1}</span>
-            </Link>
-            <div className="cl-region-card__body">
-              <h3>
-                <Link href={destination.href}>{destination.title}</Link>
-              </h3>
-              <p>{destination.text}</p>
-              <Link className="cl-text-link" href={destination.href}>
-                Explore the region <span aria-hidden="true">↗</span>
+              <Link
+                className="cl-button cl-button--outline"
+                href="#mtb-options"
+              >
+                Explore MTB tours
               </Link>
             </div>
-          </article>
-        ))}
-      </div>
-    </section>
+            <div className="cl-hero__meta">
+              <span>GUIDED RIDING</span>
+              <span>PRIVATE OPTIONS</span>
+              <span>ROUTES TO SUIT YOUR LEVEL</span>
+            </div>
+          </div>
+        </section>
 
-    <section className="cl-editorial">
-      <div className="cl-editorial__image">
-        <img
-          src="/images/group-cycling-tour-morocco.jpg"
-          alt="Cyclists exploring mountain landscapes in Morocco"
-          loading="lazy"
-        />
-      </div>
-      <div className="cl-editorial__content">
-        <p className="cl-eyebrow cl-eyebrow--dark">BEYOND THE TRAIL</p>
-        <h2>Ride for the landscapes. Stay for the experience.</h2>
-        <p>
-          A memorable mountain bike trip is not measured only in kilometres
-          or metres descended. It can include a pause above a valley, a
-          conversation in a village, a meal after a long ride and the
-          changing scenery as the route moves from one landscape to
-          another. Travelling by bike gives you time to notice details that
-          can be missed when moving quickly between destinations.
-        </p>
-        <p>
-          Good planning helps leave room for these moments. Consider the
-          riding you want to do alongside transfer times, recovery,
-          accommodation and the seasonal conditions. A thoughtfully paced
-          itinerary can bring together the challenge of the trail and the
-          pleasure of discovering Morocco at ground level.
-        </p>
-        <Link className="cl-button cl-button--dark" href="/about">
-          Learn about our approach
-        </Link>
-      </div>
-    </section>
-
-    <section className="cl-why">
-      <div className="cl-wrap">
-        <div className="cl-section-heading cl-section-heading--light">
-          <div>
-            <p className="cl-eyebrow">WHY RIDE WITH US</p>
+        <section className="cl-intro cl-wrap">
+          <div className="cl-intro__heading">
             <h2>
-              Local insight and practical planning for your MTB holiday.
+              Mountain biking shaped by trails, landscapes and local knowledge.
             </h2>
           </div>
-          <p>
-            The best route is one that suits the riders taking part. Clear
-            conversations about terrain, fitness and expectations help you
-            prepare for a trip that feels rewarding, realistic and
-            enjoyable.
-          </p>
-        </div>
-        <div className="cl-why-grid">
-          <article>
-            <span>01</span>
-            <h3>Local route knowledge</h3>
+          <div className="cl-intro__copy">
             <p>
-              Discuss trail options, regional terrain and the conditions
-              that may affect your ride at different times of year.
+              A mountain bike holiday in Morocco brings together rugged
+              terrain, mountain scenery and the chance to explore places that
+              feel far removed from the busy streets of the cities. In the
+              Atlas Mountains, trails and tracks pass through changing
+              landscapes, traditional villages and valleys shaped by everyday
+              rural life. The experience can be as much about the journey and
+              the people you meet as it is about the descent.
             </p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Riding matched to you</h3>
             <p>
-              Choose a route direction based on your handling skills,
-              fitness, confidence and preferred level of challenge.
+              No two groups ride in exactly the same way. Some want technical
+              singletrack and demanding days; others prefer scenic routes,
+              moderate climbs and time to stop along the way. We encourage you
+              to share your experience, fitness, preferred bike and travel
+              dates early, so the route, support and daily distances can be
+              discussed realistically before you travel.
             </p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Thoughtful logistics</h3>
+            <Link className="cl-text-link" href="/cycling-holiday-morocco">
+              Explore all cycling tours <span aria-hidden="true">↗</span>
+            </Link>
+          </div>
+        </section>
+
+        <section className="cl-tours" id="mtb-options">
+          <div className="cl-wrap">
+            <div className="cl-section-heading">
+              <div>
+                <p className="cl-eyebrow cl-eyebrow--dark">
+                  CHOOSE YOUR RIDE
+                </p>
+                <h2>Mountain bike holidays and trail experiences</h2>
+              </div>
+              <p>
+                Start with the kind of riding you enjoy. From a single guided
+                trail day to an enduro-focused trip or a private multi-day
+                journey, the details should be shaped around your ability, the
+                terrain and the season.
+              </p>
+            </div>
+
+            <div className="cl-tour-grid">
+              {mtbTours.map((tour) => {
+                const detailHref = tour.href;
+
+                return (
+                  <article
+                    className="home-tour-card"
+                    key={tour.number}
+                  >
+                    <Link
+                      className="home-tour-card__image"
+                      href={detailHref}
+                      aria-label={tour.title}
+                    >
+                      <img
+                        src={tour.image}
+                        alt={tour.title}
+                        loading="lazy"
+                      />
+                      <span className="home-tour-card__category">
+                        {tour.label}
+                      </span>
+                      <span className="home-tour-card__level">
+                        {tour.region || "Morocco"}
+                      </span>
+                    </Link>
+
+                    <div className="home-tour-card__body">
+                      <p className="home-tour-card__eyebrow">
+                        MOUNTAIN BIKE MOROCCO
+                      </p>
+
+                      <h3 className="home-tour-card__title">
+                        <Link href={detailHref}>{tour.title}</Link>
+                      </h3>
+
+                      <p className="home-tour-card__description">
+                        {tour.description}
+                      </p>
+
+                      <div className="home-tour-card__meta">
+                        {tour.duration && (
+                          <span className="home-tour-card__meta-item">
+                            <span
+                              className="home-tour-card__meta-icon"
+                              aria-hidden="true"
+                            >
+                              ◷
+                            </span>
+                            {tour.duration}
+                          </span>
+                        )}
+                        <span className="home-tour-card__meta-item">
+                          <span
+                            className="home-tour-card__meta-icon"
+                            aria-hidden="true"
+                          >
+                            ◆
+                          </span>
+                          {tour.region || "Morocco"}
+                        </span>
+                      </div>
+
+                      <div className="home-tour-card__actions">
+                        <Link
+                          className="home-tour-card__button"
+                          href={detailHref}
+                        >
+                          More Details
+                        </Link>
+                        <Link
+                          className="home-tour-card__link"
+                          href={tourContactHref(
+                            tour.title,
+                            tour.region,
+                            "booking"
+                          )}
+                        >
+                          Booking <span aria-hidden="true">↗</span>
+                        </Link>
+                      </div>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section className="cl-dark-band">
+          <div className="cl-wrap cl-dark-band__inner">
+            <div>
+              <p className="cl-eyebrow">YOUR SKILLS. YOUR PACE.</p>
+              <h2>
+                Choose a trail that challenges you for the right reasons.
+              </h2>
+            </div>
+            <div>
+              <p>
+                Technical difficulty, elevation, surface and daily distance all
+                affect how a ride feels. Tell us what you have ridden before
+                and what you want to improve or experience. We can discuss the
+                route options and the practical details that need to be checked
+                before an itinerary is confirmed.
+              </p>
+              <Link className="cl-button cl-button--gold" href="/contact">
+                Talk through your riding level
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="cl-regions cl-wrap">
+          <div className="cl-section-heading">
+            <div>
+              <p className="cl-eyebrow cl-eyebrow--dark">WHERE TO RIDE</p>
+              <h2>Explore mountain biking regions in Morocco</h2>
+            </div>
             <p>
-              Talk through transfers, equipment, daily stages and the
-              support arrangements needed for your itinerary.
+              The right area depends on the kind of trail experience you want,
+              how long you have and the conditions at your travel dates.
+              Explore these regions as a starting point for planning your ride.
             </p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>More than riding</h3>
+          </div>
+
+          <div className="cl-region-grid">
+            {destinations.map((destination) => (
+              <article
+                className="home-tour-card"
+                key={destination.title}
+              >
+                <Link
+                  className="home-tour-card__image"
+                  href={destination.href}
+                  aria-label={destination.title}
+                >
+                  <img
+                    src={destination.image}
+                    alt={destination.title}
+                    loading="lazy"
+                  />
+                  <span className="home-tour-card__category">
+                    CYCLING DESTINATION
+                  </span>
+                  <span className="home-tour-card__level">
+                    {destination.title}
+                  </span>
+                </Link>
+
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">
+                    MOUNTAIN BIKE MOROCCO
+                  </p>
+
+                  <h3 className="home-tour-card__title">
+                    <Link href={destination.href}>
+                      {destination.title}
+                    </Link>
+                  </h3>
+
+                  <p className="home-tour-card__description">
+                    {destination.text}
+                  </p>
+
+                  <div className="home-tour-card__actions">
+                    <Link
+                      className="home-tour-card__button"
+                      href={destination.href}
+                    >
+                      Explore Region
+                    </Link>
+                    <Link
+                      className="home-tour-card__link"
+                      href={destination.href}
+                    >
+                      Discover <span aria-hidden="true">↗</span>
+                    </Link>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="cl-editorial">
+          <div className="cl-editorial__image">
+            <img
+              src="/images/group-cycling-tour-morocco.jpg"
+              alt="Cyclists exploring mountain landscapes in Morocco"
+              loading="lazy"
+            />
+          </div>
+          <div className="cl-editorial__content">
+            <p className="cl-eyebrow cl-eyebrow--dark">BEYOND THE TRAIL</p>
+            <h2>Ride for the landscapes. Stay for the experience.</h2>
             <p>
-              Make time for mountain scenery, village life, local food and
-              the cultural experiences along the way.
+              A memorable mountain bike trip is not measured only in kilometres
+              or metres descended. It can include a pause above a valley, a
+              conversation in a village, a meal after a long ride and the
+              changing scenery as the route moves from one landscape to
+              another. Travelling by bike gives you time to notice details that
+              can be missed when moving quickly between destinations.
             </p>
-          </article>
-        </div>
-      </div>
-    </section>
+            <p>
+              Good planning helps leave room for these moments. Consider the
+              riding you want to do alongside transfer times, recovery,
+              accommodation and the seasonal conditions. A thoughtfully paced
+              itinerary can bring together the challenge of the trail and the
+              pleasure of discovering Morocco at ground level.
+            </p>
+            <Link className="cl-button cl-button--dark" href="/about">
+              Learn about our approach
+            </Link>
+          </div>
+        </section>
 
-    <section className="cl-planning cl-wrap">
-      <div className="cl-section-heading">
-        <div>
-          <p className="cl-eyebrow cl-eyebrow--dark">
-            PLAN YOUR MTB HOLIDAY
-          </p>
-          <h2>Three steps to start planning your Morocco ride.</h2>
-        </div>
-        <p>
-          You do not need a complete itinerary before making an enquiry.
-          Start with your dates, riding preferences and group details, then
-          discuss which route options may suit your trip.
-        </p>
-      </div>
-      <div className="cl-steps">
-        <article>
-          <span>STEP 01</span>
-          <h3>Share your experience</h3>
-          <p>
-            Tell us about your riding background, fitness, group size,
-            preferred bike and the type of terrain you enjoy.
-          </p>
-        </article>
-        <article>
-          <span>STEP 02</span>
-          <h3>Discuss the route</h3>
-          <p>
-            Compare regions, season, daily distances, technical difficulty,
-            elevation and the amount of time you have available.
-          </p>
-        </article>
-        <article>
-          <span>STEP 03</span>
-          <h3>Confirm the details</h3>
-          <p>
-            Review the itinerary, transfers, equipment, accommodation and
-            inclusions before final arrangements are made.
-          </p>
-        </article>
-      </div>
-    </section>
+        <section className="cl-why">
+          <div className="cl-wrap">
+            <div className="cl-section-heading cl-section-heading--light">
+              <div>
+                <p className="cl-eyebrow">WHY RIDE WITH US</p>
+                <h2>
+                  Local insight and practical planning for your MTB holiday.
+                </h2>
+              </div>
+              <p>
+                The best route is one that suits the riders taking part. Clear
+                conversations about terrain, fitness and expectations help you
+                prepare for a trip that feels rewarding, realistic and
+                enjoyable.
+              </p>
+            </div>
+            <div className="cl-why-grid">
+              <article>
+                <span>01</span>
+                <h3>Local route knowledge</h3>
+                <p>
+                  Discuss trail options, regional terrain and the conditions
+                  that may affect your ride at different times of year.
+                </p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Riding matched to you</h3>
+                <p>
+                  Choose a route direction based on your handling skills,
+                  fitness, confidence and preferred level of challenge.
+                </p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Thoughtful logistics</h3>
+                <p>
+                  Talk through transfers, equipment, daily stages and the
+                  support arrangements needed for your itinerary.
+                </p>
+              </article>
+              <article>
+                <span>04</span>
+                <h3>More than riding</h3>
+                <p>
+                  Make time for mountain scenery, village life, local food and
+                  the cultural experiences along the way.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
 
-    <section className="cl-faq">
-      <div className="cl-wrap cl-faq__inner">
-        <div className="cl-faq__intro">
-          <p className="cl-eyebrow cl-eyebrow--dark">GOOD TO KNOW</p>
-          <h2>Mountain biking in Morocco: FAQs</h2>
-          <p>
-            Read answers to common questions about trail difficulty,
-            seasons and preparing for a mountain bike holiday. For advice
-            about a specific route, contact us with your dates and riding
-            preferences.
-          </p>
-          <Link className="cl-text-link" href="/contact">
-            Ask us about your trip <span aria-hidden="true">↗</span>
-          </Link>
-        </div>
-        <div className="cl-faq-list">
-          {faqs.map((faq, index) => (
-            <details
-              className="cl-faq-item"
-              key={faq.question}
-              open={index === 0}
-            >
-              <summary>
-                {faq.question}
-                <span aria-hidden="true">+</span>
-              </summary>
-              <p>{faq.answer}</p>
-            </details>
-          ))}
-        </div>
-      </div>
-    </section>
+        <section className="cl-planning cl-wrap">
+          <div className="cl-section-heading">
+            <div>
+              <p className="cl-eyebrow cl-eyebrow--dark">
+                PLAN YOUR MTB HOLIDAY
+              </p>
+              <h2>Three steps to start planning your Morocco ride.</h2>
+            </div>
+            <p>
+              You do not need a complete itinerary before making an enquiry.
+              Start with your dates, riding preferences and group details, then
+              discuss which route options may suit your trip.
+            </p>
+          </div>
+          <div className="cl-steps">
+            <article>
+              <span>STEP 01</span>
+              <h3>Share your experience</h3>
+              <p>
+                Tell us about your riding background, fitness, group size,
+                preferred bike and the type of terrain you enjoy.
+              </p>
+            </article>
+            <article>
+              <span>STEP 02</span>
+              <h3>Discuss the route</h3>
+              <p>
+                Compare regions, season, daily distances, technical difficulty,
+                elevation and the amount of time you have available.
+              </p>
+            </article>
+            <article>
+              <span>STEP 03</span>
+              <h3>Confirm the details</h3>
+              <p>
+                Review the itinerary, transfers, equipment, accommodation and
+                inclusions before final arrangements are made.
+              </p>
+            </article>
+          </div>
+        </section>
 
-    <section className="cl-final-cta">
-      <img
-        src="/images/mountain-biking-atlas-mountains-morocco.jpg"
-        alt="Atlas Mountains in Morocco"
-        loading="lazy"
-      />
-      <div className="cl-final-cta__overlay" />
-      <div className="cl-wrap cl-final-cta__content">
-        <p className="cl-eyebrow">YOUR NEXT MTB ADVENTURE</p>
-        <h2>Ready to ride the trails of Morocco?</h2>
-        <p>
-          Tell us when you would like to travel, how you like to ride and
-          what kind of trail experience you are looking for. We can start a
-          conversation about a mountain bike trip that fits your plans.
-        </p>
-        <div className="cl-actions">
-          <Link className="cl-button cl-button--gold" href="/contact">
-            Plan your MTB holiday
-          </Link>
-          <Link
-            className="cl-button cl-button--outline"
-            href="/cycling-holiday-morocco"
-          >
-            View all cycling tours
-          </Link>
-        </div>
-      </div>
-    </section>
-  </main>
+        <section className="cl-faq">
+          <div className="cl-wrap cl-faq__inner">
+            <div className="cl-faq__intro">
+              <p className="cl-eyebrow cl-eyebrow--dark">GOOD TO KNOW</p>
+              <h2>Mountain biking in Morocco: FAQs</h2>
+              <p>
+                Read answers to common questions about trail difficulty,
+                seasons and preparing for a mountain bike holiday. For advice
+                about a specific route, contact us with your dates and riding
+                preferences.
+              </p>
+              <Link className="cl-text-link" href="/contact">
+                Ask us about your trip <span aria-hidden="true">↗</span>
+              </Link>
+            </div>
+            <div className="cl-faq-list">
+              {faqs.map((faq, index) => (
+                <details
+                  className="cl-faq-item"
+                  key={faq.question}
+                  open={index === 0}
+                >
+                  <summary>
+                    {faq.question}
+                    <span aria-hidden="true">+</span>
+                  </summary>
+                  <p>{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
 
-  <footer className="site-footer cycling-listing__footer">
-    <div className="page-width footer-grid">
-      <div className="footer-brand">
-        <Link className="brand" href="/">
+        <section className="cl-final-cta">
           <img
-            className="brand__logo"
-            src="/images/mountain-bike-morocco-logo.png"
-            alt="Mountain Bike Morocco"
+            src="/images/mountain-biking-atlas-mountains-morocco.jpg"
+            alt="Atlas Mountains in Morocco"
+            loading="lazy"
           />
-          <span>
-            MOUNTAIN BIKE <em>MOROCCO</em>
-          </span>
-        </Link>
-        <p>
-          Guided mountain biking, E-MTB, gravel and road cycling
-          experiences across Morocco. Discover the landscapes, trails and
-          local culture at your own pace.
-        </p>
-      </div>
-      <div>
-        <h3>Explore</h3>
-        <Link href="/cycling-holiday-morocco">All Cycling Tours</Link>
-        <Link href="/cycling-trips/mtb">Mountain Bike Tours</Link>
-        <Link href="/cycling-trips/e-mtb">E-MTB Tours</Link>
-        <Link href="/cycling-trips/gravel">Gravel Cycling</Link>
-        <Link href="/cycling-trips/road">Road Cycling</Link>
-      </div>
-      <div>
-        <h3>Destinations</h3>
-        <Link href="/destinations/atlas-mountains">Atlas Mountains</Link>
-        <Link href="/destinations/imlil-toubkal">
-          Imlil &amp; Toubkal
-        </Link>
-        <Link href="/destinations/marrakech">Marrakech</Link>
-        <Link href="/destinations/agafay-desert">Agafay Desert</Link>
-        <Link href="/destinations">All Destinations</Link>
-      </div>
-      <div>
-        <h3>Let&apos;s plan</h3>
-        <Link href="/about">About Us</Link>
-        <Link href="/journal">Journal</Link>
-        <Link href="/contact">Contact</Link>
-        <Link href="/contact">Plan Your Trip</Link>
-      </div>
-    </div>
-    <div className="page-width footer-bottom">
-      <span>© 2026 Mountain Bike Morocco</span>
-      <span>Morocco cycling adventures, thoughtfully planned.</span>
-    </div>
-  </footer>
-</>
+          <div className="cl-final-cta__overlay" />
+          <div className="cl-wrap cl-final-cta__content">
+            <p className="cl-eyebrow">YOUR NEXT MTB ADVENTURE</p>
+            <h2>Ready to ride the trails of Morocco?</h2>
+            <p>
+              Tell us when you would like to travel, how you like to ride and
+              what kind of trail experience you are looking for. We can start a
+              conversation about a mountain bike trip that fits your plans.
+            </p>
+            <div className="cl-actions">
+              <Link className="cl-button cl-button--gold" href="/contact">
+                Plan your MTB holiday
+              </Link>
+              <Link
+                className="cl-button cl-button--outline"
+                href="/cycling-holiday-morocco"
+              >
+                View all cycling tours
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
 
-);
+      <footer className="site-footer cycling-listing__footer">
+        <div className="page-width footer-grid">
+          <div className="footer-brand">
+            <Link className="brand" href="/">
+              <img
+                className="brand__logo"
+                src="/images/mountain-bike-morocco-logo.png"
+                alt="Mountain Bike Morocco"
+              />
+              <span>
+                MOUNTAIN BIKE <em>MOROCCO</em>
+              </span>
+            </Link>
+            <p>
+              Guided mountain biking, E-MTB, gravel and road cycling
+              experiences across Morocco. Discover the landscapes, trails and
+              local culture at your own pace.
+            </p>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <Link href="/cycling-holiday-morocco">All Cycling Tours</Link>
+            <Link href="/cycling-trips/mtb">Mountain Bike Tours</Link>
+            <Link href="/cycling-trips/e-mtb">E-MTB Tours</Link>
+            <Link href="/cycling-trips/gravel">Gravel Cycling</Link>
+            <Link href="/cycling-trips/road">Road Cycling</Link>
+          </div>
+          <div>
+            <h3>Destinations</h3>
+            <Link href="/destinations/atlas-mountains">Atlas Mountains</Link>
+            <Link href="/destinations/imlil-toubkal">
+              Imlil &amp; Toubkal
+            </Link>
+            <Link href="/destinations/marrakech">Marrakech</Link>
+            <Link href="/destinations/agafay-desert">Agafay Desert</Link>
+            <Link href="/destinations">All Destinations</Link>
+          </div>
+          <div>
+            <h3>Let&apos;s plan</h3>
+            <Link href="/about">About Us</Link>
+            <Link href="/journal">Journal</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/contact">Plan Your Trip</Link>
+          </div>
+        </div>
+        <div className="page-width footer-bottom">
+          <span>© 2026 Mountain Bike Morocco</span>
+          <span>Morocco cycling adventures, thoughtfully planned.</span>
+        </div>
+      </footer>
+    </>
+  );
 }

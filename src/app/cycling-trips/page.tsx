@@ -150,10 +150,16 @@ export default function AllCyclingToursPage() {
               style that fits your interests, experience and available time.
             </p>
             <div className="cl-actions">
-              <Link className="cl-button cl-button--gold" href="/contact?request=cycling-tour-planning">
+              <Link
+                className="cl-button cl-button--gold"
+                href="/contact?request=cycling-tour-planning"
+              >
                 Plan Your Cycling Holiday
               </Link>
-              <Link className="cl-button cl-button--outline" href="#cycling-styles">
+              <Link
+                className="cl-button cl-button--outline"
+                href="#cycling-styles"
+              >
                 Explore Cycling Styles
               </Link>
             </div>
@@ -197,7 +203,9 @@ export default function AllCyclingToursPage() {
           <div className="cl-wrap">
             <div className="cl-section-heading">
               <div>
-                <p className="cl-eyebrow cl-eyebrow--dark">EXPLORE YOUR OPTIONS</p>
+                <p className="cl-eyebrow cl-eyebrow--dark">
+                  EXPLORE YOUR OPTIONS
+                </p>
                 <h2>Find the cycling experience that fits your trip.</h2>
               </div>
               <p>
@@ -206,35 +214,70 @@ export default function AllCyclingToursPage() {
                 trip formats to explore.
               </p>
             </div>
+
             <div className="cl-tour-grid">
               {cyclingCategories.map((category) => (
-                <article className="cl-tour-card" key={category.href}>
+                <article
+                  className="home-tour-card"
+                  key={category.href}
+                >
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={category.href}
                     aria-label={category.title}
                   >
                     <img
-                      className="cl-tour-card__image"
                       src={category.image}
                       alt={category.title}
                       loading="lazy"
                     />
-                    <span className="cl-tour-card__number">{category.number}</span>
+                    <span className="home-tour-card__category">
+                      {category.label}
+                    </span>
+                    <span className="home-tour-card__level">
+                      {category.number} · MOROCCO
+                    </span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{category.label}</p>
-                    <h3><Link href={category.href}>{category.title}</Link></h3>
-                    <p>{category.description}</p>
-                    <div className="cl-tour-card__actions">
-                      <Link className="cl-button cl-button--dark" href={category.href}>
+
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      CYCLING HOLIDAYS · MOROCCO
+                    </p>
+
+                    <h3 className="home-tour-card__title">
+                      <Link href={category.href}>
+                        {category.title}
+                      </Link>
+                    </h3>
+
+                    <p className="home-tour-card__description">
+                      {category.description}
+                    </p>
+
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span
+                          className="home-tour-card__meta-icon"
+                          aria-hidden="true"
+                        >
+                          ◆
+                        </span>
+                        {category.label}
+                      </span>
+                    </div>
+
+                    <div className="home-tour-card__actions">
+                      <Link
+                        className="home-tour-card__button"
+                        href={category.href}
+                      >
                         {category.linkText}
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={`/contact?request=cycling-tour-planning&category=${encodeURIComponent(category.title)}`}
                       >
-                        Enquire
+                        Enquire <span aria-hidden="true">↗</span>
                       </Link>
                     </div>
                   </div>
@@ -258,7 +301,10 @@ export default function AllCyclingToursPage() {
                 which category fits, tell us what you like riding and the kind
                 of holiday you have in mind so the options can be discussed.
               </p>
-              <Link className="cl-button cl-button--gold" href="/contact?request=cycling-tour-planning">
+              <Link
+                className="cl-button cl-button--gold"
+                href="/contact?request=cycling-tour-planning"
+              >
                 Help Me Choose a Tour
               </Link>
             </div>
@@ -278,49 +324,197 @@ export default function AllCyclingToursPage() {
               preferred cycling style.
             </p>
           </div>
+
           <div className="cl-region-grid">
-            <article className="cl-region-card">
-              <Link className="cl-region-card__image-wrap" href="/destinations/atlas-mountains" aria-label="Atlas Mountains">
-                <img src="/images/atlas-mountains-cycling-tour-morocco.jpg" alt="Cycling in the Atlas Mountains" loading="lazy" />
-                <span>01</span>
+            <article className="home-tour-card">
+              <Link
+                className="home-tour-card__image"
+                href="/destinations/atlas-mountains"
+                aria-label="Atlas Mountains"
+              >
+                <img
+                  src="/images/atlas-mountains-cycling-tour-morocco.jpg"
+                  alt="Cycling in the Atlas Mountains"
+                  loading="lazy"
+                />
+                <span className="home-tour-card__category">
+                  CYCLING DESTINATION
+                </span>
+                <span className="home-tour-card__level">
+                  Atlas Mountains
+                </span>
               </Link>
-              <div className="cl-region-card__body">
-                <h3><Link href="/destinations/atlas-mountains">Atlas Mountains</Link></h3>
-                <p>Mountain scenery, climbs, rural tracks and routes linking valleys and villages.</p>
-                <Link className="cl-text-link" href="/destinations/atlas-mountains">Explore the Atlas <span aria-hidden="true">↗</span></Link>
+              <div className="home-tour-card__body">
+                <p className="home-tour-card__eyebrow">
+                  CYCLING IN MOROCCO
+                </p>
+                <h3 className="home-tour-card__title">
+                  <Link href="/destinations/atlas-mountains">
+                    Atlas Mountains
+                  </Link>
+                </h3>
+                <p className="home-tour-card__description">
+                  Mountain scenery, climbs, rural tracks and routes linking
+                  valleys and villages.
+                </p>
+                <div className="home-tour-card__actions">
+                  <Link
+                    className="home-tour-card__button"
+                    href="/destinations/atlas-mountains"
+                  >
+                    Explore Region
+                  </Link>
+                  <Link
+                    className="home-tour-card__link"
+                    href="/destinations/atlas-mountains"
+                  >
+                    Discover <span aria-hidden="true">↗</span>
+                  </Link>
+                </div>
               </div>
             </article>
-            <article className="cl-region-card">
-              <Link className="cl-region-card__image-wrap" href="/destinations/marrakech" aria-label="Marrakech and the foothills">
-                <img src="/images/Atlas-Mountains-Bike-trip-From-Marrakech.jpg" alt="Cycling route beginning near Marrakech" loading="lazy" />
-                <span>02</span>
+
+            <article className="home-tour-card">
+              <Link
+                className="home-tour-card__image"
+                href="/destinations/marrakech"
+                aria-label="Marrakech and the foothills"
+              >
+                <img
+                  src="/images/Atlas-Mountains-Bike-trip-From-Marrakech.jpg"
+                  alt="Cycling route beginning near Marrakech"
+                  loading="lazy"
+                />
+                <span className="home-tour-card__category">
+                  CYCLING DESTINATION
+                </span>
+                <span className="home-tour-card__level">
+                  Marrakech & Foothills
+                </span>
               </Link>
-              <div className="cl-region-card__body">
-                <h3><Link href="/destinations/marrakech">Marrakech & Foothills</Link></h3>
-                <p>A practical base for countryside rides, day trips and journeys towards the mountains.</p>
-                <Link className="cl-text-link" href="/destinations/marrakech">Explore Marrakech <span aria-hidden="true">↗</span></Link>
+              <div className="home-tour-card__body">
+                <p className="home-tour-card__eyebrow">
+                  CYCLING IN MOROCCO
+                </p>
+                <h3 className="home-tour-card__title">
+                  <Link href="/destinations/marrakech">
+                    Marrakech & Foothills
+                  </Link>
+                </h3>
+                <p className="home-tour-card__description">
+                  A practical base for countryside rides, day trips and
+                  journeys towards the mountains.
+                </p>
+                <div className="home-tour-card__actions">
+                  <Link
+                    className="home-tour-card__button"
+                    href="/destinations/marrakech"
+                  >
+                    Explore Region
+                  </Link>
+                  <Link
+                    className="home-tour-card__link"
+                    href="/destinations/marrakech"
+                  >
+                    Discover <span aria-hidden="true">↗</span>
+                  </Link>
+                </div>
               </div>
             </article>
-            <article className="cl-region-card">
-              <Link className="cl-region-card__image-wrap" href="/destinations/sahara-desert" aria-label="Southern Morocco">
-                <img src="/images/atlas-to-desert-biking-tour.jpg" alt="Open landscapes on a cycling route through southern Morocco" loading="lazy" />
-                <span>03</span>
+
+            <article className="home-tour-card">
+              <Link
+                className="home-tour-card__image"
+                href="/destinations/sahara-desert"
+                aria-label="Southern Morocco"
+              >
+                <img
+                  src="/images/atlas-to-desert-biking-tour.jpg"
+                  alt="Open landscapes on a cycling route through southern Morocco"
+                  loading="lazy"
+                />
+                <span className="home-tour-card__category">
+                  CYCLING DESTINATION
+                </span>
+                <span className="home-tour-card__level">
+                  Southern Morocco
+                </span>
               </Link>
-              <div className="cl-region-card__body">
-                <h3><Link href="/destinations/sahara-desert">Southern Morocco</Link></h3>
-                <p>Open horizons and longer journeys that require careful planning for heat, water and transfers.</p>
-                <Link className="cl-text-link" href="/destinations/sahara-desert">Explore the south <span aria-hidden="true">↗</span></Link>
+              <div className="home-tour-card__body">
+                <p className="home-tour-card__eyebrow">
+                  CYCLING IN MOROCCO
+                </p>
+                <h3 className="home-tour-card__title">
+                  <Link href="/destinations/sahara-desert">
+                    Southern Morocco
+                  </Link>
+                </h3>
+                <p className="home-tour-card__description">
+                  Open horizons and longer journeys that require careful
+                  planning for heat, water and transfers.
+                </p>
+                <div className="home-tour-card__actions">
+                  <Link
+                    className="home-tour-card__button"
+                    href="/destinations/sahara-desert"
+                  >
+                    Explore Region
+                  </Link>
+                  <Link
+                    className="home-tour-card__link"
+                    href="/destinations/sahara-desert"
+                  >
+                    Discover <span aria-hidden="true">↗</span>
+                  </Link>
+                </div>
               </div>
             </article>
-            <article className="cl-region-card">
-              <Link className="cl-region-card__image-wrap" href="/destinations/atlantic-coast" aria-label="Atlantic Coast">
-                <img src="/images/atlantic-coast-cycling-tour-morocco.jpg" alt="Cycling landscapes along Morocco's Atlantic coast" loading="lazy" />
-                <span>04</span>
+
+            <article className="home-tour-card">
+              <Link
+                className="home-tour-card__image"
+                href="/destinations/atlantic-coast"
+                aria-label="Atlantic Coast"
+              >
+                <img
+                  src="/images/atlantic-coast-cycling-tour-morocco.jpg"
+                  alt="Cycling landscapes along Morocco's Atlantic coast"
+                  loading="lazy"
+                />
+                <span className="home-tour-card__category">
+                  CYCLING DESTINATION
+                </span>
+                <span className="home-tour-card__level">
+                  Atlantic Coast
+                </span>
               </Link>
-              <div className="cl-region-card__body">
-                <h3><Link href="/destinations/atlantic-coast">Atlantic Coast</Link></h3>
-                <p>Coastal countryside and open routes where wind, surfaces and season help shape the ride.</p>
-                <Link className="cl-text-link" href="/destinations/atlantic-coast">Explore the coast <span aria-hidden="true">↗</span></Link>
+              <div className="home-tour-card__body">
+                <p className="home-tour-card__eyebrow">
+                  CYCLING IN MOROCCO
+                </p>
+                <h3 className="home-tour-card__title">
+                  <Link href="/destinations/atlantic-coast">
+                    Atlantic Coast
+                  </Link>
+                </h3>
+                <p className="home-tour-card__description">
+                  Coastal countryside and open routes where wind, surfaces and
+                  season help shape the ride.
+                </p>
+                <div className="home-tour-card__actions">
+                  <Link
+                    className="home-tour-card__button"
+                    href="/destinations/atlantic-coast"
+                  >
+                    Explore Region
+                  </Link>
+                  <Link
+                    className="home-tour-card__link"
+                    href="/destinations/atlantic-coast"
+                  >
+                    Discover <span aria-hidden="true">↗</span>
+                  </Link>
+                </div>
               </div>
             </article>
           </div>
@@ -328,7 +522,11 @@ export default function AllCyclingToursPage() {
 
         <section className="cl-editorial">
           <div className="cl-editorial__image">
-            <img src="/images/group-cycling-tour-morocco.jpg" alt="Cyclists exploring Morocco together" loading="lazy" />
+            <img
+              src="/images/group-cycling-tour-morocco.jpg"
+              alt="Cyclists exploring Morocco together"
+              loading="lazy"
+            />
           </div>
           <div className="cl-editorial__content">
             <p className="cl-eyebrow cl-eyebrow--dark">PLAN WITH CONFIDENCE</p>
@@ -357,13 +555,30 @@ export default function AllCyclingToursPage() {
             <div className="cl-faq__intro">
               <p className="cl-eyebrow cl-eyebrow--dark">GOOD TO KNOW</p>
               <h2>Choosing a cycling tour in Morocco: FAQs</h2>
-              <p>Review these general questions, then open the category that best fits your interests to compare individual routes and trip details.</p>
-              <Link className="cl-text-link" href="/contact?request=cycling-tour-planning">Ask us about choosing a tour <span aria-hidden="true">↗</span></Link>
+              <p>
+                Review these general questions, then open the category that
+                best fits your interests to compare individual routes and trip
+                details.
+              </p>
+              <Link
+                className="cl-text-link"
+                href="/contact?request=cycling-tour-planning"
+              >
+                Ask us about choosing a tour{" "}
+                <span aria-hidden="true">↗</span>
+              </Link>
             </div>
             <div className="cl-faq-list">
               {faqs.map((faq, index) => (
-                <details className="cl-faq-item" key={faq.question} open={index === 0}>
-                  <summary>{faq.question}<span aria-hidden="true">+</span></summary>
+                <details
+                  className="cl-faq-item"
+                  key={faq.question}
+                  open={index === 0}
+                >
+                  <summary>
+                    {faq.question}
+                    <span aria-hidden="true">+</span>
+                  </summary>
                   <p>{faq.answer}</p>
                 </details>
               ))}
@@ -372,15 +587,33 @@ export default function AllCyclingToursPage() {
         </section>
 
         <section className="cl-final-cta">
-          <img src="/images/mountain-bike-morocco-hero.jpg" alt="Morocco cycling adventure in the Atlas Mountains" loading="lazy" />
+          <img
+            src="/images/mountain-bike-morocco-hero.jpg"
+            alt="Morocco cycling adventure in the Atlas Mountains"
+            loading="lazy"
+          />
           <div className="cl-final-cta__overlay" />
           <div className="cl-wrap cl-final-cta__content">
             <p className="cl-eyebrow">YOUR NEXT CYCLING ADVENTURE</p>
             <h2>Ready to discover Morocco by bike?</h2>
-            <p>Tell us when you want to travel, who is riding and what kind of terrain you enjoy. Start a conversation about a cycling experience that fits your plans.</p>
+            <p>
+              Tell us when you want to travel, who is riding and what kind of
+              terrain you enjoy. Start a conversation about a cycling
+              experience that fits your plans.
+            </p>
             <div className="cl-actions">
-              <Link className="cl-button cl-button--gold" href="/contact?request=cycling-tour-planning">Plan Your Cycling Holiday</Link>
-              <Link className="cl-button cl-button--outline" href="/destinations">Explore Destinations</Link>
+              <Link
+                className="cl-button cl-button--gold"
+                href="/contact?request=cycling-tour-planning"
+              >
+                Plan Your Cycling Holiday
+              </Link>
+              <Link
+                className="cl-button cl-button--outline"
+                href="/destinations"
+              >
+                Explore Destinations
+              </Link>
             </div>
           </div>
         </section>
@@ -390,10 +623,20 @@ export default function AllCyclingToursPage() {
         <div className="page-width footer-grid">
           <div className="footer-brand">
             <Link className="brand" href="/">
-              <img className="brand__logo" src="/images/mountain-bike-morocco-logo.png" alt="Mountain Bike Morocco" />
-              <span>MOUNTAIN BIKE <em>MOROCCO</em></span>
+              <img
+                className="brand__logo"
+                src="/images/mountain-bike-morocco-logo.png"
+                alt="Mountain Bike Morocco"
+              />
+              <span>
+                MOUNTAIN BIKE <em>MOROCCO</em>
+              </span>
             </Link>
-            <p>Guided mountain biking, E-MTB, gravel and road cycling experiences across Morocco. Discover the landscapes, trails and local culture at your own pace.</p>
+            <p>
+              Guided mountain biking, E-MTB, gravel and road cycling
+              experiences across Morocco. Discover the landscapes, trails and
+              local culture at your own pace.
+            </p>
           </div>
           <div>
             <h3>Explore</h3>
@@ -417,7 +660,9 @@ export default function AllCyclingToursPage() {
             <Link href="/about">About Us</Link>
             <Link href="/journal">Journal</Link>
             <Link href="/contact">Contact</Link>
-            <Link href="/contact?request=cycling-tour-planning">Plan Your Trip</Link>
+            <Link href="/contact?request=cycling-tour-planning">
+              Plan Your Trip
+            </Link>
           </div>
         </div>
         <div className="page-width footer-bottom">

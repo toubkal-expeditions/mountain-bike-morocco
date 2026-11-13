@@ -15,6 +15,7 @@ type Tour = {
   description: string;
   image: string;
   slug: string;
+  destination: string;
 };
 
 const luxuryTours: Tour[] = [
@@ -27,6 +28,7 @@ const luxuryTours: Tour[] = [
     description:
       "Explore the High Atlas through a carefully paced cycling journey that combines mountain scenery, rural roads and time to appreciate the places along the route. A luxury escape can balance rewarding rides with comfortable accommodation, regional food and thoughtful logistics. Your itinerary should be planned around the season, daily distance, climbing preferences and the level of support you would like, with accommodation and inclusions confirmed before travel.",
     image: "/images/luxury-cycling-morocco.jpg",
+    destination: "HIGH ATLAS MOUNTAINS",
   },
   {
     number: "02",
@@ -37,6 +39,7 @@ const luxuryTours: Tour[] = [
     description:
       "Enjoy a shorter escape into the quieter landscapes around Ouirgane, where cultivated valleys, mountain views and traditional settlements provide a relaxed setting for cycling. This itinerary can suit a couple or a small private group looking to combine riding with time in the countryside. The route, accommodation, transfer arrangements and riding pace should be agreed in advance so the weekend feels comfortable rather than rushed.",
     image: "/images/Atlas-Mountains-Bike-trip-From-Marrakech.jpg",
+    destination: "OUIRGANE & WESTERN ATLAS",
   },
   {
     number: "03",
@@ -47,6 +50,7 @@ const luxuryTours: Tour[] = [
     description:
       "Plan a week of focused riding in Morocco with stages shaped around your fitness, climbing goals and preferred training rhythm. An endurance camp may combine longer road rides, mountain routes and recovery time, while private logistics allow the daily programme to be discussed around the group. Route distances, elevation, accommodation, support and rest periods should all be considered before the final itinerary is confirmed.",
     image: "/images/luxury-biking-ebike-tours-morocco.jpg",
+    destination: "ATLAS MOUNTAINS",
   },
   {
     number: "04",
@@ -57,6 +61,7 @@ const luxuryTours: Tour[] = [
     description:
       "Discover Morocco together on a private cycling holiday designed around the ages, confidence and interests of the people travelling. A family itinerary can combine suitable rides with cultural visits, scenic stops and time to relax between activities. Routes must be selected carefully for the least experienced riders, while accommodation, transfers, equipment and daily schedules should be reviewed to ensure the trip works for the whole family.",
     image: "/images/group-cycling-tour-morocco.jpg",
+    destination: "ATLAS & MARRAKECH",
   },
   {
     number: "05",
@@ -67,6 +72,7 @@ const luxuryTours: Tour[] = [
     description:
       "Spend a week discovering Morocco by bike with an itinerary that can connect mountain scenery, quiet countryside roads and selected cultural stops. The focus is on balancing rewarding rides with time to enjoy each destination rather than moving too quickly between regions. Daily mileage, climbing, travel time, accommodation preferences and support arrangements should be discussed together to create a practical journey for your dates and group.",
     image: "/images/morocco-luxury-bike-tour.jpg",
+    destination: "MOROCCO · MULTI-REGION",
   },
   {
     number: "06",
@@ -77,6 +83,7 @@ const luxuryTours: Tour[] = [
     description:
       "Travel towards the south of Morocco on a cycling journey through changing landscapes, dry valleys and communities shaped by the desert environment. A longer expedition needs careful attention to temperatures, water, distances between services and transfer times. A considered schedule makes room for riding, local experiences and recovery, while accommodation and support are planned around the selected route and the group's needs.",
     image: "/images/sahara-morocco-cycling-holiday.jpg",
+    destination: "SOUTHERN MOROCCO · SAHARA EDGE",
   },
   {
     number: "07",
@@ -87,6 +94,7 @@ const luxuryTours: Tour[] = [
     description:
       "Explore the landscapes around Skoura through a short cycling journey featuring palm groves, oasis scenery and historic kasbah country. This experience can blend relaxed riding with time to appreciate local architecture and rural life. The final stages should be planned around the distance you want to ride, road or track conditions, the season and the standard of accommodation preferred for the trip.",
     image: "/images/cycling-holiday-morocco.jpg",
+    destination: "SKOURA OASIS & KASBAH COUNTRY",
   },
   {
     number: "08",
@@ -97,6 +105,7 @@ const luxuryTours: Tour[] = [
     description:
       "Discover the distinctive rock formations, mountain roads and quiet communities of the Anti-Atlas on a boutique cycling escape. The region offers a different atmosphere from the High Atlas, with route options shaped by the terrain and the distance between overnight stops. Planning should account for elevation, weather, road surfaces and support needs while leaving enough time to enjoy the landscape and local culture.",
     image: "/images/south-morocco-cycling-expedition.jpg",
+    destination: "TAFRAOUTE & ANTI-ATLAS",
   },
   {
     number: "09",
@@ -107,6 +116,7 @@ const luxuryTours: Tour[] = [
     description:
       "Build a short road cycling journey around the mountain scenery and climbing routes of the Tizi n'Test region. The experience should be matched to your climbing ability, riding pace and comfort on descents, with the weather and road conditions checked for the travel dates. Discuss accommodation, transfers and any support requirements in advance so the riding stages and overnight stops fit together realistically.",
     image: "/images/road-cycling-holiday-tour-morocco.jpg",
+    destination: "TIZI N'TEST · HIGH ATLAS",
   },
   {
     number: "10",
@@ -117,6 +127,7 @@ const luxuryTours: Tour[] = [
     description:
       "Experience the dramatic scenery of the Todra and Dades regions on a road cycling holiday that balances riding with time to explore southern Morocco. Stages can be planned around your preferred daily distance, while transfers and overnight stops help connect the landscapes without making every day too demanding. Temperature, water, road conditions and the available services should be factored into the final schedule.",
     image: "/images/8-Day-Morocco-Cycling-Tour-Atlas-Mountains.jpg",
+    destination: "TODRA & DADES GORGES",
   },
   {
     number: "11",
@@ -127,6 +138,7 @@ const luxuryTours: Tour[] = [
     description:
       "Create a private cycling holiday around your dates, riding style, destinations and preferred level of comfort. Your journey may focus on one region or connect several parts of Morocco if the available time allows. Share your group size, fitness, preferred bike type, accommodation expectations and support requirements so the route and practical inclusions can be discussed before you decide how to proceed.",
     image: "/images/luxury-cycling-holiday-trip-morocco.jpg",
+    destination: "PRIVATE · CUSTOM ROUTE",
   },
 ];
 
@@ -295,36 +307,43 @@ export default function LuxuryCyclingToursPage() {
             </div>
             <div className="cl-tour-grid">
               {luxuryTours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={tourDetailHref(tour.slug)}
                     aria-label={`More details about ${tour.title}`}
                   >
                     <img
-                      className="cl-tour-card__image"
                       src={tour.image}
                       alt={tour.title}
                       loading="lazy"
                     />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <span className="home-tour-card__category">{tour.label}</span>
+                    <span className="home-tour-card__level">{tour.destination}</span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.label}</p>
-                    <h3>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      {`LUXURY CYCLING · ${tour.destination}`}
+                    </p>
+                    <h3 className="home-tour-card__title">
                       <Link href={tourDetailHref(tour.slug)}>{tour.title}</Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <p className="cl-card-duration">{tour.duration}</p>
-                    <div className="cl-tour-card__actions">
+                    <p className="home-tour-card__description">{tour.description}</p>
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">◆</span>
+                        {tour.duration}
+                      </span>
+                    </div>
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={tourDetailHref(tour.slug)}
                       >
                         More Details
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={contactHref(tour.title, "booking")}
                       >
                         Booking
@@ -373,24 +392,39 @@ export default function LuxuryCyclingToursPage() {
             </p>
           </div>
           <div className="cl-region-grid">
-            {destinations.map((destination, index) => (
-              <article className="cl-region-card" key={destination.title}>
+            {destinations.map((destination) => (
+              <article className="home-tour-card" key={destination.title}>
                 <Link
-                  className="cl-region-card__image-wrap"
+                  className="home-tour-card__image"
                   href={destination.href}
                   aria-label={destination.title}
                 >
                   <img src={destination.image} alt={destination.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <span className="home-tour-card__category">LUXURY CYCLING DESTINATION</span>
+                  <span className="home-tour-card__level">{destination.title}</span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">
+                    {`LUXURY CYCLING · ${destination.title}`}
+                  </p>
+                  <h3 className="home-tour-card__title">
                     <Link href={destination.href}>{destination.title}</Link>
                   </h3>
-                  <p>{destination.text}</p>
-                  <Link className="cl-text-link" href={destination.href}>
-                    Explore the region <span aria-hidden="true">↗</span>
-                  </Link>
+                  <p className="home-tour-card__description">{destination.text}</p>
+                  <div className="home-tour-card__actions">
+                    <Link
+                      className="home-tour-card__button"
+                      href={destination.href}
+                    >
+                      Explore Region
+                    </Link>
+                    <Link
+                      className="home-tour-card__link"
+                      href={destination.href}
+                    >
+                      Discover
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}

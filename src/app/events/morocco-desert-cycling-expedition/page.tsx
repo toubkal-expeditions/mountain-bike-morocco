@@ -42,52 +42,52 @@ const facts = [
 const highlights = [
   {
     number: "01",
-    title: "Two ways to explore",
-    text: "Combine the flowing rhythm of gravel riding with the freedom and technical character of mountain biking. Each riding day can be adapted to the terrain and the group's experience.",
+    title: "Two styles of riding",
+    text: "Combine flowing gravel roads with mountain bike trails for a varied cycling experience through southern Morocco.",
   },
   {
     number: "02",
-    title: "Remote southern landscapes",
-    text: "Ride through open valleys, dry riverbeds, rocky plateaus, mountain foothills and the changing landscapes of southern Morocco.",
+    title: "Remote landscapes",
+    text: "Ride through wide-open desert scenery, rugged mountain terrain and quiet routes away from busy roads.",
   },
   {
     number: "03",
-    title: "A real sense of adventure",
-    text: "Move beyond conventional cycling routes and discover quieter tracks, remote settlements and landscapes that reward curiosity and exploration.",
+    title: "Changing terrain",
+    text: "Experience a mixture of gravel tracks, rocky paths, mountain trails and open desert riding.",
   },
   {
     number: "04",
-    title: "Local knowledge",
-    text: "Discover the region with local guidance, practical route support and opportunities to connect with the culture and everyday life of southern Morocco.",
+    title: "Traditional villages",
+    text: "Discover rural communities and traditional settlements that reveal another side of Morocco.",
   },
   {
     number: "05",
-    title: "Flexible riding experience",
-    text: "The balance between gravel and MTB can be adjusted according to terrain, riding ability, weather and the group's preferred style.",
+    title: "Guided expedition",
+    text: "Explore with local support and route planning adapted to the terrain and conditions.",
   },
   {
     number: "06",
-    title: "More than a bike ride",
-    text: "Experience the contrasts of Morocco through its landscapes, villages, hospitality, food and remarkable sense of space.",
+    title: "A different Morocco",
+    text: "Experience the country's southern landscapes through an active journey that connects nature, culture and cycling.",
   },
 ];
 
 const beyondTrail = [
   {
-    title: "Discover traditional villages",
-    text: "Pass through rural communities where traditional architecture, agricultural life and local customs remain closely connected to the surrounding landscape.",
+    title: "Local encounters",
+    text: "Discover the welcoming atmosphere of southern Morocco and experience the traditions of communities along the route.",
   },
   {
-    title: "Experience Moroccan hospitality",
-    text: "Enjoy opportunities to meet local people and experience the warmth of Moroccan hospitality along the journey.",
+    title: "Desert landscapes",
+    text: "Travel through dramatic open scenery, rocky valleys and remote landscapes shaped by the changing environment.",
   },
   {
-    title: "Explore changing landscapes",
-    text: "From mountain foothills and rocky valleys to open desert scenery, every part of the expedition brings a different atmosphere.",
+    title: "Mountain scenery",
+    text: "Enjoy views across rugged mountain ranges and explore quieter routes through the countryside.",
   },
   {
-    title: "Enjoy the local cuisine",
-    text: "Discover Moroccan food and regional flavours, with traditional dishes and refreshments adding another dimension to the experience.",
+    title: "Moroccan hospitality",
+    text: "Enjoy local food, traditional accommodation and the warm hospitality that makes travelling through Morocco memorable.",
   },
 ];
 
@@ -95,106 +95,100 @@ const itinerary = [
   {
     day: "01",
     title: "Arrival and expedition briefing",
-    subtitle: "Meet the team and prepare for the journey",
-    text: "Meet your local cycling team and review the expedition plan. The day is dedicated to getting comfortable with the bikes, checking equipment and discussing the riding conditions, terrain and practical arrangements. The final route and riding programme are confirmed according to the group, conditions and available time.",
-    riding: "Bike preparation and briefing",
-    terrain: "Preparation and local surroundings",
+    location: "Southern Morocco",
+    text: "Arrive in the expedition area and meet the local team. Check your bicycle and equipment, review the planned routes and prepare for the days ahead. The team will introduce the riding terrain, support arrangements and daily programme.",
   },
   {
     day: "02",
     title: "Gravel riding through open landscapes",
-    subtitle: "Longer tracks and the freedom of the open road",
-    text: "Begin the riding adventure on a selection of gravel tracks and quiet connecting roads. The emphasis is on discovering the landscape, enjoying a steady rhythm and experiencing the scale of southern Morocco. The route can include remote tracks, open valleys and rural scenery, depending on the confirmed itinerary.",
-    riding: "Gravel-focused riding",
-    terrain: "Gravel roads, tracks and open terrain",
+    location: "Desert and rural tracks",
+    text: "Begin the cycling expedition on gravel roads and remote tracks crossing the open landscapes of southern Morocco. Enjoy changing scenery, quiet routes and the freedom of riding through wide valleys and desert surroundings.",
   },
   {
     day: "03",
     title: "Mountain bike trails and desert terrain",
-    subtitle: "A more technical side of the expedition",
-    text: "Move from open gravel riding towards terrain better suited to mountain bikes. Explore rocky tracks, natural trails and changing surfaces where bike handling and line choice become part of the adventure. The riding level and route selection are adapted to the group's experience and conditions.",
-    riding: "MTB-focused riding",
-    terrain: "Natural trails, rocky sections and mixed terrain",
+    location: "Mountain and desert trails",
+    text: "Continue the adventure on a combination of mountain bike trails and rugged terrain. Experience a different side of the region before concluding the expedition with the local team.",
   },
 ];
 
 const inclusions = [
-  "Local cycling guide and expedition support",
-  "Route planning according to the confirmed programme",
-  "Pre-trip riding and equipment briefing",
-  "Assistance during the planned riding activities",
-  "Local coordination throughout the expedition",
+  "Guided cycling programme",
+  "Local cycling support team",
+  "Route planning and daily ride briefings",
+  "Support vehicle during the expedition where required",
+  "Assistance with expedition logistics",
 ];
 
 const exclusions = [
   "International flights",
-  "Travel insurance and personal medical cover",
-  "Personal cycling equipment and clothing",
-  "Bike rental unless specifically agreed",
-  "Accommodation and meals unless confirmed in the final programme",
-  "Personal expenses and gratuities",
-  "Services not specifically listed as included",
+  "Travel insurance",
+  "Personal cycling equipment",
+  "Bicycle rental unless arranged separately",
+  "Meals and drinks not specified in the confirmed programme",
+  "Personal expenses",
+  "Tips and gratuities",
 ];
 
 const preparation = [
   {
-    title: "Choose the right bike",
-    text: "A gravel bike is suitable for longer stretches of rideable gravel and connecting tracks. A mountain bike is more appropriate for rougher terrain, rocky trails and technical sections. The recommended setup depends on the final route.",
+    title: "Bike and equipment",
+    text: "Bring a well-maintained gravel or mountain bike suited to mixed terrain. Check your tyres, brakes, drivetrain and essential tools before travelling.",
   },
   {
-    title: "Bring suitable clothing",
-    text: "Use comfortable cycling clothing and prepare for changing temperatures. Lightweight layers, sun protection and a warm layer for cooler mornings and evenings are useful.",
+    title: "Cycling clothing",
+    text: "Pack comfortable cycling clothing, gloves, suitable shoes, sunglasses and layers for changing temperatures.",
   },
   {
-    title: "Prepare for varied terrain",
-    text: "The expedition combines different riding surfaces. Confidence on gravel roads, loose ground and uneven trails will help you enjoy the experience.",
+    title: "Fitness and experience",
+    text: "A good level of cycling fitness and previous experience on gravel roads or mountain bike trails will help you enjoy the expedition.",
   },
   {
-    title: "Stay hydrated",
-    text: "Desert and mountain environments can be demanding. Carry suitable hydration equipment and follow the guide's advice on water, food and rest stops.",
+    title: "Sun and hydration",
+    text: "Bring sun protection, a reusable water bottle or hydration pack and personal essentials for riding in exposed environments.",
   },
 ];
 
 const faqs = [
   {
-    question: "Is this expedition suitable for both gravel and MTB riders?",
+    question: "What type of cycling does this expedition include?",
     answer:
-      "Yes. The expedition is designed around a combination of gravel riding and mountain biking. The exact balance depends on the confirmed route, group experience and terrain. Riders should be comfortable cycling for extended periods and handling changing surfaces.",
+      "The expedition combines gravel cycling and mountain biking. The programme includes open gravel roads, rural tracks, mountain trails and varied desert terrain.",
   },
   {
-    question: "Do I need to bring my own bike?",
+    question: "Is this expedition suitable for beginners?",
     answer:
-      "You can discuss bringing your own bike or arranging a rental before the expedition. The most suitable option depends on the final route and the type of riding you want to prioritise. Bike rental should be confirmed in advance.",
+      "This is a mixed-terrain cycling adventure. Previous cycling experience and a reasonable level of fitness are recommended. Contact our team to discuss your experience before booking.",
   },
   {
-    question: "Can I participate with a gravel bike only?",
+    question: "What type of bicycle should I bring?",
     answer:
-      "A gravel bike can be suitable for the gravel-focused sections. However, some routes or trail sections may be better suited to a mountain bike. The final itinerary and bike recommendation should be agreed before booking.",
+      "A gravel bike or mountain bike may be suitable depending on the confirmed route and terrain. We recommend discussing your bicycle choice with our team before departure.",
   },
   {
-    question: "Can I participate with a mountain bike only?",
+    question: "Can I rent a bicycle in Morocco?",
     answer:
-      "Yes. A mountain bike offers versatility across gravel roads, rocky tracks and natural trails. It may be a suitable choice for riders who prefer additional comfort and control on rougher terrain.",
+      "Bicycle rental may be arranged separately, subject to availability and the requirements of the route. Contact us with your preferred bicycle type.",
   },
   {
-    question: "What level of fitness is required?",
+    question: "Is the expedition guided?",
     answer:
-      "A good general level of fitness and regular cycling experience are recommended. The expedition may include extended riding periods and changing surfaces. The final daily distances, elevation and technical difficulty must be confirmed with the organiser.",
+      "Yes. The expedition is planned as a guided cycling experience with local support and route briefings.",
   },
   {
-    question: "Is the itinerary fixed?",
+    question: "When is the best time to ride in southern Morocco?",
     answer:
-      "The programme presented here is a suggested framework. The final route, riding distances, accommodation arrangements and daily schedule are confirmed according to the departure, weather, local conditions and group requirements.",
+      "Spring and autumn are generally favourable seasons for cycling in many parts of southern Morocco. Exact departure dates depend on the route and local conditions.",
   },
   {
-    question: "Can the expedition be organised for a private group?",
+    question: "Can the expedition be arranged for a private group?",
     answer:
-      "Private departures can be discussed. The riding programme can be adapted to the group's preferred dates, experience, bike choice and travel arrangements.",
+      "Yes. Private departures can be discussed for friends, cycling clubs and groups. The programme can be reviewed according to the group's experience and requirements.",
   },
   {
-    question: "What should I bring?",
+    question: "How do I enquire about availability?",
     answer:
-      "Bring your cycling clothing, helmet, gloves, suitable shoes, sunglasses, sun protection, hydration equipment and personal essentials. A detailed equipment recommendation can be provided once the route and season are confirmed.",
+      "Complete the enquiry form on this page with your preferred dates, group size and cycling experience. Our team will contact you to discuss the arrangements.",
   },
 ];
 
@@ -202,1414 +196,1087 @@ const relatedEvents = [
   {
     title: "Atlas Mountains MTB Gathering",
     description:
-      "Discover mountain biking through the landscapes and trails of the High Atlas.",
-    href: "/events/atlas-mountains-mtb-gathering",
+      "A mountain biking gathering exploring the trails and landscapes of the High Atlas.",
     image: "/images/saghro-morocco-bike-tour.jpg",
-    category: "Mountain Biking",
+    href: "/events/atlas-mountains-mtb-gathering",
   },
   {
     title: "Agafay Desert Cycling Challenge",
     description:
-      "Experience the unique terrain and open landscapes of the Agafay region.",
-    href: "/events/agafay-desert-cycling-challenge",
+      "Discover the rocky desert landscapes and distinctive riding terrain of Agafay.",
     image: "/images/Desert-Agafay-Morocco.jpg",
-    category: "Desert Cycling",
+    href: "/events/agafay-desert-cycling-challenge",
   },
   {
     title: "Marrakech to Sahara E-MTB Caravan",
     description:
-      "Explore Morocco on an assisted mountain bike adventure beyond Marrakech.",
-    href: "/events/marrakech-to-sahara-e-mtb-caravan",
+      "A multi-terrain electric mountain bike adventure towards the Sahara.",
     image: "/images/sahara-desert-ebike-expeditions.jpg",
-    category: "E-MTB Expedition",
+    href: "/events/marrakech-to-sahara-e-mtb-caravan",
   },
 ];
 
 export default function MoroccoDesertCyclingExpeditionPage() {
   return (
-    <main className="gravel-event">
+    <main className="atlas-tour">
       <style>{`
-        .gravel-event {
-          --ge-cream: #f4f1e9;
-          --ge-paper: #faf9f5;
-          --ge-ink: #20211d;
-          --ge-muted: #77786f;
-          --ge-gold: #b58b4b;
-          --ge-green: #56634b;
-          --ge-line: rgba(32, 33, 29, .15);
-          background: var(--ge-paper);
-          color: var(--ge-ink);
+        .atlas-tour {
+          --paper: #f4f2eb;
+          --paper-deep: #eae6db;
+          --ink: #20241f;
+          --muted: #62665d;
+          --gold: #c6a05b;
+          --gold-light: #dfc17f;
+          --green: #21372b;
+          --line: #dedbd1;
+          background: var(--paper);
+          color: var(--ink);
           font-family: Arial, Helvetica, sans-serif;
           overflow: hidden;
         }
 
-        .gravel-event *,
-        .gravel-event *::before,
-        .gravel-event *::after {
+        .atlas-tour * {
           box-sizing: border-box;
         }
 
-        .gravel-event img {
+        .atlas-tour img {
           display: block;
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
 
-        .gravel-event a {
+        .atlas-tour a {
           color: inherit;
           text-decoration: none;
         }
 
-        .ge-container {
-          width: min(1240px, calc(100% - 80px));
-          margin-inline: auto;
+        .atlas-tour .at-container {
+          width: min(1180px, calc(100% - 48px));
+          margin: 0 auto;
         }
 
-        .ge-eyebrow {
-          display: inline-flex;
+        .atlas-tour .at-eyebrow {
+          display: flex;
           align-items: center;
-          gap: 13px;
-          color: var(--ge-gold);
+          gap: 12px;
+          color: var(--gold);
           font-size: 10px;
           font-weight: 700;
-          letter-spacing: .22em;
-          line-height: 1.5;
+          letter-spacing: 2.5px;
           text-transform: uppercase;
         }
 
-        .ge-eyebrow::before {
+        .atlas-tour .at-eyebrow::before {
           content: "";
-          width: 32px;
+          width: 30px;
           height: 1px;
-          background: currentColor;
+          background: var(--gold);
         }
 
-        .ge-section-heading {
-          max-width: 780px;
-          margin: 0 0 25px;
+        .atlas-tour h1,
+        .atlas-tour h2,
+        .atlas-tour h3 {
           font-family: Georgia, "Times New Roman", serif;
-          font-size: clamp(38px, 5vw, 66px);
-          font-weight: 400;
-          letter-spacing: -.045em;
-          line-height: 1.04;
-        }
-
-        .ge-section-heading em {
-          color: var(--ge-green);
           font-weight: 400;
         }
 
-        .ge-lead {
-          max-width: 720px;
-          color: #66675f;
+        .atlas-tour .at-section-title {
+          max-width: 760px;
+          margin: 18px 0;
+          font-size: clamp(34px, 4.5vw, 58px);
+          line-height: 1.08;
+          letter-spacing: -1.7px;
+        }
+
+        .atlas-tour .at-lead {
+          max-width: 650px;
+          color: var(--muted);
           font-size: 15px;
-          line-height: 1.95;
+          line-height: 1.9;
         }
 
-        .ge-hero {
+        .atlas-tour .at-hero {
           position: relative;
+          min-height: 690px;
           display: flex;
-          min-height: 790px;
           align-items: flex-end;
-          background: #272a23;
-          color: #fff;
+          background: #222;
+          color: white;
         }
 
-        .ge-hero__image {
+        .atlas-tour .at-hero-image {
           position: absolute;
           inset: 0;
         }
 
-        .ge-hero__image::after {
-          position: absolute;
-          inset: 0;
-          background:
-            linear-gradient(90deg, rgba(13, 16, 13, .74) 0%, rgba(13, 16, 13, .32) 55%, rgba(13, 16, 13, .08) 100%),
-            linear-gradient(0deg, rgba(13, 16, 13, .72) 0%, transparent 65%);
+        .atlas-tour .at-hero-image::after {
           content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(90deg, rgba(12,18,14,.76), rgba(12,18,14,.2) 75%),
+            linear-gradient(0deg, rgba(12,18,14,.55), transparent 65%);
         }
 
-        .ge-hero__content {
+        .atlas-tour .at-hero-content {
           position: relative;
           z-index: 1;
-          width: min(1240px, calc(100% - 80px));
+          width: min(1180px, calc(100% - 48px));
           margin: 0 auto;
-          padding: 160px 0 75px;
+          padding: 120px 0 90px;
         }
 
-        .ge-hero .ge-eyebrow {
-          color: #d8b77f;
+        .atlas-tour .at-hero .at-eyebrow {
+          color: var(--gold-light);
         }
 
-        .ge-hero h1 {
-          max-width: 900px;
-          margin: 25px 0 22px;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: clamp(54px, 8vw, 106px);
-          font-weight: 400;
-          letter-spacing: -.055em;
-          line-height: .98;
+        .atlas-tour .at-hero h1 {
+          max-width: 850px;
+          margin: 22px 0;
+          font-size: clamp(48px, 7.5vw, 88px);
+          line-height: .99;
+          letter-spacing: -3px;
         }
 
-        .ge-hero h1 em {
-          color: #d7b77f;
-          font-weight: 400;
-        }
-
-        .ge-hero__intro {
-          max-width: 640px;
+        .atlas-tour .at-hero-copy {
+          max-width: 590px;
           color: rgba(255,255,255,.83);
           font-size: 16px;
           line-height: 1.85;
         }
 
-        .ge-hero__actions {
+        .atlas-tour .at-actions {
           display: flex;
           flex-wrap: wrap;
-          gap: 14px;
-          margin-top: 35px;
+          gap: 13px;
+          margin-top: 32px;
         }
 
-        .ge-button {
+        .atlas-tour .at-button {
+          min-height: 49px;
           display: inline-flex;
-          min-height: 52px;
           align-items: center;
           justify-content: center;
-          padding: 0 25px;
-          border: 1px solid var(--ge-gold);
-          background: var(--ge-gold);
-          color: #fff !important;
+          padding: 0 24px;
+          border: 1px solid var(--gold);
+          background: var(--gold);
+          color: #1d241e;
           font-size: 10px;
           font-weight: 700;
-          letter-spacing: .16em;
+          letter-spacing: 1.7px;
           text-transform: uppercase;
-          transition: background .25s ease, color .25s ease;
+          transition: .25s ease;
         }
 
-        .ge-button:hover {
+        .atlas-tour .at-button:hover {
+          background: var(--gold-light);
+          border-color: var(--gold-light);
+        }
+
+        .atlas-tour .at-button-outline {
           background: transparent;
-          color: #fff !important;
+          border-color: rgba(255,255,255,.55);
+          color: white;
         }
 
-        .ge-button--outline {
-          border-color: rgba(255,255,255,.6);
-          background: transparent;
+        .atlas-tour .at-button-outline:hover {
+          background: white;
+          color: var(--ink);
+          border-color: white;
         }
 
-        .ge-button--outline:hover {
-          border-color: var(--ge-gold);
-          background: var(--ge-gold);
+        .atlas-tour .at-facts {
+          background: var(--green);
+          color: white;
         }
 
-        .ge-hero__bottom {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 16px 38px;
-          margin-top: 70px;
-          padding-top: 24px;
-          border-top: 1px solid rgba(255,255,255,.28);
-        }
-
-        .ge-hero__bottom span {
-          color: rgba(255,255,255,.76);
-          font-size: 10px;
-          letter-spacing: .14em;
-          text-transform: uppercase;
-        }
-
-        .ge-facts {
-          background: var(--ge-cream);
-        }
-
-        .ge-facts__grid {
+        .atlas-tour .at-facts-grid {
           display: grid;
           grid-template-columns: repeat(6, 1fr);
-          padding: 28px 0;
         }
 
-        .ge-fact {
-          padding: 8px 20px;
-          border-right: 1px solid var(--ge-line);
+        .atlas-tour .at-fact {
+          min-height: 104px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 20px 18px;
+          border-right: 1px solid rgba(255,255,255,.15);
         }
 
-        .ge-fact:first-child {
-          padding-left: 0;
+        .atlas-tour .at-fact:last-child {
+          border-right: 0;
         }
 
-        .ge-fact:last-child {
-          border: 0;
-        }
-
-        .ge-fact span {
-          display: block;
+        .atlas-tour .at-fact-label {
           margin-bottom: 9px;
-          color: var(--ge-muted);
+          color: var(--gold-light);
           font-size: 9px;
-          letter-spacing: .16em;
+          font-weight: 700;
+          letter-spacing: 1.8px;
           text-transform: uppercase;
         }
 
-        .ge-fact strong {
+        .atlas-tour .at-fact-value {
           font-family: Georgia, "Times New Roman", serif;
           font-size: 17px;
-          font-weight: 400;
         }
 
-        .ge-subnav {
-          position: relative;
-          z-index: 2;
-          border-bottom: 1px solid var(--ge-line);
-          background: var(--ge-paper);
+        .atlas-tour .at-subnav {
+          border-bottom: 1px solid var(--line);
+          background: var(--paper);
         }
 
-        .ge-subnav__inner {
+        .atlas-tour .at-subnav-inner {
+          min-height: 62px;
           display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
           gap: 30px;
-          overflow-x: auto;
-          padding: 19px 0;
-          scrollbar-width: none;
         }
 
-        .ge-subnav__inner::-webkit-scrollbar {
-          display: none;
-        }
-
-        .ge-subnav a {
-          flex: 0 0 auto;
-          color: #6f7068;
+        .atlas-tour .at-subnav a {
+          color: var(--muted);
           font-size: 9px;
           font-weight: 700;
-          letter-spacing: .12em;
+          letter-spacing: 1.5px;
           text-transform: uppercase;
           transition: color .2s ease;
         }
 
-        .ge-subnav a:hover {
-          color: var(--ge-gold);
+        .atlas-tour .at-subnav a:hover {
+          color: var(--gold);
         }
 
-        .ge-intro {
-          padding: 130px 0;
+        .atlas-tour .at-section {
+          padding: 105px 0;
         }
 
-        .ge-intro__grid {
+        .atlas-tour .at-intro-grid {
           display: grid;
-          grid-template-columns: 1.08fr .92fr;
+          grid-template-columns: 1.05fr .95fr;
+          gap: 75px;
           align-items: center;
-          gap: 95px;
         }
 
-        .ge-intro__image {
+        .atlas-tour .at-intro-image {
+          height: 590px;
           position: relative;
-          min-height: 620px;
         }
 
-        .ge-intro__image::after {
-          position: absolute;
-          right: -18px;
-          bottom: -18px;
-          z-index: -1;
-          width: 58%;
-          height: 55%;
-          border: 1px solid var(--ge-gold);
+        .atlas-tour .at-intro-image::after {
           content: "";
+          position: absolute;
+          right: -15px;
+          bottom: -15px;
+          width: 42%;
+          height: 42%;
+          border-right: 1px solid var(--gold);
+          border-bottom: 1px solid var(--gold);
+          pointer-events: none;
         }
 
-        .ge-intro__copy p {
-          color: #686960;
+        .atlas-tour .at-intro-copy p {
+          color: var(--muted);
           font-size: 14px;
           line-height: 2;
         }
 
-        .ge-intro__copy p + p {
-          margin-top: 18px;
+        .atlas-tour .at-intro-copy .at-button {
+          margin-top: 20px;
         }
 
-        .ge-enquiry-card {
-          margin-top: 35px;
-          padding: 27px 30px;
-          border: 1px solid var(--ge-line);
-          background: var(--ge-cream);
+        .atlas-tour .at-highlights {
+          background: var(--paper-deep);
         }
 
-        .ge-enquiry-card strong {
-          display: block;
-          margin-bottom: 9px;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 23px;
-          font-weight: 400;
-        }
-
-        .ge-enquiry-card p {
-          margin: 0 0 18px;
-          font-size: 12px;
-          line-height: 1.8;
-        }
-
-        .ge-text-link {
-          display: inline-flex;
-          align-items: center;
-          gap: 12px;
-          color: var(--ge-green) !important;
-          font-size: 10px;
-          font-weight: 700;
-          letter-spacing: .13em;
-          text-transform: uppercase;
-        }
-
-        .ge-text-link::after {
-          content: "→";
-          font-size: 17px;
-        }
-
-        .ge-highlights {
-          padding: 115px 0 125px;
-          background: var(--ge-cream);
-        }
-
-        .ge-highlights__top {
+        .atlas-tour .at-heading-row {
           display: flex;
-          align-items: flex-end;
           justify-content: space-between;
+          align-items: flex-end;
           gap: 40px;
-          margin-bottom: 60px;
+          margin-bottom: 48px;
         }
 
-        .ge-highlights__top .ge-lead {
+        .atlas-tour .at-heading-row .at-lead {
           max-width: 390px;
-          margin-bottom: 7px;
         }
 
-        .ge-highlight-grid {
+        .atlas-tour .at-highlight-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          border-top: 1px solid var(--ge-line);
-          border-left: 1px solid var(--ge-line);
+          border-top: 1px solid #d4d0c5;
+          border-left: 1px solid #d4d0c5;
         }
 
-        .ge-highlight {
-          min-height: 235px;
-          padding: 35px 32px;
-          border-right: 1px solid var(--ge-line);
-          border-bottom: 1px solid var(--ge-line);
+        .atlas-tour .at-highlight {
+          min-height: 225px;
+          padding: 30px;
+          border-right: 1px solid #d4d0c5;
+          border-bottom: 1px solid #d4d0c5;
         }
 
-        .ge-highlight__number {
-          display: block;
-          margin-bottom: 30px;
-          color: var(--ge-gold);
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 20px;
+        .atlas-tour .at-number {
+          color: var(--gold);
+          font-size: 11px;
+          letter-spacing: 2px;
         }
 
-        .ge-highlight h3 {
-          margin: 0 0 13px;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 24px;
-          font-weight: 400;
+        .atlas-tour .at-highlight h3 {
+          margin: 25px 0 12px;
+          font-size: 25px;
         }
 
-        .ge-highlight p {
+        .atlas-tour .at-highlight p {
           margin: 0;
-          color: #707168;
-          font-size: 12px;
-          line-height: 1.9;
+          color: var(--muted);
+          font-size: 13px;
+          line-height: 1.85;
         }
 
-        .ge-terrain {
-          padding: 130px 0;
-        }
-
-        .ge-terrain__heading {
-          max-width: 760px;
-          margin-bottom: 55px;
-        }
-
-        .ge-terrain-grid {
+        .atlas-tour .at-terrain-grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 28px;
+          gap: 25px;
+          margin-top: 45px;
         }
 
-        .ge-terrain-card {
+        .atlas-tour .at-terrain-card {
           position: relative;
-          min-height: 570px;
+          min-height: 490px;
           overflow: hidden;
-          background: #30352d;
-          color: #fff;
+          color: white;
+          background: #252a24;
         }
 
-        .ge-terrain-card__image {
+        .atlas-tour .at-terrain-card img {
           position: absolute;
           inset: 0;
           transition: transform .7s ease;
         }
 
-        .ge-terrain-card:hover .ge-terrain-card__image {
+        .atlas-tour .at-terrain-card:hover img {
           transform: scale(1.04);
         }
 
-        .ge-terrain-card::after {
+        .atlas-tour .at-terrain-card::after {
+          content: "";
           position: absolute;
           inset: 0;
-          background: linear-gradient(0deg, rgba(13,16,13,.85), rgba(13,16,13,.05) 75%);
-          content: "";
+          background: linear-gradient(0deg, rgba(10,15,11,.85), transparent 75%);
         }
 
-        .ge-terrain-card__content {
+        .atlas-tour .at-terrain-copy {
           position: absolute;
-          right: 35px;
-          bottom: 38px;
-          left: 35px;
           z-index: 1;
+          right: 32px;
+          bottom: 32px;
+          left: 32px;
         }
 
-        .ge-terrain-card__content span {
-          color: #d8b77f;
-          font-size: 9px;
+        .atlas-tour .at-terrain-copy span {
+          color: var(--gold-light);
+          font-size: 10px;
           font-weight: 700;
-          letter-spacing: .2em;
+          letter-spacing: 2px;
           text-transform: uppercase;
         }
 
-        .ge-terrain-card h3 {
-          margin: 13px 0;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: clamp(34px, 4vw, 48px);
-          font-weight: 400;
+        .atlas-tour .at-terrain-copy h3 {
+          margin: 12px 0;
+          font-size: 36px;
         }
 
-        .ge-terrain-card p {
-          max-width: 470px;
+        .atlas-tour .at-terrain-copy p {
+          max-width: 450px;
           margin: 0;
           color: rgba(255,255,255,.8);
           font-size: 13px;
-          line-height: 1.85;
-        }
-
-        .ge-event-info {
-          padding: 105px 0;
-          background: #242720;
-          color: #fff;
-        }
-
-        .ge-event-info .ge-section-heading em {
-          color: #d5b77f;
-        }
-
-        .ge-event-info .ge-lead {
-          color: rgba(255,255,255,.67);
-        }
-
-        .ge-info-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 1px;
-          margin-top: 55px;
-          background: rgba(255,255,255,.18);
-          border: 1px solid rgba(255,255,255,.18);
-        }
-
-        .ge-info-item {
-          min-height: 155px;
-          padding: 27px;
-          background: #242720;
-        }
-
-        .ge-info-item span {
-          display: block;
-          margin-bottom: 15px;
-          color: #d5b77f;
-          font-size: 9px;
-          letter-spacing: .17em;
-          text-transform: uppercase;
-        }
-
-        .ge-info-item strong {
-          display: block;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 22px;
-          font-weight: 400;
-        }
-
-        .ge-info-item p {
-          margin: 10px 0 0;
-          color: rgba(255,255,255,.62);
-          font-size: 11px;
           line-height: 1.8;
         }
 
-        .ge-culture {
-          padding: 130px 0;
+        .atlas-tour .at-event-info {
+          background: var(--green);
+          color: white;
         }
 
-        .ge-culture__grid {
+        .atlas-tour .at-event-info .at-section-title {
+          color: white;
+        }
+
+        .atlas-tour .at-event-info .at-lead {
+          color: rgba(255,255,255,.7);
+        }
+
+        .atlas-tour .at-info-grid {
           display: grid;
-          grid-template-columns: .9fr 1.1fr;
-          align-items: center;
-          gap: 90px;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 0;
+          margin-top: 48px;
+          border-top: 1px solid rgba(255,255,255,.2);
         }
 
-        .ge-culture__image {
-          min-height: 590px;
+        .atlas-tour .at-info-item {
+          padding: 28px 22px 10px 0;
         }
 
-        .ge-culture__list {
-          margin-top: 35px;
-          border-top: 1px solid var(--ge-line);
-        }
-
-        .ge-culture__item {
-          padding: 21px 0;
-          border-bottom: 1px solid var(--ge-line);
-        }
-
-        .ge-culture__item h3 {
-          margin: 0 0 8px;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 22px;
-          font-weight: 400;
-        }
-
-        .ge-culture__item p {
-          margin: 0;
-          color: #74756c;
-          font-size: 12px;
-          line-height: 1.85;
-        }
-
-        .ge-gallery {
-          padding: 0 0 125px;
-        }
-
-        .ge-gallery__heading {
-          margin-bottom: 35px;
-        }
-
-        .ge-gallery-grid {
-          display: grid;
-          grid-template-columns: 1.2fr .8fr 1fr;
-          grid-template-rows: 260px 260px;
-          gap: 15px;
-        }
-
-        .ge-gallery-grid__item {
-          overflow: hidden;
-          background: var(--ge-cream);
-        }
-
-        .ge-gallery-grid__item:first-child {
-          grid-row: span 2;
-        }
-
-        .ge-gallery-grid__item img {
-          transition: transform .6s ease;
-        }
-
-        .ge-gallery-grid__item:hover img {
-          transform: scale(1.04);
-        }
-
-        .ge-itinerary {
-          padding: 120px 0;
-          background: var(--ge-cream);
-        }
-
-        .ge-itinerary__heading {
-          max-width: 760px;
-          margin-bottom: 60px;
-        }
-
-        .ge-itinerary-list {
-          border-top: 1px solid var(--ge-line);
-        }
-
-        .ge-itinerary-day {
-          display: grid;
-          grid-template-columns: 100px 1fr 230px;
-          gap: 35px;
-          padding: 38px 0;
-          border-bottom: 1px solid var(--ge-line);
-        }
-
-        .ge-itinerary-day__number {
-          color: var(--ge-gold);
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 38px;
-        }
-
-        .ge-itinerary-day h3 {
-          margin: 0 0 8px;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 29px;
-          font-weight: 400;
-        }
-
-        .ge-itinerary-day__subtitle {
+        .atlas-tour .at-info-item span {
           display: block;
-          margin-bottom: 16px;
-          color: var(--ge-green);
-          font-size: 10px;
-          font-weight: 700;
-          letter-spacing: .1em;
-          text-transform: uppercase;
-        }
-
-        .ge-itinerary-day__copy p {
-          max-width: 690px;
-          margin: 0;
-          color: #707168;
-          font-size: 12px;
-          line-height: 1.95;
-        }
-
-        .ge-itinerary-day__details {
-          padding-left: 23px;
-          border-left: 1px solid var(--ge-line);
-        }
-
-        .ge-itinerary-day__details span {
-          display: block;
-          margin-bottom: 7px;
-          color: var(--ge-gold);
+          margin-bottom: 12px;
+          color: var(--gold-light);
           font-size: 9px;
           font-weight: 700;
-          letter-spacing: .13em;
+          letter-spacing: 1.8px;
           text-transform: uppercase;
         }
 
-        .ge-itinerary-day__details p {
-          margin: 0 0 20px;
-          color: #686960;
-          font-size: 11px;
-          line-height: 1.7;
-        }
-
-        .ge-itinerary-note {
-          margin-top: 35px;
-          padding: 23px 27px;
-          border-left: 3px solid var(--ge-gold);
-          background: rgba(255,255,255,.58);
-          color: #6e6f66;
-          font-size: 12px;
-          line-height: 1.85;
-        }
-
-        .ge-arrangements {
-          padding: 125px 0;
-        }
-
-        .ge-arrangements__grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 75px;
-          margin-top: 55px;
-        }
-
-        .ge-arrangements__column h3 {
-          margin: 0 0 25px;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 31px;
-          font-weight: 400;
-        }
-
-        .ge-check-list {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-          border-top: 1px solid var(--ge-line);
-        }
-
-        .ge-check-list li {
-          position: relative;
-          padding: 15px 0 15px 25px;
-          border-bottom: 1px solid var(--ge-line);
-          color: #6b6c63;
-          font-size: 12px;
-          line-height: 1.7;
-        }
-
-        .ge-check-list li::before {
-          position: absolute;
-          top: 15px;
-          left: 0;
-          color: var(--ge-gold);
-          content: "—";
-        }
-
-        .ge-preparation {
-          padding: 115px 0;
-          background: var(--ge-cream);
-        }
-
-        .ge-preparation__grid {
-          display: grid;
-          grid-template-columns: .85fr 1.15fr;
-          gap: 90px;
-        }
-
-        .ge-preparation__intro {
-          position: sticky;
-          top: 40px;
-          align-self: start;
-        }
-
-        .ge-preparation__list {
-          border-top: 1px solid var(--ge-line);
-        }
-
-        .ge-preparation__item {
-          padding: 25px 0;
-          border-bottom: 1px solid var(--ge-line);
-        }
-
-        .ge-preparation__item h3 {
-          margin: 0 0 10px;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 24px;
-          font-weight: 400;
-        }
-
-        .ge-preparation__item p {
-          margin: 0;
-          color: #6d6e65;
-          font-size: 12px;
-          line-height: 1.9;
-        }
-
-        .ge-difficulty {
-          padding: 125px 0;
-        }
-
-        .ge-difficulty__grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 85px;
-          align-items: center;
-        }
-
-        .ge-difficulty__image {
-          min-height: 520px;
-        }
-
-        .ge-difficulty__copy p {
-          color: #6d6e65;
-          font-size: 13px;
-          line-height: 1.95;
-        }
-
-        .ge-difficulty__points {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 15px;
-          margin-top: 30px;
-        }
-
-        .ge-difficulty__point {
-          padding: 20px;
-          border: 1px solid var(--ge-line);
-        }
-
-        .ge-difficulty__point strong {
-          display: block;
-          margin-bottom: 8px;
+        .atlas-tour .at-info-item strong {
           font-family: Georgia, "Times New Roman", serif;
           font-size: 19px;
           font-weight: 400;
         }
 
-        .ge-difficulty__point span {
-          color: #77786f;
-          font-size: 10px;
-          line-height: 1.7;
-        }
-
-        .ge-faq {
-          padding: 115px 0;
-          background: var(--ge-cream);
-        }
-
-        .ge-faq__grid {
+        .atlas-tour .at-culture-grid {
           display: grid;
-          grid-template-columns: .75fr 1.25fr;
-          gap: 90px;
+          grid-template-columns: .9fr 1.1fr;
+          gap: 75px;
+          align-items: center;
         }
 
-        .ge-faq__list {
-          border-top: 1px solid var(--ge-line);
+        .atlas-tour .at-culture-image {
+          height: 520px;
         }
 
-        .ge-faq details {
-          padding: 22px 0;
-          border-bottom: 1px solid var(--ge-line);
+        .atlas-tour .at-culture-list {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 25px 30px;
+          margin-top: 35px;
         }
 
-        .ge-faq summary {
-          position: relative;
-          padding-right: 35px;
-          cursor: pointer;
+        .atlas-tour .at-culture-item {
+          padding-top: 18px;
+          border-top: 1px solid var(--line);
+        }
+
+        .atlas-tour .at-culture-item h3 {
+          margin: 0 0 10px;
+          font-size: 20px;
+        }
+
+        .atlas-tour .at-culture-item p {
+          margin: 0;
+          color: var(--muted);
+          font-size: 12px;
+          line-height: 1.8;
+        }
+
+        .atlas-tour .at-gallery {
+          padding: 0 0 105px;
+        }
+
+        .atlas-tour .at-gallery-grid {
+          display: grid;
+          grid-template-columns: 1.15fr .85fr .85fr;
+          grid-template-rows: 245px 245px;
+          gap: 12px;
+          margin-top: 35px;
+        }
+
+        .atlas-tour .at-gallery-item {
+          overflow: hidden;
+        }
+
+        .atlas-tour .at-gallery-item:first-child {
+          grid-row: span 2;
+        }
+
+        .atlas-tour .at-gallery-item img {
+          transition: transform .6s ease;
+        }
+
+        .atlas-tour .at-gallery-item:hover img {
+          transform: scale(1.04);
+        }
+
+        .atlas-tour .at-itinerary {
+          background: var(--paper-deep);
+        }
+
+        .atlas-tour .at-itinerary-list {
+          max-width: 900px;
+          margin: 50px auto 0;
+          border-top: 1px solid #d3cec1;
+        }
+
+        .atlas-tour .at-day {
+          display: grid;
+          grid-template-columns: 100px 1fr;
+          gap: 30px;
+          padding: 35px 0;
+          border-bottom: 1px solid #d3cec1;
+        }
+
+        .atlas-tour .at-day-number {
+          color: var(--gold);
           font-family: Georgia, "Times New Roman", serif;
-          font-size: 21px;
-          line-height: 1.4;
+          font-size: 34px;
+        }
+
+        .atlas-tour .at-day-location {
+          color: var(--muted);
+          font-size: 9px;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+        }
+
+        .atlas-tour .at-day h3 {
+          margin: 9px 0 12px;
+          font-size: 27px;
+        }
+
+        .atlas-tour .at-day p {
+          max-width: 690px;
+          margin: 0;
+          color: var(--muted);
+          font-size: 13px;
+          line-height: 1.9;
+        }
+
+        .atlas-tour .at-arrangements-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 70px;
+          margin-top: 45px;
+        }
+
+        .atlas-tour .at-arrangements h3 {
+          padding-bottom: 17px;
+          border-bottom: 1px solid var(--line);
+          font-size: 27px;
+        }
+
+        .atlas-tour .at-check-list {
+          padding: 0;
+          margin: 0;
           list-style: none;
         }
 
-        .ge-faq summary::-webkit-details-marker {
-          display: none;
+        .atlas-tour .at-check-list li {
+          position: relative;
+          padding: 13px 0 13px 25px;
+          border-bottom: 1px solid var(--line);
+          color: var(--muted);
+          font-size: 13px;
+          line-height: 1.6;
         }
 
-        .ge-faq summary::after {
+        .atlas-tour .at-check-list li::before {
+          content: "—";
           position: absolute;
-          top: 0;
-          right: 0;
-          color: var(--ge-gold);
-          content: "+";
-          font-family: Arial, Helvetica, sans-serif;
+          left: 0;
+          color: var(--gold);
+        }
+
+        .atlas-tour .at-preparation {
+          background: var(--paper-deep);
+        }
+
+        .atlas-tour .at-prep-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 25px;
+          margin-top: 45px;
+        }
+
+        .atlas-tour .at-prep-card {
+          padding-top: 20px;
+          border-top: 1px solid #cfcabd;
+        }
+
+        .atlas-tour .at-prep-card h3 {
+          margin: 0 0 12px;
           font-size: 22px;
         }
 
-        .ge-faq details[open] summary::after {
-          content: "−";
-        }
-
-        .ge-faq details p {
-          max-width: 700px;
-          margin: 15px 0 0;
-          color: #6c6d64;
+        .atlas-tour .at-prep-card p {
+          margin: 0;
+          color: var(--muted);
           font-size: 12px;
-          line-height: 1.95;
+          line-height: 1.9;
         }
 
-        .ge-contact {
-          padding: 120px 0;
-        }
-
-        .ge-contact__heading {
-          max-width: 760px;
-          margin-bottom: 50px;
-        }
-
-        .ge-contact__panel {
-          padding: 45px;
-          border: 1px solid var(--ge-line);
-          background: var(--ge-cream);
-        }
-
-        .ge-final {
-          position: relative;
-          display: flex;
-          min-height: 580px;
+        .atlas-tour .at-difficulty-grid {
+          display: grid;
+          grid-template-columns: .8fr 1.2fr;
+          gap: 70px;
           align-items: center;
-          background: #242720;
-          color: #fff;
         }
 
-        .ge-final__image {
+        .atlas-tour .at-difficulty-panel {
+          padding: 40px;
+          background: var(--green);
+          color: white;
+        }
+
+        .atlas-tour .at-difficulty-panel span {
+          color: var(--gold-light);
+          font-size: 9px;
+          font-weight: 700;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+
+        .atlas-tour .at-difficulty-panel h3 {
+          margin: 18px 0;
+          font-size: 34px;
+        }
+
+        .atlas-tour .at-difficulty-panel p {
+          margin: 0;
+          color: rgba(255,255,255,.75);
+          font-size: 13px;
+          line-height: 1.9;
+        }
+
+        .atlas-tour .at-faq {
+          background: var(--paper-deep);
+        }
+
+        .atlas-tour .at-faq-list {
+          max-width: 900px;
+          margin: 45px auto 0;
+          border-top: 1px solid #d0ccbf;
+        }
+
+        .atlas-tour .at-faq-item {
+          padding: 24px 0;
+          border-bottom: 1px solid #d0ccbf;
+        }
+
+        .atlas-tour .at-faq-item h3 {
+          margin: 0 0 12px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+        }
+
+        .atlas-tour .at-faq-item p {
+          max-width: 760px;
+          margin: 0;
+          color: var(--muted);
+          font-size: 13px;
+          line-height: 1.85;
+        }
+
+        .atlas-tour .at-contact {
+          background: var(--green);
+          color: white;
+        }
+
+        .atlas-tour .at-contact-grid {
+          display: grid;
+          grid-template-columns: .75fr 1.25fr;
+          gap: 70px;
+          align-items: start;
+        }
+
+        .atlas-tour .at-contact .at-section-title {
+          color: white;
+        }
+
+        .atlas-tour .at-contact .at-lead {
+          color: rgba(255,255,255,.75);
+        }
+
+        .atlas-tour .at-contact-form {
+          padding: 32px;
+          background: #f4f2eb;
+          color: var(--ink);
+        }
+
+        .atlas-tour .at-final {
+          position: relative;
+          min-height: 480px;
+          display: flex;
+          align-items: center;
+          color: white;
+          text-align: center;
+          background: #222;
+        }
+
+        .atlas-tour .at-final-image {
           position: absolute;
           inset: 0;
         }
 
-        .ge-final__image::after {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(90deg, rgba(15,18,14,.78), rgba(15,18,14,.23));
+        .atlas-tour .at-final-image::after {
           content: "";
+          position: absolute;
+          inset: 0;
+          background: rgba(15,22,17,.62);
         }
 
-        .ge-final__content {
+        .atlas-tour .at-final-content {
           position: relative;
           z-index: 1;
-          width: min(1240px, calc(100% - 80px));
-          margin: auto;
-          padding: 100px 0;
+          width: min(760px, calc(100% - 40px));
+          margin: 0 auto;
+          padding: 85px 0;
         }
 
-        .ge-final__content .ge-eyebrow {
-          color: #d8b77f;
+        .atlas-tour .at-final h2 {
+          margin: 20px 0;
+          font-size: clamp(38px, 5vw, 62px);
+          line-height: 1.08;
         }
 
-        .ge-final h2 {
-          max-width: 800px;
-          margin: 22px 0;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: clamp(43px, 6vw, 78px);
-          font-weight: 400;
-          letter-spacing: -.045em;
-          line-height: 1.02;
-        }
-
-        .ge-final h2 em {
-          color: #d8b77f;
-          font-weight: 400;
-        }
-
-        .ge-final p {
-          max-width: 600px;
-          color: rgba(255,255,255,.78);
+        .atlas-tour .at-final p {
+          color: rgba(255,255,255,.8);
           font-size: 14px;
           line-height: 1.9;
         }
 
-        .ge-related {
-          padding: 115px 0 125px;
+        .atlas-tour .at-related {
+          padding: 95px 0;
         }
 
-        .ge-related__heading {
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-          gap: 30px;
-          margin-bottom: 45px;
-        }
-
-        .ge-related-grid {
+        .atlas-tour .at-related-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 25px;
+          gap: 22px;
+          margin-top: 42px;
         }
 
-        .ge-related-card__image {
-          height: 270px;
+        .atlas-tour .at-related-card {
+          background: var(--paper-deep);
+        }
+
+        .atlas-tour .at-related-image {
+          height: 245px;
           overflow: hidden;
-          background: var(--ge-cream);
         }
 
-        .ge-related-card__image img {
-          transition: transform .6s ease;
+        .atlas-tour .at-related-image img {
+          transition: transform .5s ease;
         }
 
-        .ge-related-card:hover .ge-related-card__image img {
+        .atlas-tour .at-related-card:hover img {
           transform: scale(1.04);
         }
 
-        .ge-related-card__body {
-          padding: 22px 0;
-          border-bottom: 1px solid var(--ge-line);
+        .atlas-tour .at-related-copy {
+          padding: 24px;
         }
 
-        .ge-related-card__body span {
-          color: var(--ge-gold);
-          font-size: 9px;
-          font-weight: 700;
-          letter-spacing: .15em;
-          text-transform: uppercase;
+        .atlas-tour .at-related-copy h3 {
+          margin: 0 0 12px;
+          font-size: 24px;
         }
 
-        .ge-related-card h3 {
-          margin: 12px 0;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 25px;
-          font-weight: 400;
-          line-height: 1.25;
-        }
-
-        .ge-related-card p {
-          min-height: 48px;
-          margin: 0 0 18px;
-          color: #73746b;
-          font-size: 11px;
+        .atlas-tour .at-related-copy p {
+          min-height: 50px;
+          color: var(--muted);
+          font-size: 12px;
           line-height: 1.8;
         }
 
-        .ge-footer {
-          padding: 32px 0;
-          background: #20221d;
-          color: rgba(255,255,255,.7);
-        }
-
-        .ge-footer__inner {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: space-between;
-          gap: 20px;
-        }
-
-        .ge-footer__brand {
-          color: #fff;
-          font-family: Georgia, "Times New Roman", serif;
-          font-size: 19px;
-        }
-
-        .ge-footer__links {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 22px;
-        }
-
-        .ge-footer__links a,
-        .ge-footer__copyright {
-          color: rgba(255,255,255,.58);
+        .atlas-tour .at-related-link {
+          display: inline-block;
+          margin-top: 12px;
+          color: var(--green);
           font-size: 9px;
-          letter-spacing: .1em;
+          font-weight: 700;
+          letter-spacing: 1.5px;
           text-transform: uppercase;
         }
 
-        @media (max-width: 900px) {
-          .ge-container {
-            width: min(100% - 48px, 700px);
-          }
+        .atlas-tour .at-footer {
+          padding: 28px 0;
+          background: #19291f;
+          color: rgba(255,255,255,.7);
+          text-align: center;
+          font-size: 10px;
+          letter-spacing: 1px;
+        }
 
-          .ge-hero {
-            min-height: 700px;
-          }
-
-          .ge-hero__content,
-          .ge-final__content {
-            width: calc(100% - 48px);
-          }
-
-          .ge-facts__grid {
+        @media (max-width: 1000px) {
+          .atlas-tour .at-facts-grid {
             grid-template-columns: repeat(3, 1fr);
-            row-gap: 20px;
           }
 
-          .ge-fact:nth-child(3) {
+          .atlas-tour .at-fact:nth-child(3) {
             border-right: 0;
           }
 
-          .ge-intro__grid,
-          .ge-culture__grid,
-          .ge-preparation__grid,
-          .ge-difficulty__grid,
-          .ge-faq__grid {
-            grid-template-columns: 1fr;
-            gap: 45px;
+          .atlas-tour .at-fact:nth-child(-n+3) {
+            border-bottom: 1px solid rgba(255,255,255,.15);
           }
 
-          .ge-intro__image {
-            min-height: 480px;
+          .atlas-tour .at-intro-grid,
+          .atlas-tour .at-culture-grid,
+          .atlas-tour .at-difficulty-grid,
+          .atlas-tour .at-contact-grid {
+            gap: 42px;
           }
 
-          .ge-highlights__top,
-          .ge-related__heading {
-            display: block;
-          }
-
-          .ge-highlights__top .ge-lead {
-            margin-top: 20px;
-          }
-
-          .ge-highlight-grid {
+          .atlas-tour .at-prep-grid {
             grid-template-columns: repeat(2, 1fr);
           }
 
-          .ge-terrain-card {
-            min-height: 460px;
-          }
-
-          .ge-info-grid {
-            grid-template-columns: repeat(2, 1fr);
-          }
-
-          .ge-itinerary-day {
-            grid-template-columns: 65px 1fr;
-            gap: 20px;
-          }
-
-          .ge-itinerary-day__details {
-            grid-column: 2;
-            display: flex;
-            gap: 35px;
-            padding: 15px 0 0;
-            border-top: 1px solid var(--ge-line);
-            border-left: 0;
-          }
-
-          .ge-itinerary-day__details > div {
-            flex: 1;
-          }
-
-          .ge-preparation__intro {
-            position: static;
-          }
-
-          .ge-related-grid {
+          .atlas-tour .at-info-grid {
             grid-template-columns: repeat(2, 1fr);
           }
         }
 
-        @media (max-width: 600px) {
-          .ge-container {
-            width: calc(100% - 38px);
+        @media (max-width: 700px) {
+          .atlas-tour .at-container {
+            width: min(100% - 36px, 560px);
           }
 
-          .ge-hero {
-            min-height: 680px;
+          .atlas-tour .at-hero {
+            min-height: 640px;
           }
 
-          .ge-hero__content,
-          .ge-final__content {
-            width: calc(100% - 38px);
-            padding-top: 120px;
-            padding-bottom: 45px;
+          .atlas-tour .at-hero-content {
+            width: calc(100% - 36px);
+            padding: 100px 0 65px;
           }
 
-          .ge-hero h1 {
-            font-size: clamp(48px, 14vw, 72px);
+          .atlas-tour .at-hero h1 {
+            font-size: clamp(43px, 12vw, 65px);
+            letter-spacing: -2px;
           }
 
-          .ge-hero__bottom {
-            gap: 14px 20px;
-            margin-top: 45px;
-          }
-
-          .ge-facts__grid {
+          .atlas-tour .at-facts-grid {
             grid-template-columns: repeat(2, 1fr);
           }
 
-          .ge-fact {
-            padding: 8px 12px;
+          .atlas-tour .at-fact:nth-child(3) {
+            border-right: 1px solid rgba(255,255,255,.15);
           }
 
-          .ge-fact:nth-child(3) {
-            border-right: 1px solid var(--ge-line);
-          }
-
-          .ge-fact:nth-child(even) {
+          .atlas-tour .at-fact:nth-child(even) {
             border-right: 0;
           }
 
-          .ge-intro,
-          .ge-terrain,
-          .ge-culture,
-          .ge-arrangements,
-          .ge-difficulty,
-          .ge-contact {
-            padding: 85px 0;
+          .atlas-tour .at-fact:nth-child(4) {
+            border-bottom: 1px solid rgba(255,255,255,.15);
           }
 
-          .ge-intro__image,
-          .ge-culture__image,
-          .ge-difficulty__image {
-            min-height: 380px;
+          .atlas-tour .at-subnav-inner {
+            justify-content: flex-start;
+            gap: 18px;
+            padding: 18px 0;
           }
 
-          .ge-highlights,
-          .ge-itinerary,
-          .ge-preparation,
-          .ge-faq,
-          .ge-related {
-            padding: 85px 0;
+          .atlas-tour .at-section {
+            padding: 72px 0;
           }
 
-          .ge-highlight-grid,
-          .ge-terrain-grid,
-          .ge-info-grid,
-          .ge-arrangements__grid,
-          .ge-related-grid {
+          .atlas-tour .at-intro-grid,
+          .atlas-tour .at-culture-grid,
+          .atlas-tour .at-difficulty-grid,
+          .atlas-tour .at-contact-grid,
+          .atlas-tour .at-arrangements-grid {
+            grid-template-columns: 1fr;
+            gap: 35px;
+          }
+
+          .atlas-tour .at-intro-image {
+            height: 390px;
+          }
+
+          .atlas-tour .at-heading-row {
+            display: block;
+          }
+
+          .atlas-tour .at-highlight-grid {
+            grid-template-columns: 1fr 1fr;
+          }
+
+          .atlas-tour .at-highlight {
+            min-height: 220px;
+            padding: 22px;
+          }
+
+          .atlas-tour .at-terrain-grid {
             grid-template-columns: 1fr;
           }
 
-          .ge-highlight {
-            min-height: auto;
-            padding: 28px 23px;
+          .atlas-tour .at-terrain-card {
+            min-height: 390px;
           }
 
-          .ge-terrain-card {
-            min-height: 430px;
+          .atlas-tour .at-culture-image {
+            height: 380px;
           }
 
-          .ge-info-item {
-            min-height: 130px;
+          .atlas-tour .at-culture-list {
+            gap: 20px;
           }
 
-          .ge-gallery-grid {
+          .atlas-tour .at-gallery-grid {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 220px 160px 160px;
+            grid-template-rows: 250px 170px 170px;
           }
 
-          .ge-gallery-grid__item:first-child {
+          .atlas-tour .at-gallery-item:first-child {
             grid-column: span 2;
             grid-row: auto;
           }
 
-          .ge-itinerary-day {
-            grid-template-columns: 45px 1fr;
-            gap: 14px;
-            padding: 28px 0;
+          .atlas-tour .at-day {
+            grid-template-columns: 55px 1fr;
+            gap: 15px;
           }
 
-          .ge-itinerary-day__number {
-            font-size: 28px;
+          .atlas-tour .at-day-number {
+            font-size: 27px;
           }
 
-          .ge-itinerary-day h3 {
-            font-size: 24px;
+          .atlas-tour .at-prep-grid {
+            gap: 25px 18px;
           }
 
-          .ge-itinerary-day__details {
-            display: block;
+          .atlas-tour .at-related-grid {
+            grid-template-columns: 1fr;
           }
 
-          .ge-itinerary-day__details p {
-            margin-bottom: 14px;
+          .atlas-tour .at-related-image {
+            height: 260px;
           }
 
-          .ge-difficulty__points {
-            grid-template-columns: 1fr 1fr;
+          .atlas-tour .at-contact-form {
+            padding: 20px;
+          }
+        }
+
+        @media (max-width: 420px) {
+          .atlas-tour .at-highlight-grid,
+          .atlas-tour .at-culture-list,
+          .atlas-tour .at-prep-grid,
+          .atlas-tour .at-info-grid {
+            grid-template-columns: 1fr;
           }
 
-          .ge-contact__panel {
-            padding: 25px 18px;
+          .atlas-tour .at-fact {
+            padding: 17px 12px;
           }
 
-          .ge-related-card__image {
-            height: 240px;
+          .atlas-tour .at-fact-value {
+            font-size: 15px;
           }
 
-          .ge-footer__inner {
-            align-items: flex-start;
+          .atlas-tour .at-actions {
             flex-direction: column;
+            align-items: stretch;
+          }
+
+          .atlas-tour .at-button {
+            width: 100%;
+          }
+
+          .atlas-tour .at-gallery-grid {
+            grid-template-rows: 220px 150px 150px;
           }
         }
       `}</style>
 
-      {/* HERO */}
-      <section className="ge-hero">
-        <div className="ge-hero__image">
+      <section className="at-hero">
+        <div className="at-hero-image">
           <img src={images.hero} alt="Cycling through the desert landscapes of southern Morocco" />
         </div>
-
-        <div className="ge-hero__content">
-          <span className="ge-eyebrow">Mountain Bike Morocco · Special Cycling Event</span>
-          <h1>
-            Morocco Desert
-            <br />
-            <em>Cycling Expedition</em>
-          </h1>
-          <p className="ge-hero__intro">
-            A journey beyond the ordinary, combining the freedom of gravel
-            cycling with the adventure of mountain biking across the dramatic
-            landscapes of southern Morocco.
+        <div className="at-hero-content">
+          <div className="at-eyebrow">Mountain Bike Morocco · Cycling Expedition</div>
+          <h1>Morocco Desert Cycling Expedition</h1>
+          <p className="at-hero-copy">
+            A multi-terrain cycling adventure combining gravel roads and mountain
+            bike trails through the dramatic landscapes of southern Morocco.
           </p>
-
-          <div className="ge-hero__actions">
-            <a className="ge-button" href="#enquiry">
-              Enquire about the expedition
-            </a>
-            <a className="ge-button ge-button--outline" href="#itinerary">
-              Explore the programme
-            </a>
-          </div>
-
-          <div className="ge-hero__bottom">
-            <span>Gravel & MTB</span>
-            <span>Southern Morocco</span>
-            <span>Guided adventure</span>
-            <span>Private departures by arrangement</span>
+          <div className="at-actions">
+            <a className="at-button" href="#enquire">Enquire About This Expedition</a>
+            <a className="at-button at-button-outline" href="#itinerary">Explore The Programme</a>
           </div>
         </div>
       </section>
 
-      {/* FACTS */}
-      <section className="ge-facts">
-        <div className="ge-container ge-facts__grid">
+      <section className="at-facts">
+        <div className="at-container at-facts-grid">
           {facts.map((fact) => (
-            <div className="ge-fact" key={fact.label}>
-              <span>{fact.label}</span>
-              <strong>{fact.value}</strong>
+            <div className="at-fact" key={fact.label}>
+              <span className="at-fact-label">{fact.label}</span>
+              <span className="at-fact-value">{fact.value}</span>
             </div>
           ))}
         </div>
       </section>
 
-      {/* SUB NAVIGATION */}
-      <nav className="ge-subnav" aria-label="Event sections">
-        <div className="ge-container ge-subnav__inner">
+      <nav className="at-subnav">
+        <div className="at-container at-subnav-inner">
           <a href="#overview">Overview</a>
           <a href="#highlights">Highlights</a>
           <a href="#terrain">Terrain</a>
-          <a href="#experience">Experience</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#itinerary">Programme</a>
-          <a href="#arrangements">What's included</a>
+          <a href="#itinerary">Itinerary</a>
           <a href="#preparation">Preparation</a>
           <a href="#faq">FAQs</a>
-          <a href="#enquiry">Enquiry</a>
+          <a href="#enquire">Enquire</a>
         </div>
       </nav>
 
-      {/* OVERVIEW */}
-      <section className="ge-intro" id="overview">
-        <div className="ge-container ge-intro__grid">
-          <div className="ge-intro__image">
-            <img
-              src={images.overview}
-              alt="Remote cycling landscapes in southern Morocco"
-              loading="lazy"
-            />
+      <section className="at-section" id="overview">
+        <div className="at-container at-intro-grid">
+          <div className="at-intro-image">
+            <img src={images.overview} alt="Cycling expedition across southern Morocco" />
           </div>
-
-          <div className="ge-intro__copy">
-            <span className="ge-eyebrow">The expedition</span>
-            <h2 className="ge-section-heading">
-              Two riding styles.
-              <br />
-              <em>One unforgettable journey.</em>
+          <div className="at-intro-copy">
+            <div className="at-eyebrow">The Expedition</div>
+            <h2 className="at-section-title">
+              Discover southern Morocco on two wheels
             </h2>
-
             <p>
-              The Morocco Desert Cycling Expedition brings together two
-              complementary ways of exploring the country: gravel cycling and
-              mountain biking. Instead of following one type of road or trail,
-              the experience is built around the variety of terrain found
-              across southern Morocco.
+              The Morocco Desert Cycling Expedition brings together two exciting
+              styles of riding in one journey. Travel across open gravel roads,
+              explore rugged mountain bike trails and discover the remote
+              landscapes that make southern Morocco such a distinctive cycling
+              destination.
             </p>
-
             <p>
-              Gravel riding opens the door to longer tracks, quiet connecting
-              roads and expansive landscapes. Mountain biking adds another
-              dimension, allowing riders to explore rougher ground, rocky
-              passages and natural trails where a more capable bike makes all
-              the difference.
+              From wide desert tracks to rocky mountain paths and traditional
+              villages, each part of the expedition offers a different view of
+              the region. The programme is designed around varied terrain,
+              local knowledge and an authentic experience beyond the usual
+              tourist routes.
             </p>
-
             <p>
-              The result is a varied cycling adventure that combines distance,
-              exploration and the pleasure of discovering places beyond the
-              usual tourist routes. The final itinerary is adapted to the
-              departure, terrain conditions and experience of the group.
+              Whether you prefer the rhythm of long gravel rides or the
+              technical character of mountain bike trails, this expedition
+              offers a varied adventure through Morocco's remarkable southern
+              landscapes.
             </p>
-
-            <div className="ge-enquiry-card">
-              <strong>Planning your desert cycling adventure?</strong>
-              <p>
-                Tell us about your preferred dates, bike and riding experience.
-                We can discuss the most suitable expedition arrangements.
-              </p>
-              <a href="#enquiry" className="ge-text-link">
-                Start your enquiry
-              </a>
-            </div>
+            <a className="at-button" href="#enquire">Plan Your Expedition</a>
           </div>
         </div>
       </section>
 
-      {/* HIGHLIGHTS */}
-      <section className="ge-highlights" id="highlights">
-        <div className="ge-container">
-          <div className="ge-highlights__top">
+      <section className="at-section at-highlights" id="highlights">
+        <div className="at-container">
+          <div className="at-heading-row">
             <div>
-              <span className="ge-eyebrow">Why ride this expedition</span>
-              <h2 className="ge-section-heading">
-                An adventure shaped
-                <br />
-                by <em>the landscape.</em>
-              </h2>
+              <div className="at-eyebrow">What Makes It Special</div>
+              <h2 className="at-section-title">The expedition highlights</h2>
             </div>
-            <p className="ge-lead">
-              Discover a different side of Morocco through a cycling experience
-              that brings together varied terrain, local culture and the freedom
-              of travelling under your own power.
+            <p className="at-lead">
+              A varied cycling experience built around remote routes, changing
+              landscapes, local culture and the freedom to explore.
             </p>
           </div>
-
-          <div className="ge-highlight-grid">
+          <div className="at-highlight-grid">
             {highlights.map((item) => (
-              <article className="ge-highlight" key={item.number}>
-                <span className="ge-highlight__number">{item.number}</span>
+              <article className="at-highlight" key={item.number}>
+                <span className="at-number">{item.number}</span>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </article>
@@ -1618,278 +1285,176 @@ export default function MoroccoDesertCyclingExpeditionPage() {
         </div>
       </section>
 
-      {/* TERRAIN */}
-      <section className="ge-terrain" id="terrain">
-        <div className="ge-container">
-          <div className="ge-terrain__heading">
-            <span className="ge-eyebrow">Two sides of the ride</span>
-            <h2 className="ge-section-heading">
-              From open gravel roads
-              <br />
-              to <em>natural MTB trails.</em>
-            </h2>
-            <p className="ge-lead">
-              The expedition is designed to make the most of different riding
-              environments. The route can move between longer gravel sections
-              and more technical mountain bike terrain, depending on the
-              confirmed programme.
-            </p>
-          </div>
-
-          <div className="ge-terrain-grid">
-            <article className="ge-terrain-card">
-              <div className="ge-terrain-card__image">
-                <img src={images.gravel} alt="Gravel cycling in the Moroccan desert" loading="lazy" />
-              </div>
-              <div className="ge-terrain-card__content">
-                <span>01 · Gravel cycling</span>
-                <h3>Ride into the open</h3>
-                <p>
-                  Discover long stretches of gravel, quiet tracks and open
-                  landscapes. Enjoy the rhythm of travelling across the country
-                  and the freedom of the road less travelled.
-                </p>
-              </div>
-            </article>
-
-            <article className="ge-terrain-card">
-              <div className="ge-terrain-card__image">
-                <img src={images.mtb} alt="Mountain biking across rocky Moroccan terrain" loading="lazy" />
-              </div>
-              <div className="ge-terrain-card__content">
-                <span>02 · Mountain biking</span>
-                <h3>Explore the rougher trails</h3>
-                <p>
-                  Take on natural tracks, rocky ground and more demanding
-                  surfaces. Mountain biking brings confidence, control and a
-                  different perspective to the expedition.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* EVENT INFORMATION */}
-      <section className="ge-event-info" id="event-information">
-        <div className="ge-container">
-          <span className="ge-eyebrow">Event information</span>
-          <h2 className="ge-section-heading">
-            A flexible format
-            <br />
-            for <em>real exploration.</em>
-          </h2>
-          <p className="ge-lead">
-            The expedition is planned around the character of the region and
-            the needs of the riders. Specific logistics are confirmed before
-            departure.
+      <section className="at-section" id="terrain">
+        <div className="at-container">
+          <div className="at-eyebrow">Ride The Landscape</div>
+          <h2 className="at-section-title">Gravel roads and mountain trails</h2>
+          <p className="at-lead">
+            The expedition combines different riding environments to create a
+            varied journey through the desert and mountain landscapes of
+            southern Morocco.
           </p>
+          <div className="at-terrain-grid">
+            <article className="at-terrain-card">
+              <img src={images.gravel} alt="Gravel cycling in southern Morocco" />
+              <div className="at-terrain-copy">
+                <span>Part One · Gravel Riding</span>
+                <h3>Open Desert Roads</h3>
+                <p>
+                  Ride across open landscapes and remote gravel tracks, enjoying
+                  the changing scenery and the distinctive atmosphere of the
+                  Moroccan south.
+                </p>
+              </div>
+            </article>
+            <article className="at-terrain-card">
+              <img src={images.mtb} alt="Mountain biking on rugged Moroccan trails" />
+              <div className="at-terrain-copy">
+                <span>Part Two · Mountain Biking</span>
+                <h3>Rugged Mountain Trails</h3>
+                <p>
+                  Explore rocky paths and mountain terrain on routes that bring
+                  a different character and challenge to the expedition.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-          <div className="ge-info-grid">
-            <div className="ge-info-item">
-              <span>Riding format</span>
-              <strong>Gravel & MTB</strong>
-              <p>A combination of gravel routes and mountain bike terrain.</p>
-            </div>
-            <div className="ge-info-item">
-              <span>Destination</span>
-              <strong>Southern Morocco</strong>
-              <p>Desert environments, mountain foothills and rural landscapes.</p>
-            </div>
-            <div className="ge-info-item">
+      <section className="at-section at-event-info">
+        <div className="at-container">
+          <div className="at-eyebrow">Expedition Details</div>
+          <h2 className="at-section-title">A guided journey through Morocco</h2>
+          <p className="at-lead">
+            The expedition is organised for riders who want to discover
+            southern Morocco through a combination of gravel and mountain bike
+            riding.
+          </p>
+          <div className="at-info-grid">
+            <div className="at-info-item">
               <span>Experience</span>
-              <strong>Active adventure</strong>
-              <p>For riders with regular cycling experience and good fitness.</p>
+              <strong>Gravel & Mountain Bike</strong>
             </div>
-            <div className="ge-info-item">
-              <span>Group format</span>
-              <strong>Small groups</strong>
-              <p>Private group arrangements can be discussed.</p>
+            <div className="at-info-item">
+              <span>Environment</span>
+              <strong>Desert & Mountain</strong>
             </div>
-            <div className="ge-info-item">
-              <span>Departure dates</span>
-              <strong>By arrangement</strong>
-              <p>Dates and availability are confirmed with the organiser.</p>
+            <div className="at-info-item">
+              <span>Organisation</span>
+              <strong>Guided Expedition</strong>
             </div>
-            <div className="ge-info-item">
-              <span>Route planning</span>
-              <strong>Condition dependent</strong>
-              <p>Final route details depend on local conditions and group level.</p>
+            <div className="at-info-item">
+              <span>Departure</span>
+              <strong>By Arrangement</strong>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CULTURE */}
-      <section className="ge-culture" id="experience">
-        <div className="ge-container ge-culture__grid">
-          <div className="ge-culture__copy">
-            <span className="ge-eyebrow">Beyond the handlebars</span>
-            <h2 className="ge-section-heading">
-              Discover the Morocco
-              <br />
-              <em>between the trails.</em>
+      <section className="at-section">
+        <div className="at-container at-culture-grid">
+          <div>
+            <div className="at-eyebrow">Beyond The Ride</div>
+            <h2 className="at-section-title">
+              Experience the landscapes and culture of southern Morocco
             </h2>
-            <p className="ge-lead">
-              A cycling expedition is also an opportunity to experience the
-              places, people and traditions that give southern Morocco its
-              character.
+            <p className="at-lead">
+              The journey is about more than cycling. Discover the landscapes,
+              traditions and hospitality that make this region unforgettable.
             </p>
-
-            <div className="ge-culture__list">
+            <div className="at-culture-list">
               {beyondTrail.map((item) => (
-                <article className="ge-culture__item" key={item.title}>
+                <article className="at-culture-item" key={item.title}>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
                 </article>
               ))}
             </div>
           </div>
-
-          <div className="ge-culture__image">
-            <img
-              src={images.culture}
-              alt="Desert landscape and traditional surroundings in Morocco"
-              loading="lazy"
-            />
+          <div className="at-culture-image">
+            <img src={images.culture} alt="Desert scenery in Morocco" />
           </div>
         </div>
       </section>
 
-      {/* GALLERY */}
-      <section className="ge-gallery" id="gallery">
-        <div className="ge-container">
-          <div className="ge-gallery__heading">
-            <span className="ge-eyebrow">The landscapes</span>
-            <h2 className="ge-section-heading">
-              A journey through <em>contrasts.</em>
-            </h2>
-          </div>
-
-          <div className="ge-gallery-grid">
-            <div className="ge-gallery-grid__item">
-              <img src={images.galleryOne} alt="Southern Morocco cycling landscape" loading="lazy" />
+      <section className="at-gallery">
+        <div className="at-container">
+          <div className="at-eyebrow">The Landscapes</div>
+          <h2 className="at-section-title">Morocco through the journey</h2>
+          <div className="at-gallery-grid">
+            <div className="at-gallery-item">
+              <img src={images.galleryOne} alt="Southern Morocco cycling landscape" />
             </div>
-            <div className="ge-gallery-grid__item">
-              <img src={images.galleryTwo} alt="Gravel tracks in Morocco" loading="lazy" />
+            <div className="at-gallery-item">
+              <img src={images.galleryTwo} alt="Gravel cycling expedition in Morocco" />
             </div>
-            <div className="ge-gallery-grid__item">
-              <img src={images.galleryThree} alt="Rocky mountain biking terrain" loading="lazy" />
+            <div className="at-gallery-item">
+              <img src={images.galleryThree} alt="Mountain biking in Morocco" />
             </div>
-            <div className="ge-gallery-grid__item">
-              <img src={images.galleryFour} alt="Desert gravel cycling scenery" loading="lazy" />
+            <div className="at-gallery-item">
+              <img src={images.galleryFour} alt="Desert gravel cycling route" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ITINERARY */}
-      <section className="ge-itinerary" id="itinerary">
-        <div className="ge-container">
-          <div className="ge-itinerary__heading">
-            <span className="ge-eyebrow">Suggested programme</span>
-            <h2 className="ge-section-heading">
-              Three days of
-              <br />
-              <em>gravel and MTB adventure.</em>
-            </h2>
-            <p className="ge-lead">
-              The following outline illustrates how the expedition can combine
-              different riding styles. It is a suggested programme rather than
-              a confirmed route schedule. Final daily routes and logistics
-              must be agreed before booking.
-            </p>
-          </div>
-
-          <div className="ge-itinerary-list">
+      <section className="at-section at-itinerary" id="itinerary">
+        <div className="at-container">
+          <div className="at-eyebrow">The Programme</div>
+          <h2 className="at-section-title">Three days of desert and mountain riding</h2>
+          <p className="at-lead">
+            An outline of the expedition programme. The exact routes and daily
+            arrangements are confirmed according to conditions and the group's
+            requirements.
+          </p>
+          <div className="at-itinerary-list">
             {itinerary.map((day) => (
-              <article className="ge-itinerary-day" key={day.day}>
-                <div className="ge-itinerary-day__number">{day.day}</div>
-                <div className="ge-itinerary-day__copy">
+              <article className="at-day" key={day.day}>
+                <div className="at-day-number">{day.day}</div>
+                <div>
+                  <span className="at-day-location">{day.location}</span>
                   <h3>{day.title}</h3>
-                  <span className="ge-itinerary-day__subtitle">{day.subtitle}</span>
                   <p>{day.text}</p>
-                </div>
-                <div className="ge-itinerary-day__details">
-                  <div>
-                    <span>Riding focus</span>
-                    <p>{day.riding}</p>
-                  </div>
-                  <div>
-                    <span>Terrain</span>
-                    <p>{day.terrain}</p>
-                  </div>
                 </div>
               </article>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="ge-itinerary-note">
-            <strong>Important:</strong> This is an indicative three-day
-            programme. It does not confirm specific distances, elevation gain,
-            accommodation, meals or transfers. Those details must be provided
-            and agreed as part of the final event proposal.
+      <section className="at-section" id="arrangements">
+        <div className="at-container">
+          <div className="at-eyebrow">What's Included</div>
+          <h2 className="at-section-title">Expedition arrangements</h2>
+          <div className="at-arrangements-grid">
+            <div className="at-arrangements">
+              <h3>Included</h3>
+              <ul className="at-check-list">
+                {inclusions.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </div>
+            <div className="at-arrangements">
+              <h3>Not Included</h3>
+              <ul className="at-check-list">
+                {exclusions.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ARRANGEMENTS */}
-      <section className="ge-arrangements" id="arrangements">
-        <div className="ge-container">
-          <span className="ge-eyebrow">Expedition arrangements</span>
-          <h2 className="ge-section-heading">
-            Know what is included
-            <br />
-            <em>before you travel.</em>
-          </h2>
-          <p className="ge-lead">
-            The final event proposal will confirm the services, logistics and
-            arrangements for your departure. The lists below provide a general
-            outline and should be checked against your confirmed booking.
+      <section className="at-section at-preparation" id="preparation">
+        <div className="at-container">
+          <div className="at-eyebrow">Before You Travel</div>
+          <h2 className="at-section-title">Prepare for your cycling expedition</h2>
+          <p className="at-lead">
+            A little preparation will help you make the most of the varied
+            terrain and conditions in southern Morocco.
           </p>
-
-          <div className="ge-arrangements__grid">
-            <div className="ge-arrangements__column">
-              <h3>Included in the arrangement</h3>
-              <ul className="ge-check-list">
-                {inclusions.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="ge-arrangements__column">
-              <h3>Not included</h3>
-              <ul className="ge-check-list">
-                {exclusions.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PREPARATION */}
-      <section className="ge-preparation" id="preparation">
-        <div className="ge-container ge-preparation__grid">
-          <div className="ge-preparation__intro">
-            <span className="ge-eyebrow">Before you ride</span>
-            <h2 className="ge-section-heading">
-              Prepare for
-              <br />
-              <em>the terrain.</em>
-            </h2>
-            <p className="ge-lead">
-              Good preparation makes a real difference when riding in remote
-              and changing environments. Your equipment should match the final
-              route and the type of bike you plan to use.
-            </p>
-          </div>
-
-          <div className="ge-preparation__list">
+          <div className="at-prep-grid">
             {preparation.map((item) => (
-              <article className="ge-preparation__item" key={item.title}>
+              <article className="at-prep-card" key={item.title}>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </article>
@@ -1898,195 +1463,111 @@ export default function MoroccoDesertCyclingExpeditionPage() {
         </div>
       </section>
 
-      {/* DIFFICULTY */}
-      <section className="ge-difficulty" id="difficulty">
-        <div className="ge-container ge-difficulty__grid">
-          <div className="ge-difficulty__image">
-            <img
-              src={images.mtb}
-              alt="Mountain bike terrain in southern Morocco"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="ge-difficulty__copy">
-            <span className="ge-eyebrow">Fitness and experience</span>
-            <h2 className="ge-section-heading">
-              Made for riders
-              <br />
-              who love <em>exploration.</em>
-            </h2>
-
+      <section className="at-section">
+        <div className="at-container at-difficulty-grid">
+          <div className="at-difficulty-panel">
+            <span>Riding Profile</span>
+            <h3>Mixed-terrain cycling</h3>
             <p>
-              This expedition is best suited to riders who already cycle
-              regularly and are comfortable spending time on the bike. The
-              combination of gravel and MTB terrain means that the experience
-              can involve different surfaces, changing conditions and varied
-              riding demands.
+              The expedition combines gravel roads and mountain bike trails.
+              Riders should have previous cycling experience and a good level
+              of fitness. The precise difficulty depends on the confirmed route
+              and conditions.
             </p>
-
-            <p>
-              You do not need to be an elite athlete, but you should have a
-              reasonable level of endurance and confidence on uneven ground.
-              The final difficulty depends on the route selected, daily riding
-              time, terrain and elevation.
-            </p>
-
-            <div className="ge-difficulty__points">
-              <div className="ge-difficulty__point">
-                <strong>Fitness</strong>
-                <span>Good general cycling fitness recommended</span>
-              </div>
-              <div className="ge-difficulty__point">
-                <strong>Experience</strong>
-                <span>Regular cycling experience recommended</span>
-              </div>
-              <div className="ge-difficulty__point">
-                <strong>Bike skills</strong>
-                <span>Confidence on varied surfaces is useful</span>
-              </div>
-              <div className="ge-difficulty__point">
-                <strong>Adaptability</strong>
-                <span>Comfort with changing outdoor conditions</span>
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="ge-faq" id="faq">
-        <div className="ge-container ge-faq__grid">
           <div>
-            <span className="ge-eyebrow">Useful information</span>
-            <h2 className="ge-section-heading">
-              Frequently asked
-              <br />
-              <em>questions.</em>
-            </h2>
-            <p className="ge-lead">
-              Find answers to common questions about the Morocco Desert
-              Cycling Expedition, bike choice and preparation.
+            <div className="at-eyebrow">Is This Expedition For You?</div>
+            <h2 className="at-section-title">A rewarding adventure for experienced riders</h2>
+            <p className="at-lead">
+              This journey is suited to cyclists who enjoy discovering new
+              terrain and are comfortable riding on a mixture of surfaces.
+              Previous experience on gravel roads or mountain bike trails is
+              recommended.
+            </p>
+            <p className="at-lead">
+              If you are unsure whether the expedition matches your experience,
+              contact our team. We can discuss the route, bicycle choice and
+              riding requirements before you book.
             </p>
           </div>
+        </div>
+      </section>
 
-          <div className="ge-faq__list">
+      <section className="at-section at-faq" id="faq">
+        <div className="at-container">
+          <div className="at-eyebrow">Useful Information</div>
+          <h2 className="at-section-title">Frequently asked questions</h2>
+          <div className="at-faq-list">
             {faqs.map((faq) => (
-              <details key={faq.question}>
-                <summary>{faq.question}</summary>
+              <article className="at-faq-item" key={faq.question}>
+                <h3>{faq.question}</h3>
                 <p>{faq.answer}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ENQUIRY */}
-      <section className="ge-contact" id="enquiry">
-        <div className="ge-container">
-          <div className="ge-contact__heading">
-            <span className="ge-eyebrow">Plan your expedition</span>
-            <h2 className="ge-section-heading">
-              Tell us how you
-              <br />
-              want to <em>explore Morocco.</em>
-            </h2>
-            <p className="ge-lead">
-              Share your preferred dates, group size, cycling experience and
-              whether you plan to ride gravel, MTB or a combination of both.
-              Our team can help discuss the most suitable arrangements.
-            </p>
-          </div>
-
-          <div className="ge-contact__panel">
-            <ContactEnquiryForm />
-          </div>
-        </div>
-      </section>
-
-      {/* FINAL CTA */}
-      <section className="ge-final">
-        <div className="ge-final__image">
-          <img src={images.final} alt="Wide open landscapes of the Moroccan desert" loading="lazy" />
-        </div>
-
-        <div className="ge-final__content">
-          <span className="ge-eyebrow">Mountain Bike Morocco</span>
-          <h2>
-            Find your own
-            <br />
-            line through <em>Morocco.</em>
-          </h2>
-          <p>
-            Gravel roads, mountain trails and the vast landscapes of the south.
-            Start planning a cycling expedition that brings together the best
-            of both worlds.
-          </p>
-          <div className="ge-hero__actions">
-            <a href="#enquiry" className="ge-button">
-              Enquire now
-            </a>
-            <a href="/cycling-trips" className="ge-button ge-button--outline">
-              Explore cycling trips
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* RELATED EVENTS */}
-      <section className="ge-related">
-        <div className="ge-container">
-          <div className="ge-related__heading">
-            <div>
-              <span className="ge-eyebrow">Explore more</span>
-              <h2 className="ge-section-heading">
-                More cycling <em>adventures.</em>
-              </h2>
-            </div>
-            <a href="/events" className="ge-text-link">
-              Discover all events
-            </a>
-          </div>
-
-          <div className="ge-related-grid">
-            {relatedEvents.map((event) => (
-              <article className="ge-related-card" key={event.title}>
-                <a href={event.href}>
-                  <div className="ge-related-card__image">
-                    <img src={event.image} alt={event.title} loading="lazy" />
-                  </div>
-                  <div className="ge-related-card__body">
-                    <span>{event.category}</span>
-                    <h3>{event.title}</h3>
-                    <p>{event.description}</p>
-                    <span className="ge-text-link">Explore event</span>
-                  </div>
-                </a>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="ge-footer">
-        <div className="ge-container ge-footer__inner">
-          <a href="/" className="ge-footer__brand">
-            Mountain Bike Morocco
-          </a>
-
-          <div className="ge-footer__links">
-            <a href="/">Home</a>
-            <a href="/cycling-trips">Cycling Trips</a>
-            <a href="/destinations">Destinations</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
+      <section className="at-section at-contact" id="enquire">
+        <div className="at-container at-contact-grid">
+          <div>
+            <div className="at-eyebrow">Start Planning</div>
+            <h2 className="at-section-title">Enquire about the Morocco Desert Cycling Expedition</h2>
+            <p className="at-lead">
+              Tell us about your preferred dates, group size and cycling
+              experience. Our team will help you discuss the expedition and
+              available arrangements.
+            </p>
           </div>
-
-          <span className="ge-footer__copyright">
-          <span>© {2026} Mountain Bike Morocco. All rights reserved.</span>
-          </span>
+          <div className="at-contact-form">
+            <ContactEnquiryForm
+              eventName="Morocco Desert Cycling Expedition"
+              destination="Southern Morocco"
+            />
+          </div>
         </div>
+      </section>
+
+      <section className="at-final">
+        <div className="at-final-image">
+          <img src={images.final} alt="Desert landscape in Morocco" />
+        </div>
+        <div className="at-final-content">
+          <div className="at-eyebrow">Mountain Bike Morocco</div>
+          <h2>Ride beyond the ordinary</h2>
+          <p>
+            Discover a different side of Morocco through gravel roads, mountain
+            trails, remote landscapes and unforgettable local encounters.
+          </p>
+          <div className="at-actions" style={{ justifyContent: "center" }}>
+            <a className="at-button" href="#enquire">Plan Your Expedition</a>
+          </div>
+        </div>
+      </section>
+
+      <section className="at-related">
+        <div className="at-container">
+          <div className="at-eyebrow">Explore More Adventures</div>
+          <h2 className="at-section-title">More cycling events in Morocco</h2>
+          <div className="at-related-grid">
+            {relatedEvents.map((event) => (
+              <a className="at-related-card" href={event.href} key={event.title}>
+                <div className="at-related-image">
+                  <img src={event.image} alt={event.title} />
+                </div>
+                <div className="at-related-copy">
+                  <h3>{event.title}</h3>
+                  <p>{event.description}</p>
+                  <span className="at-related-link">Discover Event →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <footer className="at-footer">
+        Mountain Bike Morocco · Guided Cycling Adventures in Morocco
       </footer>
     </main>
   );

@@ -12,108 +12,153 @@ const events = [
     number: "01",
     slug: "atlas-mountains-mtb-gathering",
     discipline: "MTB · GROUP RIDE",
-    label: "MOUNTAIN TRAILS & LOCAL CULTURE",
+    label: "HIGH ATLAS SINGLETRACK & MOUNTAIN VILLAGES",
     title: "Atlas Mountains MTB Gathering",
     duration: "3 days",
     location: "High Atlas Mountains",
     description:
-      "Bring a group together for a mountain bike experience in the Atlas region. Build the programme around suitable trails, rider ability, daily distance and the time available for meals and local stops. The final route, guide support, accommodation and transport are agreed for your group and requested dates. This is a trip format available by arrangement, not a published event date.",
-    image: "/images/mountain-biking-atlas-mountains-morocco.jpg",
+      "Bring your mountain bike club or riding group to the High Atlas for three days of technical trails, flowing singletrack and spectacular mountain scenery. Ride through traditional Berber villages, terraced valleys and rugged mountain terrain around the Atlas foothills. The route, climbing, daily distance and technical difficulty can be planned around your group's riding experience and fitness.",
+    highlights: [
+      "High Atlas mountain trails",
+      "Traditional Berber villages",
+      "Routes planned for your group",
+    ],
+    image: "/images/singletrack-mtb-atlas-mountains.jpg",
   },
   {
     number: "02",
     slug: "agafay-desert-cycling-challenge",
     discipline: "MTB · DESERT RIDE",
-    label: "ROCKY PLATEAUS & OPEN LANDSCAPES",
+    label: "ROCKY DESERT TRACKS & OPEN PLATEAUS",
     title: "Agafay Desert Cycling Challenge",
     duration: "1 day",
     location: "Agafay Desert near Marrakech",
     description:
-      "Create a focused day of riding across selected tracks and rocky terrain around Agafay. Route choice should match participants’ fitness, technical confidence and bike setup, with sensible time for hydration, breaks and support. Confirm the ride format, distance, terrain, transfers and available dates before promoting or booking it as a group event.",
+      "Take your group into the rocky landscapes of the Agafay Desert for a day of off-road cycling across rugged tracks, dry riverbeds and rolling hills. With the High Atlas on the horizon, this is a distinctive setting for a club ride, private challenge or organised group outing close to Marrakech. Choose a suitable route and riding distance according to the group's ability and preferred pace.",
+    highlights: [
+      "Rocky Agafay desert terrain",
+      "Dry riverbeds and open plateaus",
+      "Close to Marrakech",
+    ],
     image: "/images/events-race-cycling-desert-agafay.JPG",
   },
   {
     number: "03",
     slug: "morocco-desert-cycling-expedition",
     discipline: "GRAVEL · EXPEDITION",
-    label: "DESERT ROADS & MULTI-DAY ADVENTURE",
+    label: "REMOTE DESERT LANDSCAPES & LONG RIDING STAGES",
     title: "Morocco Desert Cycling Expedition",
     duration: "8 days",
     location: "Desert regions of Morocco",
     description:
-      "A multi-day desert cycling format for riders who want to travel through Morocco’s changing landscapes by bike. Route and stage planning should take account of terrain, heat, daily distance, water availability, accommodation and vehicle support. The actual route and included services are confirmed according to the season, group experience and travel dates.",
+      "Discover the wide-open landscapes of southern Morocco on an eight-day gravel cycling expedition. Ride remote desert tracks, quiet rural roads and dry valleys, passing small settlements and dramatic natural scenery along the way. The journey is planned around achievable daily stages, with route navigation, accommodation, water stops, luggage transfers and support arrangements considered for the group.",
+    highlights: [
+      "Remote desert cycling routes",
+      "Quiet roads and dry valleys",
+      "Multi-day supported journey",
+    ],
     image: "/images/gravel-desert-cycling-expedition.jpg",
   },
   {
     number: "04",
     slug: "morocco-gravel-bike-caravan",
     discipline: "GRAVEL · GROUP CARAVAN",
-    label: "QUIET ROADS & RURAL TRACKS",
+    label: "CROSS-COUNTRY RIDING & RURAL MOROCCO",
     title: "Morocco Gravel Bike Caravan",
     duration: "10 days",
     location: "Route planned across Morocco",
     description:
-      "Gather a group for a longer gravel journey linking selected rural roads and tracks. The route can be shaped around the group’s experience, preferred daily distance and the landscapes they hope to see. Surface conditions, resupply points, overnight stops, luggage, navigation and support arrangements need to be checked and agreed before the itinerary is finalised.",
+      "Set off on a ten-day gravel cycling journey across Morocco, linking quiet rural roads, remote tracks and changing landscapes between mountain foothills and the country's southern regions. Travel together as a group, discover local communities and experience Morocco beyond the usual tourist routes. The itinerary can be shaped around your group's interests, with daily stages, accommodation, navigation, luggage transfers and logistical support planned in advance.",
+    highlights: [
+      "Cross-country gravel routes",
+      "Rural roads and local communities",
+      "Ten-day group journey",
+    ],
     image: "/images/gravel-desert-cycling-morocco.JPG",
   },
   {
     number: "05",
     slug: "marrakech-to-sahara-e-mtb-caravan",
     discipline: "E-MTB · CARAVAN",
-    label: "ELECTRIC-ASSISTED MULTI-DAY JOURNEY",
+    label: "ELECTRIC MOUNTAIN BIKING & DESERT JOURNEY",
     title: "Marrakech to Sahara E-MTB Caravan",
     duration: "9 days",
     location: "Marrakech to selected Sahara areas",
     description:
-      "Plan a supported electric mountain bike journey from Marrakech towards selected desert landscapes. Daily stages must be realistic for terrain, battery range and charging access, with transfers used where necessary to keep the trip practical. Confirm bike models, charging arrangements, service support, accommodation, route access and the final sequence of riding days before booking.",
+      "Journey south from Marrakech on a nine-day electric mountain bike adventure towards Morocco's desert regions. Combine mountain trails and off-road riding as the scenery changes from Atlas valleys to the landscapes of the southern desert gateway. The route needs careful planning around battery range, charging opportunities, terrain and daily distances, with transfers and technical support considered throughout the journey.",
+    highlights: [
+      "Electric mountain bike adventure",
+      "Atlas valleys and southern landscapes",
+      "Battery and charging planning",
+    ],
     image: "/images/e-mtb-tour-morocco.jpg",
   },
   {
     number: "06",
     slug: "women-cycling-tour",
     discipline: "WOMEN’S CYCLING · GROUP TRIP",
-    label: "A SUPPORTIVE SHARED ADVENTURE",
+    label: "SHARED RIDING & MOROCCAN DISCOVERY",
     title: "Women Cycling Tour",
     duration: "8 days",
     location: "Morocco · route agreed with the group",
     description:
-      "A women-focused cycling trip that can be adapted to the group’s preferred discipline, riding experience and travel style. It may combine selected riding stages with time to enjoy local landscapes and culture. Before confirming, discuss the route, group size, daily distances, accommodation, support, equipment and any practical preferences that will help everyone feel prepared.",
+      "Bring women together for an eight-day cycling adventure through Morocco, combining memorable rides, changing landscapes and opportunities to discover local culture. The programme can focus on mountain biking, E-MTB, gravel or road cycling, depending on the group's interests and experience. Discuss the route, daily distances, accommodation and riding support in advance to create a comfortable and rewarding shared journey.",
+    highlights: [
+      "A shared eight-day adventure",
+      "Choice of cycling disciplines",
+      "Routes suited to the group",
+    ],
     image: "/images/cycling-holiday-trip-from-marrakech.jpg",
   },
   {
     number: "07",
     slug: "school-cycling-sahara-expedition",
     discipline: "COMMUNITY · DESERT CYCLING",
-    label: "A GROUP EXPERIENCE WITH A CLEAR PURPOSE",
+    label: "OUTDOOR LEARNING & DESERT DISCOVERY",
     title: "School Cycling Sahara Expedition",
     duration: "9 days",
     location: "Sahara region · itinerary by arrangement",
     description:
-      "A proposed expedition format for a school or organised group interested in cycling, outdoor learning and discovering desert regions of Morocco. The programme must be tailored to the participants’ ages and abilities, safeguarding needs, supervision, transport, accommodation and emergency arrangements. Dates, permissions, support and any educational or community activities should be confirmed with organisers in advance.",
+      "Give students the opportunity to explore Morocco through a nine-day cycling and outdoor-learning expedition in the Sahara region. The programme can combine guided cycling, desert landscapes, environmental discovery and encounters with local communities. Every itinerary must be assessed around the participants' ages and abilities, with appropriate supervision, safeguarding, accommodation, transport and emergency arrangements agreed before departure.",
+    highlights: [
+      "Sahara outdoor discovery",
+      "Cycling and environmental learning",
+      "Supervision and safeguarding planning",
+    ],
     image: "/images/Desert-Agafay-Morocco.jpg",
   },
   {
     number: "08",
     slug: "atlantic-coast-cycling-weekend",
     discipline: "COASTAL CYCLING · GROUP WEEKEND",
-    label: "ATLANTIC AIR & COUNTRYSIDE ROUTES",
+    label: "ATLANTIC COAST ROADS & OPEN COUNTRYSIDE",
     title: "Atlantic Coast Cycling Weekend",
     duration: "3 days",
     location: "Essaouira and the Atlantic coast",
     description:
-      "Bring friends or a club together for a coastal cycling break around Essaouira. Choose road cycling, gravel riding or suitable MTB routes according to the group and local conditions. Wind exposure, surface type, planned mileage, accommodation, transfers and support can all be factored into the schedule once dates and participants are known.",
+      "Spend three days cycling around Essaouira and Morocco's Atlantic coastline, discovering quiet roads, open countryside and traditional villages. Enjoy coastal scenery and the relaxed atmosphere of the region while riding together as a group. Road, gravel and suitable off-road routes can be considered according to your group's experience, preferred distances and available time.",
+    highlights: [
+      "Essaouira and Atlantic coastline",
+      "Quiet roads and rural villages",
+      "Road, gravel or off-road options",
+    ],
     image: "/images/atlantic-coast-cycling-tour-morocco.jpg",
   },
   {
     number: "09",
     slug: "private-group-team-cycling-event",
     discipline: "PRIVATE EVENT · ANY DISCIPLINE",
-    label: "BUILT AROUND YOUR TEAM",
+    label: "CUSTOM ROUTES FOR CLUBS, FRIENDS & TEAMS",
     title: "Private Group or Team Cycling Event",
     duration: "Custom",
     location: "Choose a Moroccan destination",
     description:
-      "Create a private cycling event for a club, company, friends or a special group. The day or multi-day programme can focus on MTB, E-MTB, gravel or road riding and can include support logistics according to the agreed plan. Share your preferred destination, dates, group size, experience and goals to begin shaping a suitable format.",
+      "Plan a private cycling experience for your club, company, friends or organised team in Morocco. Choose mountain biking, E-MTB, gravel or road cycling, then select a destination and route that match your group's ambitions. From a single guided ride to a multi-day expedition, the programme can be discussed around your dates, participant experience, accommodation, transfers and support requirements.",
+    highlights: [
+      "MTB, E-MTB, gravel or road",
+      "Choose your Moroccan destination",
+      "Private programme for your team",
+    ],
     image: "/images/group-cycling-tour-morocco.jpg",
   },
 ];
@@ -121,18 +166,45 @@ const events = [
 const eventFormats = [
   {
     title: "Club rides and cycling weekends",
-    text: "Bring a cycling club or group of friends together for a shared ride, a weekend away or a multi-day journey. Choose the discipline, preferred pace and the amount of support needed, then confirm the route and logistics around your dates.",
-    image: "/images/group-cycling-tour-morocco.jpg",
+    discipline: "CLUB RIDES · GROUP WEEKENDS",
+    label: "ATLAS TRAILS & SHARED CYCLING EXPERIENCES",
+    location: "Atlas Mountains and rural Morocco",
+    duration: "One day or longer",
+    text: "Bring your cycling club, friends or riding community together for a shared adventure in Morocco. Choose Atlas Mountain singletrack, scenic valley trails or countryside routes for a group ride suited to your members' experience. Plan a one-day gathering or a longer weekend with route planning, local guiding, accommodation and transport support discussed in advance.",
+    highlights: [
+      "Atlas trails and scenic valleys",
+      "Routes suited to your club",
+      "Guiding and logistics planning",
+    ],
+    image: "/images/atlas-berber-valley-bike.JPG",
   },
   {
     title: "Desert and gravel expeditions",
-    text: "Plan a longer group adventure using selected gravel roads and desert routes. Good preparation matters: daily distances, heat, water, resupply, accommodation, navigation, communications and vehicle support should all be considered before the final itinerary is confirmed.",
-    image: "/images/gravel-desert-cycling-expedition.jpg",
+    discipline: "GRAVEL · DESERT EXPEDITIONS",
+    label: "REMOTE TRACKS & MULTI-DAY GROUP JOURNEYS",
+    location: "Southern Morocco and desert regions",
+    duration: "Multi-day",
+    text: "Take your group beyond the familiar routes on a gravel adventure through Morocco's desert regions and remote rural landscapes. Ride open plateaus, quiet tracks and roads connecting traditional settlements, with a multi-day itinerary shaped around realistic distances and terrain. Navigation, accommodation, water and food stops, luggage transfers and vehicle support can be discussed as part of the plan.",
+    highlights: [
+      "Remote desert landscapes",
+      "Gravel tracks and rural roads",
+      "Multi-day support arrangements",
+    ],
+    image: "/images/gravel-desert-cycling-morocco.JPG",
   },
   {
     title: "Private and purpose-led events",
-    text: "For private groups, schools or organised teams, start by defining the purpose of the event and who will take part. Programme design should account for rider experience, supervision, safety, route difficulty and support requirements, with dates and practical details agreed with the organisers.",
-    image: "/images/cycling-holiday-trip-from-marrakech.jpg",
+    discipline: "PRIVATE · PURPOSE-LED EVENTS",
+    label: "CUSTOM EXPERIENCES FOR GROUPS & TEAMS",
+    location: "Choose your Moroccan destination",
+    duration: "Tailor-made",
+    text: "Create a cycling programme for a private group, school, company or team, with the destination and riding style selected around your objectives. From a guided mountain adventure to an organised outdoor-learning experience, the itinerary can be planned around participant needs, route difficulty, supervision, safety and practical logistics.",
+    highlights: [
+      "Private group and team events",
+      "Flexible cycling disciplines",
+      "Planning around participant needs",
+    ],
+    image: "/images/imlil-cycling-adventure-tour.jpeg",
   },
 ];
 
@@ -235,35 +307,63 @@ export default function EventsPage() {
                 Browse possible group experiences below. Durations are planning starting points rather than confirmed departure dates; the final route, availability, inclusions and support are discussed directly for your requested trip.
               </p>
             </div>
+
             <div className="cl-tour-grid">
               {events.map((event) => (
-                <article className="cl-tour-card" key={event.number}>
+                <article className="home-tour-card" key={event.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={`/events/${event.slug}`}
                     aria-label={`More details about ${event.title}`}
                   >
-                    <img className="cl-tour-card__image" src={event.image} alt={event.title} loading="lazy" />
-                    <span className="cl-tour-card__number">{event.number}</span>
+                    <img
+                      src={event.image}
+                      alt={event.title}
+                      loading="lazy"
+                    />
+                    <span className="home-tour-card__category">
+                      {event.discipline}
+                    </span>
+                    <span className="home-tour-card__level">
+                      {event.duration}
+                    </span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{event.discipline} · {event.duration}</p>
-                    <p className="cl-card-label">{event.label}</p>
-                    <h3>
+
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      {event.label}
+                    </p>
+
+                    <h3 className="home-tour-card__title">
                       <Link href={`/events/${event.slug}`}>
                         {event.title}
                       </Link>
                     </h3>
-                    <p>{event.description}</p>
-                    <div className="cl-tour-card__actions">
+
+                    <p className="home-tour-card__description">
+                      {event.description}
+                    </p>
+
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">⌖</span>
+                        {event.location}
+                      </span>
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                        {event.duration}
+                      </span>
+                    </div>
+
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={`/events/${event.slug}`}
                       >
                         More Details
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={{
                           pathname: "/contact",
                           query: {
@@ -273,7 +373,7 @@ export default function EventsPage() {
                           },
                         }}
                       >
-                        Enquire
+                        Enquire <span aria-hidden="true">↗</span>
                       </Link>
                     </div>
                   </div>
@@ -313,30 +413,94 @@ export default function EventsPage() {
               The event format should fit the people attending, their equipment and the kind of experience you want to create. These broad formats can be used as a starting point for your enquiry.
             </p>
           </div>
+
           <div className="cl-region-grid">
-            {eventFormats.map((format, index) => (
-              <article className="cl-region-card" key={format.title}>
+            {eventFormats.map((format) => (
+              <article className="home-tour-card" key={format.title}>
                 <Link
-                  className="cl-region-card__image-wrap"
-                  href={{ pathname: "/contact", query: { event: format.title, request: "event-planning" } }}
-                  aria-label={format.title}
+                  className="home-tour-card__image"
+                  href={{
+                    pathname: "/contact",
+                    query: {
+                      event: format.title,
+                      request: "event-planning",
+                    },
+                  }}
+                  aria-label={`Plan ${format.title}`}
                 >
-                  <img src={format.image} alt={format.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <img
+                    src={format.image}
+                    alt={format.title}
+                    loading="lazy"
+                  />
+                  <span className="home-tour-card__category">
+                    {format.discipline}
+                  </span>
+                  <span className="home-tour-card__level">
+                    {format.duration}
+                  </span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3>
-                    <Link href={{ pathname: "/contact", query: { event: format.title, request: "event-planning" } }}>
+
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">
+                    {format.label}
+                  </p>
+
+                  <h3 className="home-tour-card__title">
+                    <Link
+                      href={{
+                        pathname: "/contact",
+                        query: {
+                          event: format.title,
+                          request: "event-planning",
+                        },
+                      }}
+                    >
                       {format.title}
                     </Link>
                   </h3>
-                  <p>{format.text}</p>
-                  <Link
-                    className="cl-text-link"
-                    href={{ pathname: "/contact", query: { event: format.title, request: "event-planning" } }}
-                  >
-                    Plan this format <span aria-hidden="true">↗</span>
-                  </Link>
+
+                  <p className="home-tour-card__description">
+                    {format.text}
+                  </p>
+
+                  <div className="home-tour-card__meta">
+                    <span className="home-tour-card__meta-item">
+                      <span className="home-tour-card__meta-icon" aria-hidden="true">⌖</span>
+                      {format.location}
+                    </span>
+                    <span className="home-tour-card__meta-item">
+                      <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                      {format.duration}
+                    </span>
+                  </div>
+
+                  <div className="home-tour-card__actions">
+                    <Link
+                      className="home-tour-card__button"
+                      href={{
+                        pathname: "/contact",
+                        query: {
+                          event: format.title,
+                          request: "event-planning",
+                        },
+                      }}
+                    >
+                      Plan This Format
+                    </Link>
+                    <Link
+                      className="home-tour-card__link"
+                      href={{
+                        pathname: "/contact",
+                        query: {
+                          event: format.title,
+                          request: "event-planning",
+                        },
+                      }}
+                    >
+                      Enquire <span aria-hidden="true">↗</span>
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}

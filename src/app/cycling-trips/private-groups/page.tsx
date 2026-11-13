@@ -5,6 +5,7 @@ const groupTours = [
     number: "01",
     duration: "2–3 days",
     label: "A SHARED ATLAS ESCAPE",
+    destination: "ATLAS FOOTHILLS",
     title: "Private Atlas Mountain Bike Weekend",
     slug: "private-atlas-mountain-bike-weekend-2-to-3-days",
     description:
@@ -15,6 +16,7 @@ const groupTours = [
     number: "02",
     duration: "4 days",
     label: "CLUBS & RIDING COMMUNITIES",
+    destination: "ATLAS MOUNTAINS",
     title: "Atlas Cycling Club Tour",
     slug: "atlas-cycling-club-tour-4-day",
     description:
@@ -25,6 +27,7 @@ const groupTours = [
     number: "03",
     duration: "5 days",
     label: "MOUNTAIN TRAILS & VILLAGES",
+    destination: "HIGH ATLAS MOUNTAINS",
     title: "High Atlas Group MTB Adventure",
     slug: "high-atlas-group-mtb-adventure-5-day",
     description:
@@ -35,6 +38,7 @@ const groupTours = [
     number: "04",
     duration: "6 days",
     label: "MOUNTAINS TO SOUTHERN LANDSCAPES",
+    destination: "ATLAS TO SOUTHERN MOROCCO",
     title: "Atlas to Desert Group Expedition",
     slug: "atlas-to-desert-group-expedition-6-day",
     description:
@@ -45,6 +49,7 @@ const groupTours = [
     number: "05",
     duration: "3–5 days",
     label: "ELECTRIC-ASSISTED RIDING",
+    destination: "ATLAS MOUNTAINS",
     title: "Private E-MTB Group Holiday",
     slug: "private-emtb-group-holiday-3-to-5-days",
     description:
@@ -55,6 +60,7 @@ const groupTours = [
     number: "06",
     duration: "4–6 days",
     label: "GRAVEL ROADS & OPEN COUNTRY",
+    destination: "MOROCCO · RURAL ROUTES",
     title: "Morocco Gravel Group Journey",
     slug: "morocco-gravel-group-journey-4-to-6-days",
     description:
@@ -65,6 +71,7 @@ const groupTours = [
     number: "07",
     duration: "4–7 days",
     label: "ROAD RIDING & MOUNTAIN PASSES",
+    destination: "ATLAS MOUNTAIN PASSES",
     title: "Private Road Cycling Tour",
     slug: "private-road-cycling-tour-4-to-7-days",
     description:
@@ -75,6 +82,7 @@ const groupTours = [
     number: "08",
     duration: "3–5 days",
     label: "FAMILY & FRIENDS",
+    destination: "MOROCCO · FLEXIBLE ROUTES",
     title: "Mixed-Ability Private Cycling Break",
     slug: "mixed-ability-private-cycling-break-3-to-5-days",
     description:
@@ -85,6 +93,7 @@ const groupTours = [
     number: "09",
     duration: "2–4 days",
     label: "START FROM MARRAKECH",
+    destination: "MARRAKECH & SURROUNDINGS",
     title: "Marrakech Group Cycling Escape",
     slug: "marrakech-group-cycling-escape-2-to-4-days",
     description:
@@ -95,6 +104,7 @@ const groupTours = [
     number: "10",
     duration: "4–6 days",
     label: "CULTURE & COUNTRY RIDING",
+    destination: "HIGH ATLAS VILLAGES",
     title: "Berber Villages Group Tour",
     slug: "berber-villages-group-tour-4-to-6-days",
     description:
@@ -105,6 +115,7 @@ const groupTours = [
     number: "11",
     duration: "3–5 days",
     label: "GROUP ADVENTURE & TEAM TIME",
+    destination: "MOROCCO · GROUP ROUTES",
     title: "Corporate and Team Cycling Trip",
     slug: "corporate-and-team-cycling-trip-3-to-5-days",
     description:
@@ -115,6 +126,7 @@ const groupTours = [
     number: "12",
     duration: "Custom itinerary",
     label: "YOUR ROUTE, YOUR GROUP",
+    destination: "PRIVATE · CUSTOM ROUTE",
     title: "Bespoke Private Cycling Expedition",
     slug: "bespoke-private-cycling-expedition-custom-itinerary",
     description:
@@ -263,32 +275,51 @@ export default function PrivateGroupCyclingPage() {
             </div>
             <div className="cl-tour-grid">
               {groupTours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={`/cycling-trips/trip/${tour.slug}`}
                     aria-label={`More details about ${tour.title}`}
                   >
-                    <img className="cl-tour-card__image" src={tour.image} alt={tour.title} loading="lazy" />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <img
+                      src={tour.image}
+                      alt={tour.title}
+                      loading="lazy"
+                    />
+                    <span className="home-tour-card__category">
+                      {tour.label}
+                    </span>
+                    <span className="home-tour-card__level">
+                      {tour.destination}
+                    </span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.label} · {tour.duration}</p>
-                    <h3>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      PRIVATE GROUP CYCLING · {tour.destination}
+                    </p>
+                    <h3 className="home-tour-card__title">
                       <Link href={`/cycling-trips/trip/${tour.slug}`}>
                         {tour.title}
                       </Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <div className="cl-tour-card__actions">
+                    <p className="home-tour-card__description">
+                      {tour.description}
+                    </p>
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                        {tour.duration}
+                      </span>
+                    </div>
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={`/cycling-trips/trip/${tour.slug}`}
                       >
                         More Details
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={{ pathname: "/contact", query: { tour: tour.title, request: "booking" } }}
                       >
                         Booking
@@ -332,16 +363,51 @@ export default function PrivateGroupCyclingPage() {
             </p>
           </div>
           <div className="cl-region-grid">
-            {destinations.map((destination, index) => (
-              <article className="cl-region-card" key={destination.title}>
-                <Link className="cl-region-card__image-wrap" href={destination.href} aria-label={destination.title}>
-                  <img src={destination.image} alt={destination.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+            {destinations.map((destination) => (
+              <article className="home-tour-card" key={destination.title}>
+                <Link
+                  className="home-tour-card__image"
+                  href={destination.href}
+                  aria-label={destination.title}
+                >
+                  <img
+                    src={destination.image}
+                    alt={destination.title}
+                    loading="lazy"
+                  />
+                  <span className="home-tour-card__category">
+                    CYCLING DESTINATION
+                  </span>
+                  <span className="home-tour-card__level">
+                    {destination.title}
+                  </span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3><Link href={destination.href}>{destination.title}</Link></h3>
-                  <p>{destination.text}</p>
-                  <Link className="cl-text-link" href={destination.href}>Explore the region <span aria-hidden="true">↗</span></Link>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">
+                    PRIVATE GROUP CYCLING · {destination.title}
+                  </p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={destination.href}>
+                      {destination.title}
+                    </Link>
+                  </h3>
+                  <p className="home-tour-card__description">
+                    {destination.text}
+                  </p>
+                  <div className="home-tour-card__actions">
+                    <Link
+                      className="home-tour-card__button"
+                      href={destination.href}
+                    >
+                      Explore Region
+                    </Link>
+                    <Link
+                      className="home-tour-card__link"
+                      href={destination.href}
+                    >
+                      Discover
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}

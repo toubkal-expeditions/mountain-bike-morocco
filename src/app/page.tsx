@@ -323,6 +323,8 @@ const exploreOptions = [
 export default function Home() {
   return (
     <main>
+    
+
       {/* HERO */}
       <section className="hero">
         <div className="hero__image" aria-hidden="true">
@@ -405,27 +407,65 @@ export default function Home() {
 
           <div className="tour-grid">
             {tours.map((tour) => (
-              <article className="tour-card" key={tour.title}>
+              <article className="home-tour-card" key={tour.title}>
                 <Link
-                  className="tour-card__image"
+                  className="home-tour-card__image"
                   href={tour.href}
                   aria-label={`Explore ${tour.title}`}
                 >
                   <img src={tour.image} alt={tour.title} loading="lazy" />
-                  <span className="image-tag">{tour.category}</span>
+                  <span className="home-tour-card__category">
+                    {tour.category}
+                  </span>
+                  <span className="home-tour-card__level">{tour.level}</span>
                 </Link>
-                <div className="tour-card__body">
-                  <h3>
+
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">
+                    MOROCCO CYCLING EXPERIENCE
+                  </p>
+                  <h3 className="home-tour-card__title">
                     <Link href={tour.href}>{tour.title}</Link>
                   </h3>
-                  <p>{tour.description}</p>
-                  <div className="tour-meta">
-                    <span>{tour.duration}</span>
-                    <span>{tour.level}</span>
+                  <p className="home-tour-card__description">
+                    {tour.description}
+                  </p>
+
+                  <div className="home-tour-card__meta">
+                    <span className="home-tour-card__meta-item">
+                      <span
+                        className="home-tour-card__meta-icon"
+                        aria-hidden="true"
+                      >
+                        ◷
+                      </span>
+                      {tour.duration}
+                    </span>
+                    <span className="home-tour-card__meta-item">
+                      <span
+                        className="home-tour-card__meta-icon"
+                        aria-hidden="true"
+                      >
+                        ◆
+                      </span>
+                      {tour.level}
+                    </span>
                   </div>
-                  <Link className="text-link" href={tour.href}>
-                    Explore this tour <span aria-hidden="true">↗</span>
-                  </Link>
+
+                  <div className="home-tour-card__actions">
+                    <Link
+                      className="home-tour-card__button"
+                      href={tour.href}
+                    >
+                      View Tour
+                    </Link>
+                    <Link
+                      className="home-tour-card__link"
+                      href="/contact"
+                    >
+                      Ask About Dates <span aria-hidden="true">↗</span>
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}

@@ -37,6 +37,7 @@ const marrakechTours = [
     number: "01",
     duration: "1 day",
     label: "ATLAS FOOTHILLS · MTB",
+    destination: "ATLAS FOOTHILLS",
     title: "Atlas Mountain Bike Day Trip",
     slug: "atlas-mountain-bike-day-trip-1-day",
     description:
@@ -47,6 +48,7 @@ const marrakechTours = [
     number: "02",
     duration: "1 day",
     label: "ELECTRIC ASSISTANCE · SCENIC RIDING",
+    destination: "MARRAKECH & ATLAS FOOTHILLS",
     title: "Marrakech E-MTB Adventure",
     slug: "marrakech-emtb-adventure-1-day",
     description:
@@ -57,6 +59,7 @@ const marrakechTours = [
     number: "03",
     duration: "1 day",
     label: "ROCKY DESERT · OPEN HORIZONS",
+    destination: "AGAFAY DESERT",
     title: "Agafay Desert Cycling Tour",
     slug: "agafay-desert-cycling-tour-1-day",
     description:
@@ -67,6 +70,7 @@ const marrakechTours = [
     number: "04",
     duration: "1 day",
     label: "GRAVEL · COUNTRY TRACKS",
+    destination: "ATLAS FOOTHILLS",
     title: "Atlas Foothills Gravel Ride",
     slug: "atlas-foothills-gravel-ride-1-day",
     description:
@@ -77,6 +81,7 @@ const marrakechTours = [
     number: "05",
     duration: "1 day",
     label: "ROAD CYCLING · CLIMBS & VIEWS",
+    destination: "MARRAKECH & ATLAS FOOTHILLS",
     title: "Road Cycling from Marrakech",
     slug: "road-cycling-from-marrakech-1-day",
     description:
@@ -87,6 +92,7 @@ const marrakechTours = [
     number: "06",
     duration: "1 day",
     label: "VILLAGES · VALLEY SCENERY",
+    destination: "IMLIL & TOUBKAL",
     title: "Imlil Valley Cycling Experience",
     slug: "imlil-valley-cycling-experience-1-day",
     description:
@@ -97,6 +103,7 @@ const marrakechTours = [
     number: "07",
     duration: "2 days",
     label: "SHORT BREAK · ATLAS DISCOVERY",
+    destination: "MARRAKECH TO HIGH ATLAS",
     title: "Marrakech to Atlas Cycling Escape",
     slug: "marrakech-to-atlas-cycling-escape-2-day",
     description:
@@ -107,6 +114,7 @@ const marrakechTours = [
     number: "08",
     duration: "3 days",
     label: "BERBER VILLAGES · RURAL ROUTES",
+    destination: "ATLAS MOUNTAIN VILLAGES",
     title: "Atlas Berber Villages Cycling Tour",
     slug: "atlas-berber-villages-cycling-tour-3-day",
     description:
@@ -117,6 +125,7 @@ const marrakechTours = [
     number: "09",
     duration: "4 days",
     label: "MTB · HIGH ATLAS EXPLORATION",
+    destination: "HIGH ATLAS MOUNTAINS",
     title: "Marrakech and High Atlas MTB Tour",
     slug: "marrakech-and-high-atlas-mtb-tour-4-day",
     description:
@@ -127,6 +136,7 @@ const marrakechTours = [
     number: "10",
     duration: "5 days",
     label: "MULTI-REGION · MOUNTAINS TO SOUTH",
+    destination: "ATLAS TO SOUTHERN MOROCCO",
     title: "Atlas to Desert Cycling Journey",
     slug: "atlas-to-desert-cycling-journey-5-day",
     description:
@@ -137,6 +147,7 @@ const marrakechTours = [
     number: "11",
     duration: "1 day",
     label: "FAMILY OPTIONS · FLEXIBLE PACING",
+    destination: "MARRAKECH COUNTRYSIDE",
     title: "Family Cycling Day from Marrakech",
     slug: "family-cycling-day-from-marrakech-1-day",
     description:
@@ -147,6 +158,7 @@ const marrakechTours = [
     number: "12",
     duration: "Tailor-made",
     label: "PRIVATE TRIP · YOUR ROUTE",
+    destination: "PRIVATE · CUSTOM ROUTE",
     title: "Private Cycling Holiday from Marrakech",
     slug: "private-cycling-holiday-from-marrakech-custom-itinerary",
     description:
@@ -316,37 +328,45 @@ export default function CyclingToursFromMarrakechPage() {
             </div>
             <div className="cl-tour-grid">
               {marrakechTours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={`/cycling-trips/trip/${tour.slug}`}
                     aria-label={`More details about ${tour.title}`}
                   >
                     <img
-                      className="cl-tour-card__image"
                       src={tour.image}
                       alt={tour.title}
                       loading="lazy"
                     />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <span className="home-tour-card__category">{tour.label}</span>
+                    <span className="home-tour-card__level">{tour.destination}</span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.label} · {tour.duration}</p>
-                    <h3>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      CYCLING FROM MARRAKECH · {tour.destination}
+                    </p>
+                    <h3 className="home-tour-card__title">
                       <Link href={`/cycling-trips/trip/${tour.slug}`}>
                         {tour.title}
                       </Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <div className="cl-tour-card__actions">
+                    <p className="home-tour-card__description">{tour.description}</p>
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                        {tour.duration}
+                      </span>
+                    </div>
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={`/cycling-trips/trip/${tour.slug}`}
                       >
                         More Details
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={{ pathname: "/contact", query: { tour: tour.title, request: "booking" } }}
                       >
                         Booking
@@ -398,22 +418,43 @@ export default function CyclingToursFromMarrakechPage() {
             </p>
           </div>
           <div className="cl-region-grid">
-            {destinations.map((destination, index) => (
-              <article className="cl-region-card" key={destination.title}>
+            {destinations.map((destination) => (
+              <article className="home-tour-card" key={destination.title}>
                 <Link
-                  className="cl-region-card__image-wrap"
+                  className="home-tour-card__image"
                   href={destination.href}
                   aria-label={destination.title}
                 >
-                  <img src={destination.image} alt={destination.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <img
+                    src={destination.image}
+                    alt={destination.title}
+                    loading="lazy"
+                  />
+                  <span className="home-tour-card__category">CYCLING DESTINATION</span>
+                  <span className="home-tour-card__level">{destination.title}</span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3><Link href={destination.href}>{destination.title}</Link></h3>
-                  <p>{destination.text}</p>
-                  <Link className="cl-text-link" href={destination.href}>
-                    Explore the region <span aria-hidden="true">↗</span>
-                  </Link>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">
+                    CYCLING FROM MARRAKECH · {destination.title}
+                  </p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={destination.href}>{destination.title}</Link>
+                  </h3>
+                  <p className="home-tour-card__description">{destination.text}</p>
+                  <div className="home-tour-card__actions">
+                    <Link
+                      className="home-tour-card__button"
+                      href={destination.href}
+                    >
+                      Explore Region
+                    </Link>
+                    <Link
+                      className="home-tour-card__link"
+                      href={destination.href}
+                    >
+                      Discover
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}
@@ -586,7 +627,11 @@ export default function CyclingToursFromMarrakechPage() {
               <img className="brand__logo" src="/images/mountain-bike-morocco-logo.png" alt="Mountain Bike Morocco" />
               <span>MOUNTAIN BIKE <em>MOROCCO</em></span>
             </Link>
-            <p>Guided mountain biking, E-MTB, gravel and road cycling experiences across Morocco. Discover the landscapes, trails and local culture at your own pace.</p>
+            <p>
+              Guided mountain biking, E-MTB, gravel and road cycling experiences
+              across Morocco. Discover the landscapes, trails and local culture
+              at your own pace.
+            </p>
           </div>
           <div>
             <h3>Explore</h3>
@@ -613,7 +658,7 @@ export default function CyclingToursFromMarrakechPage() {
           </div>
         </div>
         <div className="page-width footer-bottom">
-          <span>© {2026} Mountain Bike Morocco</span>
+          <span>© 2026 Mountain Bike Morocco</span>
           <span>Morocco cycling adventures, thoughtfully planned.</span>
         </div>
       </footer>

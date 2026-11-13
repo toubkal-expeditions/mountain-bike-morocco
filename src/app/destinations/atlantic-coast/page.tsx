@@ -12,6 +12,7 @@ const tours = [
     number: "01",
     discipline: "MTB",
     label: "COASTAL TRACKS & OCEAN VIEWS",
+    destination: "ESSAOUIRA · ATLANTIC COAST",
     title: "Essaouira Atlantic Coast Mountain Bike Tour",
     duration: "1 day",
     description:
@@ -22,6 +23,7 @@ const tours = [
     number: "02",
     discipline: "MTB · COAST & COUNTRYSIDE",
     label: "ARGAN GROVES & RURAL TRAILS",
+    destination: "ARGAN COUNTRYSIDE",
     title: "Argan Country and Atlantic Trails MTB Ride",
     duration: "2 days",
     description:
@@ -32,6 +34,7 @@ const tours = [
     number: "03",
     discipline: "MTB · MULTI-DAY",
     label: "VILLAGES, HILLS & COASTAL LANDSCAPES",
+    destination: "ESSAOUIRA TO SIDI KAOUKI",
     title: "Essaouira to Sidi Kaouki MTB Journey",
     duration: "3 days",
     description:
@@ -42,6 +45,7 @@ const tours = [
     number: "04",
     discipline: "E-MTB",
     label: "ELECTRIC-ASSISTED COASTAL EXPLORATION",
+    destination: "ESSAOUIRA · ATLANTIC COAST",
     title: "Essaouira Coastal E-MTB Discovery",
     duration: "1 day",
     description:
@@ -52,6 +56,7 @@ const tours = [
     number: "05",
     discipline: "E-MTB · COUNTRYSIDE",
     label: "ARGAN LANDSCAPES AT YOUR OWN PACE",
+    destination: "ARGAN COUNTRYSIDE",
     title: "Argan Country E-MTB Adventure",
     duration: "2 days",
     description:
@@ -62,6 +67,7 @@ const tours = [
     number: "06",
     discipline: "E-MTB · MULTI-DAY",
     label: "FROM THE CITY TOWARDS THE ATLANTIC",
+    destination: "MARRAKECH TO ATLANTIC",
     title: "Marrakech to Essaouira E-MTB Journey",
     duration: "4 days",
     description:
@@ -72,6 +78,7 @@ const tours = [
     number: "07",
     discipline: "GRAVEL",
     label: "QUIET ROADS & COASTAL TRACKS",
+    destination: "ESSAOUIRA · ATLANTIC COAST",
     title: "Essaouira Atlantic Gravel Cycling Tour",
     duration: "2 days",
     description:
@@ -82,6 +89,7 @@ const tours = [
     number: "08",
     discipline: "GRAVEL · EXPEDITION",
     label: "OPEN COUNTRY & LONGER RIDING DAYS",
+    destination: "ATLANTIC COAST",
     title: "Atlantic Coast Gravel Expedition",
     duration: "4 days",
     description:
@@ -92,6 +100,7 @@ const tours = [
     number: "09",
     discipline: "GRAVEL · COAST & COUNTRYSIDE",
     label: "SIDI KAOUKI & ARGAN COUNTRY",
+    destination: "SIDI KAOUKI · ATLANTIC COAST",
     title: "Sidi Kaouki and Argan Country Gravel Ride",
     duration: "3 days",
     description:
@@ -102,6 +111,7 @@ const tours = [
     number: "10",
     discipline: "ROAD",
     label: "PAVED COASTAL ROADS & OCEAN AIR",
+    destination: "ESSAOUIRA · ATLANTIC COAST",
     title: "Essaouira Atlantic Road Cycling Tour",
     duration: "1 day",
     description:
@@ -112,6 +122,7 @@ const tours = [
     number: "11",
     discipline: "ROAD · ENDURANCE",
     label: "LONGER STAGES THROUGH RURAL MOROCCO",
+    destination: "MARRAKECH TO ATLANTIC",
     title: "Marrakech to Atlantic Coast Road Cycling Journey",
     duration: "4 days",
     description:
@@ -122,6 +133,7 @@ const tours = [
     number: "12",
     discipline: "ROAD · MULTI-DAY",
     label: "ATLANTIC HORIZONS & COASTAL COUNTRYSIDE",
+    destination: "ATLANTIC COAST",
     title: "Atlantic Coast Road Cycling Escape",
     duration: "3 days",
     description:
@@ -261,36 +273,44 @@ export default function AtlanticCoastDestinationPage() {
             </div>
             <div className="cl-tour-grid">
               {tours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={{ pathname: "/contact", query: { tour: tour.title, destination: "Essaouira & Atlantic Coast", request: "details" } }}
                     aria-label={`More details about ${tour.title}`}
                   >
-                    <img className="cl-tour-card__image" src={tour.image} alt={tour.title} loading="lazy" />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <img src={tour.image} alt={tour.title} loading="lazy" />
+                    <span className="home-tour-card__category">{tour.discipline}</span>
+                    <span className="home-tour-card__level">{tour.destination}</span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.discipline} · {tour.duration}</p>
-                    <p className="cl-card-label">{tour.label}</p>
-                    <h3>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      {tour.discipline.startsWith("ROAD") ? "ROAD CYCLING TOUR" : tour.discipline.startsWith("GRAVEL") ? "GRAVEL CYCLING TOUR" : tour.discipline.startsWith("E-MTB") ? "E-MTB TOUR" : "MOUNTAIN BIKE TOUR"}
+                    </p>
+                    <h3 className="home-tour-card__title">
                       <Link href={{ pathname: "/contact", query: { tour: tour.title, destination: "Essaouira & Atlantic Coast", request: "details" } }}>
                         {tour.title}
                       </Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <div className="cl-tour-card__actions">
+                    <p className="home-tour-card__description">{tour.description}</p>
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                        {tour.duration}
+                      </span>
+                    </div>
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={{ pathname: "/contact", query: { tour: tour.title, destination: "Essaouira & Atlantic Coast", request: "details" } }}
                       >
-                        More Details
+                        Explore Tour
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={{ pathname: "/contact", query: { tour: tour.title, destination: "Essaouira & Atlantic Coast", request: "booking" } }}
                       >
-                        Booking
+                        Enquire Now
                       </Link>
                     </div>
                   </div>
@@ -332,15 +352,26 @@ export default function AtlanticCoastDestinationPage() {
           </div>
           <div className="cl-region-grid">
             {regions.map((region, index) => (
-              <article className="cl-region-card" key={region.title}>
-                <Link className="cl-region-card__image-wrap" href={region.href} aria-label={region.title}>
+              <article className="home-tour-card" key={region.title}>
+                <Link className="home-tour-card__image" href={region.href} aria-label={region.title}>
                   <img src={region.image} alt={region.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <span className="home-tour-card__category">CYCLING DESTINATION</span>
+                  <span className="home-tour-card__level">0{index + 1}</span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3><Link href={region.href}>{region.title}</Link></h3>
-                  <p>{region.text}</p>
-                  <Link className="cl-text-link" href={region.href}>Explore the region <span aria-hidden="true">↗</span></Link>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">WHERE TO RIDE</p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={region.href}>{region.title}</Link>
+                  </h3>
+                  <p className="home-tour-card__description">{region.text}</p>
+                  <div className="home-tour-card__actions">
+                    <Link className="home-tour-card__button" href={region.href}>
+                      Explore Destination
+                    </Link>
+                    <Link className="home-tour-card__link" href={region.href}>
+                      Discover More
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}
@@ -489,7 +520,7 @@ export default function AtlanticCoastDestinationPage() {
         </div>
         <div className="page-width footer-bottom">
           <span>© 2026 Mountain Bike Morocco</span>
-          <span>Atlantic coast cycling adventures, thoughtfully planned.</span>
+          <span>Morocco cycling adventures, thoughtfully planned.</span>
         </div>
       </footer>
     </>

@@ -14,6 +14,7 @@ const tours = [
     label: "TRAILS JUST BEYOND THE CITY",
     title: "Marrakech Mountain Bike Day Tour",
     duration: "1 day",
+    destination: "MARRAKECH COUNTRYSIDE",
     description:
       "Leave the busy streets behind for a guided mountain bike ride in the countryside around Marrakech. Depending on your experience and the route selected, the day can include rural tracks, rolling foothills, open views and stops to appreciate the landscape. Confirm the meeting point, transfer time, trail surface, equipment and expected riding difficulty before setting off.",
     image: "/images/day-ebike-tour-from-marrakech.jpg",
@@ -24,6 +25,7 @@ const tours = [
     label: "MOUNTAIN TRACKS & VILLAGE ROUTES",
     title: "Marrakech to Atlas MTB Adventure",
     duration: "3 days",
+    destination: "MARRAKECH TO ATLAS",
     description:
       "Use Marrakech as the starting point for a three-day mountain bike escape towards selected Atlas foothill routes and traditional villages. A short multi-day trip can balance time on the bike with transfers and opportunities to enjoy the mountain scenery. The route should be chosen around handling skills, fitness, seasonal conditions and the technical demands of each trail.",
     image: "/images/Atlas-Mountains-Bike-trip-From-Marrakech.jpg",
@@ -34,6 +36,7 @@ const tours = [
     label: "TECHNICAL TERRAIN & DESCENTS",
     title: "Atlas Foothills Enduro Tour from Marrakech",
     duration: "2 days",
+    destination: "ATLAS FOOTHILLS",
     description:
       "For riders who enjoy more technical terrain, an enduro-focused escape can connect selected mountain tracks and descent-oriented trails outside Marrakech. The suitable route depends on your bike, fitness, confidence on loose surfaces and experience with steeper sections. Confirm trail access, recent conditions, transfers and the level of technical difficulty before the itinerary is finalised.",
     image: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
@@ -44,6 +47,7 @@ const tours = [
     label: "ELECTRIC-ASSISTED COUNTRYSIDE RIDING",
     title: "Marrakech E-MTB Day Adventure",
     duration: "1 day",
+    destination: "MARRAKECH COUNTRYSIDE",
     description:
       "Explore the countryside around Marrakech on an electric mountain bike, with a route planned around your available time and riding experience. Pedal assistance can make some climbs more manageable, but trail surface and bike handling still matter. Discuss battery capacity, assistance settings, elevation, water stops, transfers and equipment before confirming the ride.",
     image: "/images/e-mtb-tour-from-marrakech.jpg",
@@ -54,6 +58,7 @@ const tours = [
     label: "CLIMBS, VALLEYS & MOUNTAIN VIEWS",
     title: "Marrakech and Atlas E-Bike Tour",
     duration: "4 days",
+    destination: "MARRAKECH & ATLAS",
     description:
       "Combine time in Marrakech with several days of electric-assisted riding on suitable routes in the nearby Atlas region. The itinerary can include changing landscapes and rural settlements, with distances planned around elevation, terrain and your group's battery range. Charging opportunities, transfers, overnight stops and the technical demands of each stage should be reviewed before travel.",
     image: "/images/eBike-tour-atlas-mountains-morocco.jpg",
@@ -64,6 +69,7 @@ const tours = [
     label: "A PERSONALISED RIDING BREAK",
     title: "Private Marrakech E-MTB Holiday",
     duration: "3 days",
+    destination: "MARRAKECH & MOROCCO",
     description:
       "A private E-MTB trip gives your group flexibility to choose dates, riding pace and the balance between time on the trails and exploring Marrakech. Share your bike type, group size, riding level and accommodation preferences so that battery range, charging, transfers and daily stages can be considered together. The final plan should reflect the routes available and the expected conditions.",
     image: "/images/group-ebike-tour-morocco.jpg",
@@ -74,6 +80,7 @@ const tours = [
     label: "QUIET ROADS & RURAL TRACKS",
     title: "Marrakech Gravel Cycling Escape",
     duration: "2 days",
+    destination: "MARRAKECH COUNTRYSIDE",
     description:
       "Discover the rural landscapes outside Marrakech on a short gravel cycling escape. A suitable route can link quiet paved roads with selected unpaved sections, depending on surface condition and your bike setup. Before setting off, check tyre suitability, navigation, water access, distance and elevation so the ride matches the group and leaves time to enjoy the countryside.",
     image: "/images/gravel-cycling-morocco.jpg",
@@ -84,6 +91,7 @@ const tours = [
     label: "OPEN TERRAIN & WIDE HORIZONS",
     title: "Marrakech to Agafay Gravel Tour",
     duration: "1 day",
+    destination: "AGAFAY DESERT",
     description:
       "Ride from the Marrakech area towards selected routes around the rocky landscapes of Agafay. The open scenery offers a contrast to the greener mountain valleys, but exposed terrain, loose stones and heat can make a ride demanding. Plan around water, sun protection, tyre choice, route access and a realistic pace, with the exact route checked for current conditions.",
     image: "/images/Desert-Agafay-Morocco.jpg",
@@ -94,6 +102,7 @@ const tours = [
     label: "VILLAGES & FOOTHILL PISTES",
     title: "Marrakech to Atlas Gravel Journey",
     duration: "4 days",
+    destination: "MARRAKECH TO ATLAS",
     description:
       "Spend several days exploring suitable gravel roads and rural tracks between Marrakech and selected Atlas foothill areas. The journey can combine open countryside, village landscapes and changing mountain views. Daily distances should be based on the actual surface, elevation and services along the route, with time allowed for transfers, navigation and stops.",
     image: "/images/gravel-adventure-bike-morocco.jpg",
@@ -104,6 +113,7 @@ const tours = [
     label: "PAVED CLIMBS & COUNTRYSIDE ROADS",
     title: "Marrakech Road Cycling Day Ride",
     duration: "1 day",
+    destination: "MARRAKECH COUNTRYSIDE",
     description:
       "Discover the countryside around Marrakech by road bike on a paved route chosen to suit your fitness and available time. The day can focus on steady riding, scenic roads and a manageable amount of climbing, depending on the route. Traffic, road surfaces, start time, water stops and your preferred daily distance should be considered when the ride is planned.",
     image: "/images/road-cycling-tour-morocco.jpg",
@@ -114,6 +124,7 @@ const tours = [
     label: "CLIMBING & MOUNTAIN SCENERY",
     title: "Marrakech to Atlas Road Cycling Tour",
     duration: "4 days",
+    destination: "MARRAKECH TO ATLAS",
     description:
       "Use Marrakech as a base for a multi-day road cycling journey into selected Atlas foothill areas. The route can include paved climbs and scenic countryside riding, with daily stages adapted to your experience and comfort on shared roads. Confirm gradients, surface conditions, traffic exposure, support and transfers before committing to the itinerary.",
     image: "/images/adventure-road-cycling-morocco.jpg",
@@ -124,6 +135,7 @@ const tours = [
     label: "FROM THE RED CITY TOWARDS THE COAST",
     title: "Marrakech to Atlantic Road Cycling Journey",
     duration: "6 days",
+    destination: "MARRAKECH TO ATLANTIC",
     description:
       "Discuss a six-day road cycling itinerary connecting Marrakech with selected routes towards the Atlantic region. A practical plan needs to balance ride days with the distances between regions, traffic, road quality, elevation and available support. The final stages and overnight stops should be confirmed around your travel dates, preferred daily mileage and recovery needs.",
     image: "/images/atlantic-coast-cycling-tour-morocco.jpg",
@@ -265,36 +277,50 @@ export default function MarrakechDestinationPage() {
             </div>
             <div className="cl-tour-grid">
               {tours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={{ pathname: "/contact", query: { tour: tour.title, destination: "Marrakech", request: "details" } }}
                     aria-label={`More details about ${tour.title}`}
                   >
-                    <img className="cl-tour-card__image" src={tour.image} alt={tour.title} loading="lazy" />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <img src={tour.image} alt={tour.title} loading="lazy" />
+                    <span className="home-tour-card__category">{tour.label}</span>
+                    <span className="home-tour-card__level">{tour.destination}</span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.discipline} · {tour.duration}</p>
-                    <p className="cl-card-label">{tour.label}</p>
-                    <h3>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      {tour.discipline.includes("ROAD")
+                        ? "ROAD CYCLING TOUR"
+                        : tour.discipline.includes("GRAVEL")
+                          ? "GRAVEL CYCLING TOUR"
+                          : tour.discipline.includes("E-MTB")
+                            ? "E-MTB TOUR"
+                            : "MOUNTAIN BIKE TOUR"}
+                    </p>
+                    <h3 className="home-tour-card__title">
                       <Link href={{ pathname: "/contact", query: { tour: tour.title, destination: "Marrakech", request: "details" } }}>
                         {tour.title}
                       </Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <div className="cl-tour-card__actions">
+                    <p className="home-tour-card__description">{tour.description}</p>
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                        {tour.duration}
+                      </span>
+                    </div>
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={{ pathname: "/contact", query: { tour: tour.title, destination: "Marrakech", request: "details" } }}
                       >
-                        More Details
+                        Explore Tour
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={{ pathname: "/contact", query: { tour: tour.title, destination: "Marrakech", request: "booking" } }}
                       >
-                        Booking
+                        Enquire Now
                       </Link>
                     </div>
                   </div>
@@ -336,15 +362,30 @@ export default function MarrakechDestinationPage() {
           </div>
           <div className="cl-region-grid">
             {regions.map((region, index) => (
-              <article className="cl-region-card" key={region.title}>
-                <Link className="cl-region-card__image-wrap" href={region.href} aria-label={region.title}>
+              <article className="home-tour-card" key={region.title}>
+                <Link
+                  className="home-tour-card__image"
+                  href={region.href}
+                  aria-label={region.title}
+                >
                   <img src={region.image} alt={region.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <span className="home-tour-card__category">CYCLING DESTINATION</span>
+                  <span className="home-tour-card__level">0{index + 1}</span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3><Link href={region.href}>{region.title}</Link></h3>
-                  <p>{region.text}</p>
-                  <Link className="cl-text-link" href={region.href}>Explore the region <span aria-hidden="true">↗</span></Link>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">WHERE TO RIDE</p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={region.href}>{region.title}</Link>
+                  </h3>
+                  <p className="home-tour-card__description">{region.text}</p>
+                  <div className="home-tour-card__actions">
+                    <Link className="home-tour-card__button" href={region.href}>
+                      Explore Destination
+                    </Link>
+                    <Link className="home-tour-card__link" href={region.href}>
+                      Discover More
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}

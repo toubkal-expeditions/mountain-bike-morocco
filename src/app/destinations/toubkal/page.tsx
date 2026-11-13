@@ -14,6 +14,7 @@ const tours = [
     label: "MOUNTAIN TRAILS & VILLAGE TRACKS",
     title: "Toubkal Foothills MTB Adventure",
     duration: "3 days",
+    destination: "TOUBKAL FOOTHILLS",
     description:
       "Explore selected mountain bike trails and tracks in the foothills of Mount Toubkal on a three-day journey through striking High Atlas scenery. The ride can combine rural tracks, rocky terrain and views across traditional villages, with difficulty matched to your experience. Trail access, gradients and conditions should be checked for your travel dates before the route is confirmed.",
     image: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
@@ -24,6 +25,7 @@ const tours = [
     label: "MULTI-DAY MOUNTAIN RIDING",
     title: "Toubkal Cycling Expedition",
     duration: "5 days",
+    destination: "TOUBKAL & HIGH ATLAS",
     description:
       "Spend five days exploring the Toubkal region and surrounding Atlas landscapes by mountain bike. An expedition-style itinerary can connect suitable trails and valley tracks while leaving room for transfers, recovery and village stops. The exact route should reflect your fitness, bike handling skills, daily-distance preferences and the terrain conditions expected during your trip.",
     image: "/images/singletrack-mtb-atlas-mountains.jpg",
@@ -34,6 +36,7 @@ const tours = [
     label: "TECHNICAL TRAILS & DESCENTS",
     title: "Atlas Enduro Cycling Tour",
     duration: "4 days",
+    destination: "ATLAS MOUNTAINS",
     description:
       "For confident riders who enjoy technical terrain, this four-day enduro concept focuses on selected mountain descents, rugged tracks and climbing between ride zones. Difficulty depends on trail surface, exposure and current access, so honest information about experience and bike setup is essential. Discuss support, transfers and easier alternatives before the itinerary is finalised.",
     image: "/images/enduro-morrocco-cycling-tour.jpg",
@@ -44,6 +47,7 @@ const tours = [
     label: "ELECTRIC-ASSISTED MOUNTAIN ROUTES",
     title: "Toubkal E-MTB Adventure",
     duration: "3 days",
+    destination: "TOUBKAL REGION",
     description:
       "Discover suitable mountain routes around the Toubkal region with electric assistance on the climbs. A three-day ride can balance time on the bike with views, village stops and recovery, but still needs careful planning around gradients, rocky surfaces, battery capacity and charging. Route choice should suit every rider's handling skills and the expected conditions.",
     image: "/images/eBike-tour-atlas-mountains-morocco.jpg",
@@ -54,6 +58,7 @@ const tours = [
     label: "HIGH ATLAS CLIMBS & VALLEYS",
     title: "High Atlas E-MTB Tour",
     duration: "4 days",
+    destination: "HIGH ATLAS MOUNTAINS",
     description:
       "Use four days to explore selected tracks, valleys and mountain scenery in the High Atlas on an electric mountain bike. Electric assistance can help manage climbing effort, while route planning must still consider elevation, surface, battery range and possible charging stops. Daily stages should be realistic for your group and confirmed after the routes and logistics have been reviewed.",
     image: "/images/e-mtb-tour-morocco.jpg",
@@ -64,6 +69,7 @@ const tours = [
     label: "VILLAGES & PANORAMIC RIDING",
     title: "Toubkal and Atlas Valleys E-MTB Journey",
     duration: "5 days",
+    destination: "TOUBKAL & ATLAS VALLEYS",
     description:
       "A five-day electric mountain bike journey can connect selected valleys and mountain villages around the Toubkal region, depending on route access and conditions. Plan the ride around battery needs, daily elevation, charging opportunities, transfers and accommodation. The balance of riding and time to explore can be tailored to the experience and pace of your group.",
     image: "/images/group-ebike-tour-morocco.jpg",
@@ -74,6 +80,7 @@ const tours = [
     label: "RURAL ROADS & GRAVEL PISTES",
     title: "Toubkal and Atlas Gravel Tour",
     duration: "3 days",
+    destination: "TOUBKAL & ATLAS",
     description:
       "Explore suitable rural roads and gravel tracks near the Toubkal region on a three-day cycling break. Surface quality and gradients vary, so the route should be chosen around your tyres, riding confidence, daily distance and the conditions on the ground. Allow time for water stops, route checks and transfers between riding areas where needed.",
     image: "/images/gravel-bike-atlas-mountains.JPG",
@@ -84,6 +91,7 @@ const tours = [
     label: "VILLAGES & OPEN MOUNTAIN TRACKS",
     title: "High Atlas Villages Gravel Adventure",
     duration: "4 days",
+    destination: "HIGH ATLAS VILLAGES",
     description:
       "Ride through selected Atlas foothill landscapes on a four-day gravel trip that combines quieter roads, rougher tracks and village scenery where practical. The itinerary should account for climbing, surface changes, water availability, navigation and the distance between services. Share your preferred pace and gravel experience so suitable stages can be considered.",
     image: "/images/gravel-cycling-morocco.jpg",
@@ -94,6 +102,7 @@ const tours = [
     label: "MOUNTAINS TOWARDS THE SOUTH",
     title: "Atlas to Desert Gravel Journey",
     duration: "6 days",
+    destination: "ATLAS TO DESERT",
     description:
       "Discuss a six-day gravel journey linking suitable Atlas foothill routes with changing landscapes farther south. Connecting regions requires realistic transfer times and careful choices about road surfaces, daily distance and support. The final itinerary should be built around your dates and preferences, with route conditions and logistical details checked before travel.",
     image: "/images/atlas-to-desert-biking-tour.jpg",
@@ -104,6 +113,7 @@ const tours = [
     label: "PAVED ROADS & MOUNTAIN SCENERY",
     title: "Toubkal Region Road Cycling Tour",
     duration: "3 days",
+    destination: "TOUBKAL REGION",
     description:
       "Discover suitable paved roads around the Toubkal region and Atlas foothills on a three-day road cycling break. The route should fit your climbing experience, preferred daily distance and comfort riding on shared roads. Traffic, weather, road surface and transfers must be considered when choosing each stage, with recovery time built into the plan.",
     image: "/images/road-cycling-tour-morocco.jpg",
@@ -114,6 +124,7 @@ const tours = [
     label: "MOUNTAIN PASSES & PANORAMIC RIDES",
     title: "Atlas Mountain Passes Road Tour",
     duration: "4 days",
+    destination: "ATLAS MOUNTAIN PASSES",
     description:
       "Spend four days riding selected paved climbs and mountain roads in the wider Toubkal and High Atlas region. A good itinerary balances elevation and distance with the group's fitness, road conditions, traffic and opportunities to recover. Specific passes and stages should only be selected after checking current access and the conditions for your travel dates.",
     image: "/images/road-cycling-morocco.jpg",
@@ -124,6 +135,7 @@ const tours = [
     label: "A LONGER ATLAS CYCLING HOLIDAY",
     title: "Toubkal to Marrakech Road Cycling Journey",
     duration: "5 days",
+    destination: "TOUBKAL TO MARRAKECH",
     description:
       "Combine selected Atlas road routes with a journey towards Marrakech over five days, subject to suitable roads and confirmed logistics. Daily climbs, traffic, transfer requirements and the group's preferred pace should shape the route. Discuss your cycling level, travel dates and accommodation preferences before choosing the final stages.",
     image: "/images/Atlas-Mountains-Bike-trip-From-Marrakech.jpg",
@@ -285,36 +297,50 @@ export default function ToubkalDestinationPage() {
             </div>
             <div className="cl-tour-grid">
               {tours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={{ pathname: "/contact", query: { tour: tour.title, request: "details" } }}
                     aria-label={`More details about ${tour.title}`}
                   >
-                    <img className="cl-tour-card__image" src={tour.image} alt={tour.title} loading="lazy" />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <img src={tour.image} alt={tour.title} loading="lazy" />
+                    <span className="home-tour-card__category">{tour.label}</span>
+                    <span className="home-tour-card__level">{tour.destination}</span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.discipline} · {tour.duration}</p>
-                    <p className="cl-card-label">{tour.label}</p>
-                    <h3>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      {tour.discipline.includes("ROAD")
+                        ? "ROAD CYCLING TOUR"
+                        : tour.discipline.includes("GRAVEL")
+                          ? "GRAVEL CYCLING TOUR"
+                          : tour.discipline.includes("E-MTB")
+                            ? "E-MTB TOUR"
+                            : "MOUNTAIN BIKE TOUR"}
+                    </p>
+                    <h3 className="home-tour-card__title">
                       <Link href={{ pathname: "/contact", query: { tour: tour.title, request: "details" } }}>
                         {tour.title}
                       </Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <div className="cl-tour-card__actions">
+                    <p className="home-tour-card__description">{tour.description}</p>
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                        {tour.duration}
+                      </span>
+                    </div>
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={{ pathname: "/contact", query: { tour: tour.title, request: "details" } }}
                       >
-                        More Details
+                        Explore Tour
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={{ pathname: "/contact", query: { tour: tour.title, request: "booking" } }}
                       >
-                        Booking
+                        Enquire Now
                       </Link>
                     </div>
                   </div>
@@ -360,17 +386,30 @@ export default function ToubkalDestinationPage() {
           </div>
           <div className="cl-region-grid">
             {regions.map((region, index) => (
-              <article className="cl-region-card" key={region.title}>
-                <Link className="cl-region-card__image-wrap" href={region.href} aria-label={region.title}>
+              <article className="home-tour-card" key={region.title}>
+                <Link
+                  className="home-tour-card__image"
+                  href={region.href}
+                  aria-label={region.title}
+                >
                   <img src={region.image} alt={region.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <span className="home-tour-card__category">CYCLING DESTINATION</span>
+                  <span className="home-tour-card__level">0{index + 1}</span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3><Link href={region.href}>{region.title}</Link></h3>
-                  <p>{region.text}</p>
-                  <Link className="cl-text-link" href={region.href}>
-                    Explore the area <span aria-hidden="true">↗</span>
-                  </Link>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">WHERE TO RIDE</p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={region.href}>{region.title}</Link>
+                  </h3>
+                  <p className="home-tour-card__description">{region.text}</p>
+                  <div className="home-tour-card__actions">
+                    <Link className="home-tour-card__button" href={region.href}>
+                      Explore Destination
+                    </Link>
+                    <Link className="home-tour-card__link" href={region.href}>
+                      Discover More
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}

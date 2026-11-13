@@ -1,10 +1,11 @@
+
 import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About Mountain Bike Morocco | Cycling Tours & Adventures",
   description:
-    "Meet MTB Morocco, a local cycling team based at the foot of the High Atlas. Explore our MTB, E-MTB, gravel and road tours, bike fleet, responsible travel approach, safety support and verified rider reviews.",
+    "Meet MTB Morocco, a local cycling team based at the foot of the High Atlas. Explore our MTB, E-MTB, gravel, road, luxury cycling and private group tours, bike fleet, responsible travel approach, safety support and rider reviews.",
 };
 
 const cyclingStyles = [
@@ -17,6 +18,8 @@ const cyclingStyles = [
     image: "/images/mountain-biking-atlas-mountains-morocco.jpg",
     href: "/cycling-trips/mtb",
     action: "Explore MTB Tours",
+    destination: "ATLAS MOUNTAINS",
+    eyebrow: "MOUNTAIN BIKE TOUR",
   },
   {
     number: "02",
@@ -27,6 +30,8 @@ const cyclingStyles = [
     image: "/images/e-mtb-tour-morocco.jpg",
     href: "/cycling-trips/e-mtb",
     action: "Explore E-MTB Tours",
+    destination: "HIGH ATLAS & MOROCCO",
+    eyebrow: "E-MTB TOUR",
   },
   {
     number: "03",
@@ -37,6 +42,8 @@ const cyclingStyles = [
     image: "/images/gravel-cycling-morocco.jpg",
     href: "/cycling-trips/gravel",
     action: "Explore Gravel Tours",
+    destination: "MOROCCO GRAVEL ROUTES",
+    eyebrow: "GRAVEL CYCLING TOUR",
   },
   {
     number: "04",
@@ -47,6 +54,32 @@ const cyclingStyles = [
     image: "/images/road-cycling-morocco.jpg",
     href: "/cycling-trips/road",
     action: "Explore Road Tours",
+    destination: "ATLAS & MOROCCO",
+    eyebrow: "ROAD CYCLING TOUR",
+  },
+  {
+    number: "05",
+    label: "COMFORT · EXCLUSIVE EXPERIENCES",
+    title: "Luxury Cycling",
+    description:
+      "Combine rewarding days in the saddle with a more considered approach to accommodation, transfers, meals and personal service. Luxury cycling journeys can be shaped around your preferred riding style, pace and places you would like to discover, with the arrangements confirmed for your chosen itinerary.",
+    image: "/images/mountain-bike-morocco-hero.jpg",
+    href: "/cycling-trips/luxury",
+    action: "Explore Luxury Cycling",
+    destination: "ATLAS & MOROCCO",
+    eyebrow: "LUXURY CYCLING TOUR",
+  },
+  {
+    number: "06",
+    label: "PRIVATE DEPARTURES · YOUR OWN PACE",
+    title: "Private Group Cycling",
+    description:
+      "Plan a cycling journey for friends, family, clubs or a group of like-minded riders. Discuss your preferred dates, group size, cycling experience and route interests so the itinerary and support arrangements can be considered around your group.",
+    image: "/images/group-cycling-atlas-mountains.jpg",
+    href: "/cycling-trips/private-groups",
+    action: "Explore Private Groups",
+    destination: "PRIVATE TOURS IN MOROCCO",
+    eyebrow: "PRIVATE GROUP CYCLING",
   },
 ];
 
@@ -125,34 +158,46 @@ const whyRideWithUs = [
 
 const riderReviews = [
   {
-    quote: "From the initial inquiry to the planning and trip itself, the team delivered. Mustapha’s route planning and guiding skills are truly outstanding.",
-    name: "Bret M",
-    date: "Jan 2026",
-  },
-  {
-    quote: "The whole team exceeded expectations in every way. Loved every minute of our 8-day tour. MTB welcomed us like family.",
-    name: "Lara K",
+    title: "Fun and beautiful!",
+    summary:
+      "A three-day cycling trip with guide Abdul, with beautiful views, villages and local food. The reviewer highlighted the organisation from Marrakech pickup through to the end of the trip.",
+    name: "Trail674128",
     date: "Apr 2026",
   },
   {
-    quote: "MTB Morocco is a professional organization that worked hard to meet and exceed my expectations. I recommend them 100%.",
-    name: "IEHansel33",
-    date: "Sep 2025",
-  },
-  {
-    quote: "They set the riding route well to our level. We enjoyed mountain scenery, small towns and valleys, with a friendly, hospitable team.",
-    name: "Kieran H",
+    title: "An authentic Atlas experience",
+    summary:
+      "A week-long guided mountain bike tour through the Atlas Mountains was described as a fantastic, authentic experience, with excellent organisation from arrival through to departure.",
+    name: "catherine c",
     date: "Apr 2026",
   },
   {
-    quote: "The entire experience was seamlessly organized, from 4x4 support during transfers to lunch and snacks. Exploring the High Atlas was a great experience!",
-    name: "Vera W",
-    date: "Apr 2026",
+    title: "A great ride in the mountains",
+    summary:
+      "The reviewer enjoyed a ride with Abdul and mentioned the mountain scenery and a stop along the route.",
+    name: "Stuart H",
+    date: "Dec 2025",
   },
   {
-    quote: "They were thorough, detailed, responsive, personable, and informative. I felt well taken care of in their hands.",
-    name: "Stella D",
-    date: "Apr 2026",
+    title: "A memorable group cycling day",
+    summary:
+      "A group of five enjoyed a birthday cycling trip, praising the transfer arrangements, the guide’s enthusiasm and the overall experience.",
+    name: "Dominic H",
+    date: "Nov 2025",
+  },
+  {
+    title: "Unforgettable Atlas Mountains tour",
+    summary:
+      "A three-day mountain bike tour was praised for its trails, village visits, local knowledge and freshly prepared meals. The reviewer also highlighted the team's attention to dietary needs.",
+    name: "Cameron B",
+    date: "Nov 2025",
+  },
+  {
+    title: "A memorable E-bike experience",
+    summary:
+      "The reviewer described an E-bike ride through the Ouirgane Valley with lunch as a highlight of their Marrakech trip, praising guide Mustafa and the mountain views.",
+    name: "Viktorija P",
+    date: "Nov 2025",
   },
 ];
 
@@ -163,7 +208,7 @@ const faqs = [
   {
     question: "What kinds of cycling tours can I explore?",
     answer:
-      "The website is organised around mountain biking, E-MTB, gravel and road cycling. Depending on the route and trip format, options can include day rides, multi-day holidays, private groups and longer cycling expeditions. Ask about the specific route, services and availability for your dates.",
+      "The website is organised around mountain biking, E-MTB, gravel, road cycling and luxury cycling. You can also enquire about private group trips and longer cycling expeditions. Depending on the route and trip format, options can include day rides and multi-day holidays. Ask about the specific route, services and availability for your dates.",
   },
   {
     question: "Do I need to be an expert cyclist?",
@@ -173,7 +218,12 @@ const faqs = [
   {
     question: "Can a tour be customised for my group?",
     answer:
-      "You can enquire about private or tailored trips. Useful details include your dates, group size, preferred cycling style, experience, target distance and the places you hope to visit. A final programme depends on route conditions and the services that can be arranged.",
+      "You can enquire about private group or tailored trips. Useful details include your dates, group size, preferred cycling style, experience, target distance and the places you hope to visit. A final programme depends on route conditions and the services that can be arranged.",
+  },
+  {
+    question: "Can I arrange a luxury cycling holiday?",
+    answer:
+      "You can enquire about a more personalised cycling holiday and discuss your preferred accommodation, transfers, riding programme and support arrangements. The services available and what is included should be confirmed for your chosen itinerary before booking.",
   },
   {
     question: "Can I start a ride from Marrakech?",
@@ -203,7 +253,7 @@ export default function AboutPage() {
             <p className="cl-eyebrow">ABOUT US · CYCLING HOLIDAYS · MOROCCO</p>
             <h1>Discover Morocco One Ride at a Time</h1>
             <p className="cl-hero__intro">
-              Mountain Bike Morocco brings together ideas for exploring the country by bike—from mountain trails and electric-assisted adventures to gravel tracks, open roads and longer journeys towards the desert. Our aim is to help you find a ride that fits your interests, experience and travel plans.
+              Mountain Bike Morocco brings together ideas for exploring the country by bike—from mountain trails and electric-assisted adventures to gravel tracks, open roads, luxury cycling holidays and private group journeys towards the desert. Our aim is to help you find a ride that fits your interests, experience and travel plans.
             </p>
             <div className="cl-actions">
               <Link className="cl-button cl-button--gold" href="/cycling-trips">
@@ -216,7 +266,7 @@ export default function AboutPage() {
             <div className="cl-hero__meta">
               <span>MTB &amp; E-MTB</span>
               <span>Gravel &amp; Road</span>
-              <span>From Day Rides to Expeditions</span>
+              <span>Luxury &amp; Private Groups</span>
             </div>
           </div>
         </section>
@@ -231,7 +281,7 @@ export default function AboutPage() {
               Mountain Bike Morocco is built around a simple idea: the best way to discover a place is to choose the right journey through it. Morocco offers a remarkable mix of high mountains, dry plateaus, rural valleys, coastal landscapes and desert regions. Cycling makes it possible to experience those changes at a human pace, with time to notice the terrain and places along the way.
             </p>
             <p>
-              We present different ways to ride so you can compare the kind of experience you want. Some travellers are looking for technical mountain trails. Others prefer the extra range offered by an electric mountain bike, the quieter routes of gravel cycling, or a road itinerary built around climbs and longer stages. The best starting point is an honest conversation about your ability, interests, dates and expectations.
+              We present different ways to ride so you can compare the kind of experience you want. Some travellers are looking for technical mountain trails. Others prefer the extra range offered by an electric mountain bike, the quieter routes of gravel cycling, or a road itinerary built around climbs and longer stages. You can also enquire about a luxury cycling holiday or a private group journey shaped around your preferred pace, travel style and interests. The best starting point is an honest conversation about your ability, interests, dates and expectations.
             </p>
             <p>
               Our pages are designed to help you explore possible tours and destinations, understand what each style involves, and prepare useful questions before making an enquiry. Specific routes, dates, inclusions, equipment and support arrangements should always be confirmed for the trip you choose.
@@ -324,26 +374,37 @@ export default function AboutPage() {
             <div className="cl-section-heading">
               <div>
                 <p className="cl-eyebrow cl-eyebrow--dark">WAYS TO RIDE</p>
-                <h2>Four cycling styles. A country full of different terrain.</h2>
+                <h2>Six cycling styles. A country full of different terrain.</h2>
               </div>
               <p>
-                Pick the discipline that matches your interests and then compare routes, trip length and the support that may be needed. Not every style suits every destination, so the final choice should reflect the terrain and your experience.
+                Pick the discipline or trip format that matches your interests and then compare routes, trip length and the support that may be needed. Not every style suits every destination, so the final choice should reflect the terrain and your experience.
               </p>
             </div>
             <div className="cl-tour-grid">
               {cyclingStyles.map((style) => (
-                <article className="cl-tour-card" key={style.number}>
-                  <Link className="cl-tour-card__image-link" href={style.href} aria-label={style.title}>
-                    <img className="cl-tour-card__image" src={style.image} alt={style.title} loading="lazy" />
-                    <span className="cl-tour-card__number">{style.number}</span>
+                <article className="home-tour-card" key={style.number}>
+                  <Link
+                    className="home-tour-card__image"
+                    href={style.href}
+                    aria-label={style.title}
+                  >
+                    <img src={style.image} alt={style.title} loading="lazy" />
+                    <span className="home-tour-card__category">{style.label}</span>
+                    <span className="home-tour-card__level">{style.destination}</span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{style.label}</p>
-                    <h3>{style.title}</h3>
-                    <p>{style.description}</p>
-                    <div className="cl-tour-card__actions">
-                      <Link className="cl-button cl-button--dark" href={style.href}>{style.action}</Link>
-                      <Link className="cl-button cl-button--gold" href="/contact">Ask a Question</Link>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">{style.eyebrow}</p>
+                    <h3 className="home-tour-card__title">
+                      <Link href={style.href}>{style.title}</Link>
+                    </h3>
+                    <p className="home-tour-card__description">{style.description}</p>
+                    <div className="home-tour-card__actions">
+                      <Link className="home-tour-card__button" href={style.href}>
+                        {style.action}
+                      </Link>
+                      <Link className="home-tour-card__link" href="/contact">
+                        Ask a Question
+                      </Link>
                     </div>
                   </div>
                 </article>
@@ -380,17 +441,31 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="cl-region-grid">
-            {destinations.map((destination) => (
-              <article className="cl-region-card" key={destination.title}>
-                <Link className="cl-region-card__image-wrap" href={destination.href} aria-label={destination.title}>
+            {destinations.map((destination, index) => (
+              <article className="home-tour-card" key={destination.title}>
+                <Link
+                  className="home-tour-card__image"
+                  href={destination.href}
+                  aria-label={destination.title}
+                >
                   <img src={destination.image} alt={destination.title} loading="lazy" />
+                  <span className="home-tour-card__category">CYCLING DESTINATION</span>
+                  <span className="home-tour-card__level">0{index + 1}</span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3>{destination.title}</h3>
-                  <p>{destination.text}</p>
-                  <Link className="cl-text-link" href={destination.href}>
-                    Explore destination <span aria-hidden="true">↗</span>
-                  </Link>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">WHERE TO RIDE</p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={destination.href}>{destination.title}</Link>
+                  </h3>
+                  <p className="home-tour-card__description">{destination.text}</p>
+                  <div className="home-tour-card__actions">
+                    <Link className="home-tour-card__button" href={destination.href}>
+                      Explore Destination
+                    </Link>
+                    <Link className="home-tour-card__link" href={destination.href}>
+                      Discover More
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}
@@ -454,31 +529,32 @@ export default function AboutPage() {
             <div className="about-reviews__header">
               <p className="cl-eyebrow cl-eyebrow--dark">TRUSTED BY RIDERS WORLDWIDE</p>
               <h2>Real reviews from real cyclists</h2>
-              <div className="about-reviews__score" aria-label="5.0 out of 5 stars on TripAdvisor">
-                <strong>5.0</strong>
+              <div className="about-reviews__score" aria-label="4.8 out of 5 bubbles on TripAdvisor">
+                <strong>4.8</strong>
                 <span className="about-reviews__stars" aria-hidden="true">★★★★★</span>
               </div>
-              <p className="about-reviews__summary">17 Google reviews · 142 TripAdvisor reviews</p>
+              <p className="about-reviews__summary">4.8 out of 5 · 149 TripAdvisor reviews</p>
               <a
                 className="about-reviews__all-link"
                 href={tripAdvisorUrl}
                 target="_blank"
                 rel="noreferrer"
               >
-                Read all 142 reviews on TripAdvisor <span aria-hidden="true">↗</span>
+                Read all 149 reviews on TripAdvisor <span aria-hidden="true">↗</span>
               </a>
             </div>
             <div className="about-reviews__grid">
               {riderReviews.map((review) => (
                 <article className="about-review-card" key={review.name}>
                   <div className="about-review-card__topline">
-                    <span className="about-reviews__stars" aria-label="5 out of 5 stars">★★★★★</span>
+                    <span className="about-reviews__stars" aria-label="5 out of 5 bubbles">★★★★★</span>
                     <a href={tripAdvisorUrl} target="_blank" rel="noreferrer" className="about-review-card__source">
                       TripAdvisor <span aria-hidden="true">↗</span>
                     </a>
                   </div>
                   <span className="about-review-card__quote-mark" aria-hidden="true">“</span>
-                  <blockquote>{review.quote}</blockquote>
+                  <h3 className="about-review-card__title">{review.title}</h3>
+                  <blockquote>{review.summary}</blockquote>
                   <p className="about-review-card__author">
                     <strong>{review.name}</strong><span> · {review.date}</span>
                   </p>
@@ -486,7 +562,7 @@ export default function AboutPage() {
               ))}
             </div>
             <p className="about-reviews__note">
-              Review excerpts are shortened for display. Names and dates are shown as listed in the review source; read the full reviews on TripAdvisor.
+              Review cards are concise summaries of recent customer reviews displayed on TripAdvisor. Read the original reviews and latest ratings on TripAdvisor.
             </p>
           </div>
         </section>
@@ -538,7 +614,7 @@ export default function AboutPage() {
             <p className="cl-eyebrow">YOUR MOROCCO CYCLING STORY STARTS HERE</p>
             <h2>Tell us what you want from your next ride.</h2>
             <p>
-              Whether you are planning a trail-focused MTB break, an E-MTB journey, a gravel expedition, a road cycling holiday or a private group trip, start with your preferred dates, experience and ideas. We can then discuss suitable options and the practical details that need to be confirmed.
+              Whether you are planning a trail-focused MTB break, an E-MTB journey, a gravel expedition, a road cycling holiday, a luxury cycling experience or a private group trip, start with your preferred dates, experience and ideas. We can then discuss suitable options and the practical details that need to be confirmed.
             </p>
             <div className="cl-actions">
               <Link className="cl-button cl-button--gold" href="/contact?request=plan-cycling-trip">
@@ -559,7 +635,7 @@ export default function AboutPage() {
               <img className="brand__logo" src="/images/mountain-bike-morocco-logo.png" alt="Mountain Bike Morocco" />
               <span>MOUNTAIN BIKE <em>MOROCCO</em></span>
             </Link>
-            <p>Guided mountain biking, E-MTB, gravel and road cycling experiences across Morocco. Discover the landscapes, trails and local culture at your own pace.</p>
+            <p>Guided mountain biking, E-MTB, gravel, road, luxury cycling and private group experiences across Morocco. Discover the landscapes, trails and local culture at your own pace.</p>
           </div>
           <div>
             <h3>Explore</h3>
@@ -568,11 +644,13 @@ export default function AboutPage() {
             <Link href="/cycling-trips/e-mtb">E-MTB Tours</Link>
             <Link href="/cycling-trips/gravel">Gravel Cycling</Link>
             <Link href="/cycling-trips/road">Road Cycling</Link>
+            <Link href="/cycling-trips/luxury">Luxury Cycling</Link>
+            <Link href="/cycling-trips/private-groups">Private Groups</Link>
           </div>
           <div>
             <h3>Destinations</h3>
             <Link href="/destinations/atlas-mountains">Atlas Mountains</Link>
-            <Link href="/destinations/imlil-toubkal">Imlil &amp; Toubkal</Link>
+            <Link href="/destinations/toubkal">Imlil &amp; Toubkal</Link>
             <Link href="/destinations/marrakech">Marrakech</Link>
             <Link href="/destinations/agafay-desert">Agafay Desert</Link>
             <Link href="/destinations">All Destinations</Link>
@@ -779,6 +857,7 @@ export default function AboutPage() {
         .about-review-card__topline .about-reviews__stars { font-size: 18px; }
         .about-review-card__source { color: #716c66; font-size: 12px; font-weight: 700; white-space: nowrap; }
         .about-review-card__quote-mark { display: block; height: 30px; margin-top: 11px; color: #27231f; font-family: Georgia, serif; font-size: 40px; font-weight: 700; line-height: 1; }
+        .about-review-card__title { margin: 0 0 10px; color: #24211e; font-size: 17px; line-height: 1.35; }
         .about-review-card blockquote { margin: 0 0 19px; color: #4d4945; font-size: 16px; line-height: 1.72; }
         .about-review-card__author { margin: 0; color: #89817a; font-size: 14px; line-height: 1.5; }
         .about-review-card__author strong { color: #24211e; font-weight: 700; }

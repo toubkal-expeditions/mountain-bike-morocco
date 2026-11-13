@@ -36,6 +36,7 @@ type Tour = {
   number: string;
   label: string;
   title: string;
+  destination: string;
   duration: string;
   description: string;
   image: string;
@@ -47,6 +48,7 @@ const roadTours: Tour[] = [
     number: "01",
     label: "MOUNTAIN PASSES & PANORAMIC CLIMBS",
     title: "High Atlas Road Cycling Tour",
+    destination: "HIGH ATLAS MOUNTAINS",
     slug: "high-atlas-road-cycling-tour-6-day",
     duration: "6 days",
     description:
@@ -57,6 +59,7 @@ const roadTours: Tour[] = [
     number: "02",
     label: "CLASSIC CLIMBING & OPEN VIEWS",
     title: "Tizi n'Test Mountain Pass Ride",
+    destination: "TIZI N'TEST · HIGH ATLAS",
     slug: "tizi-n-test-mountain-pass-ride-1-day",
     duration: "1 day",
     description:
@@ -67,6 +70,7 @@ const roadTours: Tour[] = [
     number: "03",
     label: "A ROAD RIDE FROM THE RED CITY",
     title: "Road Cycling from Marrakech",
+    destination: "MARRAKECH & FOOTHILLS",
     slug: "road-cycling-from-marrakech-1-day",
     duration: "1 day",
     description:
@@ -77,6 +81,7 @@ const roadTours: Tour[] = [
     number: "04",
     label: "CLIMBS, DESCENTS & MOUNTAIN SCENERY",
     title: "Atlas Mountain Passes Cycling Holiday",
+    destination: "ATLAS MOUNTAIN PASSES",
     slug: "atlas-mountain-passes-cycling-holiday-7-day",
     duration: "7 days",
     description:
@@ -87,6 +92,7 @@ const roadTours: Tour[] = [
     number: "05",
     label: "VALLEYS & TRADITIONAL VILLAGES",
     title: "Imlil and Toubkal Road Cycling Escape",
+    destination: "IMLIL & TOUBKAL",
     slug: "imlil-and-toubkal-road-cycling-escape-3-day",
     duration: "3 days",
     description:
@@ -97,6 +103,7 @@ const roadTours: Tour[] = [
     number: "06",
     label: "MOUNTAINS TO SOUTHERN LANDSCAPES",
     title: "Atlas to Sahara Road Cycling Expedition",
+    destination: "ATLAS TO SAHARA",
     slug: "atlas-to-sahara-road-cycling-expedition-8-day",
     duration: "8 days",
     description:
@@ -107,6 +114,7 @@ const roadTours: Tour[] = [
     number: "07",
     label: "COASTAL ROADS & OCEAN AIR",
     title: "Atlantic Coast Road Cycling Tour",
+    destination: "ATLANTIC COAST",
     slug: "atlantic-coast-road-cycling-tour-4-day",
     duration: "4 days",
     description:
@@ -117,6 +125,7 @@ const roadTours: Tour[] = [
     number: "08",
     label: "SOUTHERN ROADS & WIDE HORIZONS",
     title: "South Morocco Road Cycling Journey",
+    destination: "SOUTHERN MOROCCO",
     slug: "south-morocco-road-cycling-journey-6-day",
     duration: "6 days",
     description:
@@ -127,6 +136,7 @@ const roadTours: Tour[] = [
     number: "09",
     label: "YOUR GROUP, YOUR DISTANCE",
     title: "Private Morocco Road Cycling Holiday",
+    destination: "YOUR CHOICE OF REGION",
     slug: "private-morocco-road-cycling-holiday-7-day",
     duration: "7 days",
     description:
@@ -299,39 +309,64 @@ export default function RoadCyclingToursPage() {
             </div>
             <div className="cl-tour-grid">
               {roadTours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={tourDetailHref(tour.slug)}
                     aria-label={`More details about ${tour.title}`}
                   >
                     <img
-                      className="cl-tour-card__image"
                       src={tour.image}
                       alt={tour.title}
                       loading="lazy"
                     />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <span className="home-tour-card__category">
+                      {tour.label}
+                    </span>
+                    <span className="home-tour-card__level">
+                      {tour.destination}
+                    </span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.label}</p>
-                    <h3>
-                      <Link href={tourDetailHref(tour.slug)}>{tour.title}</Link>
+
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      ROAD CYCLING · {tour.destination}
+                    </p>
+
+                    <h3 className="home-tour-card__title">
+                      <Link href={tourDetailHref(tour.slug)}>
+                        {tour.title}
+                      </Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <p className="cl-card-duration">{tour.duration}</p>
-                    <div className="cl-tour-card__actions">
+
+                    <p className="home-tour-card__description">
+                      {tour.description}
+                    </p>
+
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span
+                          className="home-tour-card__meta-icon"
+                          aria-hidden="true"
+                        >
+                          ◆
+                        </span>
+                        {tour.duration}
+                      </span>
+                    </div>
+
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={tourDetailHref(tour.slug)}
                       >
                         More Details
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={contactHref(tour.title, "booking")}
                       >
-                        Booking
+                        Booking <span aria-hidden="true">↗</span>
                       </Link>
                     </div>
                   </div>
@@ -377,24 +412,55 @@ export default function RoadCyclingToursPage() {
             </p>
           </div>
           <div className="cl-region-grid">
-            {destinations.map((destination, index) => (
-              <article className="cl-region-card" key={destination.title}>
+            {destinations.map((destination) => (
+              <article className="home-tour-card" key={destination.title}>
                 <Link
-                  className="cl-region-card__image-wrap"
+                  className="home-tour-card__image"
                   href={destination.href}
                   aria-label={destination.title}
                 >
-                  <img src={destination.image} alt={destination.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <img
+                    src={destination.image}
+                    alt={destination.title}
+                    loading="lazy"
+                  />
+                  <span className="home-tour-card__category">
+                    ROAD CYCLING DESTINATION
+                  </span>
+                  <span className="home-tour-card__level">
+                    {destination.title}
+                  </span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3>
-                    <Link href={destination.href}>{destination.title}</Link>
+
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">
+                    ROAD CYCLING · {destination.title}
+                  </p>
+
+                  <h3 className="home-tour-card__title">
+                    <Link href={destination.href}>
+                      {destination.title}
+                    </Link>
                   </h3>
-                  <p>{destination.text}</p>
-                  <Link className="cl-text-link" href={destination.href}>
-                    Explore the region <span aria-hidden="true">↗</span>
-                  </Link>
+
+                  <p className="home-tour-card__description">
+                    {destination.text}
+                  </p>
+
+                  <div className="home-tour-card__actions">
+                    <Link
+                      className="home-tour-card__button"
+                      href={destination.href}
+                    >
+                      Explore Region
+                    </Link>
+                    <Link
+                      className="home-tour-card__link"
+                      href={destination.href}
+                    >
+                      Discover <span aria-hidden="true">↗</span>
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}

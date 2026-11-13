@@ -12,6 +12,7 @@ const tours = [
     number: "01",
     discipline: "MTB",
     label: "ROCKY TRACKS & OPEN LANDSCAPES",
+    destination: "AGAFAY DESERT",
     title: "Agafay Desert Mountain Bike Day Tour",
     duration: "1 day",
     description: "Explore selected rocky tracks around Agafay on a guided mountain bike ride planned for your handling skills and fitness. The landscape is open and exposed, with loose stones and uneven surfaces that can make even a short ride demanding. Confirm the route, technical level, water plan, start time and current access before departure.",
@@ -21,6 +22,7 @@ const tours = [
     number: "02",
     discipline: "MTB · TRAILS",
     label: "PLATEAU RIDING & DESERT VIEWS",
+    destination: "AGAFAY ROCKY PLATEAU",
     title: "Agafay Rocky Plateau MTB Adventure",
     duration: "2 days",
     description: "Spend two days riding selected tracks across the Agafay area, with stages designed around your group’s experience and the surfaces available. Expect a mix of rocky terrain, open views and stretches where route finding and pacing matter. The final plan should account for heat, elevation, transfer time, accommodation and reliable water access.",
@@ -30,6 +32,7 @@ const tours = [
     number: "03",
     discipline: "MTB · PRIVATE",
     label: "A RIDE BUILT AROUND YOUR GROUP",
+    destination: "AGAFAY & MARRAKECH",
     title: "Private Agafay MTB Escape",
     duration: "3 days",
     description: "Build a private mountain bike escape around Agafay and nearby countryside, with each ride chosen to match your group’s skill, stamina and appetite for rough terrain. Daily mileage should be realistic for the rocky surface and the conditions. Share your dates, bike setup and previous experience so the route, transfers and support can be discussed before confirming the trip.",
@@ -39,6 +42,7 @@ const tours = [
     number: "04",
     discipline: "E-MTB",
     label: "ELECTRIC-ASSISTED ROCKY TERRAIN",
+    destination: "AGAFAY DESERT",
     title: "Agafay E-MTB Discovery Ride",
     duration: "1 day",
     description: "Discover the rocky desert-edge landscapes on an electric mountain bike, with route choice based on your experience and the bike’s capabilities. Pedal assistance can help on climbs, but loose surfaces and exposed conditions still require confident handling. Discuss battery range, elevation, charging, water stops, protective equipment and the route’s technical level before riding.",
@@ -48,6 +52,7 @@ const tours = [
     number: "05",
     discipline: "E-MTB · SCENIC",
     label: "WIDE HORIZONS & RURAL TRACKS",
+    destination: "AGAFAY & LAKE TAKERKOUST",
     title: "Agafay and Lake Takerkoust E-MTB Tour",
     duration: "2 days",
     description: "Combine suitable electric mountain bike routes around Agafay with selected countryside tracks in the wider Lake Takerkoust area. The itinerary needs to balance surface conditions, climbing, battery range and time between stops. Confirm the route access, charging arrangements, expected distances, water availability and transfer logistics for your dates.",
@@ -57,6 +62,7 @@ const tours = [
     number: "06",
     discipline: "E-MTB · ATLAS EDGE",
     label: "A LONGER DESERT-TO-FOOTHILLS JOURNEY",
+    destination: "AGAFAY TO ATLAS",
     title: "Agafay to Atlas Foothills E-Bike Journey",
     duration: "4 days",
     description: "Plan a multi-day electric mountain bike journey linking selected Agafay tracks with routes towards the Atlas foothills. A practical itinerary depends on the terrain, distance between riding areas, battery capacity and charging opportunities. Daily stages, transfers, overnight stops and the group’s comfort on uneven ground should all be reviewed before the route is finalised.",
@@ -66,6 +72,7 @@ const tours = [
     number: "07",
     discipline: "GRAVEL",
     label: "GRAVEL TRACKS & OPEN COUNTRY",
+    destination: "AGAFAY DESERT",
     title: "Agafay Desert Gravel Cycling Day",
     duration: "1 day",
     description: "Ride selected unpaved routes around Agafay on a gravel bike where the surface is appropriate for your tyres and setup. The landscape is wide and exposed, and loose stones can affect speed and handling. Route choice should be checked against current conditions, with distance, hydration, sun protection, navigation and a sensible pace agreed in advance.",
@@ -75,6 +82,7 @@ const tours = [
     number: "08",
     discipline: "GRAVEL · LAKE",
     label: "RURAL PISTES & WATERFRONT VIEWS",
+    destination: "AGAFAY & LAKE TAKERKOUST",
     title: "Agafay to Lake Takerkoust Gravel Ride",
     duration: "2 days",
     description: "Explore a two-day gravel itinerary through selected tracks between the Agafay area and the Lake Takerkoust surroundings. The exact route should reflect the quality of unpaved surfaces, road connections and the group’s experience. Plan daily distance around heat and exposure, and confirm water stops, navigation, support and overnight arrangements before travel.",
@@ -84,6 +92,7 @@ const tours = [
     number: "09",
     discipline: "GRAVEL · EXPEDITION",
     label: "REMOTE FEELING & CHANGING TERRAIN",
+    destination: "AGAFAY TO ATLAS",
     title: "Agafay and Atlas Edge Gravel Expedition",
     duration: "4 days",
     description: "Spend several days exploring suitable gravel roads and tracks across the Agafay area and towards selected foothill landscapes. Each stage should be based on the actual surface, elevation, resupply options and distance between stops rather than distance alone. Discuss your bike setup, navigation preferences, group pace and support requirements when planning the itinerary.",
@@ -93,6 +102,7 @@ const tours = [
     number: "10",
     discipline: "ROAD",
     label: "PAVED COUNTRYSIDE ROADS",
+    destination: "MARRAKECH & AGAFAY",
     title: "Agafay Road Cycling Day Ride",
     duration: "1 day",
     description: "Enjoy a road cycling day on selected paved roads around the Marrakech countryside and the approaches to Agafay. The focus can be steady endurance riding and wide-open scenery, with the route tailored to your fitness and preferred distance. Traffic exposure, road surfaces, climbing, water stops and the best start time should be reviewed before the ride.",
@@ -102,6 +112,7 @@ const tours = [
     number: "11",
     discipline: "ROAD · ENDURANCE",
     label: "LONGER RIDES & ROLLING TERRAIN",
+    destination: "MARRAKECH & AGAFAY",
     title: "Agafay Road Cycling Endurance Loop",
     duration: "2 days",
     description: "Plan a two-day road cycling break using suitable paved routes around Marrakech and the Agafay approaches. A route can be shaped around preferred daily mileage, climbing and time for recovery, but should account for traffic and changing road conditions. Confirm the precise route, support, water stops and overnight arrangements for your travel dates.",
@@ -111,6 +122,7 @@ const tours = [
     number: "12",
     discipline: "ROAD · MULTI-DAY",
     label: "FROM DESERT EDGE TOWARDS THE MOUNTAINS",
+    destination: "AGAFAY TO ATLAS",
     title: "Agafay to Atlas Road Cycling Journey",
     duration: "4 days",
     description: "Consider a multi-day road cycling itinerary starting around Marrakech and Agafay before heading towards selected Atlas foothill roads. The final route needs to balance gradients, traffic, road surface, transfers and overnight stops. Share your current fitness and preferred daily distance so stages can be discussed realistically and confirmed for the season.",
@@ -243,36 +255,42 @@ export default function AgafayDesertDestinationPage() {
             </div>
             <div className="cl-tour-grid">
               {tours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={{ pathname: "/contact", query: { tour: tour.title, destination: "Agafay Desert", request: "details" } }}
                     aria-label={`More details about ${tour.title}`}
                   >
-                    <img className="cl-tour-card__image" src={tour.image} alt={tour.title} loading="lazy" />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <img src={tour.image} alt={tour.title} loading="lazy" />
+                    <span className="home-tour-card__category">{tour.label}</span>
+                    <span className="home-tour-card__level">{tour.destination}</span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.discipline} · {tour.duration}</p>
-                    <p className="cl-card-label">{tour.label}</p>
-                    <h3>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">{tour.discipline === "ROAD" || tour.discipline.startsWith("ROAD") ? "ROAD CYCLING TOUR" : tour.discipline === "GRAVEL" || tour.discipline.startsWith("GRAVEL") ? "GRAVEL CYCLING TOUR" : tour.discipline === "E-MTB" || tour.discipline.startsWith("E-MTB") ? "E-MTB TOUR" : "MOUNTAIN BIKE TOUR"}</p>
+                    <h3 className="home-tour-card__title">
                       <Link href={{ pathname: "/contact", query: { tour: tour.title, destination: "Agafay Desert", request: "details" } }}>
                         {tour.title}
                       </Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <div className="cl-tour-card__actions">
+                    <p className="home-tour-card__description">{tour.description}</p>
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                        {tour.duration}
+                      </span>
+                    </div>
+                    <div className="home-tour-card__actions">
                       <Link
-                        className="cl-button cl-button--dark"
+                        className="home-tour-card__button"
                         href={{ pathname: "/contact", query: { tour: tour.title, destination: "Agafay Desert", request: "details" } }}
                       >
-                        More Details
+                        Explore Tour
                       </Link>
                       <Link
-                        className="cl-button cl-button--gold"
+                        className="home-tour-card__link"
                         href={{ pathname: "/contact", query: { tour: tour.title, destination: "Agafay Desert", request: "booking" } }}
                       >
-                        Booking
+                        Enquire Now
                       </Link>
                     </div>
                   </div>
@@ -314,15 +332,26 @@ export default function AgafayDesertDestinationPage() {
           </div>
           <div className="cl-region-grid">
             {regions.map((region, index) => (
-              <article className="cl-region-card" key={region.title}>
-                <Link className="cl-region-card__image-wrap" href={region.href} aria-label={region.title}>
+              <article className="home-tour-card" key={region.title}>
+                <Link className="home-tour-card__image" href={region.href} aria-label={region.title}>
                   <img src={region.image} alt={region.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <span className="home-tour-card__category">CYCLING DESTINATION</span>
+                  <span className="home-tour-card__level">0{index + 1}</span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3><Link href={region.href}>{region.title}</Link></h3>
-                  <p>{region.text}</p>
-                  <Link className="cl-text-link" href={region.href}>Explore the region <span aria-hidden="true">↗</span></Link>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">WHERE TO RIDE</p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={region.href}>{region.title}</Link>
+                  </h3>
+                  <p className="home-tour-card__description">{region.text}</p>
+                  <div className="home-tour-card__actions">
+                    <Link className="home-tour-card__button" href={region.href}>
+                      Explore Destination
+                    </Link>
+                    <Link className="home-tour-card__link" href={region.href}>
+                      Discover More
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}

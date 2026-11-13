@@ -11,7 +11,8 @@ const tours = [
   {
     number: "01",
     discipline: "MTB",
-    label: "GRANITE TRAILS & ROCKY TERRAIN",
+    label: "ROCKY TRAILS",
+    destination: "TAFRAOUTE · ANTI-ATLAS",
     title: "Tafraoute Granite Trails MTB Tour",
     duration: "3 days",
     description:
@@ -22,6 +23,7 @@ const tours = [
     number: "02",
     discipline: "MTB · ADVENTURE",
     label: "REMOTE TRACKS & SOUTHERN VALLEYS",
+    destination: "ANTI-ATLAS MOUNTAINS",
     title: "Anti-Atlas Mountain Bike Adventure",
     duration: "5 days",
     description:
@@ -32,6 +34,7 @@ const tours = [
     number: "03",
     discipline: "MTB · EXPEDITION",
     label: "A LONGER SOUTHERN CROSSING",
+    destination: "SOUTHERN MOROCCO",
     title: "Anti-Atlas and Tafraoute Expedition",
     duration: "6 days",
     description:
@@ -42,6 +45,7 @@ const tours = [
     number: "04",
     discipline: "E-MTB",
     label: "ELECTRIC-ASSISTED MOUNTAIN RIDING",
+    destination: "ANTI-ATLAS MOUNTAINS",
     title: "Anti-Atlas E-MTB Discovery",
     duration: "3 days",
     description:
@@ -52,6 +56,7 @@ const tours = [
     number: "05",
     discipline: "E-MTB · MULTI-DAY",
     label: "VILLAGES & OPEN MOUNTAIN SCENERY",
+    destination: "TAFRAOUTE · ANTI-ATLAS",
     title: "Tafraoute and Anti-Atlas E-Bike Tour",
     duration: "4 days",
     description:
@@ -62,6 +67,7 @@ const tours = [
     number: "06",
     discipline: "E-MTB · PRIVATE",
     label: "A PERSONALISED SOUTHERN JOURNEY",
+    destination: "SOUTHERN MOROCCO",
     title: "Private Anti-Atlas E-MTB Holiday",
     duration: "5 days",
     description:
@@ -72,6 +78,7 @@ const tours = [
     number: "07",
     discipline: "GRAVEL",
     label: "QUIET ROADS & GRAVEL PISTES",
+    destination: "ANTI-ATLAS MOUNTAINS",
     title: "Anti-Atlas Gravel Cycling Tour",
     duration: "4 days",
     description:
@@ -82,6 +89,7 @@ const tours = [
     number: "08",
     discipline: "GRAVEL · TAFRAOUTE",
     label: "GRANITE COUNTRY & RURAL ROUTES",
+    destination: "TAFRAOUTE · ANTI-ATLAS",
     title: "Tafraoute Gravel Bike Escape",
     duration: "3 days",
     description:
@@ -92,6 +100,7 @@ const tours = [
     number: "09",
     discipline: "GRAVEL · SOUTHERN ROUTE",
     label: "SOUTHERN TRACKS & WIDE HORIZONS",
+    destination: "ANTI-ATLAS TO SOUTH",
     title: "Anti-Atlas to the South Gravel Journey",
     duration: "6 days",
     description:
@@ -102,6 +111,7 @@ const tours = [
     number: "10",
     discipline: "ROAD",
     label: "PAVED ROADS & MOUNTAIN VIEWS",
+    destination: "ANTI-ATLAS MOUNTAINS",
     title: "Anti-Atlas Road Cycling Tour",
     duration: "4 days",
     description:
@@ -112,6 +122,7 @@ const tours = [
     number: "11",
     discipline: "ROAD · TAFRAOUTE",
     label: "CLIMBS & PANORAMIC RIDES",
+    destination: "TAFRAOUTE · ANTI-ATLAS",
     title: "Tafraoute and Anti-Atlas Road Tour",
     duration: "5 days",
     description:
@@ -122,6 +133,7 @@ const tours = [
     number: "12",
     discipline: "ROAD · MULTI-REGION",
     label: "MOUNTAINS TOWARDS THE ATLANTIC",
+    destination: "ANTI-ATLAS TO ATLANTIC",
     title: "Anti-Atlas to Atlantic Road Cycling Journey",
     duration: "7 days",
     description:
@@ -262,30 +274,44 @@ export default function AntiAtlasDestinationPage() {
             </div>
             <div className="cl-tour-grid">
               {tours.map((tour) => (
-                <article className="cl-tour-card" key={tour.number}>
+                <article className="home-tour-card" key={tour.number}>
                   <Link
-                    className="cl-tour-card__image-link"
+                    className="home-tour-card__image"
                     href={{ pathname: "/contact", query: { tour: tour.title, duration: tour.duration, discipline: tour.discipline, destination: "Anti-Atlas", request: "details" } }}
                     aria-label={`More details about ${tour.title}`}
                   >
-                    <img className="cl-tour-card__image" src={tour.image} alt={tour.title} loading="lazy" />
-                    <span className="cl-tour-card__number">{tour.number}</span>
+                    <img src={tour.image} alt={tour.title} loading="lazy" />
+                    <span className="home-tour-card__category">{tour.discipline}</span>
+                    <span className="home-tour-card__level">{tour.destination}</span>
                   </Link>
-                  <div className="cl-tour-card__body">
-                    <p className="cl-card-label">{tour.discipline} · {tour.duration}</p>
-                    <p className="cl-card-label">{tour.label}</p>
-                    <h3>
+                  <div className="home-tour-card__body">
+                    <p className="home-tour-card__eyebrow">
+                      {tour.discipline.startsWith("ROAD") ? "ROAD CYCLING TOUR" : tour.discipline.startsWith("GRAVEL") ? "GRAVEL CYCLING TOUR" : tour.discipline.startsWith("E-MTB") ? "E-MTB TOUR" : "MOUNTAIN BIKE TOUR"}
+                    </p>
+                    <h3 className="home-tour-card__title">
                       <Link href={{ pathname: "/contact", query: { tour: tour.title, duration: tour.duration, discipline: tour.discipline, destination: "Anti-Atlas", request: "details" } }}>
                         {tour.title}
                       </Link>
                     </h3>
-                    <p>{tour.description}</p>
-                    <div className="cl-tour-card__actions">
-                      <Link className="cl-button cl-button--dark" href={{ pathname: "/contact", query: { tour: tour.title, duration: tour.duration, discipline: tour.discipline, destination: "Anti-Atlas", request: "details" } }}>
-                        More Details
+                    <p className="home-tour-card__description">{tour.description}</p>
+                    <div className="home-tour-card__meta">
+                      <span className="home-tour-card__meta-item">
+                        <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                        {tour.duration}
+                      </span>
+                    </div>
+                    <div className="home-tour-card__actions">
+                      <Link
+                        className="home-tour-card__button"
+                        href={{ pathname: "/contact", query: { tour: tour.title, duration: tour.duration, discipline: tour.discipline, destination: "Anti-Atlas", request: "details" } }}
+                      >
+                        Explore Tour
                       </Link>
-                      <Link className="cl-button cl-button--gold" href={{ pathname: "/contact", query: { tour: tour.title, duration: tour.duration, discipline: tour.discipline, destination: "Anti-Atlas", request: "booking" } }}>
-                        Booking
+                      <Link
+                        className="home-tour-card__link"
+                        href={{ pathname: "/contact", query: { tour: tour.title, duration: tour.duration, discipline: tour.discipline, destination: "Anti-Atlas", request: "booking" } }}
+                      >
+                        Enquire Now
                       </Link>
                     </div>
                   </div>
@@ -324,15 +350,26 @@ export default function AntiAtlasDestinationPage() {
           </div>
           <div className="cl-region-grid">
             {regions.map((region, index) => (
-              <article className="cl-region-card" key={region.title}>
-                <Link className="cl-region-card__image-wrap" href={region.href} aria-label={region.title}>
+              <article className="home-tour-card" key={region.title}>
+                <Link className="home-tour-card__image" href={region.href} aria-label={region.title}>
                   <img src={region.image} alt={region.title} loading="lazy" />
-                  <span>0{index + 1}</span>
+                  <span className="home-tour-card__category">CYCLING DESTINATION</span>
+                  <span className="home-tour-card__level">0{index + 1}</span>
                 </Link>
-                <div className="cl-region-card__body">
-                  <h3><Link href={region.href}>{region.title}</Link></h3>
-                  <p>{region.text}</p>
-                  <Link className="cl-text-link" href={region.href}>Explore the region <span aria-hidden="true">↗</span></Link>
+                <div className="home-tour-card__body">
+                  <p className="home-tour-card__eyebrow">WHERE TO RIDE</p>
+                  <h3 className="home-tour-card__title">
+                    <Link href={region.href}>{region.title}</Link>
+                  </h3>
+                  <p className="home-tour-card__description">{region.text}</p>
+                  <div className="home-tour-card__actions">
+                    <Link className="home-tour-card__button" href={region.href}>
+                      Explore Destination
+                    </Link>
+                    <Link className="home-tour-card__link" href={region.href}>
+                      Discover More
+                    </Link>
+                  </div>
                 </div>
               </article>
             ))}
