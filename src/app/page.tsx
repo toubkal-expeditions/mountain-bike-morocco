@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Mountain Bike Tours in Morocco | Atlas MTB & E-MTB Adventures",
+  title: "Morocco Cycling Tours | MTB, E-MTB, Gravel & Road",
   description:
-    "Discover Morocco on guided mountain bike, E-MTB and gravel cycling tours. Explore Atlas Mountain trails, traditional villages and desert landscapes with experienced local guides.",
+    "Discover guided Morocco cylcing tours, from Atlas Mountains MTB and E-MTB Tour adventures to gravel, road bike and private rides from Marrakech.",
   alternates: {
     canonical: "/",
   },
@@ -362,30 +362,91 @@ export default function Home() {
         </div>
       </section>
 
-      {/* INTRODUCTION */}
-      <section className="intro section page-width">
-        <div>
-          <p className="eyebrow">DISCOVER MOROCCO BY BIKE</p>
-          <h2>More than a ride. A different way to discover Morocco.</h2>
-        </div>
-        <div className="intro__copy">
-          <p>
-            Morocco is a country of extraordinary contrasts. In a single
-            journey, you can move from mountain villages and terraced valleys
-            to wide gravel tracks, rocky desert landscapes and lively historic
-            cities. Travelling by bike lets you experience these places at a
-            pace that leaves room for discovery.
-          </p>
-          <p>
-            Our cycling experiences bring together rewarding routes, local
-            knowledge and practical trip planning. Whether you are looking for
-            technical mountain biking, a multi-day gravel adventure, a road
-            cycling holiday or a private trip with friends, the journey should
-            suit the way you want to ride.
-          </p>
-          <Link className="text-link" href="/about">
-            Discover our approach <span aria-hidden="true">↗</span>
-          </Link>
+     
+     {/* INTRODUCTION — REFERENCE DESIGN */}
+      <section className="intro-reference">
+        <div className="intro-reference__inner page-width">
+          <div className="intro-reference__left">
+            <div className="intro-reference__image">
+              <img
+                src="/images/group-cycling-tour-morocco.jpg"
+                alt="Cyclists exploring the mountain landscapes of Morocco"
+                loading="lazy"
+              />
+            </div>
+
+            <p className="intro-reference__eyebrow">
+              DISCOVER MOROCCO BY BIKE
+            </p>
+
+            <h2>
+              Experience Morocco on two wheels. Discover a world beyond the
+              ordinary.
+            </h2>
+
+            <div className="intro-reference__trust">
+              <span className="intro-reference__trust-title">
+                THE MOUNTAIN BIKE MOROCCO EXPERIENCE
+              </span>
+              <div className="intro-reference__trust-items">
+                <span>LOCAL KNOWLEDGE</span>
+                <span>GUIDED ADVENTURES</span>
+                <span>PRIVATE JOURNEYS</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="intro-reference__features">
+            <article className="intro-reference__feature">
+              <div className="intro-reference__icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none">
+                  <path d="M20 4L24.5 14H35L27 21L30 33L20 26L10 33L13 21L5 14H15.5L20 4Z" />
+                </svg>
+              </div>
+              <div>
+                <h3>Local Knowledge of the Atlas</h3>
+                <p>
+                  Discover mountain trails, remote valleys and traditional
+                  villages with a team familiar with Morocco's landscapes
+                  and cycling regions.
+                </p>
+              </div>
+            </article>
+
+            <article className="intro-reference__feature">
+              <div className="intro-reference__icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none">
+                  <path d="M8 35V5M9 7H30L25 15L30 23H9" />
+                  <path d="M14 12H23M14 19H23" />
+                </svg>
+              </div>
+              <div>
+                <h3>Guided by Local Cycling Experts</h3>
+                <p>
+                  Benefit from local insight, carefully considered routes
+                  and guidance to help you experience the terrain, culture
+                  and character of each destination.
+                </p>
+              </div>
+            </article>
+
+            <article className="intro-reference__feature">
+              <div className="intro-reference__icon" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none">
+                  <path d="M20 4L33 9V18C33 27 27.5 33 20 36C12.5 33 7 27 7 18V9L20 4Z" />
+                  <path d="M14 20L18 24L27 14" />
+                </svg>
+              </div>
+              <div>
+                <h3>Experiences Shaped Around You</h3>
+                <p>
+                  From technical MTB trails and E-MTB adventures to gravel
+                  and road cycling, choose a journey adapted to your
+                  experience, interests and travel plans.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -479,46 +540,69 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DESTINATIONS */}
-      <section className="section page-width">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">CHOOSE YOUR LANDSCAPE</p>
-            <h2>Where will your Moroccan cycling journey take you?</h2>
+      {/* DESTINATIONS — PREMIUM LANDSCAPE CARDS */}
+      <section className="destinations-premium">
+        <div className="page-width">
+          <div className="destinations-premium__heading">
+            <div>
+              <p className="eyebrow">CHOOSE YOUR LANDSCAPE</p>
+              <h2>Three landscapes. A thousand ways to explore.</h2>
+            </div>
+            <p>
+              From the high peaks of the Atlas to traditional mountain
+              villages and the open desert, discover the landscapes that
+              make Morocco an extraordinary destination for cycling.
+            </p>
           </div>
-          <p>
-            Every region has its own character. Explore high mountain scenery,
-            traditional settlements, open desert terrain and the countryside
-            surrounding Marrakech to find the right setting for your next
-            adventure.
-          </p>
-        </div>
 
-        <div className="destination-grid">
-          {destinations.map((destination) => (
-            <article className="destination-card" key={destination.title}>
-              <Link
-                href={destination.href}
-                className="destination-card__image"
-                aria-label={`Discover ${destination.title}`}
+          <div className="destinations-premium__grid">
+            {destinations.map((destination, index) => (
+              <article
+                className="destination-premium-card"
+                key={destination.title}
               >
-                <img
-                  src={destination.image}
-                  alt={destination.title}
-                  loading="lazy"
-                />
-              </Link>
-              <div className="destination-card__body">
-                <h3>
-                  <Link href={destination.href}>{destination.title}</Link>
-                </h3>
-                <p>{destination.description}</p>
-                <Link className="text-link" href={destination.href}>
-                  Discover the region <span aria-hidden="true">↗</span>
+                <Link
+                  href={destination.href}
+                  className="destination-premium-card__image"
+                  aria-label={`Discover ${destination.title}`}
+                >
+                  <img
+                    src={destination.image}
+                    alt={destination.title}
+                    loading="lazy"
+                  />
+                  <span className="destination-premium-card__number">
+                    0{index + 1}
+                  </span>
+                  <span className="destination-premium-card__image-link">
+                    <span aria-hidden="true">↗</span>
+                  </span>
                 </Link>
-              </div>
-            </article>
-          ))}
+
+                <div className="destination-premium-card__content">
+                  <span className="destination-premium-card__eyebrow">
+                    MOROCCO · DESTINATION 0{index + 1}
+                  </span>
+
+                  <h3>
+                    <Link href={destination.href}>
+                      {destination.title}
+                    </Link>
+                  </h3>
+
+                  <p>{destination.description}</p>
+
+                  <Link
+                    className="destination-premium-card__link"
+                    href={destination.href}
+                  >
+                    DISCOVER THIS DESTINATION
+                    <span aria-hidden="true">↗</span>
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -595,58 +679,104 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PLANNING STEPS */}
-      <section className="section section--soft">
+    {/* WHY RIDE WITH US — REFERENCE DESIGN */}
+      <section className="why-ride-reference">
         <div className="page-width">
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">SIMPLE, PERSONAL, WELL PLANNED</p>
-              <h2>How to plan your cycling holiday</h2>
+          <div className="why-ride-reference__heading">
+            <div className="why-ride-reference__title">
+              <p className="why-ride-reference__eyebrow">
+                WHY RIDE WITH US?
+              </p>
+              <h2>
+                Discover Morocco&apos;s best trails,
+                <br />
+                guided by local professionals.
+              </h2>
             </div>
-            <p>
-              Planning a cycling trip should feel straightforward. We start
-              with your ideas, discuss the practical details and develop an
-              itinerary that reflects your group, the season and the kind of
-              riding you want to experience.
+
+            <p className="why-ride-reference__intro">
+              Every journey is shaped around local knowledge, carefully
+              considered routes and the kind of cycling experience you want
+              to discover.
             </p>
           </div>
 
-          <div className="steps-grid">
-            <article>
-              <span>01</span>
-              <h3>Tell us what you want</h3>
+          <div className="why-ride-reference__grid">
+            <article className="why-ride-reference__card">
+              <div className="why-ride-reference__icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <path d="M32 5L52 13V29C52 42 43 52 32 59C21 52 12 42 12 29V13L32 5Z" />
+                  <path d="M22 31L29 38L43 23" />
+                </svg>
+              </div>
+              <h3>LOCAL MTB GUIDES</h3>
               <p>
-                Share your dates, group size, cycling experience and preferred
-                bike style. Let us know whether you want a day ride, a
-                multi-day expedition or a fully private holiday.
+                Explore Morocco with local cycling knowledge and guidance
+                shaped by experience of the region, its trails and mountain
+                communities.
               </p>
+              <div className="why-ride-reference__card-footer">
+                <span>LOCAL KNOWLEDGE</span>
+                <span>01</span>
+              </div>
             </article>
-            <article>
-              <span>02</span>
-              <h3>Shape your itinerary</h3>
+
+            <article className="why-ride-reference__card">
+              <div className="why-ride-reference__icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <circle cx="32" cy="32" r="25" />
+                  <path d="M42 19L36 36L19 42L25 25L42 19Z" />
+                </svg>
+              </div>
+              <h3>FULL FLEXIBILITY</h3>
               <p>
-                Discuss possible regions, daily distances, terrain,
-                accommodation and support. The proposed route should balance
-                riding ambitions with realistic travel times and conditions.
+                Private routes and itineraries adapted to your group,
+                preferred riding style, experience and travel plans.
               </p>
+              <div className="why-ride-reference__card-footer">
+                <span>YOUR RIDE, YOUR WAY</span>
+                <span>02</span>
+              </div>
             </article>
-            <article>
-              <span>03</span>
-              <h3>Prepare for the ride</h3>
+
+            <article className="why-ride-reference__card">
+              <div className="why-ride-reference__icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <path d="M5 48L20 19L32 37L41 25L59 48H5Z" />
+                  <path d="M20 19L25 27" />
+                </svg>
+              </div>
+              <h3>LOCAL &amp; AUTHENTIC</h3>
               <p>
-                Confirm the practical arrangements and receive guidance on
-                equipment, clothing, weather and what to expect. Good
-                preparation helps you enjoy the journey with confidence.
+                Discover the Atlas Mountains, traditional Amazigh villages
+                and the landscapes and culture that make Morocco unique.
               </p>
+              <div className="why-ride-reference__card-footer">
+                <span>DISCOVER MOROCCO</span>
+                <span>03</span>
+              </div>
             </article>
-            <article>
-              <span>04</span>
-              <h3>Discover Morocco</h3>
+
+            <article className="why-ride-reference__card">
+              <div className="why-ride-reference__icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none">
+                  <circle cx="15" cy="44" r="10" />
+                  <circle cx="49" cy="44" r="10" />
+                  <path d="M15 44L26 20L38 44H15Z" />
+                  <path d="M26 20H39L49 44" />
+                  <path d="M22 20H30M36 16H43L47 25" />
+                </svg>
+              </div>
+              <h3>TRAIL EXPERTISE</h3>
               <p>
-                Set off to explore mountain tracks, quiet roads and local
-                communities, with your agreed itinerary and support
-                arrangements guiding the way.
+                Routes selected with care, with terrain and daily riding
+                planned around your experience and preferred level of
+                challenge.
               </p>
+              <div className="why-ride-reference__card-footer">
+                <span>ROUTES CHOSEN WITH CARE</span>
+                <span>04</span>
+              </div>
             </article>
           </div>
         </div>
