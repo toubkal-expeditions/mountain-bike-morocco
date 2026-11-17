@@ -97,7 +97,7 @@ const faqs = [
 
 const relatedTours = [
   { category: "TEAM CYCLING", title: "Atlas Cycling Club Tour", text: "Bring riders together for a guided multi-day cycling experience among Morocco's Atlas landscapes.", image: "/images/group-cycling-atlas-mountains.jpg", href: "/cycling-trips/trip/atlas-cycling-club-tour-4-day" },
-  { category: "MARRAKECH CYCLING", title: "Marrakech Group Cycling Escape", text: "Explore the countryside around Marrakech on a flexible team cycling break.", image: "/images/group-cycling-tour-morocco.jpg", href: "/cycling-trips/trip/marrakech-group-cycling-escape-2-to-4-dayss" },
+  { category: "MARRAKECH CYCLING", title: "Marrakech Group Cycling Escape", text: "Explore the countryside around Marrakech on a flexible team cycling break.", image: "/images/group-cycling-tour-morocco.jpg", href: "/cycling-trips/trip/marrakech-group-cycling-escape-2-to-4-days" },
   { category: "PRIVATE CYCLING", title: "Mixed Ability Private Cycling Break", text: "Plan a private cycling journey with route choices discussed around different rider abilities.", image: "/images/morocco-group-cycling-adventure.jpg", href: "/cycling-trips/trip/mixed-ability-private-cycling-break-3-to-5-day" },
 ];
 

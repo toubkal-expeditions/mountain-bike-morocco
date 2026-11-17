@@ -736,7 +736,7 @@ const articles = [
       "Build in time for meals, rest and cultural activities away from the bike. Bring sun protection, suitable layers and plenty of water, and check the availability of family-appropriate accommodation along the planned route."
     ],
     "relatedLabel": "Explore family cycling holidays",
-    "relatedHref": "/cycling-trips/family"
+    "relatedHref": "/cycling-trips/family-mtb"
   },
   {
     "slug": "mtb-tour-marrakech",

@@ -68,7 +68,7 @@ const tourTypes = [
     description:
       "A family cycling trip should feel enjoyable and achievable for everyone. Routes can be planned around ages, confidence, riding experience and the time your family wants to spend on the bike. We consider terrain, transfer times, rest breaks and other activities so that cycling is part of a memorable Moroccan holiday rather than a race against the clock.",
     image: "/images/atlas-mountains.jpg",
-    href: "/cycling-trips/family",
+    href: "/cycling-trips/family-mtb",
     link: "Discover family cycling",
   },
   {

@@ -105,7 +105,7 @@ const faqs = [
 const relatedEvents = [
   { category: "DESERT CYCLING EVENT", title: "Agafay Desert Cycling Challenge", text: "Discover the rocky desert landscapes near Marrakech on a dedicated cycling event.", image: "/images/Desert-Agafay-Morocco.jpg", href: "/events/agafay-desert-cycling-challenge" },
   { category: "MTB EVENT", title: "Atlas Mountains MTB Gathering", text: "Discover another group cycling event in Morocco’s High Atlas.", image: "/images/toubkal-imlil-enduro-mtb-expedition.jpg", href: "/events/atlas-mountains-mtb-gathering" },
-  { category: "E-MTB ADVENTURE", title: "Marrakech to Sahara E-MTB Caravan", text: "Explore Morocco's changing landscapes on a multi-stage electric cycling journey.", image: "/images/e-mtb-tour-morocco.jpg", href: "/events/marrakech-to-sahara-emtb-caravan" },
+  { category: "E-MTB ADVENTURE", title: "Marrakech to Sahara E-MTB Caravan", text: "Explore Morocco's changing landscapes on a multi-stage electric cycling journey.", image: "/images/e-mtb-tour-morocco.jpg", href: "/events/marrakech-to-sahara-e-mtb-caravan" },
 ];
 
 export default function SchoolCyclingSaharaExpeditionPage() {
