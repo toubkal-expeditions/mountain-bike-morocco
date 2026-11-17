@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Explore Morocco by gravel bike on a flexible 4 to 6 day group journey. Link Atlas foothills, remote valleys and changing southern landscapes on a guided adventure shaped around your group's riding level, preferred terrain and travel dates.",
   alternates: {
-    canonical: "/cycling-trips/trip/morocco-gravel-group-journey-4-to-6-day",
+    canonical: "/cycling-trips/trip/morocco-gravel-group-journey-4-to-6-days",
   },
 };
 

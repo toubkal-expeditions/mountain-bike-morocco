@@ -93,8 +93,8 @@ const faqs = [
 
 const relatedTours = [
   { category: "PRIVATE MTB", title: "Private Atlas Mountain Bike Weekend", text: "Explore a private mountain-bike escape in the Atlas region with a route shaped around your riding level.", image: "/images/atlas-mountains-singletrack.jpg", href: "/cycling-trips/trip/private-atlas-mountain-bike-weekend-2-to-3-days" },
-  { category: "GRAVEL CYCLING", title: "Morocco Gravel Group Journey", text: "Discover Morocco's varied landscapes on gravel routes through selected regions.", image: "/images/gravel-adventure-bike-morocco.jpg", href: "/cycling-trips/trip/morocco-gravel-group-journey-4-to-6-day" },
-  { category: "ROAD CYCLING", title: "Private Road Cycling Tour", text: "Plan a private road cycling holiday with route choices discussed around your preferred challenge.", image: "/images/road-cycling-holiday-morocco.jpg", href: "/cycling-trips/trip/private-road-cycling-tour-4-to-7-day" },
+  { category: "GRAVEL CYCLING", title: "Morocco Gravel Group Journey", text: "Discover Morocco's varied landscapes on gravel routes through selected regions.", image: "/images/gravel-adventure-bike-morocco.jpg", href: "/cycling-trips/trip/morocco-gravel-group-journey-4-to-6-days" },
+  { category: "ROAD CYCLING", title: "Private Road Cycling Tour", text: "Plan a private road cycling holiday with route choices discussed around your preferred challenge.", image: "/images/road-cycling-holiday-morocco.jpg", href: "/cycling-trips/trip/private-road-cycling-tour-4-to-7-days" },
 ];
 
 export default function BespokePrivateCyclingExpeditionPage() {

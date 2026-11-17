@@ -4,7 +4,7 @@ import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 export const metadata: Metadata = {
   title: "Corporate and Team Cycling Trip – 3 to 5 Days | Mountain Bike Morocco",
   description:
-    "Bring colleagues together in Morocco for a 3 to 5day corporate cycling trip in the Atlas region. Build shared experiences through guided rides, scenic breaks and a programme planned around your team's experience and objectives.",
+    "Bring colleagues together in Morocco for a 3 to 5 day corporate cycling trip in the Atlas region. Build shared experiences through guided rides, scenic breaks and a programme planned around your team's experience and objectives.",
   alternates: {
     canonical: "/cycling-trips/trip/corporate-and-team-cycling-trip-3-to-5-days",
   },
@@ -97,7 +97,7 @@ const faqs = [
 
 const relatedTours = [
   { category: "TEAM CYCLING", title: "Atlas Cycling Club Tour", text: "Bring riders together for a guided multi-day cycling experience among Morocco's Atlas landscapes.", image: "/images/group-cycling-atlas-mountains.jpg", href: "/cycling-trips/trip/atlas-cycling-club-tour-4-day" },
-  { category: "MARRAKECH CYCLING", title: "Marrakech Group Cycling Escape", text: "Explore the countryside around Marrakech on a flexible team cycling break.", image: "/images/group-cycling-tour-morocco.jpg", href: "/cycling-trips/trip/marrakech-group-cycling-escape-2-to-4-day" },
+  { category: "MARRAKECH CYCLING", title: "Marrakech Group Cycling Escape", text: "Explore the countryside around Marrakech on a flexible team cycling break.", image: "/images/group-cycling-tour-morocco.jpg", href: "/cycling-trips/trip/marrakech-group-cycling-escape-2-to-4-dayss" },
   { category: "PRIVATE CYCLING", title: "Mixed Ability Private Cycling Break", text: "Plan a private cycling journey with route choices discussed around different rider abilities.", image: "/images/morocco-group-cycling-adventure.jpg", href: "/cycling-trips/trip/mixed-ability-private-cycling-break-3-to-5-day" },
 ];
 
