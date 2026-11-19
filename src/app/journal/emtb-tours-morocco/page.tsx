@@ -35,7 +35,7 @@ const relatedArticles = [
     title: "Mountain Biking in Morocco",
     text: "Discover how to choose routes, prepare your bike and plan a cycling experience around Morocco's varied landscapes.",
     image: "/images/atlas-mountains-cycling-tour-morocco.jpg",
-    href: "/journal/mountain-biking-morocco",
+    href: "/journal/high-atlas-mtb-guide",
   },
 ];
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Morocco Cycling Tours | MTB, E-MTB, Gravel & Road",
   description:
-    "Discover guided Morocco cylcing tours, from Atlas Mountains MTB and E-MTB Tour adventures to gravel, road bike and private rides from Marrakech.",
+    "Discover guided Morocco cycling tours, from Atlas Mountains MTB and E-MTB Tour adventures to gravel, road bike and private rides from Marrakech.",
   alternates: {
     canonical: "/",
   },
@@ -172,57 +172,6 @@ const reasons = [
   },
 ];
 
-const experiences = [
-  {
-    title: "Mountain Bike Tours",
-    description:
-      "Explore mountain trails, rocky paths and rewarding descents through the Atlas and beyond.",
-    href: "/cycling-trips/mtb",
-  },
-  {
-    title: "E-MTB Holidays",
-    description:
-      "Cover more ground and climb further with electric mountain bikes on carefully selected routes.",
-    href: "/cycling-trips/e-mtb",
-  },
-  {
-    title: "Gravel Cycling",
-    description:
-      "Follow quiet roads and remote tracks through mountains, valleys and open countryside.",
-    href: "/cycling-trips/gravel",
-  },
-  {
-    title: "Road Cycling",
-    description:
-      "Discover scenic climbs, winding mountain roads and long rides through Morocco's varied terrain.",
-    href: "/cycling-trips/road",
-  },
-  {
-    title: "Family Cycling",
-    description:
-      "Enjoy an itinerary planned around your family's ages, confidence, interests and preferred pace.",
-    href: "/cycling-trips/family-mtb",
-  },
-  {
-    title: "Luxury Cycling",
-    description:
-      "Combine active days outdoors with carefully selected accommodation, local experiences and attentive planning.",
-    href: "/cycling-trips/luxury",
-  },
-  {
-    title: "Private Group Tours",
-    description:
-      "Travel with friends or your own group on a route adapted to your dates and riding goals.",
-    href: "/cycling-trips/private-groups",
-  },
-  {
-    title: "Cycling from Marrakech",
-    description:
-      "Start near Marrakech and explore accessible mountain, countryside and desert landscapes.",
-    href: "/cycling-trips/from-marrakech",
-  },
-];
-
 const faqs = [
   {
     question: "When is the best time for cycling in Morocco?",
@@ -323,8 +272,6 @@ const exploreOptions = [
 export default function Home() {
   return (
     <main>
-    
-
       {/* HERO */}
       <section className="hero">
         <div className="hero__image" aria-hidden="true">
@@ -362,8 +309,7 @@ export default function Home() {
         </div>
       </section>
 
-     
-     {/* INTRODUCTION — REFERENCE DESIGN */}
+      {/* INTRODUCTION — REFERENCE DESIGN */}
       <section className="intro-reference">
         <div className="intro-reference__inner page-width">
           <div className="intro-reference__left">
@@ -606,39 +552,74 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CYCLING EXPERIENCES */}
-      <section className="section section--dark">
-        <div className="page-width">
-          <div className="section-heading section-heading--dark">
-            <div>
-              <p className="eyebrow">A RIDE FOR EVERY ADVENTURE</p>
-              <h2>Find the cycling experience that fits you</h2>
+      {/* MORE WAYS TO EXPLORE — REPLACES A RIDE FOR EVERY ADVENTURE */}
+      <section className="more-explore section">
+        <div className="page-width more-explore__inner">
+          <div className="more-explore__heading">
+            <div className="more-explore__heading-copy">
+              <p className="eyebrow">MORE WAYS TO EXPLORE</p>
+              <h2 id="more-ways-title">
+                One country.
+                <br />
+                <em>Endless ways to ride.</em>
+              </h2>
             </div>
             <p>
-              There is no single way to explore Morocco. Your ideal holiday
-              might be a challenging mountain ride, a relaxed gravel journey, a
-              road cycling escape or a private adventure built around your
-              group. Start with the experience you want and let the route
-              follow.
+              Discover Morocco through a cycling experience that matches your
+              ambitions. Ride Atlas Mountain singletrack, explore remote
+              gravel roads, travel further on an electric mountain bike, or
+              plan a private cycling holiday with your own itinerary. From
+              short rides near Marrakech to multi-day mountain expeditions,
+              find a different way to experience Morocco&apos;s landscapes,
+              villages and culture.
             </p>
           </div>
 
-          <div className="experience-grid">
-            {experiences.map((experience, index) => (
-              <article className="experience-card" key={experience.title}>
-                <span className="experience-card__number">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <h3>{experience.title}</h3>
-                <p>{experience.description}</p>
+          <div className="more-explore__secondary">
+            {exploreOptions.map((option) => (
+              <article className="more-explore__card" key={option.number}>
                 <Link
-                  href={experience.href}
-                  className="text-link text-link--light"
+                  href={option.href}
+                  className="more-explore__card-image"
+                  aria-label={option.linkText}
                 >
-                  Learn more <span aria-hidden="true">↗</span>
+                  <img
+                    src={option.image}
+                    alt={option.alt}
+                    loading="lazy"
+                  />
                 </Link>
+                <div className="more-explore__card-content">
+                  <span className="more-explore__number">
+                    {option.number} — {option.eyebrow}
+                  </span>
+                  <h3>{option.title}</h3>
+                  <p>{option.description}</p>
+                  <Link
+                    className="more-explore__link"
+                    href={option.href}
+                  >
+                    {option.linkText} <span aria-hidden="true">↗</span>
+                  </Link>
+                </div>
               </article>
             ))}
+          </div>
+
+          <div className="more-explore__bottom">
+            <div>
+              <span className="more-explore__number">
+                YOUR RIDE. YOUR MOROCCO.
+              </span>
+              <p>
+                Not sure which cycling holiday is right for you? Tell us
+                about your dates, experience and preferred landscapes, and
+                start planning your Moroccan cycling adventure.
+              </p>
+            </div>
+            <Link className="more-explore__cta" href="/contact">
+              Plan your cycling trip <span aria-hidden="true">↗</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -679,7 +660,7 @@ export default function Home() {
         </div>
       </section>
 
-    {/* WHY RIDE WITH US — REFERENCE DESIGN */}
+      {/* WHY RIDE WITH US — REFERENCE DESIGN */}
       <section className="why-ride-reference">
         <div className="page-width">
           <div className="why-ride-reference__heading">
@@ -881,78 +862,6 @@ export default function Home() {
                 </p>
               </div>
             </article>
-          </div>
-        </div>
-      </section>
-
-      {/* MORE WAYS TO EXPLORE */}
-      <section className="more-explore section">
-        <div className="page-width more-explore__inner">
-          <div className="more-explore__heading">
-            <div className="more-explore__heading-copy">
-              <p className="eyebrow">MORE WAYS TO EXPLORE</p>
-              <h2 id="more-ways-title">
-                One country.
-                <br />
-                <em>Endless ways to ride.</em>
-              </h2>
-            </div>
-            <p>
-              Discover Morocco through a cycling experience that matches your
-              ambitions. Ride Atlas Mountain singletrack, explore remote
-              gravel roads, travel further on an electric mountain bike, or
-              plan a private cycling holiday with your own itinerary. From
-              short rides near Marrakech to multi-day mountain expeditions,
-              find a different way to experience Morocco&apos;s landscapes,
-              villages and culture.
-            </p>
-          </div>
-
-          <div className="more-explore__secondary">
-            {exploreOptions.map((option) => (
-              <article className="more-explore__card" key={option.number}>
-                <Link
-                  href={option.href}
-                  className="more-explore__card-image"
-                  aria-label={option.linkText}
-                >
-                  <img
-                    src={option.image}
-                    alt={option.alt}
-                    loading="lazy"
-                  />
-                </Link>
-                <div className="more-explore__card-content">
-                  <span className="more-explore__number">
-                    {option.number} — {option.eyebrow}
-                  </span>
-                  <h3>{option.title}</h3>
-                  <p>{option.description}</p>
-                  <Link
-                    className="more-explore__link"
-                    href={option.href}
-                  >
-                    {option.linkText} <span aria-hidden="true">↗</span>
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="more-explore__bottom">
-            <div>
-              <span className="more-explore__number">
-                YOUR RIDE. YOUR MOROCCO.
-              </span>
-              <p>
-                Not sure which cycling holiday is right for you? Tell us
-                about your dates, experience and preferred landscapes, and
-                start planning your Moroccan cycling adventure.
-              </p>
-            </div>
-            <Link className="more-explore__cta" href="/contact">
-              Plan your cycling trip <span aria-hidden="true">↗</span>
-            </Link>
           </div>
         </div>
       </section>

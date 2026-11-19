@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description:
     "Discover the spectacular Todra Gorge and Dades Valley on a six-day luxury road cycling journey through southern Morocco. Experience dramatic mountain roads, traditional villages and a personalised cycling escape.",
   alternates: {
-    canonical: "/cycling-trips/trip/todra-dades-luxury-road-journey-6-day",
+    canonical: "/cycling-trips/trip/todra-and-dades-luxury-road-journey-6-day",
   },
 };
 

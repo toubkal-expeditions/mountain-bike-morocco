@@ -5442,3 +5442,224 @@ section {
     margin-left: -25px;
   }
 }
+/* =========================================================
+   MOUNTAIN BIKE MOROCCO — PREMIUM FOOTER UPDATE
+   Footer styling only
+   ========================================================= */
+
+.site-footer {
+  position: relative;
+  padding: 88px 0 0;
+  background: #19251d;
+  color: #fffefa;
+}
+
+.site-footer .page-width {
+  width: min(1320px, calc(100% - 2 * var(--page-gutter)));
+  margin-inline: auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.45fr 0.8fr 0.9fr 0.85fr;
+  align-items: start;
+  gap: clamp(30px, 5vw, 76px);
+  padding-bottom: 66px;
+}
+
+.footer-grid > div {
+  min-width: 0;
+}
+
+/* BRAND COLUMN */
+
+.footer-brand .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  color: #fffefa;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.015em;
+  line-height: 1.45;
+}
+
+.footer-brand .brand__logo {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+  object-fit: contain;
+}
+
+.footer-brand .brand em {
+  color: #d6a36d;
+  font-style: normal;
+}
+
+.footer-brand > p {
+  max-width: 350px;
+  margin: 0;
+  color: rgba(255, 254, 250, 0.67);
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* FOOTER COLUMN HEADINGS */
+
+.footer-grid > div:not(.footer-brand) h3 {
+  margin: 7px 0 25px;
+  color: #d6a36d;
+  font-family: "DM Sans", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+/* FOOTER LINKS */
+
+.footer-grid > div:not(.footer-brand) a {
+  display: block;
+  width: fit-content;
+  margin-bottom: 13px;
+  color: rgba(255, 254, 250, 0.69);
+  font-size: 13px;
+  line-height: 1.7;
+  text-decoration: none;
+  transition:
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+.footer-grid > div:not(.footer-brand) a:hover {
+  color: #e5b783;
+  transform: translateX(3px);
+}
+
+/* FOOTER CONTACT LINK */
+
+.footer-grid > div:last-child a {
+  color: #e5b783;
+}
+
+.footer-grid > div:last-child a:hover {
+  color: #fffefa;
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-bottom span,
+.footer-bottom a {
+  color: rgba(255, 254, 250, 0.53);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.footer-bottom a:hover {
+  color: #e5b783;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .site-footer {
+    padding-top: 68px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 42px 35px;
+    padding-bottom: 48px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand > p {
+    max-width: 480px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding-top: 55px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 20px;
+    padding-bottom: 38px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand .brand {
+    gap: 12px;
+    font-size: 13px;
+  }
+
+  .footer-brand .brand__logo {
+    width: 51px;
+    height: 51px;
+    flex-basis: 51px;
+  }
+
+  .footer-brand > p {
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 1.9;
+  }
+
+  .footer-grid > div:not(.footer-brand) h3 {
+    margin-bottom: 17px;
+    font-size: 10px;
+    letter-spacing: 0.11em;
+  }
+
+  .footer-grid > div:not(.footer-brand) a {
+    margin-bottom: 11px;
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    min-height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding-block: 20px;
+  }
+
+  .footer-bottom span,
+  .footer-bottom a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-grid {
+    column-gap: 14px;
+  }
+}

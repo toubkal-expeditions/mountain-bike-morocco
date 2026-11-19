@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 const tours = [
   {
     number: "01",
+    href: "/cycling-trips/trip/agafay-desert-cycling-tour-1-day",
     discipline: "MTB",
     label: "ROCKY TRACKS & OPEN LANDSCAPES",
     destination: "AGAFAY DESERT",
@@ -20,6 +21,7 @@ const tours = [
   },
   {
     number: "02",
+    href: null,
     discipline: "MTB · TRAILS",
     label: "PLATEAU RIDING & DESERT VIEWS",
     destination: "AGAFAY ROCKY PLATEAU",
@@ -30,6 +32,7 @@ const tours = [
   },
   {
     number: "03",
+    href: null,
     discipline: "MTB · PRIVATE",
     label: "A RIDE BUILT AROUND YOUR GROUP",
     destination: "AGAFAY & MARRAKECH",
@@ -40,6 +43,7 @@ const tours = [
   },
   {
     number: "04",
+    href: "/cycling-trips/trip/agafay-and-southern-morocco-emtb-flexible-duration",
     discipline: "E-MTB",
     label: "ELECTRIC-ASSISTED ROCKY TERRAIN",
     destination: "AGAFAY DESERT",
@@ -50,6 +54,7 @@ const tours = [
   },
   {
     number: "05",
+    href: null,
     discipline: "E-MTB · SCENIC",
     label: "WIDE HORIZONS & RURAL TRACKS",
     destination: "AGAFAY & LAKE TAKERKOUST",
@@ -60,6 +65,7 @@ const tours = [
   },
   {
     number: "06",
+    href: null,
     discipline: "E-MTB · ATLAS EDGE",
     label: "A LONGER DESERT-TO-FOOTHILLS JOURNEY",
     destination: "AGAFAY TO ATLAS",
@@ -70,6 +76,7 @@ const tours = [
   },
   {
     number: "07",
+    href: "/cycling-trips/trip/agafay-gravel-escape-1-day",
     discipline: "GRAVEL",
     label: "GRAVEL TRACKS & OPEN COUNTRY",
     destination: "AGAFAY DESERT",
@@ -80,6 +87,7 @@ const tours = [
   },
   {
     number: "08",
+    href: "/cycling-trips/trip/agafay-gravel-escape",
     discipline: "GRAVEL · LAKE",
     label: "RURAL PISTES & WATERFRONT VIEWS",
     destination: "AGAFAY & LAKE TAKERKOUST",
@@ -90,6 +98,7 @@ const tours = [
   },
   {
     number: "09",
+    href: null,
     discipline: "GRAVEL · EXPEDITION",
     label: "REMOTE FEELING & CHANGING TERRAIN",
     destination: "AGAFAY TO ATLAS",
@@ -100,6 +109,7 @@ const tours = [
   },
   {
     number: "10",
+    href: null,
     discipline: "ROAD",
     label: "PAVED COUNTRYSIDE ROADS",
     destination: "MARRAKECH & AGAFAY",
@@ -110,6 +120,7 @@ const tours = [
   },
   {
     number: "11",
+    href: null,
     discipline: "ROAD · ENDURANCE",
     label: "LONGER RIDES & ROLLING TERRAIN",
     destination: "MARRAKECH & AGAFAY",
@@ -120,6 +131,7 @@ const tours = [
   },
   {
     number: "12",
+    href: null,
     discipline: "ROAD · MULTI-DAY",
     label: "FROM DESERT EDGE TOWARDS THE MOUNTAINS",
     destination: "AGAFAY TO ATLAS",
@@ -236,7 +248,7 @@ export default function AgafayDesertDestinationPage() {
             <p>
               Whether you want a single day ride or a longer journey that combines Agafay with the Lake Takerkoust area or Atlas foothills, planning should allow for heat, water, transfers and regular breaks. Exact routes, access, availability and inclusions should be confirmed for your travel dates.
             </p>
-            <Link className="cl-text-link" href="/destinations/agafay-desert">
+            <Link className="cl-text-link" href="/cycling-trips/trip/agafay-desert-cycling-tour-1-day">
               Explore cycling trips in the Agafay area <span aria-hidden="true">↗</span>
             </Link>
           </div>
@@ -256,21 +268,31 @@ export default function AgafayDesertDestinationPage() {
             <div className="cl-tour-grid">
               {tours.map((tour) => (
                 <article className="home-tour-card" key={tour.number}>
-                  <Link
-                    className="home-tour-card__image"
-                    href={{ pathname: "/contact", query: { tour: tour.title, destination: "Agafay Desert", request: "details" } }}
-                    aria-label={`More details about ${tour.title}`}
-                  >
-                    <img src={tour.image} alt={tour.title} loading="lazy" />
-                    <span className="home-tour-card__category">{tour.label}</span>
-                    <span className="home-tour-card__level">{tour.destination}</span>
-                  </Link>
+                  {tour.href ? (
+                    <Link
+                      className="home-tour-card__image"
+                      href={tour.href}
+                      aria-label={`More details about ${tour.title}`}
+                    >
+                      <img src={tour.image} alt={tour.title} loading="lazy" />
+                      <span className="home-tour-card__category">{tour.label}</span>
+                      <span className="home-tour-card__level">{tour.destination}</span>
+                    </Link>
+                  ) : (
+                    <div className="home-tour-card__image">
+                      <img src={tour.image} alt={tour.title} loading="lazy" />
+                      <span className="home-tour-card__category">{tour.label}</span>
+                      <span className="home-tour-card__level">{tour.destination}</span>
+                    </div>
+                  )}
                   <div className="home-tour-card__body">
                     <p className="home-tour-card__eyebrow">{tour.discipline === "ROAD" || tour.discipline.startsWith("ROAD") ? "ROAD CYCLING TOUR" : tour.discipline === "GRAVEL" || tour.discipline.startsWith("GRAVEL") ? "GRAVEL CYCLING TOUR" : tour.discipline === "E-MTB" || tour.discipline.startsWith("E-MTB") ? "E-MTB TOUR" : "MOUNTAIN BIKE TOUR"}</p>
                     <h3 className="home-tour-card__title">
-                      <Link href={{ pathname: "/contact", query: { tour: tour.title, destination: "Agafay Desert", request: "details" } }}>
-                        {tour.title}
-                      </Link>
+                      {tour.href ? (
+                        <Link href={tour.href}>{tour.title}</Link>
+                      ) : (
+                        tour.title
+                      )}
                     </h3>
                     <p className="home-tour-card__description">{tour.description}</p>
                     <div className="home-tour-card__meta">
@@ -280,12 +302,18 @@ export default function AgafayDesertDestinationPage() {
                       </span>
                     </div>
                     <div className="home-tour-card__actions">
-                      <Link
-                        className="home-tour-card__button"
-                        href={{ pathname: "/contact", query: { tour: tour.title, destination: "Agafay Desert", request: "details" } }}
-                      >
-                        Explore Tour
-                      </Link>
+                      {tour.href ? (
+                        <Link
+                          className="home-tour-card__button"
+                          href={tour.href}
+                        >
+                          Explore Tour
+                        </Link>
+                      ) : (
+                        <span className="home-tour-card__button">
+                          Details on request
+                        </span>
+                      )}
                       <Link
                         className="home-tour-card__link"
                         href={{ pathname: "/contact", query: { tour: tour.title, destination: "Agafay Desert", request: "booking" } }}

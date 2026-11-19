@@ -73,6 +73,7 @@ const tours = [
     description:
       "A private E-MTB trip gives your group flexibility to choose dates, riding pace and the balance between time on the trails and exploring Marrakech. Share your bike type, group size, riding level and accommodation preferences so that battery range, charging, transfers and daily stages can be considered together. The final plan should reflect the routes available and the expected conditions.",
     image: "/images/group-ebike-tour-morocco.jpg",
+    href: "/cycling-trips/trip/private-emtb-group-holiday-3-to-5-days",
   },
   {
     number: "07",
@@ -106,6 +107,7 @@ const tours = [
     description:
       "Spend several days exploring suitable gravel roads and rural tracks between Marrakech and selected Atlas foothill areas. The journey can combine open countryside, village landscapes and changing mountain views. Daily distances should be based on the actual surface, elevation and services along the route, with time allowed for transfers, navigation and stops.",
     image: "/images/gravel-adventure-bike-morocco.jpg",
+    href: "/cycling-trips/trip/high-atlas-and-ouirgane-gravel-tour-4-day",
   },
   {
     number: "10",
@@ -117,6 +119,7 @@ const tours = [
     description:
       "Discover the countryside around Marrakech by road bike on a paved route chosen to suit your fitness and available time. The day can focus on steady riding, scenic roads and a manageable amount of climbing, depending on the route. Traffic, road surfaces, start time, water stops and your preferred daily distance should be considered when the ride is planned.",
     image: "/images/road-cycling-tour-morocco.jpg",
+    href: "/cycling-trips/trip/road-cycling-from-marrakech-1-day",
   },
   {
     number: "11",
@@ -276,56 +279,74 @@ export default function MarrakechDestinationPage() {
               </p>
             </div>
             <div className="cl-tour-grid">
-              {tours.map((tour) => (
-                <article className="home-tour-card" key={tour.number}>
-                  <Link
-                    className="home-tour-card__image"
-                    href={{ pathname: "/contact", query: { tour: tour.title, destination: "Marrakech", request: "details" } }}
-                    aria-label={`More details about ${tour.title}`}
-                  >
-                    <img src={tour.image} alt={tour.title} loading="lazy" />
-                    <span className="home-tour-card__category">{tour.label}</span>
-                    <span className="home-tour-card__level">{tour.destination}</span>
-                  </Link>
-                  <div className="home-tour-card__body">
-                    <p className="home-tour-card__eyebrow">
-                      {tour.discipline.includes("ROAD")
-                        ? "ROAD CYCLING TOUR"
-                        : tour.discipline.includes("GRAVEL")
-                          ? "GRAVEL CYCLING TOUR"
-                          : tour.discipline.includes("E-MTB")
-                            ? "E-MTB TOUR"
-                            : "MOUNTAIN BIKE TOUR"}
-                    </p>
-                    <h3 className="home-tour-card__title">
-                      <Link href={{ pathname: "/contact", query: { tour: tour.title, destination: "Marrakech", request: "details" } }}>
-                        {tour.title}
-                      </Link>
-                    </h3>
-                    <p className="home-tour-card__description">{tour.description}</p>
-                    <div className="home-tour-card__meta">
-                      <span className="home-tour-card__meta-item">
-                        <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
-                        {tour.duration}
-                      </span>
+              {tours.map((tour) => {
+                const detailsHref = tour.href ?? {
+                  pathname: "/contact",
+                  query: {
+                    tour: tour.title,
+                    destination: "Marrakech",
+                    request: "details",
+                  },
+                };
+
+                const bookingHref = {
+                  pathname: "/contact",
+                  query: {
+                    tour: tour.title,
+                    destination: "Marrakech",
+                    request: "booking",
+                  },
+                };
+
+                return (
+                  <article className="home-tour-card" key={tour.number}>
+                    <Link
+                      className="home-tour-card__image"
+                      href={detailsHref}
+                      aria-label={`More details about ${tour.title}`}
+                    >
+                      <img src={tour.image} alt={tour.title} loading="lazy" />
+                      <span className="home-tour-card__category">{tour.label}</span>
+                      <span className="home-tour-card__level">{tour.destination}</span>
+                    </Link>
+                    <div className="home-tour-card__body">
+                      <p className="home-tour-card__eyebrow">
+                        {tour.discipline.includes("ROAD")
+                          ? "ROAD CYCLING TOUR"
+                          : tour.discipline.includes("GRAVEL")
+                            ? "GRAVEL CYCLING TOUR"
+                            : tour.discipline.includes("E-MTB")
+                              ? "E-MTB TOUR"
+                              : "MOUNTAIN BIKE TOUR"}
+                      </p>
+                      <h3 className="home-tour-card__title">
+                        <Link href={detailsHref}>{tour.title}</Link>
+                      </h3>
+                      <p className="home-tour-card__description">{tour.description}</p>
+                      <div className="home-tour-card__meta">
+                        <span className="home-tour-card__meta-item">
+                          <span className="home-tour-card__meta-icon" aria-hidden="true">◷</span>
+                          {tour.duration}
+                        </span>
+                      </div>
+                      <div className="home-tour-card__actions">
+                        <Link
+                          className="home-tour-card__button"
+                          href={detailsHref}
+                        >
+                          Explore Tour
+                        </Link>
+                        <Link
+                          className="home-tour-card__link"
+                          href={bookingHref}
+                        >
+                          Enquire Now
+                        </Link>
+                      </div>
                     </div>
-                    <div className="home-tour-card__actions">
-                      <Link
-                        className="home-tour-card__button"
-                        href={{ pathname: "/contact", query: { tour: tour.title, destination: "Marrakech", request: "details" } }}
-                      >
-                        Explore Tour
-                      </Link>
-                      <Link
-                        className="home-tour-card__link"
-                        href={{ pathname: "/contact", query: { tour: tour.title, destination: "Marrakech", request: "booking" } }}
-                      >
-                        Enquire Now
-                      </Link>
-                    </div>
-                  </div>
-                </article>
-              ))}
+                  </article>
+                );
+              })}
             </div>
           </div>
         </section>

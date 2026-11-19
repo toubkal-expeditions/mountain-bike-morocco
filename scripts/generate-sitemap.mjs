@@ -17,7 +17,18 @@ const EXCLUDED_SEGMENTS = new Set([
   "api",
   "_next",
 ]);
-
+const EXCLUDED_ROUTES = new Set([
+  "/cycling-trips/trip/agafay-gravel-escape",
+  "/cycling-trips/trip/anti-atlas-gravel-discovery",
+  "/cycling-trips/trip/three-valleys-gravel-tour",
+  "/cycling-trips/trip/south-morocco-gravel-expedition",
+  "/cycling-trips/trip/private-morocco-gravel-holiday",
+  "/cycling-trips/trip/atlas-to-desert-gravel-adventure-5-day",
+  "/cycling-trips/trip/gravel-cycling-from-marrakech",
+  "/cycling-trips/trip/high-atlas-and-ouirgane-gravel-tour",
+   "/journal/family-holiday-morocco",
+  "/journal/mountain-biking-morocco",
+]);
 async function collectRoutes(directory, segments = []) {
   const entries = await readdir(directory, { withFileTypes: true });
   const routes = [];
@@ -64,10 +75,18 @@ function escapeXml(value) {
 
 const routes = await collectRoutes(APP_DIR);
 
-const urls = [...new Set(routes.map((segments) => {
-  const route = segments.map(encodeURIComponent).join("/");
-  return route ? `${BASE_URL}/${route}` : BASE_URL;
-}))].sort();
+const urls = [...new Set(
+  routes
+    .filter((segments) => {
+      const route = segments.map(encodeURIComponent).join("/");
+      const pathname = route ? `/${route}` : "/";
+      return !EXCLUDED_ROUTES.has(pathname);
+    })
+    .map((segments) => {
+      const route = segments.map(encodeURIComponent).join("/");
+      return route ? `${BASE_URL}/${route}` : BASE_URL;
+    })
+)].sort();
 
 const sitemap = [
   '<?xml version="1.0" encoding="UTF-8"?>',

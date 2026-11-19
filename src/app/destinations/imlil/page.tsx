@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -18,6 +19,7 @@ const tours = [
     description:
       "Discover the trails and mountain tracks around Imlil on a two-day mountain bike escape. Ride through changing valley scenery, pass traditional settlements and enjoy views of the surrounding High Atlas. The route should be matched to your handling skills, fitness and preferred level of challenge, with time for bike checks, transfers and stops along the way.",
     image: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
+    href: "/cycling-trips/trip/mtb-tour-atlas-mountains-2-day",
   },
   {
     number: "02",
@@ -95,6 +97,7 @@ const tours = [
     description:
       "Ride a selection of quiet roads and gravel routes around the High Atlas, linking rural landscapes and traditional villages where practical. This four-day concept can be adapted to your preferred daily distance and amount of climbing. Discuss surface conditions, navigation, luggage, water and support before the itinerary is finalised.",
     image: "/images/gravel-cycling-morocco.jpg",
+    href: "/cycling-trips/trip/atlas-mountains-gravel-ride-4-day",
   },
   {
     number: "09",
@@ -139,6 +142,7 @@ const tours = [
     description:
       "Take more time to explore the Atlas by road bike with an itinerary linking selected villages, mountain scenery and quieter paved routes. A private journey gives you room to discuss travel dates, support, accommodation, luggage handling and daily effort. Choose roads and stages based on current conditions and the experience of your group, rather than committing to unrealistic distances.",
     image: "/images/Atlas-Mountains-Bike-trip-From-Marrakech.jpg",
+    href: "/cycling-trips/trip/private-road-cycling-tour-4-to-7-days",
   },
 ];
 
@@ -297,7 +301,7 @@ export default function ImlilDestinationPage() {
             </div>
             <div className="cl-tour-grid">
               {tours.map((tour) => {
-                const detailsHref = {
+                const detailsHref = tour.href ?? {
                   pathname: "/contact",
                   query: { tour: tour.title, request: "details" },
                 };

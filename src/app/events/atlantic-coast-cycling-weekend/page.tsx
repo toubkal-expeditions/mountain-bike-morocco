@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Discover Morocco's Atlantic coast on a three-day cycling expedition, with coastal landscapes, local culture and riding routes planned around the confirmed event programme.",
   alternates: {
-    canonical: "/events/atlantic-coast-cycling-expedition",
+    canonical: "/events/atlantic-coast-cycling-weekend",
   },
 };
 

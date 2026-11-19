@@ -53,7 +53,7 @@ const tours = [
     description:
       "Connect mountain scenery with the drier landscapes of southern Morocco on a gravel journey planned around the regions you want to explore. These longer routes require realistic planning for transfers, surface changes, elevation, water and accommodation between stages. The itinerary should reflect your travel dates, riding level and available time rather than trying to cover too much distance each day.",
     image: "/images/gravel-desert-cycling-expedition.jpg",
-    href: "/cycling-trips/trip/atlas-to-desert-gravel-adventure-5-day",
+    href: "/cycling-trips/trip/atlas-to-desert-gravel-adventure-ride-5-day",
   },
   {
     number: "03",

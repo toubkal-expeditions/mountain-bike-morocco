@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 const tours = [
   {
     number: "01",
+    href: "/cycling-trips/trip/atlas-mountain-bike-day-trip-1-day",
     discipline: "MTB",
     label: "COASTAL TRACKS & OCEAN VIEWS",
     destination: "ESSAOUIRA · ATLANTIC COAST",
@@ -21,6 +22,7 @@ const tours = [
   },
   {
     number: "02",
+    href: "/cycling-trips/trip/mtb-tour-atlas-mountains-2-day",
     discipline: "MTB · COAST & COUNTRYSIDE",
     label: "ARGAN GROVES & RURAL TRAILS",
     destination: "ARGAN COUNTRYSIDE",
@@ -32,6 +34,7 @@ const tours = [
   },
   {
     number: "03",
+    href: "/cycling-trips/trip/atlas-berber-villages-cycling-tour-3-day",
     discipline: "MTB · MULTI-DAY",
     label: "VILLAGES, HILLS & COASTAL LANDSCAPES",
     destination: "ESSAOUIRA TO SIDI KAOUKI",
@@ -43,6 +46,7 @@ const tours = [
   },
   {
     number: "04",
+    href: "/cycling-trips/trip/atlas-to-atlantic-coast-e-bike-tour-6-day",
     discipline: "E-MTB",
     label: "ELECTRIC-ASSISTED COASTAL EXPLORATION",
     destination: "ESSAOUIRA · ATLANTIC COAST",
@@ -54,6 +58,7 @@ const tours = [
   },
   {
     number: "05",
+    href: "/cycling-trips/trip/south-morocco-e-bike-tour-8-day",
     discipline: "E-MTB · COUNTRYSIDE",
     label: "ARGAN LANDSCAPES AT YOUR OWN PACE",
     destination: "ARGAN COUNTRYSIDE",
@@ -65,6 +70,7 @@ const tours = [
   },
   {
     number: "06",
+    href: "/cycling-trips/trip/atlas-and-desert-emtb-tour-8-day",
     discipline: "E-MTB · MULTI-DAY",
     label: "FROM THE CITY TOWARDS THE ATLANTIC",
     destination: "MARRAKECH TO ATLANTIC",
@@ -76,6 +82,7 @@ const tours = [
   },
   {
     number: "07",
+    href: "/cycling-trips/trip/anti-atlas-gravel-discovery",
     discipline: "GRAVEL",
     label: "QUIET ROADS & COASTAL TRACKS",
     destination: "ESSAOUIRA · ATLANTIC COAST",
@@ -87,6 +94,7 @@ const tours = [
   },
   {
     number: "08",
+    href: "/cycling-trips/trip/south-morocco-gravel-expedition-5-day",
     discipline: "GRAVEL · EXPEDITION",
     label: "OPEN COUNTRY & LONGER RIDING DAYS",
     destination: "ATLANTIC COAST",
@@ -98,6 +106,7 @@ const tours = [
   },
   {
     number: "09",
+    href: "/cycling-trips/trip/atlas-to-desert-gravel-adventure-5-day",
     discipline: "GRAVEL · COAST & COUNTRYSIDE",
     label: "SIDI KAOUKI & ARGAN COUNTRY",
     destination: "SIDI KAOUKI · ATLANTIC COAST",
@@ -109,6 +118,7 @@ const tours = [
   },
   {
     number: "10",
+    href: "/cycling-trips/trip/road-cycling-from-marrakech-1-day",
     discipline: "ROAD",
     label: "PAVED COASTAL ROADS & OCEAN AIR",
     destination: "ESSAOUIRA · ATLANTIC COAST",
@@ -120,6 +130,7 @@ const tours = [
   },
   {
     number: "11",
+    href: "/cycling-trips/trip/atlas-to-atlantic-coast-bike-tour-9-day",
     discipline: "ROAD · ENDURANCE",
     label: "LONGER STAGES THROUGH RURAL MOROCCO",
     destination: "MARRAKECH TO ATLANTIC",
@@ -131,6 +142,7 @@ const tours = [
   },
   {
     number: "12",
+    href: "/cycling-trips/trip/atlantic-coast-road-cycling-tour-4-day",
     discipline: "ROAD · MULTI-DAY",
     label: "ATLANTIC HORIZONS & COASTAL COUNTRYSIDE",
     destination: "ATLANTIC COAST",
@@ -276,7 +288,7 @@ export default function AtlanticCoastDestinationPage() {
                 <article className="home-tour-card" key={tour.number}>
                   <Link
                     className="home-tour-card__image"
-                    href={{ pathname: "/contact", query: { tour: tour.title, destination: "Essaouira & Atlantic Coast", request: "details" } }}
+                    href={tour.href}
                     aria-label={`More details about ${tour.title}`}
                   >
                     <img src={tour.image} alt={tour.title} loading="lazy" />
@@ -288,7 +300,7 @@ export default function AtlanticCoastDestinationPage() {
                       {tour.discipline.startsWith("ROAD") ? "ROAD CYCLING TOUR" : tour.discipline.startsWith("GRAVEL") ? "GRAVEL CYCLING TOUR" : tour.discipline.startsWith("E-MTB") ? "E-MTB TOUR" : "MOUNTAIN BIKE TOUR"}
                     </p>
                     <h3 className="home-tour-card__title">
-                      <Link href={{ pathname: "/contact", query: { tour: tour.title, destination: "Essaouira & Atlantic Coast", request: "details" } }}>
+                      <Link href={tour.href}>
                         {tour.title}
                       </Link>
                     </h3>
@@ -302,7 +314,7 @@ export default function AtlanticCoastDestinationPage() {
                     <div className="home-tour-card__actions">
                       <Link
                         className="home-tour-card__button"
-                        href={{ pathname: "/contact", query: { tour: tour.title, destination: "Essaouira & Atlantic Coast", request: "details" } }}
+                        href={tour.href}
                       >
                         Explore Tour
                       </Link>

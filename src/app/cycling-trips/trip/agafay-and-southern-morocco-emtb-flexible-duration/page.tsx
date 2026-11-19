@@ -1,14 +1,70 @@
+
 import type { Metadata } from "next";
 import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
+const pageUrl =
+  "https://mountain-bike-morocco.com/cycling-trips/trip/agafay-and-southern-morocco-emtb-flexible-duration";
+
 export const metadata: Metadata = {
-  title: "Agafay and Southern Morocco e-MTB – Flexible Duration | Mountain Bike Morocco",
+  title: "Agafay & Southern Morocco e-MTB Tour | Mountain Bike Morocco",
   description:
-    "Explore Agafay and southern Morocco by electric mountain bike on a private guided adventure. Choose a day ride or multi-day escape across desert plateaus, rugged valleys, oasis landscapes and remote tracks, with a flexible itinerary.",
+    "Ride Agafay and southern Morocco by guided e-MTB on a flexible day or multi-day adventure from Marrakech. Enquire now to plan your private route.",
   alternates: {
     canonical: "/cycling-trips/trip/agafay-and-southern-morocco-emtb-flexible-duration",
   },
 };
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    name: "Agafay and Southern Morocco e-MTB Adventures",
+    description:
+      "A private guided electric mountain-bike adventure in Agafay and southern Morocco, with flexible duration, route options and riding pace.",
+    url: pageUrl,
+    touristType: [
+      "Mountain biking enthusiasts",
+      "Electric mountain-bike riders",
+      "Adventure travellers",
+    ],
+    itinerary: {
+      "@type": "ItemList",
+      name: "Flexible Agafay and Southern Morocco e-MTB itinerary",
+      description:
+        "A custom day ride or multi-day itinerary planned around the selected riding region, group experience and travel dates.",
+      url: `${pageUrl}#itinerary`,
+    },
+    provider: {
+      "@type": "Organization",
+      name: "Mountain Bike Morocco",
+      url: "https://mountain-bike-morocco.com",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://mountain-bike-morocco.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Cycling Tours",
+        item: "https://mountain-bike-morocco.com/cycling-trips",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Agafay & Southern Morocco e-MTB Adventures",
+        item: pageUrl,
+      },
+    ],
+  },
+];
 
 const images = {
   hero: "/images/Agafay-desert-morocco.jpg",
@@ -213,31 +269,39 @@ const faqs = [
 
 const relatedTours = [
   {
-    category: "ATLAS E-BIKE ESCAPE",
-    title: "Three-Day Atlas E-Bike Escape",
-    text: "A three-day electric-bike journey in the Atlas, with guided mountain riding and time to explore the valleys.",
+    category: "ATLAS E-MTB TOUR",
+    title: "Morocco e-MTB Tour – 3 Days",
+    text: "Enjoy a guided three-day electric mountain-bike adventure in Morocco, with routes planned around your group and riding experience.",
     image: "/images/atlas_mountain_ebike_tour_3days-2.jpg",
-    href: "/cycling-trips/trip/three-day-atlas-e-bike-escape-3-day",
+    href: "/cycling-trips/trip/morocco-emtb-tour-3-day",
   },
   {
-    category: "FLEXIBLE ATLAS E-MTB",
-    title: "Atlas Mountains e-MTB Tours",
-    text: "Choose a day ride or a longer guided e-MTB escape with routes adapted to your group.",
+    category: "PRIVATE E-MTB GROUP",
+    title: "Private e-MTB Group Holiday",
+    text: "Plan a private electric mountain-bike holiday with a flexible programme for your group, dates and preferred riding level.",
     image: "/images/atlas-mountains-ebike-tour.jpg",
-    href: "/cycling-trips/trip/atlas-mountains-emtb-tours-flexible-duration",
+    href: "/cycling-trips/trip/private-emtb-group-holiday-3-to-5-days",
   },
   {
-    category: "PRIVATE E-MTB HOLIDAY",
-    title: "Private e-MTB Holidays – Custom Itinerary",
-    text: "Build a private electric mountain-bike holiday around your dates, riding experience and preferred destinations.",
+    category: "ATLAS TO ATLANTIC COAST",
+    title: "Atlas to Atlantic Coast e-Bike Tour",
+    text: "Discover Morocco on a longer e-bike journey connecting the Atlas region with the Atlantic coast.",
     image: "/images/south-ebike-tourmorocco.jpg",
-    href: "/cycling-trips/trip/private-emtb-holidays-private-itinerary",
+    href: "/cycling-trips/trip/atlas-to-atlantic-coast-e-bike-tour-6-day",
   },
 ];
 
 export default function AgafayAndSouthernMoroccoEmtbPage() {
   return (
     <main className="atlas-tour">
+      {structuredData.map((data, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+        />
+      ))}
+
       <style>{`
         .atlas-tour {
           --paper: #f4f2eb;
@@ -473,7 +537,7 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
         <div className="at-hero-image">
           <img
             src={images.hero}
-            alt="Electric mountain biking in the Agafay Desert and southern Morocco"
+            alt="Electric mountain biking across the rocky Agafay Desert near Marrakech, Morocco"
           />
         </div>
         <div className="at-hero-shade" />
@@ -490,7 +554,7 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
           </p>
           <div className="at-hero-actions">
             <a className="at-button" href="#enquiry">
-              Enquire About Your e-MTB Adventure <span>→</span>
+              Check Dates and Availability <span>→</span>
             </a>
             <a className="at-hero-back" href="/cycling-trips">
               Explore All Cycling Tours
@@ -555,7 +619,7 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
           <div className="at-overview-image">
             <img
               src={images.overview}
-              alt="e-MTB adventure in the Agafay Desert of Morocco"
+              alt="Guided electric mountain-bike adventure through Morocco's desert and mountain terrain"
             />
           </div>
           <div className="at-overview-content">
@@ -626,28 +690,36 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
             </p>
             <ul className="at-booking-list">
               <li>
-                <span>Tour format</span>
-                <strong>Guided</strong>
+                <span>Duration</span>
+                <strong>Flexible – day ride or multi-day</strong>
               </li>
               <li>
-                <span>e-MTB</span>
-                <strong>Electric mountain bike</strong>
+                <span>Difficulty</span>
+                <strong>Adapted to rider experience and route</strong>
               </li>
               <li>
-                <span>Destination</span>
-                <strong>Agafay &amp; Southern Morocco</strong>
+                <span>Region / Start</span>
+                <strong>Agafay &amp; Southern Morocco; Marrakech or agreed meeting point</strong>
               </li>
               <li>
-                <span>Itinerary</span>
-                <strong>Day ride or multi-day tour</strong>
+                <span>Distance / Elevation</span>
+                <strong>Confirmed after route selection</strong>
               </li>
               <li>
-                <span>Routes</span>
-                <strong>On Request</strong>
+                <span>Bike / Equipment</span>
+                <strong>Rental and helmet if selected and confirmed</strong>
+              </li>
+              <li>
+                <span>Transfers / Stay</span>
+                <strong>Arranged and confirmed in your proposal</strong>
+              </li>
+              <li>
+                <span>Guiding</span>
+                <strong>Private guide for agreed riding days</strong>
               </li>
             </ul>
             <a className="at-button" href="#enquiry">
-              Enquire About Your Trip <span>→</span>
+              Check Dates and Availability <span>→</span>
             </a>
           </aside>
         </div>
@@ -685,7 +757,7 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
           <div className="at-terrain-image">
             <img
               src={images.valley}
-              alt="Mountain cycling routes and gravel tracks in Morocco"
+              alt="Remote Moroccan valley terrain and mountain-bike tracks in southern Morocco"
             />
           </div>
           <div>
@@ -758,7 +830,7 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
         <div className="at-culture-image">
           <img
             src={images.village}
-            alt="Traditional Berber village in the High Atlas Mountains"
+            alt="Traditional village and mountain landscape along a Moroccan cycling route"
           />
         </div>
         <div className="at-culture-content">
@@ -807,31 +879,31 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
             <div className="at-gallery-item">
               <img
                 src={images.cycling}
-                alt="Cycling through a selected Moroccan mountain landscape"
+                alt="Electric mountain-bike ride through a rugged Moroccan landscape"
               />
             </div>
             <div className="at-gallery-item">
               <img
                 src={images.valley}
-                alt="Remote southern Morocco landscape and riding terrain"
+                alt="Remote southern Morocco valley and mountain-bike riding terrain"
               />
             </div>
             <div className="at-gallery-item">
               <img
                 src={images.village}
-                alt="Traditional Berber village along a Moroccan cycling route"
+                alt="Traditional village along a Moroccan mountain-bike route"
               />
             </div>
             <div className="at-gallery-item">
               <img
                 src={images.mountain}
-                alt="Mountain landscape in Morocco"
+                alt="Rocky mountain scenery in Morocco"
               />
             </div>
             <div className="at-gallery-item">
               <img
                 src={images.atlas}
-                alt="Atlas mountain landscape on the cycling journey"
+                alt="Moroccan mountain and desert landscape on an e-MTB journey"
               />
             </div>
           </div>
@@ -1024,13 +1096,13 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
         <div className="at-final-image">
           <img
             src={images.final}
-            alt="Electric mountain biking in the Agafay Desert and southern Morocco"
+            alt="Electric mountain-bike adventure in the Agafay Desert and southern Morocco"
           />
         </div>
         <div className="at-final-shade" />
         <div className="at-final-content">
           <span className="at-eyebrow">
-            YOUR IMLIL & OUIRGANE E-MTB ADVENTURE STARTS HERE
+            YOUR AGAFAY & SOUTHERN MOROCCO E-MTB ADVENTURE STARTS HERE
           </span>
           <h2>Plan Your Agafay &amp; Southern Morocco e-MTB Adventure</h2>
           <p>
@@ -1040,7 +1112,7 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
             transfers between the selected regions and accommodation options.
           </p>
           <a className="at-button" href="#enquiry">
-            Enquire About Your e-MTB Adventure <span>→</span>
+            Check Dates and Availability <span>→</span>
           </a>
         </div>
       </section>
@@ -1070,8 +1142,8 @@ export default function AgafayAndSouthernMoroccoEmtbPage() {
             </div>
             <p>
               Explore related electric mountain-bike journeys, from a
-              three-day Atlas escape to a private e-MTB holiday with a custom
-              itinerary.
+              three-day Atlas escape to a private e-MTB holiday and a longer
+              ride towards the Atlantic coast.
             </p>
           </div>
           <div className="at-related-grid">

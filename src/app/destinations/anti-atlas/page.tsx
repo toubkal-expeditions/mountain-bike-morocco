@@ -15,6 +15,7 @@ const tours = [
     destination: "TAFRAOUTE · ANTI-ATLAS",
     title: "Tafraoute Granite Trails MTB Tour",
     duration: "3 days",
+    href: "/cycling-trips/trip/anti-atlas-mountain-bike-tour-8-day",
     description:
       "Discover the distinctive granite landscapes around Tafraoute on a three-day mountain bike trip. The itinerary can combine rocky tracks, village approaches and selected trails through the Anti-Atlas foothills, with route difficulty matched to your handling skills. Trail access, terrain and weather should be checked for your travel dates, and daily stages should leave room for water stops and recovery.",
     image: "/images/anti-atlas-cycling-tour.jpg",
@@ -26,6 +27,7 @@ const tours = [
     destination: "ANTI-ATLAS MOUNTAINS",
     title: "Anti-Atlas Mountain Bike Adventure",
     duration: "5 days",
+    href: "/cycling-trips/trip/tafraoute-and-anti-atlas-boutique-cycling-5-day",
     description:
       "Spend five days exploring selected tracks and mountain scenery across the Anti-Atlas. A multi-day journey can link rugged hills, quiet settlements and wide-open southern landscapes, depending on current access and local conditions. The route should reflect your fitness, bike setup, preferred daily distance and experience on loose or rocky surfaces, with transfers and support agreed in advance.",
     image: "/images/anti-atlas-morocco-cycling-tour.jpg",
@@ -37,6 +39,7 @@ const tours = [
     destination: "SOUTHERN MOROCCO",
     title: "Anti-Atlas and Tafraoute Expedition",
     duration: "6 days",
+    href: "/cycling-trips/trip/saghro-cycling-adventure-7-day",
     description:
       "Explore a wider section of the Anti-Atlas on a six-day mountain bike expedition concept built around selected trails and rural tracks. Distances and technical demands can vary considerably between areas, so the itinerary needs careful planning around riding ability, water, accommodation, transfers and seasonal temperatures. Confirm the route and available support before making final travel arrangements.",
     image: "/images/mtb-morocco-Saghro.JPG",
@@ -48,6 +51,7 @@ const tours = [
     destination: "ANTI-ATLAS MOUNTAINS",
     title: "Anti-Atlas E-MTB Discovery",
     duration: "3 days",
+    href: "/cycling-trips/trip/south-morocco-e-bike-tour-8-day",
     description:
       "Explore suitable tracks and scenic routes around the Anti-Atlas with electric assistance for the climbs. A three-day E-MTB trip can balance riding with stops to appreciate the region's rugged terrain and village landscapes. The plan should account for elevation, surface, battery capacity, assistance settings and charging options, while keeping the technical difficulty appropriate for your group.",
     image: "/images/saghro-morocco-e-bike-tour.jpg",
@@ -59,6 +63,7 @@ const tours = [
     destination: "TAFRAOUTE · ANTI-ATLAS",
     title: "Tafraoute and Anti-Atlas E-Bike Tour",
     duration: "4 days",
+    href: "/cycling-trips/trip/agafay-and-southern-morocco-emtb-flexible-duration",
     description:
       "Spend four days riding selected Anti-Atlas foothill routes and exploring the landscapes around Tafraoute by electric mountain bike. Electric assistance may make some climbs more manageable, but rocky surfaces and loose tracks still require good control and appropriate equipment. Battery range, water, charging, support and the distance between overnight stops all need to be considered before the route is confirmed.",
     image: "/images/southern-ebike-cycling-expeditions.jpg",
@@ -70,6 +75,7 @@ const tours = [
     destination: "SOUTHERN MOROCCO",
     title: "Private Anti-Atlas E-MTB Holiday",
     duration: "5 days",
+    href: "/cycling-trips/trip/private-emtb-group-holiday-3-to-5-days",
     description:
       "A private five-day E-MTB holiday gives your group flexibility to select suitable riding areas, daily effort and time for cultural stops. Share your bike type, group size, fitness, battery requirements and accommodation preferences so the practical details can be discussed early. The final itinerary should be planned around confirmed route access, available charging or support arrangements and expected temperatures.",
     image: "/images/group-ebike-tour-morocco.jpg",
@@ -81,6 +87,7 @@ const tours = [
     destination: "ANTI-ATLAS MOUNTAINS",
     title: "Anti-Atlas Gravel Cycling Tour",
     duration: "4 days",
+    href: "/cycling-trips/trip/anti-atlas-gravel-discovery-4-day",
     description:
       "Ride a mix of quiet paved roads and suitable gravel tracks through the Anti-Atlas region on a four-day trip. The appeal lies in the changing terrain, open views and connections between rural settlements. Route choice should consider surface quality, tyre clearance, elevation, water access and daily distance, with alternatives available if road or track conditions are not suitable.",
     image: "/images/gravel-biking-atlas-morocco.jpg",
@@ -92,6 +99,7 @@ const tours = [
     destination: "TAFRAOUTE · ANTI-ATLAS",
     title: "Tafraoute Gravel Bike Escape",
     duration: "3 days",
+    href: "/cycling-trips/trip/anti-atlas-gravel-discovery",
     description:
       "Discover the countryside around Tafraoute on a three-day gravel escape linking suitable rural roads and unpaved sections. The ride can be paced around your experience and the time available for exploring the distinctive granite scenery. Before confirming, check the exact surfaces, navigation requirements, water stops and the amount of climbing expected each day.",
     image: "/images/gravel-morocco-cycling-tour.JPG",
@@ -103,6 +111,7 @@ const tours = [
     destination: "ANTI-ATLAS TO SOUTH",
     title: "Anti-Atlas to the South Gravel Journey",
     duration: "6 days",
+    href: "/cycling-trips/trip/south-morocco-gravel-expedition-5-day",
     description:
       "Discuss a six-day gravel journey through selected Anti-Atlas and southern routes, with the stages planned around the surfaces your bike can handle. The itinerary should balance riding time with transfers, navigation, temperatures and the distance between services. Route details and logistics need to be checked for your dates rather than assuming every track is passable throughout the year.",
     image: "/images/gravel-desert-cycling-morocco.JPG",
@@ -114,6 +123,7 @@ const tours = [
     destination: "ANTI-ATLAS MOUNTAINS",
     title: "Anti-Atlas Road Cycling Tour",
     duration: "4 days",
+    href: "/cycling-trips/trip/high-atlas-road-cycling-tour-6-day",
     description:
       "Explore suitable paved roads in the Anti-Atlas on a four-day road cycling trip through rugged hills and southern Moroccan landscapes. The route should reflect your climbing experience, preferred daily distance and comfort riding on shared roads. Road surfaces, traffic, elevation, weather and support arrangements should be reviewed before confirming each stage.",
     image: "/images/road-cycling-tour-morocco.jpg",
@@ -125,6 +135,7 @@ const tours = [
     destination: "TAFRAOUTE · ANTI-ATLAS",
     title: "Tafraoute and Anti-Atlas Road Tour",
     duration: "5 days",
+    href: "/cycling-trips/trip/private-road-cycling-tour-4-to-7-days",
     description:
       "Spend five days riding selected paved routes around Tafraoute and the Anti-Atlas, with stages designed around the group's fitness and appetite for climbing. The journey can combine scenic roads and time to explore local towns, while avoiding unrealistic distances between overnight stops. Confirm road conditions, transfers and support before settling on the itinerary.",
     image: "/images/adventure-road-cycling-morocco.jpg",
@@ -136,6 +147,7 @@ const tours = [
     destination: "ANTI-ATLAS TO ATLANTIC",
     title: "Anti-Atlas to Atlantic Road Cycling Journey",
     duration: "7 days",
+    href: "/cycling-trips/trip/atlas-to-atlantic-coast-bike-tour-9-day",
     description:
       "Consider a seven-day road cycling journey connecting selected Anti-Atlas routes with the Atlantic region, subject to suitable roads and realistic transfer arrangements. Daily climbing, traffic, road surfaces and the group's preferred pace should shape the stages. The final itinerary should leave room for recovery and be confirmed against current access and travel conditions.",
     image: "/images/atlantic-coast-cycling-tour-morocco.jpg",
@@ -277,7 +289,7 @@ export default function AntiAtlasDestinationPage() {
                 <article className="home-tour-card" key={tour.number}>
                   <Link
                     className="home-tour-card__image"
-                    href={{ pathname: "/contact", query: { tour: tour.title, duration: tour.duration, discipline: tour.discipline, destination: "Anti-Atlas", request: "details" } }}
+                    href={tour.href}
                     aria-label={`More details about ${tour.title}`}
                   >
                     <img src={tour.image} alt={tour.title} loading="lazy" />
@@ -289,7 +301,7 @@ export default function AntiAtlasDestinationPage() {
                       {tour.discipline.startsWith("ROAD") ? "ROAD CYCLING TOUR" : tour.discipline.startsWith("GRAVEL") ? "GRAVEL CYCLING TOUR" : tour.discipline.startsWith("E-MTB") ? "E-MTB TOUR" : "MOUNTAIN BIKE TOUR"}
                     </p>
                     <h3 className="home-tour-card__title">
-                      <Link href={{ pathname: "/contact", query: { tour: tour.title, duration: tour.duration, discipline: tour.discipline, destination: "Anti-Atlas", request: "details" } }}>
+                      <Link href={tour.href}>
                         {tour.title}
                       </Link>
                     </h3>
@@ -303,7 +315,7 @@ export default function AntiAtlasDestinationPage() {
                     <div className="home-tour-card__actions">
                       <Link
                         className="home-tour-card__button"
-                        href={{ pathname: "/contact", query: { tour: tour.title, duration: tour.duration, discipline: tour.discipline, destination: "Anti-Atlas", request: "details" } }}
+                        href={tour.href}
                       >
                         Explore Tour
                       </Link>

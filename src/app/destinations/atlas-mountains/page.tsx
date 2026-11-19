@@ -18,7 +18,7 @@ const tours = [
     description:
       "Ride mountain tracks, rocky trails and singletrack routes through the High Atlas. Your itinerary can be shaped around riding confidence, fitness, the type of descent you enjoy and the time you have available. Discuss technical sections, daily elevation, transfers and local conditions before the route is confirmed.",
     image: "/images/singletrack-mtb-atlas-mountains.jpg",
-    href: "/cycling-trips/mtb",
+    href: "/cycling-trips/trip/atlas-mountains-cycling-tour-6-day",
   },
   {
     number: "02",
@@ -30,7 +30,7 @@ const tours = [
     description:
       "Explore the Atlas with electric assistance on selected mountain routes and countryside tracks. A suitable plan considers elevation, trail difficulty, battery range, charging opportunities and the experience of everyone riding. Choose a scenic outing or discuss a longer journey connecting valleys and traditional villages.",
     image: "/images/eBike-tour-atlas-mountains-morocco.jpg",
-    href: "/cycling-trips/e-mtb",
+    href: "/cycling-trips/trip/atlas-mountains-emtb-tours-flexible-duration",
   },
   {
     number: "03",
@@ -42,7 +42,7 @@ const tours = [
     description:
       "Discover rural roads, gravel pistes and mountain valleys at a pace that leaves room to appreciate the landscape. Gravel routes can vary greatly in surface, climbing and remoteness, so discuss tyre choice, daily distance, water stops and support needs when planning your journey.",
     image: "/images/gravel-bike-atlas-mountains.JPG",
-    href: "/cycling-trips/gravel",
+    href: "/cycling-trips/trip/atlas-mountains-gravel-ride",
   },
   {
     number: "04",
@@ -54,7 +54,7 @@ const tours = [
     description:
       "Take on mountain roads and rewarding climbs through changing scenery, with the route considered around your pace and experience. Elevation, road conditions, traffic, weather and transfer times all influence the daily stages. Build a realistic itinerary that gives you time to enjoy the ride as well as recover between days.",
     image: "/images/road-cycling-tour-morocco.jpg",
-    href: "/cycling-trips/road",
+    href: "/cycling-trips/trip/high-atlas-road-cycling-tour-6-day",
   },
   {
     number: "05",
@@ -66,7 +66,7 @@ const tours = [
     description:
       "Connect mountain scenery with village life and quieter valleys. Depending on your preferred bike and riding level, a journey can combine gentle countryside roads, rougher tracks and time for cultural stops. The final route should be matched to the season, group ability and the logistics between overnight stays.",
     image: "/images/group-cycling-atlas-mountains.jpg",
-    href: "/contact?tour=Atlas%20Villages%20Cycling%20Journey&request=details",
+    href: "/cycling-trips/trip/atlas-berber-villages-cycling-tour-3-day",
   },
   {
     number: "06",
@@ -78,7 +78,7 @@ const tours = [
     description:
       "For riders who want to see more of the region, a traverse can link selected valleys and riding areas over several days. The itinerary needs to account for the kind of bike, daily distance, elevation, luggage and bike support, overnight arrangements and seasonal access. Share your priorities to start shaping a practical plan.",
     image: "/images/Atlas-Mountains-Bike-trip-From-Marrakech.jpg",
-    href: "/cycling-trips/private-groups",
+    href: "/cycling-trips/trip/high-atlas-group-mtb-adventure-5-day",
   },
   {
     number: "07",
@@ -90,7 +90,7 @@ const tours = [
     description:
       "Explore the mountain landscapes around the Toubkal region on a five-day cycling expedition linking selected Atlas valleys, village tracks and mountain roads. Daily routes should be planned around your riding style, fitness, altitude and the season, with realistic time for transfers and recovery. The final itinerary can be adapted to suit MTB, E-MTB or other appropriate cycling preferences after route conditions are reviewed.",
     image: "/images/toubkal-cycling-expedition.jpg",
-    href: "/contact?tour=Toubkal%20Cycling%20Expedition&request=details",
+    href: "/cycling-trips/trip/toubkal-and-mgoun-mtb-expedition-10-day",
   },
   {
     number: "08",
@@ -102,7 +102,7 @@ const tours = [
     description:
       "Spend six days discovering the variety of the Atlas, from cultivated valleys and traditional villages to rugged mountain scenery and sweeping views. A multi-day adventure gives you time to explore more than one area, while keeping the route balanced with suitable riding stages and time to enjoy the landscape. Discuss your preferred discipline, group ability, accommodation and support needs when planning the journey.",
     image: "/images/mountain-biking-atlas-mountains.jpg",
-    href: "/contact?tour=Atlas%20Cycling%20Adventure&request=details",
+    href: "/cycling-trips/trip/atlas-singletrack-mountain-bike-tour-6-day",
   },
   {
     number: "09",
@@ -114,7 +114,7 @@ const tours = [
     description:
       "A three-day Atlas bike tour is a way to experience mountain scenery and local routes without committing to a longer expedition. Choose from suitable tracks and roads according to your experience, preferred riding surface and daily distance. The plan should allow for the elevation, terrain, seasonal weather and transfer arrangements that make each mountain route different.",
     image: "/images/mtb-tour-atlas-mountains.jpg",
-    href: "/contact?tour=Atlas%20Mountains%20Bike%20Tour&request=details",
+    href: "/cycling-trips/trip/atlas-villages-and-gentle-trails-3-day",
   },
   {
     number: "10",
@@ -126,7 +126,7 @@ const tours = [
     description:
       "Use two days to discover selected Atlas trails, mountain tracks and villages with a ride planned to fit your confidence and available time. This shorter trip can be shaped around scenic riding or more demanding terrain, depending on your skills and the local conditions. Discuss bike setup, technical difficulty, daily climbing and transfer times before confirming the route.",
     image: "/images/singletrack-mtb-atlas-mountains.jpg",
-    href: "/contact?tour=MTB%20Tour%20Atlas%20Mountains&request=details",
+    href: "/cycling-trips/trip/private-atlas-mountain-bike-weekend-2-to-3-days",
   },
   {
     number: "11",
@@ -138,7 +138,7 @@ const tours = [
     description:
       "This four-day enduro concept is for riders interested in technical trails, mountain descents and challenging terrain across selected Atlas riding areas. Route choice must reflect your handling skills, fitness, bike setup and comfort with rocky or exposed sections. Discuss lift or vehicle support where relevant, daily elevation, transfers and alternative stages so the itinerary is realistic for your group.",
     image: "/images/enduro-morrocco-cycling-tour.jpg",
-    href: "/contact?tour=Atlas%20Enduro%20Cycling%20Tour&request=details",
+    href: "/cycling-trips/trip/atlas-enduro-mtb-tour-5-day",
   },
   {
     number: "12",
@@ -150,7 +150,7 @@ const tours = [
     description:
       "Discover the rugged trails and mountain scenery around Imlil on a two-day enduro-focused ride. The area offers a dramatic setting, but trail surfaces, gradients and exposure can vary, so the route should be matched to your ability and the conditions on the day. Plan time for bike checks, transfers, recovery and stops to enjoy the valley and surrounding villages.",
     image: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
-    href: "/contact?tour=Imlil%20Valley%20Enduro%20Tour&request=details",
+    href: "/cycling-trips/trip/atlas-mountains-enduro-tour-3-day",
   },
 ];
 
@@ -160,28 +160,28 @@ const regions = [
     text:
       "Discover dramatic mountain scenery, terraced fields and traditional villages around the Imlil area. Routes differ in gradient and surface, so choose an outing that suits your riding experience and the conditions on the day.",
     image: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
-    href: "/destinations/imlil-toubkal",
+    href: "/destinations/imlil",
   },
   {
     title: "Ouirgane & the Western Atlas",
     text:
       "A quieter landscape of valleys, cultivated land and rural tracks. This area can work well for scenic riding and mixed-ability groups when the chosen route, daily effort and support arrangements are considered carefully.",
     image: "/images/ouirgane-valley-ebike-tour.jpg",
-    href: "/destinations/ouirgane",
+    href: "/destinations/atlas-mountains",
   },
   {
     title: "High Atlas Mountain Trails",
     text:
       "Explore high viewpoints, rocky tracks and mountain terrain. Altitude, weather and trail conditions can change the character of a ride, particularly on longer routes away from towns and regular services.",
     image: "/images/mountain-biking-atlas-mountains-morocco.jpg",
-    href: "/cycling-trips/mtb",
+    href: "/destinations/toubkal",
   },
   {
     title: "Marrakech & the Foothills",
     text:
       "Start near Marrakech and head into the countryside for a shorter ride or as the beginning of a longer Atlas itinerary. Confirm the meeting point, transfer time and route surface before setting out.",
     image: "/images/cycling-tour-from-marrakech.jpg",
-    href: "/cycling-trips/from-marrakech",
+    href: "/destinations/marrakech",
   },
 ];
 
@@ -307,10 +307,7 @@ export default function AtlasMountainsDestinationPage() {
             </div>
             <div className="cl-tour-grid">
               {tours.map((tour) => {
-                const detailsHref =
-                  tour.href.startsWith("/contact")
-                    ? tour.href
-                    : `/contact?tour=${encodeURIComponent(tour.title)}&request=details`;
+                const detailsHref = tour.href;
                 const bookingHref =
                   `/contact?tour=${encodeURIComponent(tour.title)}&request=booking`;
 
