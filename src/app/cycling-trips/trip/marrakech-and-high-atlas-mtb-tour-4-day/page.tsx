@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 
 export const metadata: Metadata = {
-  title: "Marrakech and High Atlas MTB Tour – 4 Days | Mountain Bike Morocco",
+  title: "Marrakech & Atlas MTB Tour – 4 Days | Mountain Bike Morocco",
   description:
-    "Ride from Marrakech into Morocco’s High Atlas on a 4-day guided mountain-bike journey through mountain valleys, Amazigh villages and rugged trails. The route, daily riding and services are tailored and confirmed for your group.",
+    "Cycling from Marrakech into Morocco’s High Atlas on a 4-day guided mountain-bike journey through mountain valleys, Amazigh villages and rugged trails. The route, daily riding and services are tailored and confirmed for your group.",
   alternates: {
     canonical: "/cycling-trips/trip/marrakech-and-high-atlas-mtb-tour-4-day",
   },

@@ -2,14 +2,14 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Electric Mountain Bike Tours in Morocco | Atlas E-MTB Adventures",
+  title: "Electric Bike Tours in Morocco | Atlas & Desert E-MTB Adventures",
   description:
-    "Discover guided electric mountain bike tours in Morocco's High Atlas. Explore E-MTB day rides, multi-day adventures, private cycling holidays and scenic routes from Marrakech.",
+    "Guided E-Bike tours in Morocco. Ride a premium E-Mountain Bike through the Atlas Mountains, explore Berber villages and discover the desert landscapes.",
   alternates: {
     canonical: "/cycling-trips/e-mtb",
   },
   openGraph: {
-    title: "Electric Mountain Bike Tours in Morocco | Atlas E-MTB Adventures",
+    title: "Electric Mountain Bike Tours in Morocco | Atlas & Desert E-MTB Adventures",
     description:
       "Explore Morocco on a guided electric mountain bike adventure. Discover Atlas Mountain trails, traditional villages, private E-MTB holidays and day rides from Marrakech.",
     url: "https://mountain-bike-morocco.com/cycling-trips/e-mtb",
@@ -46,6 +46,39 @@ const emtbTours = [
   },
   {
     number: "02",
+    duration: "1 day",
+    destination: "Ouirgane Valley",
+    label: "VALLEY SCENERY & BERBER VILLAGES",
+    title: "E-Bike Day Tour – Ouirgane Valley",
+    description:
+      "Discover the Ouirgane Valley and High Atlas Mountains on a private one-day e-bike tour. Ride through mountain villages, scenic valleys and spectacular Atlas landscapes. Enjoy the quieter countryside around Ouirgane while exploring a route planned around your riding experience, available time and preferred terrain.",
+    image: "/images/ouirgane-valley-ebike-tour.jpg",
+    href: "/cycling-trips/trip/e-bike-day-tour-ouirgane",
+  },
+  {
+    number: "03",
+    duration: "1 day",
+    destination: "Kik Plateau",
+    label: "PLATEAU LANDSCAPES & ATLAS FOOTHILLS",
+    title: "Kik Plateau E-Bike Day Tour",
+    description:
+      "Discover the open landscapes of the Kik Plateau on a private one-day electric mountain bike adventure from the Marrakech region. Ride through the Atlas foothills, enjoy wide mountain views and pass traditional villages surrounded by rolling countryside. Electric assistance can help make the climbs more manageable while leaving time to appreciate the scenery. The route should be selected according to your riding experience, trail conditions and the battery range available on the day.",
+    image: "/images/atlas-mountains-ebike-tour.jpg",
+    href: "/cycling-trips/trip/e-bike-day-tour-kik-plateau",
+  },
+  {
+    number: "04",
+    duration: "1 day",
+    destination: "Imlil Valley",
+    label: "HIGH ATLAS VILLAGES & MOUNTAIN SCENERY",
+    title: "E-Bike Day Tour – Imlil Valley",
+    description:
+      "Discover the Imlil Valley and High Atlas Mountains on a private one-day e-bike tour. Ride through mountain villages, scenic valleys and spectacular Atlas landscapes. Explore the mountain scenery around Imlil on a route planned around your riding experience, preferred pace and the conditions of the day.",
+    image: "/images/imlil-cycling-adventure-tour.jpeg",
+    href: "/cycling-trips/trip/e-bike-day-tour-imlil-valley",
+  },
+  {
+    number: "05",
     duration: "Flexible duration",
     destination: "High Atlas",
     label: "HIGH MOUNTAINS & SCENIC TRAILS",
@@ -56,7 +89,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/atlas-mountains-emtb-tours-flexible-duration",
   },
   {
-    number: "03",
+    number: "06",
     duration: "3 days",
     destination: "High Atlas",
     label: "MULTI-DAY MOUNTAIN EXPLORATION",
@@ -67,7 +100,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/three-day-atlas-e-bike-escape-3-day",
   },
   {
-    number: "04",
+    number: "07",
     duration: "Private itinerary",
     destination: "Morocco",
     label: "PERSONALISED CYCLING HOLIDAYS",
@@ -78,7 +111,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/private-emtb-holidays-private-itinerary",
   },
   {
-    number: "05",
+    number: "08",
     duration: "Flexible duration",
     destination: "Imlil & Ouirgane",
     label: "VILLAGES, VALLEYS & RURAL TRACKS",
@@ -89,7 +122,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/imlil-and-ouirgane-emtb-adventures-flexible-duration",
   },
   {
-    number: "06",
+    number: "09",
     duration: "Flexible duration",
     destination: "Agafay & Southern Morocco",
     label: "OPEN LANDSCAPES & DESERT EDGE",
@@ -100,7 +133,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/agafay-and-southern-morocco-emtb-flexible-duration",
   },
   {
-    number: "07",
+    number: "10",
     duration: "2 days",
     destination: "Atlas Mountains",
     label: "BERBER VILLAGES & VALLEY TRACKS",
@@ -111,7 +144,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/atlas-berber-valley-e-bike-tour-2-day",
   },
   {
-    number: "08",
+    number: "11",
     duration: "4 days",
     destination: "Atlas Mountains",
     label: "MOUNTAIN TRAILS & HIGH ATLAS SCENERY",
@@ -122,7 +155,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/atlas-mountains-e-bike-tour-4-day",
   },
   {
-    number: "09",
+    number: "12",
     duration: "8 days",
     destination: "Atlas & Desert",
     label: "MOUNTAINS TO DESERT LANDSCAPES",
@@ -133,7 +166,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/atlas-and-desert-emtb-tour-8-day",
   },
   {
-    number: "10",
+    number: "13",
     duration: "4 days",
     destination: "Morocco",
     label: "FAMILY RIDING & SHARED DISCOVERY",
@@ -144,7 +177,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/morocco-family-e-bike-tour-4-day",
   },
   {
-    number: "11",
+    number: "14",
     duration: "5 days",
     destination: "Atlas Mountains",
     label: "COMFORT, SCENERY & PRIVATE RIDING",
@@ -155,7 +188,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/atlas-luxury-e-bike-tour-5-day",
   },
   {
-    number: "12",
+    number: "15",
     duration: "3 days",
     destination: "Morocco",
     label: "A SHORT MOROCCO CYCLING ESCAPE",
@@ -166,7 +199,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/morocco-emtb-tour-3-day",
   },
   {
-    number: "13",
+    number: "16",
     duration: "6 days",
     destination: "Atlas & Atlantic Coast",
     label: "FROM MOUNTAIN INTERIORS TO THE COAST",
@@ -177,7 +210,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/atlas-to-atlantic-coast-e-bike-tour-6-day",
   },
   {
-    number: "14",
+    number: "17",
     duration: "8 days",
     destination: "Southern Morocco",
     label: "SOUTHERN VALLEYS & OPEN TERRAIN",
@@ -188,7 +221,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/south-morocco-e-bike-tour-8-day",
   },
   {
-    number: "15",
+    number: "18",
     duration: "3 days",
     destination: "Atlas Valleys",
     label: "VALLEY TRAILS & RURAL VILLAGES",
@@ -199,7 +232,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/three-valley-e-bike-tour-3-day",
   },
   {
-    number: "16",
+    number: "19",
     duration: "7 days",
     destination: "Marrakech & Atlas",
     label: "CITY ACCESS & ATLAS EXPLORATION",
@@ -210,7 +243,7 @@ const emtbTours = [
     href: "/cycling-trips/trip/atlas-marrakech-e-bike-tour-7-day",
   },
   {
-    number: "17",
+    number: "20",
     duration: "4 days",
     destination: "Atlas Mountains",
     label: "ATLAS MOUNTAIN RIDING",

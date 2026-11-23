@@ -4,7 +4,7 @@ import ContactEnquiryForm from "@/app/contact/ContactEnquiryForm";
 export const metadata: Metadata = {
   title: "Anti-Atlas Gravel Discovery – 4 Days | Mountain Bike Morocco",
   description:
-    "Discover the landscapes of southern Morocco on a four-day Anti-Atlas gravel cycling adventure. Explore remote roads, mountain scenery and traditional villages on a private gravel tour.",
+    "Discover the Anti-Atlas on a four-day gravel cycling adventure from Tafraoute through the Ameln Valley, Aït Mansour Gorge and the Painted Rocks of southern Morocco.",
   alternates: {
     canonical: "/cycling-trips/trip/anti-atlas-gravel-discovery-4-day",
   },
@@ -24,11 +24,12 @@ const images = {
 const facts = [
   ["Duration", "4 days"],
   ["Destination", "Anti-Atlas, southern Morocco"],
-  ["Starting point", "To be confirmed"],
-  ["Main areas", "Anti-Atlas mountains and surrounding valleys"],
+  ["Starting point", "Tafraoute"],
+  ["Main areas", "Ameln Valley, Aït Mansour and Painted Rocks"],
   ["Cycling style", "Gravel cycling"],
-  ["Difficulty", "To be confirmed against the final route"],
-  ["Experience", "Previous cycling experience recommended"],
+  ["Estimated distance", "170–200 km"],
+  ["Estimated elevation", "2,600–3,650 m"],
+  ["Difficulty", "Intermediate"],
   ["Tour format", "Private multi-day gravel adventure"],
   ["Best season", "Autumn, winter and spring, subject to conditions"],
 ];
@@ -37,111 +38,115 @@ const highlights = [
   {
     number: "01",
     title: "Discover the Anti-Atlas Mountains",
-    text: "Explore the distinctive landscapes of the Anti-Atlas, a region of rugged mountains, open valleys and remote countryside in southern Morocco.",
+    text: "Explore the distinctive landscapes around Tafraoute, with rugged granite mountains, rocky formations and spectacular views across the Anti-Atlas.",
   },
   {
     number: "02",
-    title: "Ride Remote Gravel Roads",
-    text: "Discover selected gravel roads and rural routes through mountain landscapes, with the final riding programme planned according to your experience and road conditions.",
+    title: "Ride the Aït Mansour Gorge",
+    text: "Cycle through remote mountain terrain towards the beautiful Aït Mansour Gorge, where palm groves, traditional villages and dramatic rocky landscapes create a remarkable contrast.",
   },
   {
     number: "03",
-    title: "Experience Traditional Berber Villages",
-    text: "Travel through rural communities and discover traditional architecture, local culture and the welcoming atmosphere of southern Morocco.",
+    title: "Explore the Ameln Valley",
+    text: "Ride through the Ameln Valley and its traditional Berber villages, discovering cultivated terraces, quiet rural roads and the impressive granite mountains surrounding Tafraoute.",
   },
   {
     number: "04",
-    title: "Four Days of Gravel Adventure",
-    text: "Enjoy a multi-day cycling experience combining mountain scenery, rural landscapes and the freedom of exploring Morocco at gravel cycling pace.",
+    title: "Discover the Painted Rocks",
+    text: "Finish your gravel adventure with a ride towards the famous Painted Rocks, one of the most unusual granite landscapes in the Tafraoute region.",
   },
 ];
 
 const beyondTrail = [
   {
     title: "The character of the Anti-Atlas",
-    text: "Discover a distinctive mountain region shaped by rugged ridges, rocky landscapes, open valleys and the changing colours of southern Morocco.",
+    text: "Discover a distinctive mountain region shaped by rugged granite formations, rocky ridges, open valleys and the changing colours of southern Morocco.",
   },
   {
     title: "Traditional mountain villages",
-    text: "Depending on the selected route, pass through rural villages and settlements where traditional architecture reflects the history and character of the region.",
+    text: "Explore the Ameln Valley and its rural communities, where traditional architecture and cultivated terraces reflect the history and character of the region.",
   },
   {
-    title: "Local culture and hospitality",
-    text: "Experience the atmosphere of southern Morocco and discover regional traditions, local food and the hospitality of communities along the journey.",
+    title: "The Aït Mansour oasis",
+    text: "Experience the contrast between the dry mountain landscape and the palm-filled gorge, with its traditional settlements and green cultivated areas.",
   },
   {
-    title: "Remote landscapes and quiet roads",
-    text: "Leave the busiest routes behind and explore quieter parts of Morocco through a multi-day gravel cycling journey.",
+    title: "Remote gravel landscapes",
+    text: "Leave the busiest routes behind and explore selected gravel pistes, mountain roads and quieter countryside tracks around Tafraoute.",
   },
 ];
 
 const itinerary = [
   {
     day: "01",
-    title: "Arrival and First Gravel Ride in the Anti-Atlas",
-    location: "Starting point – Anti-Atlas region",
-    distance: "To be confirmed",
-    riding: "Gravel cycling",
+    title: "Arrival in Tafraoute and Ameln Valley Warm-up",
+    location: "Tafraoute – Ameln Valley – Tafraoute",
+    distance: "30–35 km",
+    elevation: "400–600 m",
+    riding: "Gravel warm-up ride",
     image: images.overview,
-    text: "Meet the local team and review the arrangements for your Anti-Atlas gravel adventure. After checking your bicycle and equipment, begin the first cycling stage on selected roads and gravel routes in the region. The route introduces the landscapes and riding conditions of southern Morocco, with opportunities to discover the surrounding mountains and rural countryside. The exact starting location, distance, elevation gain and accommodation arrangements will be confirmed in your final itinerary.",
+    text: "Arrive in Tafraoute and settle into the mountain surroundings of the Anti-Atlas. After meeting the local team and checking your gravel bicycle and equipment, enjoy an introductory ride through the beautiful Ameln Valley. Follow selected gravel tracks and quiet roads past traditional Berber villages, cultivated terraces and impressive granite formations. This first stage offers a relaxed introduction to the region and its riding conditions before returning to Tafraoute for the evening.",
     details: [
-      "Meet the team and review the trip arrangements",
+      "Arrive in Tafraoute and meet the local team",
+      "Review the four-day cycling programme",
       "Check your gravel bicycle and personal equipment",
-      "Begin the first selected gravel cycling stage",
-      "Discover the landscapes of the Anti-Atlas",
-      "Take scenic breaks along the route",
-      "Reach the agreed overnight accommodation",
+      "Ride through the Ameln Valley and surrounding villages",
+      "Enjoy views of the granite mountains and rural landscapes",
+      "Return to Tafraoute for overnight accommodation",
     ],
   },
   {
     day: "02",
-    title: "Gravel Roads Through Mountain Valleys",
-    location: "Anti-Atlas – Mountain Valleys",
-    distance: "To be confirmed",
-    riding: "Gravel cycling",
+    title: "Tafraoute to Aït Mansour Gorge",
+    location: "Tafraoute – Anti-Atlas Mountain Tracks – Aït Mansour",
+    distance: "55–65 km",
+    elevation: "900–1,200 m",
+    riding: "Mountain gravel and rural tracks",
     image: images.mountains,
-    text: "Continue your gravel journey through the mountain landscapes and valleys of the Anti-Atlas. Ride selected rural roads and suitable gravel sections, discovering the changing scenery of southern Morocco. The day's route will be planned according to the confirmed programme, road conditions and the group's riding level. Enjoy opportunities to stop in rural areas and appreciate the character of this remote mountain region before reaching the next overnight location.",
+    text: "Today's stage takes you deeper into the Anti-Atlas on a longer gravel cycling adventure. Leave Tafraoute and follow selected mountain tracks and rural roads through rugged landscapes and traditional settlements. The route gradually leads towards the spectacular Aït Mansour Gorge, where the dry rocky mountains give way to palm groves, small gardens and traditional villages. Enjoy the changing scenery throughout the ride before reaching the Aït Mansour area for your overnight stay.",
     details: [
-      "Breakfast and preparation for the cycling stage",
-      "Ride selected mountain and valley routes",
-      "Discover remote landscapes and rural surroundings",
-      "Enjoy planned breaks during the ride",
-      "Continue towards the next overnight location",
-      "Review the following day's route with the team",
+      "Breakfast and preparation for the longer cycling stage",
+      "Leave Tafraoute and enter the surrounding mountain landscapes",
+      "Ride selected gravel pistes and rural mountain roads",
+      "Discover remote settlements and changing scenery",
+      "Approach the palm-filled Aït Mansour Gorge",
+      "Arrive in the Aït Mansour area for overnight accommodation",
     ],
   },
   {
     day: "03",
-    title: "Discover Remote Villages and Southern Landscapes",
-    location: "Anti-Atlas – Rural Villages and Valleys",
-    distance: "To be confirmed",
-    riding: "Gravel cycling",
+    title: "Aït Mansour Gorge to Tafraoute via the Anti-Atlas",
+    location: "Aït Mansour – Palm Oasis – Mountain Pistes – Tafraoute",
+    distance: "45–55 km",
+    elevation: "800–1,100 m",
+    riding: "Gravel climbs and mountain descents",
     image: images.village,
-    text: "Explore another part of the Anti-Atlas on a gravel cycling stage through selected rural roads and mountain landscapes. Depending on the final route, the ride may pass traditional villages, cultivated areas and quiet valleys. Take time to appreciate the local architecture and scenery along the way. The route and riding distance will be confirmed during trip planning to ensure the programme is appropriate for the group.",
+    text: "After breakfast, begin the ride through the palm-lined landscapes of Aït Mansour before climbing away from the oasis towards the open mountain scenery of the Anti-Atlas. Follow selected gravel routes through rocky hillsides, remote countryside and traditional settlements. The landscape changes throughout the stage, creating a rewarding day of climbing, scenic riding and mountain descents. Continue towards Tafraoute and return to the town for the evening.",
     details: [
-      "Prepare for another day of gravel cycling",
-      "Ride selected rural roads and gravel sections",
-      "Discover traditional villages and mountain scenery",
-      "Enjoy stops along the route",
-      "Continue through the selected Anti-Atlas landscapes",
-      "Arrive at the agreed overnight accommodation",
+      "Breakfast and preparation for the return ride",
+      "Ride through the palm groves of Aït Mansour",
+      "Climb away from the oasis towards the mountain landscape",
+      "Follow selected gravel pistes and rural tracks",
+      "Enjoy panoramic views across the Anti-Atlas",
+      "Descend towards Tafraoute and return to your accommodation",
     ],
   },
   {
     day: "04",
-    title: "Final Gravel Stage and End of the Adventure",
-    location: "Anti-Atlas – Final Destination",
-    distance: "To be confirmed",
-    riding: "Gravel cycling",
+    title: "Tafraoute and Painted Rocks Gravel Loop",
+    location: "Tafraoute – Painted Rocks – Ameln Valley – Tafraoute",
+    distance: "40–45 km",
+    elevation: "500–750 m",
+    riding: "Gravel loop and scenic mountain roads",
     image: images.trails,
-    text: "Complete your four-day gravel adventure with a final cycling stage through the landscapes selected for your programme. Enjoy the last roads and views of the Anti-Atlas before reaching the agreed finishing point. At the end of the ride, the team will coordinate the departure or onward transfer arrangements specified in your booking. The final destination, cycling distance and transfer details will be confirmed before departure.",
+    text: "Complete your four-day gravel adventure with a final ride through the remarkable landscapes surrounding Tafraoute. Follow selected gravel tracks and quiet roads towards the famous Painted Rocks, where enormous granite boulders create one of the region's most unusual natural landscapes. Continue through the surrounding countryside and the Ameln Valley before returning to Tafraoute. Celebrate the end of your Anti-Atlas gravel adventure before your onward journey or departure.",
     details: [
       "Breakfast and final equipment check",
-      "Begin the last gravel cycling stage",
-      "Explore the final selected mountain and countryside routes",
-      "Enjoy scenic stops along the ride",
-      "Complete the cycling programme",
-      "Arrange onward travel according to the confirmed itinerary",
+      "Begin the final gravel cycling stage from Tafraoute",
+      "Ride towards the famous Painted Rocks",
+      "Explore the surrounding granite formations and countryside",
+      "Continue through selected Ameln Valley routes",
+      "Return to Tafraoute and finish the four-day adventure",
     ],
   },
 ];
@@ -171,15 +176,15 @@ const exclusions = [
 const preparation = [
   {
     title: "Choose a Suitable Gravel Bike",
-    text: "Bring a gravel bicycle suitable for the selected mountain roads and surfaces. Tyre width, gearing, brakes and overall setup should match the confirmed route and terrain.",
+    text: "Bring a gravel bicycle suitable for the selected mountain roads and surfaces. Tyre width, gearing, brakes and overall setup should match the gravel pistes, climbs and descents around Tafraoute and Aït Mansour.",
   },
   {
     title: "Prepare for Mountain Terrain",
-    text: "The Anti-Atlas includes varied landscapes and road conditions. Your bicycle setup should be checked against the selected route, including gravel sections, climbs and descents.",
+    text: "The Anti-Atlas includes rocky landscapes, gravel tracks and changing road conditions. Your bicycle setup should be checked against the selected route, including longer climbs and rougher sections.",
   },
   {
     title: "Build Your Cycling Endurance",
-    text: "This is a multi-day cycling experience. Previous cycling experience and preparation for consecutive days in the saddle are recommended. Share your usual riding distances and fitness level when planning.",
+    text: "This four-day experience includes approximately 170–200 km of riding, with consecutive days in the saddle. Previous cycling experience and preparation for mountain gravel stages are recommended.",
   },
   {
     title: "Pack for Four Days of Cycling",
@@ -190,35 +195,43 @@ const preparation = [
 const faqs = [
   {
     q: "How long is the Anti-Atlas Gravel Discovery tour?",
-    a: "The tour is planned as a four-day gravel cycling experience. The exact riding time and daily distances depend on the final route and the group's preferences.",
+    a: "The tour is planned as a four-day gravel cycling experience, with approximately 170–200 km of total riding across the four stages. Daily distances are estimated and depend on the final route selection.",
   },
   {
     q: "Where does the tour start?",
-    a: "The starting point will be confirmed in your trip proposal. It will depend on the selected route, arrival arrangements and the agreed programme for the four days.",
+    a: "The proposed starting and finishing point is Tafraoute, in the Anti-Atlas region of southern Morocco. The final meeting and transfer arrangements will be confirmed in your trip proposal.",
   },
   {
-    q: "Where is the Anti-Atlas region?",
-    a: "The Anti-Atlas is a mountain region in southern Morocco, known for its rugged landscapes, valleys, rocky mountains and traditional rural communities.",
+    q: "Which places will we discover during the tour?",
+    a: "The proposed itinerary explores Tafraoute, the Ameln Valley, Aït Mansour Gorge and the famous Painted Rocks. These locations showcase the region's granite mountains, traditional villages and palm-filled landscapes.",
+  },
+  {
+    q: "How far do we cycle each day?",
+    a: "The estimated daily distances are 30–35 km on Day 1, 55–65 km on Day 2, 45–55 km on Day 3 and 40–45 km on Day 4. The final distances depend on the selected tracks and confirmed route.",
+  },
+  {
+    q: "How much elevation gain is included?",
+    a: "The estimated climbing is approximately 400–600 m on Day 1, 900–1,200 m on Day 2, 800–1,100 m on Day 3 and 500–750 m on Day 4. These are planning estimates rather than verified GPX figures.",
   },
   {
     q: "What type of terrain can we expect?",
-    a: "The programme is designed around gravel cycling and may include selected unpaved sections, rural roads and paved connections. Exact road surfaces depend on the confirmed route.",
+    a: "The programme is designed around gravel cycling and may include mountain pistes, rocky gravel sections, quiet rural roads and paved connections. Exact road surfaces depend on the confirmed route.",
+  },
+  {
+    q: "How difficult is the Anti-Atlas Gravel Discovery?",
+    a: "The proposed programme is best suited to intermediate gravel cyclists with previous multi-day riding experience. The longer mountain stages include significant climbing. Difficulty should be checked against the final GPX route and your riding experience.",
+  },
+  {
+    q: "Are the daily distances and elevation fixed?",
+    a: "The distances and elevation gains shown on this page are estimates for planning purposes. The exact figures must be checked against the final GPX tracks and may change according to route conditions.",
   },
   {
     q: "Do we need our own gravel bicycles?",
     a: "You can discuss bringing your own bicycle or arranging a rental. Bicycle availability, specifications, rental costs and equipment arrangements must be confirmed in your trip proposal.",
   },
   {
-    q: "How difficult is the Anti-Atlas Gravel Discovery?",
-    a: "Difficulty depends on the selected route, daily distance, elevation gain, road surfaces and weather conditions. Previous cycling experience and preparation for consecutive riding days are recommended.",
-  },
-  {
-    q: "Are the daily distances and elevation fixed?",
-    a: "Exact daily distance and elevation figures have not been specified here. They depend on the confirmed route and will be agreed before the tour.",
-  },
-  {
     q: "Is accommodation included?",
-    a: "Accommodation arrangements will be specified in your final proposal. Check the confirmed itinerary for the overnight locations, accommodation standard and included services.",
+    a: "Accommodation arrangements will be specified in your final proposal. The proposed itinerary includes overnight stays in Tafraoute and the Aït Mansour area. Check your confirmed itinerary for the accommodation standard and included services.",
   },
   {
     q: "Is a support vehicle available?",
@@ -507,8 +520,8 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
           <p className="at-hero-description">
             Discover the rugged landscapes of southern Morocco
             on a four-day gravel cycling adventure through
-            mountain roads, remote valleys and traditional
-            villages in the Anti-Atlas region.
+            Tafraoute, the Ameln Valley, Aït Mansour Gorge
+            and the remarkable Painted Rocks.
           </p>
           <div className="at-hero-actions">
             <a className="at-button" href="/contact">Plan Your Gravel Adventure <span>→</span></a>
@@ -518,7 +531,7 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
             <div><strong>04 DAYS</strong><span>Gravel adventure</span></div>
             <div><strong>ANTI-ATLAS</strong><span>Southern Morocco</span></div>
             <div><strong>GRAVEL</strong><span>Mountain roads and trails</span></div>
-            <div><strong>MOROCCO</strong><span>Culture and scenery</span></div>
+            <div><strong>TAFRAOUTE</strong><span>Mountains and valleys</span></div>
           </div>
         </div>
       </section>
@@ -554,24 +567,26 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
             <h2 className="at-heading">Discover the Anti-Atlas Mountains by Gravel Bike</h2>
             <p className="at-copy">
               The Anti-Atlas Gravel Discovery is a four-day
-              cycling experience designed to explore the
-              distinctive landscapes of southern Morocco.
-              Discover a mountain region of rugged terrain,
-              remote valleys and traditional rural communities.
+              cycling experience based around Tafraoute,
+              one of the most distinctive mountain destinations
+              in southern Morocco. Discover rugged granite
+              formations, remote valleys and traditional
+              rural communities.
             </p>
             <p className="at-copy">
-              The journey is planned around selected gravel
-              roads, rural routes and suitable paved connections.
-              Each cycling stage offers an opportunity to
-              experience a different part of the Anti-Atlas
-              and its surrounding landscapes.
+              Ride through the beautiful Ameln Valley,
+              explore the palm-filled Aït Mansour Gorge
+              and discover the remarkable Painted Rocks.
+              Each stage offers a different perspective
+              on the landscapes and culture of the Anti-Atlas.
             </p>
             <p className="at-copy">
-              This private gravel adventure can be discussed
-              around your riding level, preferred terrain and
-              travel dates. The exact route, daily distances,
-              elevation and accommodation arrangements
-              should be confirmed before departure.
+              The proposed programme covers approximately
+              170–200 km over four days, with an estimated
+              total elevation gain of 2,600–3,650 m.
+              Distances and climbing are planning estimates
+              and should be checked against the final GPX
+              routes before departure.
             </p>
             <a className="at-text-link" href="#itinerary">Discover the itinerary →</a>
           </div>
@@ -582,33 +597,33 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
         <div className="at-container at-overview-grid">
           <div>
             <span className="at-eyebrow">YOUR PRIVATE GRAVEL EXPERIENCE</span>
-            <h2 className="at-heading">Four Days Exploring Southern Morocco</h2>
+            <h2 className="at-heading">Four Days Exploring the Tafraoute Region</h2>
             <p className="at-copy">
-              The Anti-Atlas offers a distinctive setting
-              for a multi-day gravel cycling adventure.
-              Its rugged mountain scenery, quiet rural
-              roads and traditional villages create
-              opportunities to explore beyond the
-              better-known destinations.
+              Begin and finish your adventure in Tafraoute,
+              surrounded by the remarkable granite mountains
+              of the Anti-Atlas. From here, explore selected
+              gravel routes through the Ameln Valley and
+              towards the Aït Mansour Gorge.
             </p>
             <p className="at-copy">
-              Ride through selected mountain and valley
-              routes, discovering the changing landscapes
-              of the region over four days. The daily
-              programme can be discussed according to
-              your cycling background and preferred pace.
+              The programme combines a warm-up ride,
+              two mountain stages and a final scenic loop
+              towards the Painted Rocks. The daily distances
+              are designed to create a varied four-day
+              gravel experience.
             </p>
           </div>
           <aside className="at-booking-card">
             <span className="at-eyebrow">TRIP AT A GLANCE</span>
             <h3>Anti-Atlas Gravel Discovery</h3>
-            <p>A private four-day gravel cycling experience through the mountain landscapes of southern Morocco.</p>
+            <p>A private four-day gravel cycling experience through the mountain landscapes around Tafraoute.</p>
             <ul className="at-booking-list">
               <li><span>Duration</span><strong>4 days</strong></li>
-              <li><span>Destination</span><strong>Anti-Atlas</strong></li>
-              <li><span>Region</span><strong>Southern Morocco</strong></li>
+              <li><span>Starting point</span><strong>Tafraoute</strong></li>
+              <li><span>Main areas</span><strong>Ameln and Aït Mansour</strong></li>
+              <li><span>Total distance</span><strong>170–200 km estimated</strong></li>
+              <li><span>Elevation gain</span><strong>2,600–3,650 m estimated</strong></li>
               <li><span>Tour format</span><strong>Private gravel tour</strong></li>
-              <li><span>Route programme</span><strong>Mountain and rural routes</strong></li>
             </ul>
             <a className="at-button" href="/contact">Enquire About This Tour <span>→</span></a>
           </aside>
@@ -623,10 +638,10 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
               <h2 className="at-heading">Highlights of the Anti-Atlas Gravel Discovery</h2>
             </div>
             <p>
-              Discover the rugged mountains of southern
-              Morocco, ride selected gravel roads and
-              experience traditional villages and remote
-              landscapes on a four-day cycling adventure.
+              Discover Tafraoute and the rugged mountains
+              of southern Morocco, ride gravel roads through
+              the Ameln Valley and Aït Mansour Gorge, and
+              explore the remarkable Painted Rocks.
             </p>
           </div>
           <div className="at-highlight-grid">
@@ -648,27 +663,27 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
           </div>
           <div>
             <span className="at-eyebrow">THE ROUTE & TERRAIN</span>
-            <h2 className="at-heading">Remote Gravel Roads and Rugged Mountain Landscapes</h2>
+            <h2 className="at-heading">Gravel Roads, Granite Mountains and Palm-Filled Valleys</h2>
             <p className="at-copy">
-              The Anti-Atlas is characterised by rugged
-              mountain scenery, rocky landscapes and
-              rural valleys. Depending on the selected
-              route, your gravel adventure may combine
-              suitable unpaved sections, quiet rural roads
-              and paved connections.
+              The route explores the landscapes around
+              Tafraoute, where rocky granite mountains,
+              open valleys and traditional villages create
+              a distinctive setting for gravel cycling.
+              The programme includes selected mountain
+              pistes, rural roads and suitable paved connections.
             </p>
             <p className="at-copy">
-              The final route will be selected according
-              to the group's riding experience, available
-              time, road conditions and the overall
-              programme. Daily distance and elevation
-              will be confirmed before departure.
+              The longer stages explore the countryside
+              towards Aït Mansour Gorge, with gravel climbs
+              and descents through changing mountain scenery.
+              The final loop returns to the surroundings
+              of Tafraoute and the Painted Rocks.
             </p>
             <ul className="at-terrain-points">
-              <li><span>01</span>Selected gravel roads and rural tracks</li>
-              <li><span>02</span>Mountain scenery and remote valleys</li>
-              <li><span>03</span>Traditional villages and countryside routes</li>
-              <li><span>04</span>Four cycling days planned around your experience</li>
+              <li><span>01</span>Gravel roads and rural mountain tracks</li>
+              <li><span>02</span>Ameln Valley and traditional Berber villages</li>
+              <li><span>03</span>Aït Mansour Gorge and palm-filled oasis scenery</li>
+              <li><span>04</span>Painted Rocks and granite mountain landscapes</li>
             </ul>
           </div>
         </div>
@@ -681,11 +696,10 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
             <h2 className="at-heading">Tour Information</h2>
             <p className="at-copy">
               Review the main details of this four-day
-              gravel cycling experience. Exact daily
-              distances, elevation, road surfaces,
-              starting point, accommodation and support
-              services should be confirmed in your
-              personalised trip proposal.
+              gravel cycling experience. The distances
+              and elevation figures are estimates for
+              planning purposes and should be verified
+              against the final GPX tracks before departure.
             </p>
           </div>
           <div className="at-facts-table">
@@ -709,10 +723,10 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
           <p className="at-copy">
             This experience is about more than the
             kilometres covered. Beyond the cycling
-            routes, discover the mountain landscapes,
-            traditional villages and local communities
-            that give southern Morocco its distinctive
-            character.
+            routes, discover the traditional villages
+            of the Ameln Valley, the palm-filled landscapes
+            of Aït Mansour and the remarkable granite
+            formations around Tafraoute.
           </p>
           <div className="at-culture-grid">
             {beyondTrail.map((item) => (
@@ -733,9 +747,9 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
               <h2 className="at-heading">Explore the Landscapes Along the Journey</h2>
             </div>
             <p>
-              Discover the mountain roads, rural
-              villages, open valleys and rugged
-              landscapes that make the Anti-Atlas
+              Discover the granite mountains, rural
+              villages, palm-filled valleys and rugged
+              landscapes that make the Tafraoute region
               a distinctive destination for gravel cycling.
             </p>
           </div>
@@ -757,20 +771,20 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
               <h2 className="at-heading">Anti-Atlas Gravel Discovery Itinerary</h2>
             </div>
             <p>
-              A suggested four-day structure exploring
-              selected gravel routes in the Anti-Atlas.
-              The final route, daily distances, riding
-              time and transfers are confirmed during
-              trip planning.
+              Four gravel stages based around Tafraoute,
+              exploring the Ameln Valley, Aït Mansour Gorge
+              and Painted Rocks through the landscapes
+              of the Anti-Atlas.
             </p>
           </div>
           <p className="at-itinerary-intro">
-            This itinerary outlines the proposed structure
-            of the experience. Exact route selection,
-            daily distance, elevation gain, road surfaces,
-            accommodation, meeting point and transfer
-            arrangements depend on the final programme
-            agreed with your group.
+            The proposed itinerary covers approximately
+            170–200 km of gravel cycling, with an estimated
+            total elevation gain of 2,600–3,650 m.
+            Daily distances and climbing are approximate
+            planning figures, not verified GPX measurements.
+            The final tracks, road surfaces and riding
+            conditions should be checked before departure.
           </p>
           <div className="at-itinerary-list">
             {itinerary.map((day) => (
@@ -785,6 +799,7 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
                   <p>{day.text}</p>
                   <div className="at-day-meta">
                     <span>Distance: {day.distance}</span>
+                    <span>Elevation: {day.elevation}</span>
                     <span>{day.riding}</span>
                   </div>
                   <ul>
@@ -843,7 +858,7 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
               Prepare your bicycle, fitness and
               equipment for four days of cycling
               through the varied roads and mountain
-              landscapes of southern Morocco.
+              landscapes around Tafraoute.
             </p>
           </div>
           <div className="at-prep-grid">
@@ -866,27 +881,30 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
             <span className="at-eyebrow">RIDE AT YOUR LEVEL</span>
             <h2 className="at-heading">Difficulty and Cycling Experience</h2>
             <p className="at-copy">
-              A multi-day gravel adventure in the
-              Anti-Atlas can involve varied road surfaces,
-              mountain climbs, descents and consecutive
-              days of riding. The overall difficulty
-              depends on the selected route, daily
-              distance, elevation gain and weather conditions.
+              This proposed four-day gravel adventure
+              is best suited to intermediate cyclists
+              with previous experience on gravel roads
+              and mountain terrain. The programme
+              includes approximately 170–200 km of
+              riding and an estimated 2,600–3,650 m
+              of total climbing.
             </p>
             <p className="at-copy">
-              Tell us about your cycling experience,
-              the distances you normally ride and your
-              preferred terrain. This information will
-              help when discussing a suitable four-day
-              route and bicycle setup for your adventure.
+              The second and third stages are the
+              most demanding, with longer distances
+              and significant elevation gain. Tell us
+              about your cycling experience, the
+              distances you normally ride and your
+              preferred terrain so the final route can
+              be matched to your ability.
             </p>
             <div className="at-difficulty-note">
-              <strong>Important:</strong> Final difficulty,
-              daily riding distances, elevation figures
-              and road surfaces must be checked against
-              the actual route before booking. This page
-              does not promise a fixed technical grade
-              or mileage.
+              <strong>Important:</strong> Daily distances
+              and elevation figures are estimates for
+              itinerary planning. Final difficulty,
+              actual mileage, climbing and road surfaces
+              must be checked against the confirmed
+              GPX tracks before booking.
             </div>
           </div>
         </div>
@@ -927,11 +945,26 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
           <p>
             Tell us your preferred dates, group size,
             cycling experience and bicycle requirements.
-            We can discuss a four-day gravel adventure
-            in southern Morocco and help plan an
+            We can discuss this four-day gravel adventure
+            around Tafraoute, the Ameln Valley and
+            Aït Mansour Gorge, and help plan an
             experience suited to your riding style.
           </p>
           <a className="at-button" href="/contact">Plan Your Gravel Adventure <span>→</span></a>
+        </div>
+      </section>
+
+      <section
+        className="at-section"
+        id="enquiry"
+        style={{ backgroundColor: "var(--green)" }}
+      >
+        <div className="at-container">
+          <ContactEnquiryForm
+            tourName="Anti-Atlas Gravel Discovery – 4 Days"
+            destination="Anti-Atlas, southern Morocco"
+            cyclingType="Gravel Cycling"
+          />
         </div>
       </section>
 
@@ -964,20 +997,6 @@ export default function AntiAtlasGravelDiscovery4DayPage() {
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section
-        className="at-section"
-        id="enquiry"
-        style={{ backgroundColor: "var(--green)" }}
-      >
-        <div className="at-container">
-          <ContactEnquiryForm
-            tourName="Anti-Atlas Gravel Discovery – 4 Days"
-            destination="Anti-Atlas, southern Morocco"
-            cyclingType="Gravel Cycling"
-          />
         </div>
       </section>
 
