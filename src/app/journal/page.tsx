@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Suspense } from "react";
+import { connection } from "next/server";
 
 export const metadata: Metadata = {
   title: "Morocco Cycling Journal | MTB, Gravel, E-MTB & Road Guides | Mountain Bike Morocco",
@@ -784,6 +786,11 @@ const faqs = [
   },
 ];
 
+async function CurrentYear() {
+  await connection();
+  return <>{new Date().getFullYear()}</>;
+}
+
 export default function JournalPage() {
   return (
     <>
@@ -987,7 +994,7 @@ export default function JournalPage() {
         </div>
 
         <div className="container footer-bottom">
-          <p>© {new Date().getFullYear()} Mountain Bike Morocco. All rights reserved.</p>
+          <p>© <Suspense fallback="2026"><CurrentYear /></Suspense> Mountain Bike Morocco. All rights reserved.</p>
           <p>Made for the journey.</p>
           <Link href="/privacy-policy">Privacy Policy</Link>
         </div>
