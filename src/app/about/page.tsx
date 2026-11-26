@@ -1,9 +1,8 @@
-
 import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Mountain Bike Morocco | Cycling Tours & Adventures",
+  title: "Mountain Bike Morocco | Cycling Tours & Adventures",
   description:
     "Meet MTB Morocco, a local cycling team based at the foot of the High Atlas. Explore our MTB, E-MTB, gravel, road, luxury cycling and private group tours, bike fleet, responsible travel approach, safety support and rider reviews.",
 };
@@ -136,23 +135,39 @@ const principles = [
 const whyRideWithUs = [
   {
     number: "01",
-    title: "Local knowledge, not just a route file",
-    text: "The Atlas is our home riding region. Local guides help you understand the terrain, choose an appropriate pace and make the most of the villages, valleys and landscapes along the way.",
+    title: "Local Experience",
+    text: "Our knowledge of Morocco’s mountain trails, valleys and rural routes helps us plan cycling journeys around the terrain, local conditions and the experience you want.",
+    icon: "experience",
   },
   {
     number: "02",
-    title: "A ride matched to your group",
-    text: "We encourage an honest conversation about fitness, handling skills, preferred distances and the type of riding you enjoy. The aim is to build a trip around the riders—not force everyone into the same itinerary.",
+    title: "Professional Guides",
+    text: "Ride with local guides who understand the region and help you navigate the routes, discover the landscapes and enjoy the journey at a suitable pace.",
+    icon: "guides",
   },
   {
     number: "03",
-    title: "Support beyond the saddle",
-    text: "Transfers, luggage movement, refreshment stops and mechanical assistance can make a big difference on a multi-day trip. Confirm the exact services included in your chosen itinerary before booking.",
+    title: "Trust & Safety",
+    text: "Good preparation, clear communication and suitable support arrangements are important parts of every ride, particularly when exploring remote mountain and rural areas.",
+    icon: "safety",
   },
   {
     number: "04",
-    title: "Morocco experienced at human pace",
-    text: "Ride between mountain villages, rocky plateaus, desert-edge landscapes and the coast. A cycling journey leaves room to notice the country’s changing scenery and everyday life along the way.",
+    title: "Local Knowledge",
+    text: "Discover more than the main attractions. Our local perspective helps bring mountain villages, hidden valleys and the everyday culture of Morocco into your cycling journey.",
+    icon: "knowledge",
+  },
+  {
+    number: "05",
+    title: "Flexible Cycling Tours",
+    text: "Discuss your preferred dates, group size, cycling style and experience. Private journeys can be planned around your interests and the practical needs of your group.",
+    icon: "flexibility",
+  },
+  {
+    number: "06",
+    title: "Transparent Pricing",
+    text: "Understand what is included in your chosen tour before booking. We encourage clear discussions about services, equipment, accommodation, transfers and any additional costs.",
+    icon: "pricing",
   },
 ];
 
@@ -292,25 +307,75 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="about-page__why-section">
+        {/* WHY RIDE WITH US */}
+        <section className="about-why">
           <div className="cl-wrap">
-            <div className="cl-section-heading">
-              <div>
-                <p className="cl-eyebrow cl-eyebrow--dark">WHY RIDE WITH US</p>
-                <h2>Local knowledge, carefully planned routes, and support beyond the saddle.</h2>
+            <div className="about-why__heading">
+              <p>WHY RIDE WITH US</p>
+              <h2>MOROCCO BIKE TOURS</h2>
+              <div className="about-why__intro">
+                Discover Morocco by bike with local knowledge, carefully considered routes and cycling experiences shaped around your group. From the Atlas Mountains to the desert and coast, we help you find the right journey for your riding style.
               </div>
-              <p>
-                A memorable cycling holiday is built from more than beautiful scenery. It needs the right route, honest advice, good preparation and a team that understands how the day should work for the people riding it.
-              </p>
             </div>
-            <div className="about-page__why-grid">
+
+            <div className="about-why__grid">
               {whyRideWithUs.map((item) => (
-                <article className="about-page__why-card" key={item.number}>
-                  <span className="about-page__number">{item.number}</span>
+                <article className="about-why__card" key={item.number}>
+                  <div className="about-why__icon" aria-hidden="true">
+                    {item.icon === "experience" && (
+                      <svg viewBox="0 0 80 80" fill="none">
+                        <path d="M40 7L50 29L74 32L56 49L60 73L40 61L20 73L24 49L6 32L30 29L40 7Z" />
+                      </svg>
+                    )}
+                    {item.icon === "guides" && (
+                      <svg viewBox="0 0 80 80" fill="none">
+                        <circle cx="40" cy="40" r="32" />
+                        <circle cx="29" cy="33" r="3" fill="currentColor" stroke="none" />
+                        <circle cx="51" cy="33" r="3" fill="currentColor" stroke="none" />
+                        <path d="M27 48C30 54 35 57 40 57C45 57 50 54 53 48" />
+                      </svg>
+                    )}
+                    {item.icon === "safety" && (
+                      <svg viewBox="0 0 80 80" fill="none">
+                        <path d="M40 12C31 12 24 19 24 28C24 37 31 44 40 44C49 44 56 37 56 28C56 19 49 12 40 12Z" />
+                        <path d="M12 37V53C12 57 15 61 19 64L27 70C31 73 36 70 36 65V55C36 51 34 48 31 46L24 41V23" />
+                        <path d="M68 37V53C68 57 65 61 61 64L53 70C49 73 44 70 44 65V55C44 51 46 48 49 46L56 41V23" />
+                      </svg>
+                    )}
+                    {item.icon === "knowledge" && (
+                      <svg viewBox="0 0 80 80" fill="none">
+                        <circle cx="40" cy="17" r="7" fill="currentColor" stroke="none" />
+                        <path d="M40 34V69" />
+                        <path d="M28 42H40V69H28" />
+                        <path d="M40 42H52" />
+                      </svg>
+                    )}
+                    {item.icon === "flexibility" && (
+                      <svg viewBox="0 0 80 80" fill="none">
+                        <rect x="13" y="19" width="54" height="52" rx="7" />
+                        <path d="M26 10V26M54 10V26M14 34H66" />
+                        <path d="M27 50L36 59L54 42" />
+                      </svg>
+                    )}
+                    {item.icon === "pricing" && (
+                      <svg viewBox="0 0 80 80" fill="none">
+                        <path d="M12 38H25L34 27C38 22 44 24 44 30L42 39H60C65 39 68 44 65 48C69 52 66 58 61 59C63 64 59 68 54 68H35C30 68 27 65 24 62L12 56V38Z" />
+                        <path d="M12 38V56" />
+                        <path d="M43 39L49 28C52 22 60 24 60 30L57 40" />
+                      </svg>
+                    )}
+                  </div>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
                 </article>
               ))}
+            </div>
+
+            <div className="about-why__footer">
+              <p>Let’s find the right Moroccan cycling adventure for you.</p>
+              <Link className="about-why__button" href="/contact">
+                BOOK YOUR BIKE TOUR
+              </Link>
             </div>
           </div>
         </section>
@@ -665,45 +730,143 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="page-width footer-bottom">
-<span>© 2026 Mountain Bike Morocco</span>          <span>Morocco cycling adventures, thoughtfully planned.</span>
+          <span>© 2026 Mountain Bike Morocco</span>
+          <span>Morocco cycling adventures, thoughtfully planned.</span>
         </div>
       </footer>
 
       <style>{`
-        .about-page__why-section {
-          padding: clamp(76px, 8vw, 116px) 0;
-          background: #f1eee8;
+        .about-why {
+          position: relative;
+          isolation: isolate;
+          overflow: hidden;
+          padding: clamp(58px, 6vw, 82px) 0 64px;
+          background-color: #fff;
+          background-image:
+            repeating-radial-gradient(
+              ellipse at 0% 18%,
+              transparent 0,
+              transparent 18px,
+              rgba(48, 55, 50, .055) 19px,
+              transparent 20px,
+              transparent 28px
+            ),
+            repeating-radial-gradient(
+              ellipse at 100% 82%,
+              transparent 0,
+              transparent 21px,
+              rgba(48, 55, 50, .05) 22px,
+              transparent 23px,
+              transparent 31px
+            );
+          background-size: 470px 560px, 520px 610px;
+          background-position: left top, right bottom;
+          background-repeat: no-repeat;
         }
-        .about-page__why-grid {
+        .about-why__heading {
+          max-width: 1080px;
+          margin: 0 auto;
+          text-align: center;
+        }
+        .about-why__heading > p {
+          margin: 0 0 6px;
+          color: #202020;
+          font-size: clamp(19px, 2vw, 23px);
+          font-weight: 500;
+          letter-spacing: .015em;
+        }
+        .about-why__heading h2 {
+          margin: 0 0 19px;
+          color: #ed1c24;
+          font-size: clamp(25px, 2.5vw, 31px);
+          font-weight: 500;
+          letter-spacing: .015em;
+          line-height: 1.25;
+        }
+        .about-why__intro {
+          max-width: 1050px;
+          margin: 0 auto;
+          color: #555;
+          font-size: clamp(15px, 1.4vw, 18px);
+          font-style: italic;
+          line-height: 1.7;
+        }
+        .about-why__grid {
           display: grid;
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-          gap: 18px;
-          margin-top: 38px;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          column-gap: clamp(24px, 4vw, 58px);
+          row-gap: 28px;
+          max-width: 1160px;
+          margin: 28px auto 0;
         }
-        .about-page__why-card {
-          min-height: 255px;
-          padding: 27px 25px 29px;
-          border: 1px solid rgba(32, 35, 29, 0.13);
-          background: #fffefa;
+        .about-why__card {
+          display: flex;
+          min-width: 0;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
         }
-        .about-page__number {
-          display: inline-block;
-          margin-bottom: 25px;
-          color: #c8794e;
-          font-size: 12px;
-          font-weight: 800;
-          letter-spacing: .16em;
+        .about-why__icon {
+          display: flex;
+          width: 82px;
+          height: 82px;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 15px;
+          color: #ed1c24;
         }
-        .about-page__why-card h3 {
-          margin-bottom: 13px;
-          font-size: clamp(19px, 1.8vw, 24px);
-          line-height: 1.2;
+        .about-why__icon svg {
+          display: block;
+          width: 78px;
+          height: 78px;
+          overflow: visible;
+          stroke: currentColor;
+          stroke-width: 6;
+          stroke-linecap: round;
+          stroke-linejoin: round;
         }
-        .about-page__why-card p {
+        .about-why__card h3 {
+          margin: 0 0 12px;
+          color: #ed1c24;
+          font-size: clamp(16px, 1.5vw, 19px);
+          font-weight: 500;
+          line-height: 1.35;
+          text-transform: uppercase;
+        }
+        .about-why__card p {
+          max-width: 365px;
           margin: 0;
-          color: #55584f;
-          font-size: 15px;
-          line-height: 1.8;
+          color: #555;
+          font-size: 15.5px;
+          line-height: 1.72;
+        }
+        .about-why__footer {
+          margin-top: 42px;
+          text-align: center;
+        }
+        .about-why__footer p {
+          margin: 0 0 18px;
+          color: #202020;
+          font-size: clamp(17px, 1.8vw, 22px);
+          line-height: 1.5;
+        }
+        .about-why__button {
+          display: inline-flex;
+          min-height: 44px;
+          align-items: center;
+          justify-content: center;
+          padding: 12px 30px;
+          background: #ed1c24;
+          color: #fff;
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: .04em;
+          text-decoration: none;
+          transition: background .2s ease, transform .2s ease;
+        }
+        .about-why__button:hover {
+          transform: translateY(-2px);
+          background: #c9151c;
         }
         .about-page__detail-section {
           padding: clamp(76px, 9vw, 126px) 0;
@@ -863,7 +1026,7 @@ export default function AboutPage() {
         .about-review-card__author strong { color: #24211e; font-weight: 700; }
         .about-reviews__note { margin: 24px 0 0; color: #79756f; font-size: 12px; text-align: center; }
         @media (max-width: 1000px) {
-          .about-page__why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+          .about-why__grid { column-gap: 25px; row-gap: 34px; }
           .about-reviews__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
           .about-page__split { gap: 34px; }
           .about-page__split-image, .about-page__split-image img { min-height: 430px; }
@@ -871,12 +1034,31 @@ export default function AboutPage() {
           .about-page__responsible-image, .about-page__responsible-image img { min-height: 430px; }
         }
         @media (max-width: 680px) {
-          .about-page__why-grid,
+          .about-why {
+            padding: 58px 0 54px;
+            background-size: 300px 390px, 330px 420px;
+          }
+          .about-why__grid {
+            grid-template-columns: 1fr;
+            row-gap: 31px;
+            max-width: 430px;
+            margin-top: 32px;
+          }
+          .about-why__icon {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 11px;
+          }
+          .about-why__icon svg {
+            width: 68px;
+            height: 68px;
+          }
+          .about-why__card h3 { margin-bottom: 8px; }
+          .about-why__card p { font-size: 15px; }
+          .about-why__footer { margin-top: 34px; }
           .about-reviews__grid,
           .about-page__split,
           .about-page__responsible-grid { grid-template-columns: 1fr; }
-          .about-page__why-card { min-height: auto; }
-          .about-page__number { margin-bottom: 16px; }
           .about-page__split-image, .about-page__split-image img,
           .about-page__responsible-image, .about-page__responsible-image img { min-height: 300px; }
           .about-review-card { padding: 23px; }

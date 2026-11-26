@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Morocco Cycling Tours | MTB, E-MTB, Gravel & Road",
   description:
-    "Discover guided Morocco cycling tours, from Atlas Mountains MTB and E-MTB Tour adventures to gravel, road bike and private rides from Marrakech.",
+    "Discover guided Morocco cycling tours, from Atlas Mountains MTB and E-MTB adventures to gravel, road bike and private rides from Marrakech.",
   alternates: {
     canonical: "/",
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       "Explore the Atlas Mountains and beyond on guided MTB, E-MTB and gravel cycling adventures with local Moroccan guides.",
     images: [
       {
-        url: "/images/mountain-bike-morocco-hero.jpg",
+        url: "/images/morocco-cycling-tour-hero.jpg",
         alt: "Mountain biking in Morocco's Atlas Mountains",
       },
     ],
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Mountain Bike Tours in Morocco | Mountain Bike Morocco",
     description:
       "Guided MTB, E-MTB and gravel cycling adventures across Morocco.",
-    images: ["/images/mountain-bike-morocco-hero.jpg"],
+    images: ["/images/morocco-cycling-tour-hero.jpg"],
   },
 };
 
@@ -129,23 +129,83 @@ const destinations = [
   {
     title: "High Atlas Mountains",
     description:
-      "Ride through high mountain passes, deep valleys and dramatic landscapes. The Atlas offers a varied network of tracks and trails, with routes for adventurous riders looking for remote scenery and meaningful encounters with local communities. Discover mountain terrain and traditional settlements while exploring one of Morocco's most distinctive cycling regions.",
+      "Ride through high mountain passes, deep valleys and dramatic landscapes. The Atlas offers a varied network of tracks and trails, with routes for adventurous riders looking for remote scenery and meaningful encounters with local communities.",
     image: "/images/atlas-mountains-cycling-tour-morocco.jpg",
     href: "/destinations/atlas-mountains",
+    tag: "MOUNTAIN TRAILS",
   },
   {
     title: "Imlil and Mount Toubkal",
     description:
-      "Discover the mountain villages around Imlil and the rugged foothills of Mount Toubkal. This region combines traditional architecture, terraced fields and spectacular mountain views, making it an inspiring base for guided rides and multi-day adventures. Explore the surrounding valleys and learn about the landscapes and communities of the High Atlas.",
+      "Discover the mountain villages around Imlil and the rugged foothills of Mount Toubkal. This region combines traditional architecture, terraced fields and spectacular mountain views.",
     image: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
     href: "/destinations/imlil",
+    tag: "VILLAGES & VALLEYS",
   },
   {
     title: "Agafay and the Desert",
     description:
-      "Explore open, rocky terrain and wide horizons outside Marrakech. The Agafay region and Morocco's desert landscapes offer a different kind of adventure, with scenic tracks, changing light and opportunities to combine cycling with cultural discovery. These landscapes are ideal for riders seeking a contrast to the high mountain trails.",
+      "Explore open, rocky terrain and wide horizons outside Marrakech. The Agafay region offers scenic tracks, changing light and a striking contrast to the high mountain trails.",
     image: "/images/Desert-Agafay-Morocco.jpg",
     href: "/destinations/agafay-desert",
+    tag: "DESERT LANDSCAPES",
+  },
+];
+
+const rideStyles = [
+  {
+    number: "01",
+    title: "Mountain Bike Tours",
+    description:
+      "Ride ancient mule tracks, rocky singletrack and flowing mountain paths through the High Atlas and beyond.",
+    image: "/images/singletrack-mtb-atlas-mountains.jpg",
+    href: "/cycling-trips/mtb",
+    tag: "MTB ADVENTURES",
+  },
+  {
+    number: "02",
+    title: "E-MTB Tours",
+    description:
+      "Explore longer climbs, mountain villages and rewarding descents with the assistance of an electric mountain bike.",
+    image: "/images/e-mtb-tour-morocco.jpg",
+    href: "/cycling-trips/e-mtb",
+    tag: "ELECTRIC MOUNTAIN BIKING",
+  },
+  {
+    number: "03",
+    title: "Gravel Cycling",
+    description:
+      "Connect quiet roads, remote tracks and wide-open landscapes on a route planned around your riding goals.",
+    image: "/images/gravel-cycling-morocco.jpg",
+    href: "/cycling-trips/gravel",
+    tag: "GRAVEL JOURNEYS",
+  },
+  {
+    number: "04",
+    title: "Road Cycling",
+    description:
+      "Discover mountain climbs, open roads and changing scenery on a road cycling holiday across Morocco.",
+    image: "/images/road-cycling-morocco.jpg",
+    href: "/cycling-trips/road",
+    tag: "ROAD RIDES",
+  },
+  {
+    number: "05",
+    title: "Luxury Cycling",
+    description:
+      "Combine rewarding days in the saddle with considered accommodation, transfers and personal trip planning.",
+    image: "/images/group-cycling-tour-morocco.jpg",
+    href: "/cycling-trips/luxury",
+    tag: "COMFORT & SERVICE",
+  },
+  {
+    number: "06",
+    title: "Private Group Tours",
+    description:
+      "Plan a cycling journey around your group's preferred dates, experience, destinations and pace.",
+    image: "/images/group-cycling-atlas-mountains.jpg",
+    href: "/cycling-trips/private-groups",
+    tag: "YOUR GROUP, YOUR RIDE",
   },
 ];
 
@@ -200,195 +260,188 @@ const faqs = [
   },
 ];
 
-const exploreOptions = [
+const galleryImages = [
   {
-    number: "01",
-    eyebrow: "MTB ADVENTURES",
-    title: "Mountain Bike Tours in Morocco",
-    description:
-      "Explore Morocco's mountain biking trails on a guided adventure through the High Atlas Mountains. Ride ancient mule tracks, rocky singletrack and flowing mountain paths connecting remote valleys and traditional Amazigh villages. Each route can be planned around your riding experience, technical ability and preferred riding distance, from rewarding day rides to multi-day mountain bike expeditions. Discover spectacular scenery, experience the region with local guides and enjoy the freedom of exploring beyond the usual tourist routes.",
-    image: "/images/singletrack-mtb-atlas-mountains.jpg",
-    alt: "Mountain biker riding a singletrack trail in Morocco's Atlas Mountains",
-    href: "/cycling-trips/mtb",
-    linkText: "Explore mountain bike tours",
+    src: "/images/singletrack-mtb-atlas-mountains.jpg",
+    alt: "Mountain biker riding singletrack in Morocco's Atlas Mountains",
   },
   {
-    number: "02",
-    eyebrow: "E-MTB EXPERIENCES",
-    title: "Electric Mountain Biking in Morocco",
-    description:
-      "Discover more of the Atlas Mountains with an electric mountain bike holiday in Morocco. E-MTB assistance can make longer climbs and extended routes more accessible, leaving more time to explore mountain villages, scenic valleys and rewarding descents. Choose an itinerary that reflects your fitness, experience and preferred riding style, with routes ranging from scenic countryside rides to challenging mountain adventures. Enjoy a flexible way to discover Morocco's varied terrain by bike.",
-    image: "/images/e-mtb-tour-morocco.jpg",
-    alt: "Electric mountain bike adventure in Morocco",
-    href: "/cycling-trips/e-mtb",
-    linkText: "Discover E-MTB tours",
+    src: "/images/atlas-mountains-cycling-tour-morocco.jpg",
+    alt: "Cycling through the Atlas Mountains",
   },
   {
-    number: "03",
-    eyebrow: "GRAVEL JOURNEYS",
-    title: "Gravel Cycling and Remote Roads",
-    description:
-      "Experience a different side of Morocco on a gravel cycling adventure across quiet roads, remote tracks and wide-open landscapes. Travel through mountain passes, agricultural valleys and rural communities while discovering routes away from busy highways. A gravel cycling holiday can combine challenging climbs, long scenic stages and opportunities to experience local culture along the way. Choose a shorter escape or a multi-day expedition connecting different regions, with daily distances and terrain adapted to your goals and experience.",
-    image: "/images/gravel-cycling-morocco.jpg",
-    alt: "Gravel cycling across Morocco's remote mountain roads",
-    href: "/cycling-trips/gravel",
-    linkText: "Explore gravel cycling",
+    src: "/images/toubkal-imlil-enduro-mtb-expedition.jpg",
+    alt: "Mountain biking near Imlil and Mount Toubkal",
   },
   {
-    number: "04",
-    eyebrow: "PRIVATE HOLIDAYS",
-    title: "Private Cycling Holidays in Morocco",
-    description:
-      "Create a private cycling holiday designed around your interests, travel dates and riding ambitions. Choose your preferred bike type, destinations, daily distances and accommodation style, then build an itinerary that works for your group. Explore the High Atlas Mountains, ride scenic countryside roads or combine different landscapes in one journey. Private trips are ideal for friends, couples, families and cycling clubs who want greater flexibility over the pace and structure of their holiday. Start with your ideas and develop a practical route with local guidance.",
-    image: "/images/group-cycling-tour-morocco.jpg",
-    alt: "Cyclists enjoying a guided group cycling adventure in Morocco",
-    href: "/cycling-trips/private-groups",
-    linkText: "Plan a private journey",
+    src: "/images/e-mtb-tour-morocco.jpg",
+    alt: "Electric mountain bike tour in Morocco",
   },
   {
-    number: "05",
-    eyebrow: "LUXURY CYCLING",
-    title: "Luxury Cycling Holidays in Morocco",
-    description:
-      "Combine rewarding days on the bike with carefully selected accommodation, regional food and thoughtful local support. A luxury cycling holiday can connect the High Atlas, countryside roads and southern landscapes at a pace that suits your group. Share your preferred riding style, travel dates, daily distances and comfort preferences so the itinerary can be planned around the experience you want, with logistics and route details confirmed before you travel.",
-    image: "/images/group-cycling-tour-morocco.jpg",
-    alt: "A guided cycling holiday through Morocco with local support",
-    href: "/cycling-trips/luxury",
-    linkText: "Explore luxury cycling",
+    src: "/images/gravel-cycling-morocco.jpg",
+    alt: "Gravel cycling through Morocco",
   },
   {
-    number: "06",
-    eyebrow: "CYCLING FROM MARRAKECH",
-    title: "Cycling Trips from Marrakech",
-    description:
-      "Begin your cycling adventure in Marrakech and ride beyond the city into the foothills of the Atlas Mountains, rural valleys and the rocky landscapes around Agafay. Choose a shorter ride during a city break or discuss a longer itinerary linking different regions. Your route should reflect your available time, cycling experience and preferred terrain, with meeting points, transfers and daily distances agreed as part of the plan.",
+    src: "/images/group-cycling-atlas-mountains.jpg",
+    alt: "Cycling group in the Atlas Mountains",
+  },
+];
+
+const guides = [
+  {
+    tag: "DESTINATION GUIDE",
+    title: "Discover the Atlas Mountains",
+    text: "Explore the mountain region, its valleys, villages and riding possibilities.",
+    image: "/images/Atlas-Mountains-Bike-trip-From-Marrakech.jpg",
+    href: "/destinations/atlas-mountains",
+  },
+  {
+    tag: "TRIP PLANNING",
+    title: "Plan a cycling trip from Marrakech",
+    text: "Understand the options for starting your cycling holiday in Marrakech.",
     image: "/images/day-ebike-tour-from-marrakech.jpg",
-    alt: "Cycling in the countryside near Marrakech, Morocco",
     href: "/cycling-trips/from-marrakech",
-    linkText: "Explore trips from Marrakech",
+  },
+  {
+    tag: "LOCAL EXPERIENCES",
+    title: "Explore Morocco beyond the trail",
+    text: "Discover the villages, landscapes and local culture along the way.",
+    image: "/images/berber-villages-cycling-expeditions.jpg",
+    href: "/journal",
   },
 ];
 
 export default function Home() {
   return (
-    <main>
+    <main className="cycling-home">
       {/* HERO */}
-      <section className="hero">
-        <div className="hero__image" aria-hidden="true">
-          <img
-            src="/images/mountain-bike-morocco-hero.jpg"
-            alt=""
-            fetchPriority="high"
-          />
-        </div>
-
-        <div className="hero__content page-width">
-          <p className="eyebrow eyebrow--light">
-            MOROCCO · HIGH ATLAS · SAHARA
+      <section className="cycling-home__hero">
+        <img
+          className="cycling-home__hero-image"
+          src="/images/morocco-cycling-tour-hero.jpg"
+          alt="Mountain biking in Morocco's Atlas Mountains"
+          fetchPriority="high"
+        />
+        <div className="cycling-home__hero-shade" />
+        <div className="cycling-home__hero-content page-width">
+          <p className="cycling-home__eyebrow">MOROCCO · HIGH ATLAS · SAHARA</p>
+          <h1>Morocco Cycling Tours</h1>
+          <p>
+            Discover Morocco by bike. Ride Atlas Mountain trails, explore
+            remote gravel roads and traditional villages, or plan a private
+            cycling journey shaped around your experience.
           </p>
-          <h1>Ride the Atlas. Feel the Freedom.</h1>
-          <p className="hero__subtitle">
-            Discover Morocco by bike, from the high mountain trails of the
-            Atlas to quiet gravel roads, traditional villages and open desert
-            landscapes.
-          </p>
-          <div className="hero__actions">
-            <Link className="button button--gold" href="/cycling-trips">
+          <div className="cycling-home__hero-actions">
+            <Link className="cycling-home__button cycling-home__button--gold" href="/cycling-trips">
               Explore Cycling Tours
             </Link>
-            <Link className="button button--outline-light" href="/contact">
-              Plan Your Adventure
+            <Link className="cycling-home__button cycling-home__button--light" href="/contact">
+              Plan Your Ride
             </Link>
           </div>
-        </div>
-
-        <div className="hero__bottom page-width">
-          <span>LOCAL GUIDES</span>
-          <span>MTB · E-MTB · GRAVEL · ROAD</span>
-          <span>MADE FOR YOUR JOURNEY</span>
+          <div className="cycling-home__hero-facts">
+            <span>MTB &amp; E-MTB</span>
+            <span>GRAVEL &amp; ROAD</span>
+            <span>PRIVATE CYCLING TOURS</span>
+          </div>
         </div>
       </section>
 
-      {/* INTRODUCTION — REFERENCE DESIGN */}
-      <section className="intro-reference">
-        <div className="intro-reference__inner page-width">
-          <div className="intro-reference__left">
-            <div className="intro-reference__image">
+      {/* INTRODUCTION — WHY RIDE WITH US */}
+      <section className="cycling-home__intro" id="intro">
+        <div className="page-width cycling-home__intro-layout">
+          <div className="cycling-home__intro-main">
+            <div className="cycling-home__intro-image">
               <img
-                src="/images/group-cycling-tour-morocco.jpg"
-                alt="Cyclists exploring the mountain landscapes of Morocco"
+                src="/images/group-cycling-atlas-mountains.jpg"
+                alt="Mountain bikers taking in the High Atlas mountain scenery in Morocco"
                 loading="lazy"
               />
             </div>
-
-            <p className="intro-reference__eyebrow">
-              DISCOVER MOROCCO BY BIKE
-            </p>
-
-            <h2>
-              Experience Morocco on two wheels. Discover a world beyond the
-              ordinary.
-            </h2>
-
-            <div className="intro-reference__trust">
-              <span className="intro-reference__trust-title">
-                THE MOUNTAIN BIKE MOROCCO EXPERIENCE
-              </span>
-              <div className="intro-reference__trust-items">
-                <span>LOCAL KNOWLEDGE</span>
-                <span>GUIDED ADVENTURES</span>
-                <span>PRIVATE JOURNEYS</span>
+            <div className="cycling-home__intro-story">
+              <p>
+                With local knowledge of Morocco’s mountain trails, gravel
+                roads and changing landscapes, Mountain Bike Morocco helps
+                riders discover the country in a way that suits their own
+                experience and ambitions. From the High Atlas to the desert
+                and coast, we focus on thoughtful route planning, good
+                preparation and memorable days on two wheels.
+              </p>
+              <h3>Find the ride that feels right for you</h3>
+              <div className="cycling-home__intro-trust" aria-label="Our cycling experiences">
+                <span>MTB &amp; E-MTB</span>
+                <span>GRAVEL &amp; ROAD</span>
+                <span>PRIVATE CYCLING TOURS</span>
               </div>
             </div>
           </div>
 
-          <div className="intro-reference__features">
-            <article className="intro-reference__feature">
-              <div className="intro-reference__icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none">
-                  <path d="M20 4L24.5 14H35L27 21L30 33L20 26L10 33L13 21L5 14H15.5L20 4Z" />
+          <div className="cycling-home__intro-features">
+            <article className="cycling-home__intro-feature">
+              <span className="cycling-home__intro-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <path d="M9 4h14v5a7 7 0 0 1-14 0V4Z" />
+                  <path d="M9 7H4v3a6 6 0 0 0 6 6M23 7h5v3a6 6 0 0 1-6 6M16 16v6M11 28h10M13 22h6v6h-6z" />
                 </svg>
-              </div>
+              </span>
               <div>
-                <h3>Local Knowledge of the Atlas</h3>
+                <h3>Local Atlas Experience</h3>
                 <p>
-                  Discover mountain trails, remote valleys and traditional
-                  villages with a team familiar with Morocco's landscapes
-                  and cycling regions.
+                  Explore with a team familiar with the region’s mountain
+                  villages, valleys, trail networks and the practical details
+                  that shape a great day of riding.
                 </p>
               </div>
             </article>
 
-            <article className="intro-reference__feature">
-              <div className="intro-reference__icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none">
-                  <path d="M8 35V5M9 7H30L25 15L30 23H9" />
-                  <path d="M14 12H23M14 19H23" />
+            <article className="cycling-home__intro-feature">
+              <span className="cycling-home__intro-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <path d="M5 27V5M6 6h19l-4 6 4 6H6" />
+                  <path d="M11 10h5M11 14h8" />
                 </svg>
-              </div>
+              </span>
               <div>
-                <h3>Guided by Local Cycling Experts</h3>
+                <h3>Knowledgeable Local Guides</h3>
                 <p>
-                  Benefit from local insight, carefully considered routes
-                  and guidance to help you experience the terrain, culture
-                  and character of each destination.
+                  Get route guidance shaped around the terrain, weather,
+                  riding conditions and cultural places encountered along
+                  the way.
                 </p>
               </div>
             </article>
 
-            <article className="intro-reference__feature">
-              <div className="intro-reference__icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none">
-                  <path d="M20 4L33 9V18C33 27 27.5 33 20 36C12.5 33 7 27 7 18V9L20 4Z" />
-                  <path d="M14 20L18 24L27 14" />
+            <article className="cycling-home__intro-feature">
+              <span className="cycling-home__intro-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <circle cx="8" cy="23" r="5" />
+                  <circle cx="24" cy="23" r="5" />
+                  <path d="m8 23 6-11 5 11H8l5-8h8l3 8M12 8h4M18 8h3" />
                 </svg>
-              </div>
+              </span>
               <div>
-                <h3>Experiences Shaped Around You</h3>
+                <h3>Bike &amp; Mechanical Preparation</h3>
                 <p>
-                  From technical MTB trails and E-MTB adventures to gravel
-                  and road cycling, choose a journey adapted to your
-                  experience, interests and travel plans.
+                  Discuss bike choice, fit and equipment before departure.
+                  Support and mechanical arrangements are planned according
+                  to the tour you select.
+                </p>
+              </div>
+            </article>
+
+            <article className="cycling-home__intro-feature">
+              <span className="cycling-home__intro-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <path d="M16 3 27 7v8c0 7-4.7 11.7-11 14-6.3-2.3-11-7-11-14V7l11-4Z" />
+                  <path d="m11 16 3.5 3.5L21 13" />
+                </svg>
+              </span>
+              <div>
+                <h3>Safety &amp; Thoughtful Support</h3>
+                <p>
+                  Clear preparation, realistic route choices and agreed
+                  support arrangements help you understand what to expect
+                  before setting out.
                 </p>
               </div>
             </article>
@@ -396,80 +449,119 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CYCLING TOURS */}
-      <section className="section section--soft">
+      {/* BROWSE CYCLING TOURS BY STYLE */}
+      <section className="cycling-home__section cycling-home__section--sand" id="cycling-styles">
         <div className="page-width">
-          <div className="section-heading">
+          <div className="cycling-home__section-heading">
             <div>
-              <p className="eyebrow">FIND YOUR NEXT ADVENTURE</p>
-              <h2>Explore cycling tours in Morocco</h2>
+              <p className="cycling-home__eyebrow cycling-home__eyebrow--dark">
+                BROWSE CYCLING TOURS
+              </p>
+              <h2>Choose the way you want to ride</h2>
             </div>
             <p>
-              Choose a riding style, explore a destination or work with us to
-              plan a route that fits your dates, experience and ambitions.
-              Each journey can be shaped around the landscapes you most want
-              to discover.
+              Start with the cycling style that suits you. Explore the options
+              and compare the type of terrain, pace and experience you want
+              from your time in Morocco.
             </p>
           </div>
-
-          <div className="tour-grid">
-            {tours.map((tour) => (
-              <article className="home-tour-card" key={tour.title}>
-                <Link
-                  className="home-tour-card__image"
-                  href={tour.href}
-                  aria-label={`Explore ${tour.title}`}
-                >
-                  <img src={tour.image} alt={tour.title} loading="lazy" />
-                  <span className="home-tour-card__category">
-                    {tour.category}
-                  </span>
-                  <span className="home-tour-card__level">{tour.level}</span>
+          <div className="cycling-home__style-grid">
+            {rideStyles.map((style) => (
+              <article className="cycling-home__style-card" key={style.number}>
+                <Link href={style.href} className="cycling-home__style-image">
+                  <img src={style.image} alt={style.title} loading="lazy" />
+                  <span>{style.tag}</span>
                 </Link>
+                <div className="cycling-home__style-content">
+                  <span className="cycling-home__number">{style.number}</span>
+                  <h3><Link href={style.href}>{style.title}</Link></h3>
+                  <p>{style.description}</p>
+                  <Link className="cycling-home__text-link" href={style.href}>
+                    Explore tours <span aria-hidden="true">↗</span>
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                <div className="home-tour-card__body">
-                  <p className="home-tour-card__eyebrow">
-                    MOROCCO CYCLING EXPERIENCE
-                  </p>
-                  <h3 className="home-tour-card__title">
-                    <Link href={tour.href}>{tour.title}</Link>
-                  </h3>
-                  <p className="home-tour-card__description">
-                    {tour.description}
-                  </p>
+      {/* BROWSE BY DESTINATION */}
+      <section className="cycling-home__section">
+        <div className="page-width">
+          <div className="cycling-home__section-heading">
+            <div>
+              <p className="cycling-home__eyebrow cycling-home__eyebrow--dark">
+                BROWSE TOURS BY PLACE
+              </p>
+              <h2>Where would you like to ride?</h2>
+            </div>
+            <p>
+              Each region offers a different kind of ride. Discover the
+              mountain trails, village routes and open landscapes, then ask
+              us which itinerary best fits your plans.
+            </p>
+          </div>
+          <div className="cycling-home__destination-grid">
+            {destinations.map((destination) => (
+              <article className="cycling-home__destination-card" key={destination.title}>
+                <Link href={destination.href} className="cycling-home__destination-image">
+                  <img src={destination.image} alt={destination.title} loading="lazy" />
+                  <span>{destination.tag}</span>
+                </Link>
+                <div>
+                  <h3><Link href={destination.href}>{destination.title}</Link></h3>
+                  <p>{destination.description}</p>
+                  <Link className="cycling-home__text-link" href={destination.href}>
+                    Explore destination <span aria-hidden="true">↗</span>
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="cycling-home__center-action">
+            <Link className="cycling-home__button cycling-home__button--dark" href="/destinations">
+              Browse All Destinations
+            </Link>
+          </div>
+        </div>
+      </section>
 
-                  <div className="home-tour-card__meta">
-                    <span className="home-tour-card__meta-item">
-                      <span
-                        className="home-tour-card__meta-icon"
-                        aria-hidden="true"
-                      >
-                        ◷
-                      </span>
-                      {tour.duration}
-                    </span>
-                    <span className="home-tour-card__meta-item">
-                      <span
-                        className="home-tour-card__meta-icon"
-                        aria-hidden="true"
-                      >
-                        ◆
-                      </span>
-                      {tour.level}
-                    </span>
+      {/* POPULAR TOURS */}
+      <section className="cycling-home__section cycling-home__section--sand" id="popular-tours">
+        <div className="page-width">
+          <div className="cycling-home__section-heading">
+            <div>
+              <p className="cycling-home__eyebrow cycling-home__eyebrow--dark">
+                FIND YOUR NEXT ADVENTURE
+              </p>
+              <h2>Popular cycling tours in Morocco</h2>
+            </div>
+            <p>
+              Explore a selection of MTB, E-MTB and gravel journeys. Tour
+              duration and riding level are starting points; confirm the
+              itinerary and details for your preferred dates with our team.
+            </p>
+          </div>
+          <div className="cycling-home__tour-grid">
+            {tours.slice(0, 6).map((tour) => (
+              <article className="cycling-home__tour-card" key={tour.title}>
+                <Link href={tour.href} className="cycling-home__tour-image">
+                  <img src={tour.image} alt={tour.title} loading="lazy" />
+                  <span>{tour.category}</span>
+                </Link>
+                <div className="cycling-home__tour-content">
+                  <h3><Link href={tour.href}>{tour.title}</Link></h3>
+                  <p>{tour.description}</p>
+                  <div className="cycling-home__tour-meta">
+                    <span>{tour.duration}</span>
+                    <span>{tour.level}</span>
                   </div>
-
-                  <div className="home-tour-card__actions">
-                    <Link
-                      className="home-tour-card__button"
-                      href={tour.href}
-                    >
+                  <div className="cycling-home__tour-actions">
+                    <Link className="cycling-home__button cycling-home__button--gold" href={tour.href}>
                       View Tour
                     </Link>
-                    <Link
-                      className="home-tour-card__link"
-                      href="/contact"
-                    >
+                    <Link className="cycling-home__text-link" href="/contact">
                       Ask About Dates <span aria-hidden="true">↗</span>
                     </Link>
                   </div>
@@ -477,417 +569,277 @@ export default function Home() {
               </article>
             ))}
           </div>
-
-          <div className="center-action">
-            <Link className="button button--dark" href="/cycling-trips">
+          <div className="cycling-home__center-action">
+            <Link className="cycling-home__button cycling-home__button--dark" href="/cycling-trips">
               View All Cycling Tours
             </Link>
           </div>
         </div>
       </section>
 
-      {/* DESTINATIONS — PREMIUM LANDSCAPE CARDS */}
-      <section className="destinations-premium">
+      {/* MOUNTAIN BIKE & ENDURO TOURS */}
+      <section className="cycling-home__section" id="mountain-bike-tours">
         <div className="page-width">
-          <div className="destinations-premium__heading">
+          <div className="cycling-home__section-heading">
             <div>
-              <p className="eyebrow">CHOOSE YOUR LANDSCAPE</p>
-              <h2>Three landscapes. A thousand ways to explore.</h2>
-            </div>
-            <p>
-              From the high peaks of the Atlas to traditional mountain
-              villages and the open desert, discover the landscapes that
-              make Morocco an extraordinary destination for cycling.
-            </p>
-          </div>
-
-          <div className="destinations-premium__grid">
-            {destinations.map((destination, index) => (
-              <article
-                className="destination-premium-card"
-                key={destination.title}
-              >
-                <Link
-                  href={destination.href}
-                  className="destination-premium-card__image"
-                  aria-label={`Discover ${destination.title}`}
-                >
-                  <img
-                    src={destination.image}
-                    alt={destination.title}
-                    loading="lazy"
-                  />
-                  <span className="destination-premium-card__number">
-                    0{index + 1}
-                  </span>
-                  <span className="destination-premium-card__image-link">
-                    <span aria-hidden="true">↗</span>
-                  </span>
-                </Link>
-
-                <div className="destination-premium-card__content">
-                  <span className="destination-premium-card__eyebrow">
-                    MOROCCO · DESTINATION 0{index + 1}
-                  </span>
-
-                  <h3>
-                    <Link href={destination.href}>
-                      {destination.title}
-                    </Link>
-                  </h3>
-
-                  <p>{destination.description}</p>
-
-                  <Link
-                    className="destination-premium-card__link"
-                    href={destination.href}
-                  >
-                    DISCOVER THIS DESTINATION
-                    <span aria-hidden="true">↗</span>
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* MORE WAYS TO EXPLORE — REPLACES A RIDE FOR EVERY ADVENTURE */}
-      <section className="more-explore section">
-        <div className="page-width more-explore__inner">
-          <div className="more-explore__heading">
-            <div className="more-explore__heading-copy">
-              <p className="eyebrow">MORE WAYS TO EXPLORE</p>
-              <h2 id="more-ways-title">
-                One country.
-                <br />
-                <em>Endless ways to ride.</em>
-              </h2>
-            </div>
-            <p>
-              Discover Morocco through a cycling experience that matches your
-              ambitions. Ride Atlas Mountain singletrack, explore remote
-              gravel roads, travel further on an electric mountain bike, or
-              plan a private cycling holiday with your own itinerary. From
-              short rides near Marrakech to multi-day mountain expeditions,
-              find a different way to experience Morocco&apos;s landscapes,
-              villages and culture.
-            </p>
-          </div>
-
-          <div className="more-explore__secondary">
-            {exploreOptions.map((option) => (
-              <article className="more-explore__card" key={option.number}>
-                <Link
-                  href={option.href}
-                  className="more-explore__card-image"
-                  aria-label={option.linkText}
-                >
-                  <img
-                    src={option.image}
-                    alt={option.alt}
-                    loading="lazy"
-                  />
-                </Link>
-                <div className="more-explore__card-content">
-                  <span className="more-explore__number">
-                    {option.number} — {option.eyebrow}
-                  </span>
-                  <h3>{option.title}</h3>
-                  <p>{option.description}</p>
-                  <Link
-                    className="more-explore__link"
-                    href={option.href}
-                  >
-                    {option.linkText} <span aria-hidden="true">↗</span>
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="more-explore__bottom">
-            <div>
-              <span className="more-explore__number">
-                YOUR RIDE. YOUR MOROCCO.
-              </span>
-              <p>
-                Not sure which cycling holiday is right for you? Tell us
-                about your dates, experience and preferred landscapes, and
-                start planning your Moroccan cycling adventure.
+              <p className="cycling-home__eyebrow cycling-home__eyebrow--dark">
+                MTB &amp; ENDURO ADVENTURES
               </p>
+              <h2>Discover Morocco's mountain bike tours</h2>
             </div>
-            <Link className="more-explore__cta" href="/contact">
-              Plan your cycling trip <span aria-hidden="true">↗</span>
+            <p>
+              Explore the High Atlas and Anti-Atlas on guided mountain bike
+              adventures. Ride mountain trails, technical singletrack and
+              remote routes through spectacular Moroccan landscapes.
+            </p>
+          </div>
+
+          <div className="cycling-home__tour-grid">
+            {tours
+              .filter((tour) => tour.category === "MTB ADVENTURE")
+              .map((tour) => (
+                <article className="cycling-home__tour-card" key={tour.title}>
+                  <Link href={tour.href} className="cycling-home__tour-image">
+                    <img src={tour.image} alt={tour.title} loading="lazy" />
+                    <span>{tour.category}</span>
+                  </Link>
+                  <div className="cycling-home__tour-content">
+                    <h3><Link href={tour.href}>{tour.title}</Link></h3>
+                    <p>{tour.description}</p>
+                    <div className="cycling-home__tour-meta">
+                      <span>{tour.duration}</span>
+                      <span>{tour.level}</span>
+                    </div>
+                    <div className="cycling-home__tour-actions">
+                      <Link className="cycling-home__button cycling-home__button--gold" href={tour.href}>
+                        View Tour
+                      </Link>
+                      <Link className="cycling-home__text-link" href="/contact">
+                        Ask About Dates <span aria-hidden="true">↗</span>
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+              ))}
+          </div>
+
+          <div className="cycling-home__center-action">
+            <Link className="cycling-home__button cycling-home__button--dark" href="/cycling-trips/mtb">
+              Explore All MTB Tours
             </Link>
           </div>
         </div>
       </section>
 
-      {/* MARRAKECH INTRODUCTION */}
-      <section className="section page-width split-section">
-        <div className="split-section__image">
-          <img
-            src="/images/Atlas-Mountains-Bike-trip-From-Marrakech.jpg"
-            alt="Cycling adventure through Morocco's Atlas Mountains"
-            loading="lazy"
-          />
-        </div>
-        <div className="split-section__content">
-          <p className="eyebrow">YOUR ADVENTURE STARTS HERE</p>
-          <h2>Cycling holidays from Marrakech into the Atlas Mountains</h2>
-          <p>
-            Marrakech is a natural starting point for exploring the landscapes
-            beyond the city. Within reach are mountain foothills, rural roads,
-            traditional villages and trails that lead into the High Atlas.
-            Starting from Marrakech can make it easier to combine a cycling
-            holiday with time to discover the city's architecture, markets and
-            food.
-          </p>
-          <p>
-            We can help you consider transfer times, the best area for your
-            preferred riding style, how many days to spend on the bike and
-            whether to include a multi-day journey. The aim is to create a
-            balanced itinerary with enough time to ride, rest and experience
-            the places along the way.
-          </p>
-          <Link
-            className="button button--gold"
-            href="/cycling-trips/from-marrakech"
-          >
-            Explore Marrakech Tours
-          </Link>
-        </div>
-      </section>
-
-      {/* WHY RIDE WITH US — REFERENCE DESIGN */}
-      <section className="why-ride-reference">
+      {/* E-MTB ADVENTURES */}
+      <section className="cycling-home__section cycling-home__section--sand" id="emtb-adventures">
         <div className="page-width">
-          <div className="why-ride-reference__heading">
-            <div className="why-ride-reference__title">
-              <p className="why-ride-reference__eyebrow">
-                WHY RIDE WITH US?
-              </p>
-              <h2>
-                Discover Morocco&apos;s best trails,
-                <br />
-                guided by local professionals.
-              </h2>
-            </div>
-
-            <p className="why-ride-reference__intro">
-              Every journey is shaped around local knowledge, carefully
-              considered routes and the kind of cycling experience you want
-              to discover.
-            </p>
-          </div>
-
-          <div className="why-ride-reference__grid">
-            <article className="why-ride-reference__card">
-              <div className="why-ride-reference__icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none">
-                  <path d="M32 5L52 13V29C52 42 43 52 32 59C21 52 12 42 12 29V13L32 5Z" />
-                  <path d="M22 31L29 38L43 23" />
-                </svg>
-              </div>
-              <h3>LOCAL MTB GUIDES</h3>
-              <p>
-                Explore Morocco with local cycling knowledge and guidance
-                shaped by experience of the region, its trails and mountain
-                communities.
-              </p>
-              <div className="why-ride-reference__card-footer">
-                <span>LOCAL KNOWLEDGE</span>
-                <span>01</span>
-              </div>
-            </article>
-
-            <article className="why-ride-reference__card">
-              <div className="why-ride-reference__icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none">
-                  <circle cx="32" cy="32" r="25" />
-                  <path d="M42 19L36 36L19 42L25 25L42 19Z" />
-                </svg>
-              </div>
-              <h3>FULL FLEXIBILITY</h3>
-              <p>
-                Private routes and itineraries adapted to your group,
-                preferred riding style, experience and travel plans.
-              </p>
-              <div className="why-ride-reference__card-footer">
-                <span>YOUR RIDE, YOUR WAY</span>
-                <span>02</span>
-              </div>
-            </article>
-
-            <article className="why-ride-reference__card">
-              <div className="why-ride-reference__icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none">
-                  <path d="M5 48L20 19L32 37L41 25L59 48H5Z" />
-                  <path d="M20 19L25 27" />
-                </svg>
-              </div>
-              <h3>LOCAL &amp; AUTHENTIC</h3>
-              <p>
-                Discover the Atlas Mountains, traditional Amazigh villages
-                and the landscapes and culture that make Morocco unique.
-              </p>
-              <div className="why-ride-reference__card-footer">
-                <span>DISCOVER MOROCCO</span>
-                <span>03</span>
-              </div>
-            </article>
-
-            <article className="why-ride-reference__card">
-              <div className="why-ride-reference__icon" aria-hidden="true">
-                <svg viewBox="0 0 64 64" fill="none">
-                  <circle cx="15" cy="44" r="10" />
-                  <circle cx="49" cy="44" r="10" />
-                  <path d="M15 44L26 20L38 44H15Z" />
-                  <path d="M26 20H39L49 44" />
-                  <path d="M22 20H30M36 16H43L47 25" />
-                </svg>
-              </div>
-              <h3>TRAIL EXPERTISE</h3>
-              <p>
-                Routes selected with care, with terrain and daily riding
-                planned around your experience and preferred level of
-                challenge.
-              </p>
-              <div className="why-ride-reference__card-footer">
-                <span>ROUTES CHOSEN WITH CARE</span>
-                <span>04</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* BEST SEASON */}
-      <section className="section page-width split-section split-section--reverse">
-        <div className="split-section__image">
-          <img
-            src="/images/mountain-biking-atlas-mountains-morocco.jpg"
-            alt="Mountain biking among the landscapes of the High Atlas"
-            loading="lazy"
-          />
-        </div>
-        <div className="split-section__content">
-          <p className="eyebrow">PLAN AROUND THE SEASONS</p>
-          <h2>When is the best time to go cycling in Morocco?</h2>
-          <p>
-            The best time for a cycling holiday depends on where you want to
-            ride. Spring and autumn are often attractive for many mountain and
-            countryside routes, while conditions at higher elevations can be
-            cooler and more changeable. Lower regions and desert areas may
-            experience intense heat, particularly during summer.
-          </p>
-          <p>
-            Altitude, route exposure, daily distance and the type of cycling
-            all affect the best travel window. Rather than choosing dates
-            based on one general rule, plan around the region and experience
-            you want. We recommend checking expected conditions and preparing
-            for temperature changes between valleys and mountain passes.
-          </p>
-          <Link className="text-link" href="/journal">
-            Read our cycling guides <span aria-hidden="true">↗</span>
-          </Link>
-        </div>
-      </section>
-
-      {/* BEYOND THE TRAIL */}
-      <section className="section section--soft">
-        <div className="page-width">
-          <div className="section-heading">
+          <div className="cycling-home__section-heading">
             <div>
-              <p className="eyebrow">BEYOND THE TRAIL</p>
-              <h2>Discover the people, culture and landscapes of Morocco</h2>
+              <p className="cycling-home__eyebrow cycling-home__eyebrow--dark">
+                ELECTRIC MOUNTAIN BIKING
+              </p>
+              <h2>Explore further with E-MTB adventures</h2>
             </div>
             <p>
-              A cycling journey is also an opportunity to experience the
-              country beyond its scenery. Travel through working villages,
-              pause to enjoy local food and notice how architecture, farming
-              and daily life change from one region to another.
+              Discover Morocco's mountain landscapes with electric mountain
+              bike assistance. Enjoy rewarding climbs, scenic trails and
+              longer riding days with itineraries adapted to your group.
             </p>
           </div>
 
-          <div className="culture-grid">
-            <article className="culture-card">
-              <img
-                src="/images/berber-villages-cycling-expeditions.jpg"
-                alt="Traditional Amazigh villages in the Moroccan mountains"
-                loading="lazy"
-              />
-              <div>
-                <h3>Villages and local life</h3>
-                <p>
-                  Mountain villages offer a window into the everyday rhythms
-                  of rural Morocco. With thoughtful planning and respect for
-                  local customs, cycling can create opportunities to
-                  appreciate these places at a slower pace.
-                </p>
-              </div>
-            </article>
-            <article className="culture-card">
-              <img
-                src="/images/marrakech-city-bike-tou.jpeg"
-                alt="Architecture and everyday life in Marrakech"
-                loading="lazy"
-              />
-              <div>
-                <h3>Food, traditions and hospitality</h3>
-                <p>
-                  Make time for regional dishes, markets, traditional
-                  buildings and conversations along the route. These
-                  experiences add depth to a cycling holiday and help connect
-                  the landscapes you ride through with the people who call
-                  them home.
-                </p>
-              </div>
-            </article>
-            <article className="culture-card">
-              <img
-                src="/images/atlas-mountains-cycling-tour-morocco.jpg"
-                alt="The mountain landscapes and valleys of the Moroccan Atlas"
-                loading="lazy"
-              />
-              <div>
-                <h3>Landscapes beyond the route</h3>
-                <p>
-                  Leave time to appreciate the changing scenery between rides,
-                  from terraced valleys and mountain passes to open desert
-                  horizons. A well-planned cycling holiday balances the time
-                  on the bike with opportunities to stop, take in the views
-                  and discover the character of each region.
-                </p>
-              </div>
-            </article>
+          <div className="cycling-home__tour-grid">
+            {tours
+              .filter((tour) => tour.category === "E-MTB EXPERIENCE")
+              .map((tour) => (
+                <article className="cycling-home__tour-card" key={tour.title}>
+                  <Link href={tour.href} className="cycling-home__tour-image">
+                    <img src={tour.image} alt={tour.title} loading="lazy" />
+                    <span>{tour.category}</span>
+                  </Link>
+                  <div className="cycling-home__tour-content">
+                    <h3><Link href={tour.href}>{tour.title}</Link></h3>
+                    <p>{tour.description}</p>
+                    <div className="cycling-home__tour-meta">
+                      <span>{tour.duration}</span>
+                      <span>{tour.level}</span>
+                    </div>
+                    <div className="cycling-home__tour-actions">
+                      <Link className="cycling-home__button cycling-home__button--gold" href={tour.href}>
+                        View Tour
+                      </Link>
+                      <Link className="cycling-home__text-link" href="/contact">
+                        Ask About Dates <span aria-hidden="true">↗</span>
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+              ))}
+          </div>
+
+          <div className="cycling-home__center-action">
+            <Link className="cycling-home__button cycling-home__button--dark" href="/cycling-trips/e-mtb">
+              Explore All E-MTB Tours
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* WHY RIDE WITH US */}
-      <section className="section section--dark">
+      {/* GRAVEL CYCLING TOURS */}
+      <section className="cycling-home__section" id="gravel-adventures">
         <div className="page-width">
-          <div className="section-heading section-heading--dark">
+          <div className="cycling-home__section-heading">
             <div>
-              <p className="eyebrow">LOCAL KNOWLEDGE, REAL EXPERIENCES</p>
-              <h2>Why ride with a local Morocco cycling team?</h2>
+              <p className="cycling-home__eyebrow cycling-home__eyebrow--dark">
+                GRAVEL CYCLING IN MOROCCO
+              </p>
+              <h2>Discover Morocco's gravel adventures</h2>
             </div>
             <p>
-              A great trip depends on more than a good trail. Regional
-              knowledge, realistic planning and clear communication help make
-              a cycling holiday more rewarding. Our approach starts with
-              understanding what you want from the journey and matching those
-              expectations to the places and routes available.
+              Ride quiet mountain roads, remote tracks and spectacular
+              landscapes. Discover multi-day gravel journeys through the
+              Atlas Mountains and southern Morocco.
             </p>
           </div>
-          <div className="reasons-grid">
+
+          <div className="cycling-home__tour-grid">
+            {tours
+              .filter((tour) => tour.category === "GRAVEL CYCLING")
+              .map((tour) => (
+                <article className="cycling-home__tour-card" key={tour.title}>
+                  <Link href={tour.href} className="cycling-home__tour-image">
+                    <img src={tour.image} alt={tour.title} loading="lazy" />
+                    <span>{tour.category}</span>
+                  </Link>
+                  <div className="cycling-home__tour-content">
+                    <h3><Link href={tour.href}>{tour.title}</Link></h3>
+                    <p>{tour.description}</p>
+                    <div className="cycling-home__tour-meta">
+                      <span>{tour.duration}</span>
+                      <span>{tour.level}</span>
+                    </div>
+                    <div className="cycling-home__tour-actions">
+                      <Link className="cycling-home__button cycling-home__button--gold" href={tour.href}>
+                        View Tour
+                      </Link>
+                      <Link className="cycling-home__text-link" href="/contact">
+                        Ask About Dates <span aria-hidden="true">↗</span>
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+              ))}
+          </div>
+
+          <div className="cycling-home__center-action">
+            <Link className="cycling-home__button cycling-home__button--dark" href="/cycling-trips/gravel">
+              Explore All Gravel Tours
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT / WHY RIDE WITH US */}
+      <section className="cycling-home__about">
+        <div className="page-width">
+          <div className="cycling-home__about-heading">
+            <div>
+              <p className="cycling-home__eyebrow">ABOUT MOUNTAIN BIKE MOROCCO</p>
+              <h2>Local knowledge. Thoughtful planning. More meaningful rides.</h2>
+            </div>
+            <p>
+              A memorable cycling holiday needs more than a beautiful route.
+              It takes honest advice, realistic preparation and an understanding
+              of the places and people along the way.
+            </p>
+          </div>
+          <div className="cycling-home__reason-grid">
             {reasons.map((reason) => (
-              <article key={reason.number}>
+              <article className="cycling-home__reason-card" key={reason.number}>
                 <span>{reason.number}</span>
                 <h3>{reason.title}</h3>
                 <p>{reason.text}</p>
+              </article>
+            ))}
+          </div>
+          <div className="cycling-home__about-bottom">
+            <p>
+              Tell us about your riding experience, preferred terrain and
+              travel plans. We can help you explore the options and discuss
+              the practical details of your trip.
+            </p>
+            <Link className="cycling-home__button cycling-home__button--gold" href="/about">
+              About Our Team
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CYCLING GALLERY */}
+      <section className="cycling-home__section">
+        <div className="page-width">
+          <div className="cycling-home__section-heading">
+            <div>
+              <p className="cycling-home__eyebrow cycling-home__eyebrow--dark">
+                MOROCCO ON TWO WHEELS
+              </p>
+              <h2>Scenes from the ride</h2>
+            </div>
+            <p>
+              Mountain trails, remote roads and the landscapes that make
+              every cycling journey different. Explore more images and trip
+              stories in our journal.
+            </p>
+          </div>
+          <div className="cycling-home__gallery">
+            {galleryImages.map((photo, index) => (
+              <Link
+                href="/journal"
+                className={`cycling-home__gallery-item cycling-home__gallery-item--${index + 1}`}
+                key={photo.src}
+                aria-label={`Explore cycling stories: ${photo.alt}`}
+              >
+                <img src={photo.src} alt={photo.alt} loading="lazy" />
+              </Link>
+            ))}
+          </div>
+          <div className="cycling-home__center-action">
+            <Link className="cycling-home__button cycling-home__button--dark" href="/journal">
+              Explore the Journal
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* TRAVEL GUIDES */}
+      <section className="cycling-home__section cycling-home__section--sand">
+        <div className="page-width">
+          <div className="cycling-home__section-heading">
+            <div>
+              <p className="cycling-home__eyebrow cycling-home__eyebrow--dark">
+                PLAN YOUR CYCLING HOLIDAY
+              </p>
+              <h2>Explore Morocco before you ride</h2>
+            </div>
+            <p>
+              Get to know the regions, trip options and local experiences
+              that can help you plan a cycling holiday with confidence.
+            </p>
+          </div>
+          <div className="cycling-home__guide-grid">
+            {guides.map((guide) => (
+              <article className="cycling-home__guide-card" key={guide.title}>
+                <Link href={guide.href} className="cycling-home__guide-image">
+                  <img src={guide.image} alt={guide.title} loading="lazy" />
+                </Link>
+                <div>
+                  <span>{guide.tag}</span>
+                  <h3><Link href={guide.href}>{guide.title}</Link></h3>
+                  <p>{guide.text}</p>
+                  <Link className="cycling-home__text-link" href={guide.href}>
+                    Read more <span aria-hidden="true">↗</span>
+                  </Link>
+                </div>
               </article>
             ))}
           </div>
@@ -895,43 +847,57 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="section page-width">
-        <div className="section-heading">
+      <section className="cycling-home__faq">
+        <div className="page-width cycling-home__faq-grid">
           <div>
-            <p className="eyebrow">HELPFUL INFORMATION</p>
-            <h2>Frequently asked questions about cycling in Morocco</h2>
+            <p className="cycling-home__eyebrow cycling-home__eyebrow--dark">
+              NEED TO KNOW
+            </p>
+            <h2>Frequently asked questions</h2>
+            <p>
+              Find answers to common questions about cycling in Morocco. If
+              you have a specific route or trip in mind, get in touch and
+              we can discuss the details.
+            </p>
+            <Link className="cycling-home__text-link" href="/contact">
+              Ask us a question <span aria-hidden="true">↗</span>
+            </Link>
           </div>
-          <p>
-            Find answers to common questions about timing, riding experience,
-            private trips and preparation. If your plans are more specific,
-            contact us to discuss the details of your proposed journey.
-          </p>
-        </div>
-        <div className="faq-list">
-          {faqs.map((faq) => (
-            <details key={faq.question}>
-              <summary>{faq.question}</summary>
-              <p>{faq.answer}</p>
-            </details>
-          ))}
+          <div className="cycling-home__faq-list">
+            {faqs.map((faq, index) => (
+              <details key={faq.question} open={index === 0}>
+                <summary>{faq.question}<span aria-hidden="true">+</span></summary>
+                <p>{faq.answer}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* FINAL CTA */}
-      <section className="final-cta">
-        <div className="page-width final-cta__inner">
-          <p className="eyebrow eyebrow--light">
-            YOUR NEXT ADVENTURE STARTS HERE
-          </p>
+      <section className="cycling-home__cta">
+        <img
+          src="/images/group-cycling-atlas-mountains.jpg"
+          alt="Cyclists riding together through Morocco's Atlas Mountains"
+          loading="lazy"
+        />
+        <div className="cycling-home__cta-shade" />
+        <div className="page-width cycling-home__cta-content">
+          <p className="cycling-home__eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
           <h2>Ready to discover Morocco by bike?</h2>
           <p>
-            Tell us what kind of ride you have in mind. Together, we can
-            explore the possible routes, choose a destination and start
-            shaping a cycling holiday around your plans.
+            Tell us what kind of ride you have in mind. Share your preferred
+            dates, experience and group size, and start planning your
+            Moroccan cycling adventure.
           </p>
-          <Link className="button button--gold" href="/contact">
-            Plan Your Cycling Trip
-          </Link>
+          <div className="cycling-home__hero-actions">
+            <Link className="cycling-home__button cycling-home__button--gold" href="/contact">
+              Plan Your Cycling Trip
+            </Link>
+            <Link className="cycling-home__button cycling-home__button--light" href="/cycling-trips">
+              View All Tours
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -945,9 +911,7 @@ export default function Home() {
                 src="/images/logo-mountain-bike-morocco-footer.png"
                 alt="Mountain Bike Morocco"
               />
-              <span>
-                MOUNTAIN BIKE <em>MOROCCO</em>
-              </span>
+              <span>MOUNTAIN BIKE <em>MOROCCO</em></span>
             </Link>
             <p>
               Guided mountain biking, E-MTB, gravel and road cycling
@@ -955,7 +919,6 @@ export default function Home() {
               local culture at your own pace.
             </p>
           </div>
-
           <div>
             <h3>Explore</h3>
             <Link href="/cycling-trips">All Cycling Tours</Link>
@@ -963,8 +926,9 @@ export default function Home() {
             <Link href="/cycling-trips/e-mtb">E-MTB Tours</Link>
             <Link href="/cycling-trips/gravel">Gravel Cycling</Link>
             <Link href="/cycling-trips/road">Road Cycling</Link>
+            <Link href="/cycling-trips/luxury">Luxury Cycling</Link>
+            <Link href="/cycling-trips/private-groups">Private Groups</Link>
           </div>
-
           <div>
             <h3>Destinations</h3>
             <Link href="/destinations/atlas-mountains">Atlas Mountains</Link>
@@ -973,7 +937,6 @@ export default function Home() {
             <Link href="/destinations/agafay-desert">Agafay Desert</Link>
             <Link href="/destinations">All Destinations</Link>
           </div>
-
           <div>
             <h3>Let's plan</h3>
             <Link href="/about">About Us</Link>
@@ -982,12 +945,614 @@ export default function Home() {
             <Link href="/contact">Plan Your Trip</Link>
           </div>
         </div>
-
         <div className="page-width footer-bottom">
           <span>© 2026 Mountain Bike Morocco</span>
           <span>Morocco cycling adventures, thoughtfully planned.</span>
         </div>
       </footer>
+
+      <style>{`
+        .cycling-home {
+          --home-ink: #252a24;
+          --home-muted: #686b63;
+          --home-paper: #fffefa;
+          --home-sand: #f4efe3;
+          --home-gold: #c88b24;
+          color: var(--home-ink);
+          background: var(--home-paper);
+        }
+        .cycling-home__hero {
+          position: relative;
+          display: flex;
+          min-height: min(690px, 78vh);
+          align-items: center;
+          overflow: hidden;
+          background: #26362d;
+          color: #fff;
+        }
+        .cycling-home__hero-image,
+        .cycling-home__hero-shade {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .cycling-home__hero-image {
+          object-fit: cover;
+          object-position: center 48%;
+        }
+        .cycling-home__hero-shade {
+          background: linear-gradient(90deg, rgba(13, 23, 18, .76), rgba(13, 23, 18, .32) 58%, rgba(13, 23, 18, .18)), linear-gradient(0deg, rgba(13, 23, 18, .42), transparent 45%);
+        }
+        .cycling-home__hero-content {
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          max-width: 1180px;
+          padding-top: 105px;
+          padding-bottom: 115px;
+        }
+        .cycling-home__eyebrow {
+          margin: 0 0 15px;
+          color: #e6bd79;
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: .2em;
+          line-height: 1.5;
+        }
+        .cycling-home__hero h1 {
+          max-width: 800px;
+          margin: 0 0 20px;
+          color: #fff;
+          font-size: clamp(43px, 7vw, 82px);
+          font-weight: 650;
+          letter-spacing: -.055em;
+          line-height: .99;
+        }
+        .cycling-home__hero-content > p:not(.cycling-home__eyebrow) {
+          max-width: 650px;
+          margin: 0;
+          color: rgba(255,255,255,.9);
+          font-size: clamp(16px, 1.6vw, 19px);
+          line-height: 1.75;
+        }
+        .cycling-home__hero-actions {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px;
+          margin-top: 30px;
+        }
+        .cycling-home__button {
+          display: inline-flex;
+          min-height: 46px;
+          align-items: center;
+          justify-content: center;
+          padding: 12px 22px;
+          border: 1px solid transparent;
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: .08em;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: transform .2s ease, background .2s ease, color .2s ease;
+        }
+        .cycling-home__button:hover { transform: translateY(-2px); }
+        .cycling-home__button--gold { background: var(--home-gold); color: #fff; }
+        .cycling-home__button--gold:hover { background: #a96f14; }
+        .cycling-home__button--light { border-color: rgba(255,255,255,.75); color: #fff; }
+        .cycling-home__button--light:hover { background: #fff; color: var(--home-ink); }
+        .cycling-home__button--dark { background: #26362d; color: #fff; }
+        .cycling-home__button--dark:hover { background: #3b5143; }
+        .cycling-home__hero-facts {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px 34px;
+          margin-top: 45px;
+          color: rgba(255,255,255,.85);
+          font-size: 10px;
+          font-weight: 800;
+          letter-spacing: .15em;
+        }
+        .cycling-home__intro {
+          padding: 76px 0 82px;
+          background: #f7f7f5;
+        }
+        .cycling-home__intro-layout {
+          display: grid;
+          grid-template-columns: minmax(0, 1.25fr) minmax(0, .9fr);
+          gap: clamp(32px, 4vw, 58px);
+          align-items: stretch;
+        }
+        .cycling-home__intro-main { min-width: 0; }
+        .cycling-home__intro-image {
+          height: clamp(300px, 31vw, 430px);
+          overflow: hidden;
+          border-radius: 18px;
+          background: #d8d4ca;
+        }
+        .cycling-home__intro-image img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center 48%;
+        }
+        .cycling-home__intro-story { padding: 27px 2px 0; }
+        .cycling-home__intro-story > p {
+          max-width: 760px;
+          margin: 0 0 25px;
+          color: var(--home-ink);
+          font-size: clamp(15px, 1.35vw, 18px);
+          line-height: 1.8;
+        }
+        .cycling-home__intro-story h3 {
+          margin: 0 0 17px;
+          color: var(--home-ink);
+          font-size: 21px;
+          font-weight: 650;
+          letter-spacing: -.025em;
+        }
+        .cycling-home__intro-trust {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+        .cycling-home__intro-trust span {
+          display: inline-flex;
+          min-height: 40px;
+          align-items: center;
+          padding: 9px 14px;
+          border: 1px solid #deded9;
+          border-radius: 5px;
+          background: #fff;
+          color: #315b60;
+          font-size: 10px;
+          font-weight: 800;
+          letter-spacing: .08em;
+        }
+        .cycling-home__intro-features {
+          display: grid;
+          grid-template-columns: 1fr;
+          align-content: stretch;
+          border-left: 1px solid #e1e2de;
+        }
+        .cycling-home__intro-feature {
+          display: grid;
+          grid-template-columns: 48px minmax(0, 1fr);
+          gap: 22px;
+          align-content: center;
+          padding: 25px 0 25px 34px;
+          border-bottom: 1px solid #dedfdb;
+        }
+        .cycling-home__intro-feature:last-child { border-bottom: 0; }
+        .cycling-home__intro-icon {
+          display: flex;
+          width: 42px;
+          height: 42px;
+          align-items: flex-start;
+          justify-content: center;
+          color: #155363;
+        }
+        .cycling-home__intro-icon svg {
+          width: 34px;
+          height: 34px;
+          stroke: currentColor;
+          stroke-width: 1.8;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        }
+        .cycling-home__intro-feature h3 {
+          margin: 0 0 12px;
+          color: #155363;
+          font-size: clamp(17px, 1.55vw, 21px);
+          font-weight: 700;
+          line-height: 1.35;
+        }
+        .cycling-home__intro-feature p {
+          max-width: 440px;
+          margin: 0;
+          color: #5d605e;
+          font-size: 15px;
+          line-height: 1.7;
+        }
+        .cycling-home__eyebrow--dark { color: #a66f1d; }
+        .cycling-home__section-heading h2,
+        .cycling-home__about-heading h2,
+        .cycling-home__faq h2 {
+          margin: 0;
+          color: var(--home-ink);
+          font-size: clamp(31px, 4.2vw, 49px);
+          font-weight: 600;
+          letter-spacing: -.05em;
+          line-height: 1.08;
+        }
+        .cycling-home__section { padding: 78px 0 86px; }
+        .cycling-home__section--sand { background: var(--home-sand); }
+        .cycling-home__section-heading {
+          display: flex;
+          align-items: end;
+          justify-content: space-between;
+          gap: 35px;
+          margin-bottom: 34px;
+        }
+        .cycling-home__section-heading > p {
+          max-width: 510px;
+          margin: 0 0 3px;
+          color: var(--home-muted);
+          font-size: 14px;
+          line-height: 1.8;
+        }
+        .cycling-home__style-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 22px;
+        }
+        .cycling-home__style-card,
+        .cycling-home__destination-card,
+        .cycling-home__tour-card,
+        .cycling-home__guide-card {
+          min-width: 0;
+          overflow: hidden;
+          background: #fff;
+          box-shadow: 0 5px 22px rgba(31, 34, 28, .055);
+        }
+        .cycling-home__style-image,
+        .cycling-home__destination-image,
+        .cycling-home__tour-image,
+        .cycling-home__guide-image {
+          position: relative;
+          display: block;
+          height: 220px;
+          overflow: hidden;
+          background: #d8d4ca;
+        }
+        .cycling-home__style-image img,
+        .cycling-home__destination-image img,
+        .cycling-home__tour-image img,
+        .cycling-home__guide-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform .45s ease;
+        }
+        .cycling-home__style-card:hover img,
+        .cycling-home__destination-card:hover img,
+        .cycling-home__tour-card:hover img,
+        .cycling-home__guide-card:hover img { transform: scale(1.045); }
+        .cycling-home__style-image > span,
+        .cycling-home__destination-image > span,
+        .cycling-home__tour-image > span {
+          position: absolute;
+          bottom: 13px;
+          left: 14px;
+          padding: 8px 10px;
+          background: rgba(31, 43, 35, .88);
+          color: #fff;
+          font-size: 9px;
+          font-weight: 800;
+          letter-spacing: .13em;
+        }
+        .cycling-home__style-content { position: relative; padding: 23px 23px 25px; }
+        .cycling-home__number {
+          display: block;
+          margin-bottom: 10px;
+          color: #b47b25;
+          font-size: 10px;
+          font-weight: 800;
+          letter-spacing: .15em;
+        }
+        .cycling-home__style-content h3,
+        .cycling-home__destination-card h3,
+        .cycling-home__tour-card h3,
+        .cycling-home__guide-card h3 {
+          margin: 0 0 10px;
+          color: var(--home-ink);
+          font-size: 21px;
+          line-height: 1.2;
+        }
+        .cycling-home__style-content h3 a,
+        .cycling-home__destination-card h3 a,
+        .cycling-home__tour-card h3 a,
+        .cycling-home__guide-card h3 a {
+          color: inherit;
+          text-decoration: none;
+        }
+        .cycling-home__style-content p,
+        .cycling-home__destination-card p,
+        .cycling-home__tour-card p,
+        .cycling-home__guide-card p {
+          margin: 0 0 17px;
+          color: var(--home-muted);
+          font-size: 13px;
+          line-height: 1.75;
+        }
+        .cycling-home__text-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          color: #a56c17;
+          font-size: 10px;
+          font-weight: 800;
+          letter-spacing: .08em;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+        .cycling-home__text-link:hover { color: #74480c; }
+        .cycling-home__destination-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 22px;
+        }
+        .cycling-home__destination-card > div { padding: 22px 23px 25px; }
+        .cycling-home__center-action { display: flex; justify-content: center; margin-top: 32px; }
+        .cycling-home__tour-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 22px;
+        }
+        .cycling-home__tour-image { height: 205px; }
+        .cycling-home__tour-content { padding: 21px 22px 23px; }
+        .cycling-home__tour-content h3 { min-height: 50px; font-size: 19px; }
+        .cycling-home__tour-content > p {
+          display: -webkit-box;
+          min-height: 92px;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 4;
+        }
+        .cycling-home__tour-meta {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          padding: 13px 0;
+          border-top: 1px solid #e9e5dd;
+          border-bottom: 1px solid #e9e5dd;
+        }
+        .cycling-home__tour-meta span {
+          padding: 6px 9px;
+          background: #f4f0e8;
+          color: #55584f;
+          font-size: 10px;
+          font-weight: 700;
+        }
+        .cycling-home__tour-actions {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 13px;
+          margin-top: 16px;
+        }
+        .cycling-home__tour-actions .cycling-home__button { min-height: 39px; padding: 9px 14px; font-size: 9px; }
+        .cycling-home__about {
+          padding: 82px 0 78px;
+          background: #26362d;
+          color: #fff;
+        }
+        .cycling-home__about-heading {
+          display: flex;
+          align-items: end;
+          justify-content: space-between;
+          gap: 40px;
+        }
+        .cycling-home__about-heading h2 {
+          max-width: 680px;
+          color: #fff;
+        }
+        .cycling-home__about-heading > p {
+          max-width: 450px;
+          margin: 0 0 4px;
+          color: rgba(255,255,255,.75);
+          font-size: 14px;
+          line-height: 1.85;
+        }
+        .cycling-home__reason-grid {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 15px;
+          margin-top: 38px;
+        }
+        .cycling-home__reason-card {
+          min-height: 220px;
+          padding: 23px 21px;
+          border: 1px solid rgba(255,255,255,.18);
+          background: rgba(255,255,255,.045);
+        }
+        .cycling-home__reason-card > span {
+          display: block;
+          margin-bottom: 23px;
+          color: #e6bd79;
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: .16em;
+        }
+        .cycling-home__reason-card h3 { margin: 0 0 10px; color: #fff; font-size: 18px; }
+        .cycling-home__reason-card p { margin: 0; color: rgba(255,255,255,.72); font-size: 12px; line-height: 1.75; }
+        .cycling-home__about-bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 25px;
+          margin-top: 31px;
+          padding-top: 25px;
+          border-top: 1px solid rgba(255,255,255,.18);
+        }
+        .cycling-home__about-bottom p {
+          max-width: 720px;
+          margin: 0;
+          color: rgba(255,255,255,.82);
+          font-size: 14px;
+          line-height: 1.7;
+        }
+        .cycling-home__gallery {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          grid-auto-rows: 180px;
+          gap: 12px;
+        }
+        .cycling-home__gallery-item { display: block; overflow: hidden; background: #ddd8cc; }
+        .cycling-home__gallery-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform .45s ease;
+        }
+        .cycling-home__gallery-item:hover img { transform: scale(1.05); }
+        .cycling-home__gallery-item--1,
+        .cycling-home__gallery-item--4 { grid-row: span 2; }
+        .cycling-home__guide-grid {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 22px;
+        }
+        .cycling-home__guide-image { height: 190px; }
+        .cycling-home__guide-card > div { padding: 21px 22px 24px; }
+        .cycling-home__guide-card > div > span {
+          display: block;
+          margin-bottom: 10px;
+          color: #a56c17;
+          font-size: 9px;
+          font-weight: 800;
+          letter-spacing: .14em;
+        }
+        .cycling-home__faq { padding: 80px 0; background: #f4efe3; }
+        .cycling-home__faq-grid {
+          display: grid;
+          grid-template-columns: minmax(0, .75fr) minmax(0, 1.25fr);
+          gap: clamp(35px, 8vw, 110px);
+          align-items: start;
+        }
+        .cycling-home__faq-grid > div:first-child > p:not(.cycling-home__eyebrow) {
+          max-width: 400px;
+          color: var(--home-muted);
+          font-size: 14px;
+          line-height: 1.8;
+        }
+        .cycling-home__faq-grid .cycling-home__text-link { margin-top: 10px; }
+        .cycling-home__faq-list details {
+          border-bottom: 1px solid #dcd5c7;
+        }
+        .cycling-home__faq-list details:first-child { border-top: 1px solid #dcd5c7; }
+        .cycling-home__faq-list summary {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          padding: 17px 0;
+          color: #292e27;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 700;
+          list-style: none;
+        }
+        .cycling-home__faq-list summary::-webkit-details-marker { display: none; }
+        .cycling-home__faq-list summary span { color: #b47b25; font-size: 20px; font-weight: 400; }
+        .cycling-home__faq-list details p {
+          margin: 0;
+          padding: 0 30px 18px 0;
+          color: var(--home-muted);
+          font-size: 13px;
+          line-height: 1.8;
+        }
+        .cycling-home__cta {
+          position: relative;
+          display: flex;
+          min-height: 440px;
+          align-items: center;
+          overflow: hidden;
+          background: #24352b;
+          color: #fff;
+        }
+        .cycling-home__cta > img,
+        .cycling-home__cta-shade {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .cycling-home__cta > img { object-fit: cover; }
+        .cycling-home__cta-shade { background: rgba(17, 28, 21, .72); }
+        .cycling-home__cta-content {
+          position: relative;
+          z-index: 1;
+          padding-top: 75px;
+          padding-bottom: 75px;
+        }
+        .cycling-home__cta h2 {
+          max-width: 700px;
+          margin: 0 0 16px;
+          color: #fff;
+          font-size: clamp(36px, 5vw, 58px);
+          letter-spacing: -.05em;
+          line-height: 1.04;
+        }
+        .cycling-home__cta-content > p:not(.cycling-home__eyebrow) {
+          max-width: 650px;
+          margin: 0;
+          color: rgba(255,255,255,.85);
+          font-size: 15px;
+          line-height: 1.8;
+        }
+        @media (max-width: 1000px) {
+          .cycling-home__intro-layout { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 25px; }
+          .cycling-home__intro-feature { grid-template-columns: 38px minmax(0, 1fr); gap: 15px; padding-left: 22px; }
+          .cycling-home__intro-feature p { font-size: 14px; }
+          .cycling-home__style-grid,
+          .cycling-home__destination-grid,
+          .cycling-home__tour-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+          .cycling-home__reason-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+          .cycling-home__section-heading,
+          .cycling-home__about-heading { align-items: start; flex-direction: column; }
+          .cycling-home__section-heading > p,
+          .cycling-home__about-heading > p { max-width: 680px; }
+        }
+        @media (max-width: 680px) {
+          .cycling-home__hero { min-height: 610px; }
+          .cycling-home__hero-content { padding-top: 90px; padding-bottom: 90px; }
+          .cycling-home__hero h1 { font-size: clamp(42px, 12vw, 58px); }
+          .cycling-home__hero-facts { gap: 10px 18px; font-size: 9px; }
+          .cycling-home__intro { padding: 55px 0 60px; }
+          .cycling-home__intro-layout,
+          .cycling-home__faq-grid { grid-template-columns: 1fr; gap: 28px; }
+          .cycling-home__intro-image { height: 270px; border-radius: 12px; }
+          .cycling-home__intro-story { padding-top: 21px; }
+          .cycling-home__intro-features { border-left: 0; }
+          .cycling-home__intro-feature {
+            grid-template-columns: 40px minmax(0, 1fr);
+            gap: 15px;
+            padding: 22px 0;
+            border-top: 1px solid #dedfdb;
+            border-bottom: 0;
+          }
+          .cycling-home__intro-icon { width: 36px; height: 36px; }
+          .cycling-home__intro-icon svg { width: 30px; height: 30px; }
+          .cycling-home__intro-feature p { font-size: 14px; }
+          .cycling-home__section { padding: 58px 0 64px; }
+          .cycling-home__section-heading { gap: 15px; margin-bottom: 25px; }
+          .cycling-home__style-grid,
+          .cycling-home__destination-grid,
+          .cycling-home__tour-grid,
+          .cycling-home__guide-grid,
+          .cycling-home__reason-grid { grid-template-columns: 1fr; }
+          .cycling-home__style-image,
+          .cycling-home__destination-image { height: 215px; }
+          .cycling-home__tour-image { height: 220px; }
+          .cycling-home__tour-content > p { min-height: 0; }
+          .cycling-home__reason-card { min-height: 0; }
+          .cycling-home__about { padding: 60px 0; }
+          .cycling-home__about-bottom { align-items: start; flex-direction: column; }
+          .cycling-home__gallery {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-auto-rows: 145px;
+            gap: 8px;
+          }
+          .cycling-home__gallery-item--1,
+          .cycling-home__gallery-item--4 { grid-row: span 1; }
+          .cycling-home__faq { padding: 60px 0; }
+          .cycling-home__cta { min-height: 430px; }
+          .cycling-home__cta-content { padding-top: 65px; padding-bottom: 65px; }
+        }
+      `}</style>
     </main>
   );
 }

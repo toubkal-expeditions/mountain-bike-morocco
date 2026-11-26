@@ -144,7 +144,6 @@ const articles = [
     relatedLabel: "Ask about equipment and trip details",
     relatedHref: "/contact?request=cycling-equipment-planning",
   },
-
   {
     "slug": "best-mtb-trails-atlas-mountains",
     "category": "MOUNTAIN BIKE GUIDES",
@@ -640,8 +639,7 @@ const articles = [
     ],
     "relatedLabel": "Explore premium cycling options",
     "relatedHref": "/cycling-trips/luxury"
-  }
-,
+  },
   {
     "slug": "emtb-tours-morocco",
     "category": "E-MTB GUIDES",
@@ -944,43 +942,54 @@ export default function JournalPage() {
         </section>
       </main>
 
+      {/* Journal page footer */}
       <footer className="site-footer cycling-listing__footer">
-        <div className="page-width footer-grid">
+        <div className="container footer-main">
           <div className="footer-brand">
-            <Link className="brand" href="/">
-              <img className="brand__logo" src="/images/mountain-bike-morocco-logo.png" alt="Mountain Bike Morocco" />
-              <span>MOUNTAIN BIKE <em>MOROCCO</em></span>
+            <Link href="/" className="brand__logo" aria-label="Mountain Bike Morocco homepage">
+              <img
+                src="/images/mountain-bike-morocco-logo.png"
+                alt="Mountain Bike Morocco"
+              />
             </Link>
-            <p>Guided mountain biking, E-MTB, gravel and road cycling experiences across Morocco. Discover the landscapes, trails and local culture at your own pace.</p>
+            <p>
+              Discover Morocco by bike with guided mountain-bike, E-MTB, gravel
+              and road cycling adventures across the Atlas Mountains, desert
+              landscapes and Atlantic Coast.
+            </p>
           </div>
-          <div>
-            <h3>Explore</h3>
-            <Link href="/cycling-trips">All Cycling Tours</Link>
-            <Link href="/cycling-trips/mtb">Mountain Bike Tours</Link>
-            <Link href="/cycling-trips/e-mtb">E-MTB Tours</Link>
-            <Link href="/cycling-trips/gravel">Gravel Cycling</Link>
-            <Link href="/cycling-trips/road">Road Cycling</Link>
-          </div>
-          <div>
-            <h3>Destinations</h3>
-            <Link href="/destinations/atlas-mountains">Atlas Mountains</Link>
-            <Link href="/destinations/imlil">Imlil Valley</Link>
-            <Link href="/destinations/toubkal">Mount Toubkal</Link>
-            <Link href="/destinations/marrakech">Marrakech</Link>
-            <Link href="/destinations">All Destinations</Link>
-          </div>
-          <div>
-            <h3>Let&apos;s Plan</h3>
+
+          <div className="footer-column">
+            <h3>EXPLORE</h3>
+            <Link href="/cycling-trips">Cycling Tours</Link>
             <Link href="/about">About Us</Link>
-            <Link href="/events">Events</Link>
+            <Link href="/destinations">Destinations</Link>
             <Link href="/journal">Journal</Link>
-            <Link href="/contact">Contact</Link>
-            <Link href="/contact">Plan Your Trip</Link>
+            <Link href="/events">Events</Link>
+          </div>
+
+          <div className="footer-column">
+            <h3>DESTINATIONS</h3>
+            <Link href="/destinations/atlas-mountains">Atlas Mountains</Link>
+            <Link href="/destinations/imlil">Imlil & Toubkal</Link>
+            <Link href="/destinations/agafay-desert">Agafay Desert</Link>
+            <Link href="/destinations/sahara-desert">Sahara Desert</Link>
+            <Link href="/destinations/atlantic-coast">Atlantic Coast</Link>
+          </div>
+
+          <div className="footer-column">
+            <h3>LET’S TALK</h3>
+            <Link href="/contact">Contact Us</Link>
+            <Link href="/cycling-trips/from-marrakech">Tours from Marrakech</Link>
+            <Link href="/cycling-trips/luxury">Luxury Cycling</Link>
+            <Link href="/cycling-trips/private-groups">Private Groups</Link>
           </div>
         </div>
-        <div className="page-width footer-bottom">
-          <span>© 2026 Mountain Bike Morocco</span>
-          <span>Morocco cycling adventures, thoughtfully planned.</span>
+
+        <div className="container footer-bottom">
+          <p>© {new Date().getFullYear()} Mountain Bike Morocco. All rights reserved.</p>
+          <p>Made for the journey.</p>
+          <Link href="/privacy-policy">Privacy Policy</Link>
         </div>
       </footer>
 
